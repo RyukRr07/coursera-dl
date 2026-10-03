@@ -294,11 +294,15 @@ class OnDemandCourseMaterialItemsV1(object):
         Initialization. Build a map from lessonId to Lecture (item)
 
         @param items: linked.OnDemandCourseMaterialItems key of
-            OPENCOURSE_ONDEMAND_COURSE_MATERIALS response.
+            OPENCOURSE_ONDEMAND_COURSE_MATERIALS_V2 response.
         @type items: dict
         """
         # Build a map of lessonId => Item
-        self._items = dict((item['lessonId'], item) for item in items)
+        items_with_lesson = [item for item in items if 'lessonId' in item]
+        if len(items_with_lesson) < len(items):
+            logging.debug('Filtered %d items without lessonId',
+                          len(items) - len(items_with_lesson))
+        self._items = dict((item['lessonId'], item) for item in items_with_lesson)
 
     @staticmethod
     def create(session, course_name):
@@ -315,11 +319,12 @@ class OnDemandCourseMaterialItemsV1(object):
         @rtype: OnDemandCourseMaterialItems
         """
 
-        dom = get_page(session, OPENCOURSE_ONDEMAND_COURSE_MATERIALS,
+        # Coursera retired materials.v1; use v2 (returns JSON again).
+        dom = get_page(session, OPENCOURSE_ONDEMAND_COURSE_MATERIALS_V2,
                        json=True,
                        class_name=course_name)
         return OnDemandCourseMaterialItemsV1(
-            dom['linked']['onDemandCourseMaterialItems.v1'])
+            dom['linked']['onDemandCourseMaterialItems.v2'])
 
     def get(self, lesson_id):
         """

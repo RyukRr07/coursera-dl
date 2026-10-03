@@ -22,3 +22,8 @@ venv3
 .ipynb_checkpoints
 .ropeproject
 .mypy_cache
+
+.venv/
+descargas/
+coursera-dl.conf
+requirements-locked.txt
