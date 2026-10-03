@@ -1,0 +1,3414 @@
+Introduction to Back-End Development
+MODULE 01: Get Started With Web Development
+===================================================================================
+
+This file collects the readable text from this module's subtitles and learning materials. Source paths are kept below each section.
+
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_introduction-to-the-professional-certificate/01_introduction-to-the-program.en.srt
+TYPE: SRT
+TITLE: Introduction To The Program
+
+[00:00:01,680 --> 00:00:06,120] A digital space is a world of connection and opportunity.
+[00:00:06,120 --> 00:00:07,700] Take this moment, for example.
+[00:00:07,700 --> 00:00:09,380] The web has made it possible for you
+[00:00:09,380 --> 00:00:11,600] to enroll in this program where you will
+[00:00:11,600 --> 00:00:13,440] learn from the personal stories of
+[00:00:13,440 --> 00:00:15,940] developers at Meta. Isn't that exciting?
+[00:00:15,940 --> 00:00:17,440] By the time you have completed
+[00:00:17,440 --> 00:00:18,800] this professional certificate,
+[00:00:18,800 --> 00:00:21,980] you can become a creator of digital experiences.
+[00:00:21,980 --> 00:00:24,520] Connection is evolving, and so are you.
+[00:00:24,520 --> 00:00:26,020] You might not have a background in
+[00:00:26,020 --> 00:00:27,760] tech at all, and that's okay.
+[00:00:27,760 --> 00:00:29,880] Even if you have no experience,
+[00:00:29,880 --> 00:00:33,720] this program can get you job ready within a single year.
+[00:00:33,720 --> 00:00:36,180] How can this professional certificate
+[00:00:36,180 --> 00:00:38,920] prepare you for a job at an organization like Meta?
+[00:00:38,920 --> 00:00:41,040] The backend developer professional
+[00:00:41,040 --> 00:00:42,760] certificate will help you build
+[00:00:42,760 --> 00:00:44,060] job ready skills for
+[00:00:44,060 --> 00:00:45,760] a backend development role
+[00:00:45,760 --> 00:00:47,860] while earning a credential from Meta.
+[00:00:47,860 --> 00:00:49,480] From Meta engineers, you
+[00:00:49,480 --> 00:00:51,260] will learn about how they collaborate
+[00:00:51,260 --> 00:00:52,660] to create and test
+[00:00:52,660 --> 00:00:55,100] high performance websites and applications.
+[00:00:55,100 --> 00:00:57,460] We'll also discuss interesting topics with
+[00:00:57,460 --> 00:00:59,540] other aspiring backend developers and
+[00:00:59,540 --> 00:01:00,760] complete a range of coding
+[00:01:00,760 --> 00:01:02,525] exercises to improve your skills.
+[00:01:02,525 --> 00:01:04,020] It's important to complete
+[00:01:04,020 --> 00:01:06,500] all the courses in the certificate in order,
+[00:01:06,500 --> 00:01:08,820] as each course will build on your skills.
+[00:01:08,820 --> 00:01:11,380] Although we have a recommended schedule for each course,
+[00:01:11,380 --> 00:01:13,620] the program is entirely self-paced,
+[00:01:13,620 --> 00:01:15,860] which means your time is your own to manage.
+[00:01:15,860 --> 00:01:17,300] As you make your way through
+[00:01:17,300 --> 00:01:18,720] the courses in this certificate,
+[00:01:18,720 --> 00:01:20,940] you'll learn how to program in Python,
+[00:01:20,940 --> 00:01:22,640] which is one of the most popular
+[00:01:22,640 --> 00:01:24,520] programming languages in the world.
+[00:01:24,520 --> 00:01:26,340] You'll also learn how to query
+[00:01:26,340 --> 00:01:29,160] a database and surface its data on an interface,
+[00:01:29,160 --> 00:01:30,780] build APIs that connect
+[00:01:30,780 --> 00:01:32,640] applications to one another securely,
+[00:01:32,640 --> 00:01:35,020] and use a Django web framework to connect
+[00:01:35,020 --> 00:01:37,755] the front end and backend of your web application.
+[00:01:37,755 --> 00:01:39,200] For your final project,
+[00:01:39,200 --> 00:01:41,360] you will create a web application with
+[00:01:41,360 --> 00:01:44,240] a functional integration designed and developed with
+[00:01:44,240 --> 00:01:46,820] best practice backend architecture to
+[00:01:46,820 --> 00:01:47,960] showcase as part of
+[00:01:47,960 --> 00:01:50,080] your portfolio during your job search.
+[00:01:50,080 --> 00:01:51,300] You'll also be ready to
+[00:01:51,300 --> 00:01:53,060] collaborate with other developers,
+[00:01:53,060 --> 00:01:54,500] as you will have learned to use
+[00:01:54,500 --> 00:01:56,840] Git and GitHub for version control.
+[00:01:56,840 --> 00:01:58,280] If you're hoping to operate
+[00:01:58,280 --> 00:02:01,720] independently or in a smaller team, not to worry.
+[00:02:01,720 --> 00:02:03,360] We've also got you covered when it
+[00:02:03,360 --> 00:02:05,300] comes to the basics of cloud computing.
+[00:02:05,300 --> 00:02:06,980] In the final course, you'll
+[00:02:06,980 --> 00:02:08,560] prepare for the coding interview.
+[00:02:08,560 --> 00:02:10,060] You'll practice your interview
+[00:02:10,060 --> 00:02:11,800] skills, refine your resume,
+[00:02:11,800 --> 00:02:13,980] and tackle some common coding challenges
+[00:02:13,980 --> 00:02:16,790] that typically form part of technical job interviews.
+[00:02:16,790 --> 00:02:18,460] Once you complete the program,
+[00:02:18,460 --> 00:02:21,880] you'll get access to the Meta Career Programs Job Board,
+[00:02:21,880 --> 00:02:23,780] a job search platform that connects you with
+[00:02:23,780 --> 00:02:26,200] over 200 employers who have committed
+[00:02:26,200 --> 00:02:28,980] to sourcing talent through Meta certificate programs.
+[00:02:28,980 --> 00:02:30,580] Who knows where you'll end up?
+[00:02:30,580 --> 00:02:32,800] Whatever the future of connection looks like,
+[00:02:32,800 --> 00:02:36,840] you'll be part of its creation. Let's get started.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_introduction-to-the-professional-certificate/02_introduction-to-the-course.en.srt
+TYPE: SRT
+TITLE: Introduction To The Course
+
+[00:00:00,000 --> 00:00:01,980] Many of the activities you do every
+[00:00:01,980 --> 00:00:04,245] day can be entirely performed online.
+[00:00:04,245 --> 00:00:07,785] You can use applications on your phone, computer, tablet,
+[00:00:07,785 --> 00:00:09,735] or other devices to access the web
+[00:00:09,735 --> 00:00:12,120] and perform tasks such as shopping,
+[00:00:12,120 --> 00:00:13,380] reserving hotels,
+[00:00:13,380 --> 00:00:15,675] and chatting with friends and work colleagues.
+[00:00:15,675 --> 00:00:18,255] With remote working becoming more popular,
+[00:00:18,255 --> 00:00:20,690] you can work, engage with your colleagues
+[00:00:20,690 --> 00:00:23,435] and be productive all from the comfort of your home.
+[00:00:23,435 --> 00:00:26,420] All of that is possible with a combination of Internet,
+[00:00:26,420 --> 00:00:28,250] infrastructure and technologies and
+[00:00:28,250 --> 00:00:31,090] skilled professionals who build the apps that you use.
+[00:00:31,090 --> 00:00:34,040] Just to mention that when you come across the term app,
+[00:00:34,040 --> 00:00:36,650] it could refer to an app on your phone or to
+[00:00:36,650 --> 00:00:37,790] a web app that runs on
+[00:00:37,790 --> 00:00:40,480] a website or by some other online method.
+[00:00:40,480 --> 00:00:43,475] In this course, starting with module one,
+[00:00:43,475 --> 00:00:46,415] you will cover an introduction to how the web works,
+[00:00:46,415 --> 00:00:48,920] including an exploration of web-pages,
+[00:00:48,920 --> 00:00:50,930] web servers, and web browsers.
+[00:00:50,930 --> 00:00:53,030] You will learn what each is and what
+[00:00:53,030 --> 00:00:55,655] their role is in bringing the Internet to you.
+[00:00:55,655 --> 00:00:58,340] You will also get hands-on practice using
+[00:00:58,340 --> 00:01:00,095] core Internet technologies like
+[00:01:00,095 --> 00:01:03,215] HTML, CSS, and JavaScript.
+[00:01:03,215 --> 00:01:04,970] You will learn how developers
+[00:01:04,970 --> 00:01:06,800] bring these technologies together and
+[00:01:06,800 --> 00:01:08,960] build functional and interactive websites
+[00:01:08,960 --> 00:01:10,355] and web applications.
+[00:01:10,355 --> 00:01:12,800] As you progress, you will explore some of
+[00:01:12,800 --> 00:01:15,245] the tools used by professional developers,
+[00:01:15,245 --> 00:01:17,120] and you will learn the fundamentals of
+[00:01:17,120 --> 00:01:20,080] coding using best practices and standards.
+[00:01:20,080 --> 00:01:23,330] For example, you will learn how to use the web browsers
+[00:01:23,330 --> 00:01:25,160] built-in developer tools and
+[00:01:25,160 --> 00:01:27,860] code using industry standard software,
+[00:01:27,860 --> 00:01:31,595] known as an integrated development environment or IDE.
+[00:01:31,595 --> 00:01:35,260] Professionals use IDEs to write code more efficiently.
+[00:01:35,260 --> 00:01:36,710] In Module 2,
+[00:01:36,710 --> 00:01:38,480] you will begin your coding journey with
+[00:01:38,480 --> 00:01:41,630] an introduction to HTML5 and CSS.
+[00:01:41,630 --> 00:01:43,460] You will learn the basics of each of
+[00:01:43,460 --> 00:01:45,050] these languages and how they
+[00:01:45,050 --> 00:01:46,400] complement each other to
+[00:01:46,400 --> 00:01:49,375] layout and style elements on a web page.
+[00:01:49,375 --> 00:01:51,590] This includes text,
+[00:01:51,590 --> 00:01:55,250] images and multimedia elements like video.
+[00:01:55,250 --> 00:01:57,410] Additionally, to make sure that
+[00:01:57,410 --> 00:01:59,555] your web-page is accessible to everyone,
+[00:01:59,555 --> 00:02:02,620] you will learn how to code for web accessibility.
+[00:02:02,620 --> 00:02:05,045] In module three, you will learn how
+[00:02:05,045 --> 00:02:07,670] developers use frameworks and libraries.
+[00:02:07,670 --> 00:02:11,065] This module will focus on responsive design.
+[00:02:11,065 --> 00:02:13,010] You will learn how to implement
+[00:02:13,010 --> 00:02:15,530] the Bootstrap library so that web-page is can
+[00:02:15,530 --> 00:02:17,615] offer a great browsing experience
+[00:02:17,615 --> 00:02:20,140] no matter what type of devices is used.
+[00:02:20,140 --> 00:02:22,954] You will also learn about user interface
+[00:02:22,954 --> 00:02:25,460] or UI design and how to work
+[00:02:25,460 --> 00:02:27,530] with common UI components and
+[00:02:27,530 --> 00:02:31,010] position them using the flexible Bootstrap grid.
+[00:02:31,010 --> 00:02:34,280] Next, you'll be introduced to React,
+[00:02:34,280 --> 00:02:37,970] a free and open source JavaScript library that developers
+[00:02:37,970 --> 00:02:42,455] use to build user interfaces based on UI components.
+[00:02:42,455 --> 00:02:44,870] You will then learn about the difference between
+[00:02:44,870 --> 00:02:47,090] static and dynamic content and
+[00:02:47,090 --> 00:02:50,305] the benefits of using single-page applications.
+[00:02:50,305 --> 00:02:53,170] Speaking of content in Module 4,
+[00:02:53,170 --> 00:02:55,790] you will have an opportunity to put your new skills into
+[00:02:55,790 --> 00:02:59,695] practice by editing your very own biographical web-page.
+[00:02:59,695 --> 00:03:01,730] In summary, this course
+[00:03:01,730 --> 00:03:04,429] provides you with an introduction to web development.
+[00:03:04,429 --> 00:03:06,800] It is part of a program of courses that lead
+[00:03:06,800 --> 00:03:09,305] you towards a career in software development.
+[00:03:09,305 --> 00:03:11,495] There are many videos in your course
+[00:03:11,495 --> 00:03:14,110] that will gradually guide you toward that goal.
+[00:03:14,110 --> 00:03:16,685] Watch, pause, rewind,
+[00:03:16,685 --> 00:03:18,110] and re-watch the videos
+[00:03:18,110 --> 00:03:20,345] until you are confident in your skills.
+[00:03:20,345 --> 00:03:23,300] Then consolidate your knowledge by consulting
+[00:03:23,300 --> 00:03:25,220] the course readings and put your skills
+[00:03:25,220 --> 00:03:27,830] into practice during the course exercises.
+[00:03:27,830 --> 00:03:30,800] Along the way, you'll encounter several knowledge
+[00:03:30,800 --> 00:03:33,965] quizzes where you can self-check your progress.
+[00:03:33,965 --> 00:03:35,840] You're not alone in considering
+[00:03:35,840 --> 00:03:37,505] a career as a web developer.
+[00:03:37,505 --> 00:03:39,095] The course discussion prompts
+[00:03:39,095 --> 00:03:41,480] enable you to connect with your classmates,
+[00:03:41,480 --> 00:03:43,520] is a great way to share knowledge,
+[00:03:43,520 --> 00:03:46,430] discuss difficulties, and make new friends.
+[00:03:46,430 --> 00:03:48,455] To be successful in the course,
+[00:03:48,455 --> 00:03:49,700] you should try to develop
+[00:03:49,700 --> 00:03:51,755] a schedule for your learning regime.
+[00:03:51,755 --> 00:03:53,900] Ideally, commit yourself to
+[00:03:53,900 --> 00:03:56,840] a regular time slot and duration for your study.
+[00:03:56,840 --> 00:03:59,795] You've probably encountered many new technical words
+[00:03:59,795 --> 00:04:01,750] and terminology in this video.
+[00:04:01,750 --> 00:04:03,290] Don't worry if you don't fully
+[00:04:03,290 --> 00:04:05,270] understand all these terms right now,
+[00:04:05,270 --> 00:04:07,010] everything will become clearer
+[00:04:07,010 --> 00:04:09,480] as you progress through the course.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_introduction-to-the-professional-certificate/03_front-end-back-end-and-full-stack-developer-roles.en.srt
+TYPE: SRT
+TITLE: Front End Back End And Full Stack Developer Roles
+
+[00:00:00,000 --> 00:00:01,331] when you eat at a restaurant,
+[00:00:01,331 --> 00:00:04,378] there are often many cooks preparing different parts of your meal.
+[00:00:04,378 --> 00:00:08,596] Similarly for the websites and applications you use every day.
+[00:00:08,596 --> 00:00:12,471] Many roles are involved in delivering these projects to users.
+[00:00:12,471 --> 00:00:17,080] If you were to look up a list of high paying IT jobs, web developer roles would
+[00:00:17,080 --> 00:00:21,762] certainly feature prominently and with good reason the digital world that we
+[00:00:21,762 --> 00:00:26,516] all live in would not be possible without developers creating architecting and
+[00:00:26,516 --> 00:00:30,500] maintaining the technology that we use every day on our devices.
+[00:00:30,500 --> 00:00:33,380] But it can be confusing for aspiring developers
+[00:00:33,380 --> 00:00:37,851] to understand some of the terminology associated with web development.
+[00:00:37,851 --> 00:00:42,543] Finding the right area for you will depend on a greater understanding of web
+[00:00:42,543 --> 00:00:47,013] developers roles, responsibilities and technologies for example,
+[00:00:47,013 --> 00:00:51,853] suppose you are a visual person in that case you might want to design a stunning
+[00:00:51,853 --> 00:00:55,900] website that offers an excellent experience for its end users.
+[00:00:55,900 --> 00:00:59,922] Or if you're more analytical, you might be interested in working with
+[00:00:59,922 --> 00:01:03,686] the technologies that power, a high performing e commerce site.
+[00:01:03,686 --> 00:01:07,092] Likewise, if your interest is mobile devices,
+[00:01:07,092 --> 00:01:11,503] your passion may lie in creating the next big social media app.
+[00:01:11,503 --> 00:01:16,314] While job roles and titles may vary, web developer roles are usually split
+[00:01:16,314 --> 00:01:19,841] into front end, back end and full stack in this video.
+[00:01:19,841 --> 00:01:23,337] You will learn about each of these, their differences and
+[00:01:23,337 --> 00:01:26,274] the skills required to gain a job in these areas.
+[00:01:26,274 --> 00:01:30,692] A front end developer is someone that works on all parts of a website or
+[00:01:30,692 --> 00:01:33,220] web app that users will interact with.
+[00:01:33,220 --> 00:01:37,473] This can be anything from the style colors, buttons, menus or
+[00:01:37,473 --> 00:01:41,982] user interactions as they click swipe and interact with the site.
+[00:01:41,982 --> 00:01:44,812] The skills of a front end developer can vary, but
+[00:01:44,812 --> 00:01:48,066] they will always focus on three leading technologies.
+[00:01:48,066 --> 00:01:50,770] HTML, CSS and JavaScript for example,
+[00:01:50,770 --> 00:01:56,431] suppose you are a front end developer assigned the task of adding a newsletter,
+[00:01:56,431 --> 00:01:59,574] sign up option to the home page of a website.
+[00:01:59,574 --> 00:02:04,486] In this case you would use HTML to build the display elements such as the input
+[00:02:04,486 --> 00:02:05,023] area for
+[00:02:05,023 --> 00:02:09,891] the user to type their email address and then the button to click to send it.
+[00:02:09,891 --> 00:02:14,713] You can then use CSS to position, color and style these elements on the page.
+[00:02:14,713 --> 00:02:15,589] And finally,
+[00:02:15,589 --> 00:02:20,485] you can use JavaScript to process the activity when the user clicks the button.
+[00:02:20,485 --> 00:02:25,027] This could be something like checking the email address is valid and then sending
+[00:02:25,027 --> 00:02:29,186] that email address to the website for storage under newsletter members.
+[00:02:29,186 --> 00:02:32,238] While HTML and CSS skills are essential.
+[00:02:32,238 --> 00:02:35,323] The most critical skill is usually JavaScript.
+[00:02:35,323 --> 00:02:38,551] It is the powerhouse of front end technology.
+[00:02:38,551 --> 00:02:43,241] This is mainly because of its versatility and the fact that it is paired
+[00:02:43,241 --> 00:02:47,464] with powerful libraries and frameworks such as react by meta.
+[00:02:47,464 --> 00:02:52,342] These can be used to build rich user interface driven enterprise websites and
+[00:02:52,342 --> 00:02:55,730] web apps that are fast, secure and highly scalable.
+[00:02:55,730 --> 00:02:59,355] The salary of front end developers are competitive and
+[00:02:59,355 --> 00:03:01,412] can vary based on experience.
+[00:03:01,412 --> 00:03:02,342] Generally.
+[00:03:02,342 --> 00:03:05,012] Front end developer roles will be available for
+[00:03:05,012 --> 00:03:08,161] junior intermediate and senior level professionals.
+[00:03:08,161 --> 00:03:09,978] As an aspiring developer,
+[00:03:09,978 --> 00:03:14,165] this is a great area to get started in entry into the job market.
+[00:03:14,165 --> 00:03:19,213] For a junior position is possible with some fundamental demonstrations
+[00:03:19,213 --> 00:03:23,857] of core concepts and skills and an eye catching sample portfolio.
+[00:03:23,857 --> 00:03:27,250] A back end developer works on the parts of a website or
+[00:03:27,250 --> 00:03:29,726] web app that the end users don't see.
+[00:03:29,726 --> 00:03:34,202] These activities occur behind the scenes, particularly on the web
+[00:03:34,202 --> 00:03:38,300] server in the database or in constructing the architecture.
+[00:03:38,300 --> 00:03:40,971] Back end developers are responsible for creating and
+[00:03:40,971 --> 00:03:44,117] maintaining functionality when users request information or
+[00:03:44,117 --> 00:03:48,108] when the website needs to communicate to another part of the web architecture.
+[00:03:48,108 --> 00:03:52,676] For processing for example, performing an account, log in or
+[00:03:52,676 --> 00:03:56,482] completing an online purchase using a credit card.
+[00:03:56,482 --> 00:04:01,054] A back end developer will facilitate the interaction of the website and
+[00:04:01,054 --> 00:04:03,198] the content stored in database.
+[00:04:03,198 --> 00:04:08,525] As a result, back end development requires different languages, skills and tools.
+[00:04:08,525 --> 00:04:13,148] While these can vary, they generally consist of knowledge relating to back end
+[00:04:13,148 --> 00:04:17,909] programming language, database management systems, API's and web servers,
+[00:04:17,909 --> 00:04:22,131] salaries are similar to front end developers and depend on experience.
+[00:04:22,131 --> 00:04:26,274] Still the salary may be higher in some instances, especially for
+[00:04:26,274 --> 00:04:28,545] entry and senior level positions.
+[00:04:28,545 --> 00:04:32,752] This is because getting started with back end technologies requires
+[00:04:32,752 --> 00:04:37,402] more set up configuration resources and general it structural knowledge.
+[00:04:37,402 --> 00:04:42,305] This is in contrast to the front end where you can start learning some elements using
+[00:04:42,305 --> 00:04:43,504] only a web browser.
+[00:04:43,504 --> 00:04:46,376] The road to back end development is generally long as
+[00:04:46,376 --> 00:04:50,897] you must have a proficient understanding of the needs of front end technologies.
+[00:04:50,897 --> 00:04:55,288] This can include things like the inner workings of the Internet networks and
+[00:04:55,288 --> 00:04:55,910] servers.
+[00:04:55,910 --> 00:04:59,946] It's pretty common for aspiring developers to first start with the front end and
+[00:04:59,946 --> 00:05:01,261] then move to the back end.
+[00:05:01,261 --> 00:05:03,577] Once they have acquired specialist knowledge.
+[00:05:03,577 --> 00:05:08,152] A full stack developer is someone equally comfortable working with front end and
+[00:05:08,152 --> 00:05:09,575] back end technologies.
+[00:05:09,575 --> 00:05:11,617] Full stack developers have skills and
+[00:05:11,617 --> 00:05:14,945] knowledge in all areas of the web development project cycle.
+[00:05:14,945 --> 00:05:20,185] For example they have relevant expertise in the planning architecture,
+[00:05:20,185 --> 00:05:25,607] design, development, deployment and maintenance of the website or web.
+[00:05:25,607 --> 00:05:29,991] Full stack developer positions are generally at a more senior level.
+[00:05:29,991 --> 00:05:34,351] It can take some time to gain the knowledge, professional experience and
+[00:05:34,351 --> 00:05:36,828] skills to become a full stack developer.
+[00:05:36,828 --> 00:05:40,428] As a result roles in this area are in high demand and
+[00:05:40,428 --> 00:05:43,961] are some of the best paid jobs in the IT Industry.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_introduction-to-the-professional-certificate/04_a-day-in-the-life-of-a-back-end-developer.en.srt
+TYPE: SRT
+TITLE: A Day In The Life Of A Back End Developer
+
+[00:00:00,000 --> 00:00:02,640] Have you ever wondered how your app loads up
+[00:00:02,640 --> 00:00:05,460] so fast or how would you keep on scrolling,
+[00:00:05,460 --> 00:00:07,620] the information comes back just as quick?
+[00:00:07,620 --> 00:00:10,830] We help to pretty much build snappy programs,
+[00:00:10,830 --> 00:00:13,050] build architectural solutions that can help
+[00:00:13,050 --> 00:00:16,720] you use your app well and efficiently.
+[00:00:23,450 --> 00:00:26,010] My name is Grace Egbo,
+[00:00:26,010 --> 00:00:28,200] and I'm a backend engineer at Meta.
+[00:00:28,200 --> 00:00:30,440] I help to build solutions that
+[00:00:30,440 --> 00:00:32,585] can help build our products at Meta,
+[00:00:32,585 --> 00:00:35,875] at scale to run efficiently and reliably.
+[00:00:35,875 --> 00:00:38,870] My hope is that you get to understand just a little
+[00:00:38,870 --> 00:00:41,690] bit more about what a backend engineer is,
+[00:00:41,690 --> 00:00:44,285] and the unique value that they add to the team.
+[00:00:44,285 --> 00:00:47,620] There are over 3 billion users on the platform.
+[00:00:47,620 --> 00:00:49,955] A question that always comes up is,
+[00:00:49,955 --> 00:00:52,175] how can we ensure that we're able to support
+[00:00:52,175 --> 00:00:54,350] all these users that are using this platform
+[00:00:54,350 --> 00:00:57,170] and not bring down the site or make
+[00:00:57,170 --> 00:01:01,145] the programs and applications to be really slow.
+[00:01:01,145 --> 00:01:04,430] For me, that's probably one of the cool parts that I
+[00:01:04,430 --> 00:01:07,580] like to do is how to optimize and say,
+[00:01:07,580 --> 00:01:09,530] how can I make this experience to be even faster?
+[00:01:09,530 --> 00:01:11,180] How can I push the limits?
+[00:01:11,180 --> 00:01:13,190] How can I continue to make it of
+[00:01:13,190 --> 00:01:16,235] a more efficient and better experience for users?
+[00:01:16,235 --> 00:01:18,905] After I get some food and get my fuel up,
+[00:01:18,905 --> 00:01:22,350] I then began with first looking through review.
+[00:01:22,350 --> 00:01:23,450] I pretty much review
+[00:01:23,450 --> 00:01:27,360] my coworkers code just to see how I can support them.
+[00:01:27,360 --> 00:01:29,840] Is there anything that looks good,
+[00:01:29,840 --> 00:01:31,850] anything that needs changes just so
+[00:01:31,850 --> 00:01:34,225] that they can get their code to production.
+[00:01:34,225 --> 00:01:36,935] Then from there, I usually have some meetings.
+[00:01:36,935 --> 00:01:39,110] These meetings usually are around
+[00:01:39,110 --> 00:01:41,600] the area of either updates or what are
+[00:01:41,600 --> 00:01:44,375] potential projects that we can be working on
+[00:01:44,375 --> 00:01:47,805] then begin to code and get into my flow.
+[00:01:47,805 --> 00:01:53,660] I would say the most rewarding part of my day is being
+[00:01:53,660 --> 00:01:56,690] able to have a potential solution to something
+[00:01:56,690 --> 00:01:59,770] that has probably been nagging at my brain for days.
+[00:01:59,770 --> 00:02:01,520] At Meta, we honestly
+[00:02:01,520 --> 00:02:04,225] encounter some really complex problems.
+[00:02:04,225 --> 00:02:05,480] Almost the fact that I
+[00:02:05,480 --> 00:02:07,520] think they're impossible sometimes.
+[00:02:07,520 --> 00:02:09,710] But that's the beauty of being able to
+[00:02:09,710 --> 00:02:12,090] really push the limits and say, can we go faster?
+[00:02:12,090 --> 00:02:13,520] Can we make it more snappier?
+[00:02:13,520 --> 00:02:15,500] Can we make it more ideal
+[00:02:15,500 --> 00:02:18,545] for even our client and engineers to work with?
+[00:02:18,545 --> 00:02:20,555] Sometimes I've had dreams
+[00:02:20,555 --> 00:02:24,805] about just potential code optimizations.
+[00:02:24,805 --> 00:02:26,580] Then it's just when I now say
+[00:02:26,580 --> 00:02:28,680] that moment is like this can work.
+[00:02:28,680 --> 00:02:30,215] This is it and I write it down,
+[00:02:30,215 --> 00:02:33,400] type it in the code, and then boom, that's it.
+[00:02:33,400 --> 00:02:35,645] It actually works and is actually
+[00:02:35,645 --> 00:02:37,190] helping to achieve the goal that I
+[00:02:37,190 --> 00:02:39,055] set when I wrote it on my notebook.
+[00:02:39,055 --> 00:02:41,420] From the technical side of things,
+[00:02:41,420 --> 00:02:43,040] I use Python,
+[00:02:43,040 --> 00:02:46,525] I use Java more so depending on the project,
+[00:02:46,525 --> 00:02:49,985] and what could help me achieve my goal easier.
+[00:02:49,985 --> 00:02:51,590] Because definitely languages each
+[00:02:51,590 --> 00:02:53,255] have their pros and cons.
+[00:02:53,255 --> 00:02:55,340] But what you may not always realize is that
+[00:02:55,340 --> 00:02:58,475] soft skills are even all the more necessary.
+[00:02:58,475 --> 00:03:01,220] Things like communication, how
+[00:03:01,220 --> 00:03:03,740] are you able to listen and listen,
+[00:03:03,740 --> 00:03:06,410] not just to respond, but actually listen to understand.
+[00:03:06,410 --> 00:03:07,820] When you hear different perspectives
+[00:03:07,820 --> 00:03:09,320] that might not agree with yours.
+[00:03:09,320 --> 00:03:13,265] Especially in this distributed remote world,
+[00:03:13,265 --> 00:03:15,800] it has become all the more necessary as well.
+[00:03:15,800 --> 00:03:19,280] I work with front-end engineers and
+[00:03:19,280 --> 00:03:23,110] full-stack engineers in honestly diverse ways.
+[00:03:23,110 --> 00:03:26,030] For example, on my team in particular,
+[00:03:26,030 --> 00:03:27,785] we usually have a product.
+[00:03:27,785 --> 00:03:30,320] Then from there we're able to just deviate
+[00:03:30,320 --> 00:03:33,860] up based on different platforms and use cases.
+[00:03:33,860 --> 00:03:35,720] As a backend engineer,
+[00:03:35,720 --> 00:03:38,990] I'm able to now build what is called the
+[00:03:38,990 --> 00:03:40,790] schema and the architecture of
+[00:03:40,790 --> 00:03:42,980] how we should be able to use this data.
+[00:03:42,980 --> 00:03:44,645] It's a two-way street,
+[00:03:44,645 --> 00:03:47,270] sometimes for client and front-end engineers,
+[00:03:47,270 --> 00:03:47,600] and we say,
+[00:03:47,600 --> 00:03:50,465] we actually need this data to be worded this way,
+[00:03:50,465 --> 00:03:52,360] or we need it to be in a different structure.
+[00:03:52,360 --> 00:03:54,545] From there I can either update, change,
+[00:03:54,545 --> 00:03:57,470] optimize just to ensure that the client engineers,
+[00:03:57,470 --> 00:04:00,265] they're able to do their work more efficiently as well.
+[00:04:00,265 --> 00:04:01,880] In the end, we want to show that we
+[00:04:01,880 --> 00:04:03,680] build a product for our users,
+[00:04:03,680 --> 00:04:05,900] that it's well-built and efficient and
+[00:04:05,900 --> 00:04:09,020] scalable for ultimately years to come.
+[00:04:09,020 --> 00:04:13,865] From your year 1 to even year 5 or year 10,
+[00:04:13,865 --> 00:04:15,200] there's always going to be
+[00:04:15,200 --> 00:04:17,075] something that she may not know.
+[00:04:17,075 --> 00:04:18,110] It is always going to be
+[00:04:18,110 --> 00:04:19,670] an opportunity to learn something
+[00:04:19,670 --> 00:04:22,205] new and to continue to grow your skill set,
+[00:04:22,205 --> 00:04:23,990] and your repository pun
+[00:04:23,990 --> 00:04:27,095] intended of different technologies and
+[00:04:27,095 --> 00:04:29,795] opportunities to grow and make things more
+[00:04:29,795 --> 00:04:33,350] optimal or scalable at different companies.
+[00:04:33,350 --> 00:04:37,010] There's always going to be a need of how we can scale,
+[00:04:37,010 --> 00:04:39,380] of how we can make things more snappier,
+[00:04:39,380 --> 00:04:42,170] about how we can make things run more efficient.
+[00:04:42,170 --> 00:04:44,420] It's you and the work that you're doing
+[00:04:44,420 --> 00:04:45,770] now that is going to be able to
+[00:04:45,770 --> 00:04:48,330] help power that in the future.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_introduction-to-the-professional-certificate/05_course-syllabus-for-introduction-to-back-end-development_instructions.html
+TYPE: HTML
+TITLE: Course Syllabus For Introduction To Back End Development Instructions
+
+This course is the first of a series that aims to help you learn more about web development.
+
+Back-end developers must have a proficient understanding of the needs of front-end technologies, so through this first course, you will gain an understanding of the inner workings of the internet and webservers, as well as HTML, CSS and Javascript.
+
+You will then use this knowledge to create your own biographical page that harnesses the power of the Bootstrap CSS framework. By the end of this course, you’ll be able to:
+
+·       Describe the back-end developer role
+
+·       Explain the core and underlying technologies that power the internet
+
+·       Use HTML to create a simple webpage
+
+·       Use CSS to control the appearance of a simple webpage
+
+·       Explain what React is
+
+·       Describe the applications and characteristics of the most popular UI frameworks
+
+In this course, you will explore the following:
+
+Module 1:
+
+Get started with web development
+
+In this module, you are introduced to web development. You’ll learn about the different types of web developer roles and the responsibilities of front-end, back-end and full-stack developers. You will get a streamlined overview of the core technologies of HTML, CSS and JavaScript and explore the concepts that underpin how the internet works. Furthermore, you will be able to access hands-on exercises to edit a website.
+
+After completing this module, you will be able to:
+
+Describe the web developer job role.
+
+Distinguish between front-end, back-end and full-stack developers.
+
+Explain how data moves through the internet.
+
+Describe the technologies that underpin the internet.
+
+Module 2:
+
+Introduction to HTML5 and CSS
+
+Here you'll learn about HTML5 and CSS. You'll also examine how to construct HTML documents and add basic styling and layout using CSS.
+
+After completing this module, you will be able to:
+
+Use HTML to create a simple webpage.
+
+Use CSS to define the style of a simple webpage.
+
+Module 3:
+
+UI Frameworks
+
+In this module, you'll learn about UI frameworks. In addition, you will learn how to use the Bootstrap framework to build responsive interfaces. You'll explore the benefits of working with UI frameworks.
+
+After completing this module, you will be able to:
+
+Outline the concepts that exist in most UI frameworks.
+
+Use the Bootstrap CSS framework to create webpages.
+
+Leverage Bootstrap documentation to reproduce and modify CSS components.
+
+Use Bootstrap themes.
+
+Describe the basics of React in relation to other frameworks and web technologies.
+
+Module 4:
+
+Graded Assessment
+
+Here you'll learn about the graded assessment. After you complete the individual units in this module, you'll synthesize the skills from the course to create and style a biographical page. You'll also have the opportunity to reflect on the course content and the learning path that lies ahead.
+
+After completing this module, you will be able to:
+
+Create and style a biographical page.
+
+Note for Learners:
+
+If you are wondering why this course covers HTML, CSS, and React, it is not a mistake! As mentioned at the beginning of this syllabus, back-end developers must have a proficient understanding of front-end technologies so they understand how to build the servers, databases, and APIs that eventually connect to them.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_introduction-to-the-professional-certificate/06_how-to-be-successful-in-this-course_instructions.html
+TYPE: HTML
+TITLE: How To Be Successful In This Course Instructions
+
+Taking an online course can be overwhelming. How do you learn at your own pace and successfully achieve your goals?
+
+Here are some general tips that can help you stay focused and on track.
+
+Set daily goals for studying
+
+Ask yourself what you hope to accomplish in your course each day. Setting a clear goal can help you stay motivated and beat procrastination. The goal should be specific and easy to measure, such as “I’ll watch all the videos in Module 2 and complete the first programming assignment.” And don’t forget to reward yourself when you make progress towards your goal!
+
+Create a dedicated study space
+
+It’s easier to recall information if you’re in the same place where you first learned it, so having a dedicated space at home to take online courses can make your learning more effective. Remove any distractions from the space, and if possible, make it separate from your bed or sofa. A clear distinction between where you study and where you take breaks can help you focus.
+
+Schedule time to study on your calendar
+
+Open your calendar and choose a predictable, reliable time that you can dedicate to watching lectures and completing assignments. This helps ensure that your courses won’t become the last thing on your to-do list.
+
+Tip: You can add deadlines for a Coursera course to your Google calendar, Apple calendar, or another calendar app.
+
+Keep yourself accountable
+
+Tell your friends about the courses you’re taking, post achievements to your social media accounts or blog about your homework assignments. Having a community and support network of friends and family to cheer you on makes a difference!
+
+Actively take notes
+
+Taking notes can promote active thinking, boost comprehension and extend your attention span.It’s a good strategy to internalize knowledge, whether you’re learning online or in the classroom.So, grab a notebook or find a digital app that works best for you and start synthesizing key points.
+
+Tip: While watching a lecture on Coursera, you can click the 'Save Note' button below the video to save a screenshot to your course notes and add your own comments.
+
+Join the discussion
+
+Course discussion forums are a great place to ask questions about assignments, discuss topics, share resources and make friends. Our research shows that learners who participate in the discussion forums are 37% more likely to complete a course. So make a post today!
+
+Do one thing at a time
+
+Multitasking is less productive than focusing on a single task at a time. Researchers from Stanford University found that “People who are regularly bombarded with several streams of electronic information cannot pay attention, recall information or switch from one job to another as well as those who complete one task at a time.” Stay focused on one thing at a time. You’ll absorb more information and complete assignments with greater productivity and ease than if you were trying to do many things at once.
+
+Take breaks
+
+Resting your brain after learning is critical to high performance. If you find yourself working on a challenging problem without much progress for an hour, take a break. Walking outside, taking a shower or talking with a friend can help you to re-energize and even give you new ideas on how to tackle the project.
+
+Your learning journey starts now!
+
+While preparing for the module quiz or working on achieving your learning goals, you’re encouraged to:
+
+Work through each lesson in the learning pathway. Try not to skip any activities or lessons unless you are certain that you already know this information well enough to move ahead.
+
+Take the opportunity to go back and watch a video or read all the information provided before moving on to the next lesson or module.
+
+Complete all the knowledge and module quizzes and exercises.
+
+Read the feedback carefully when answering quizzes, as this will help you to reinforce what you are learning.
+
+Make use of  the  practical learning environment provided by the exercises. You can gain substantial reinforcement of your learning through the step-by-step application of your skills.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_introduction-to-the-professional-certificate/07_capstone-project-overview_instructions.html
+TYPE: HTML
+TITLE: Capstone Project Overview Instructions
+
+You’ve just begun your coding journey in the Meta Back-End Developer program. By the end of this program, you'll put your new skills to work by completing a real-world portfolio project where you will architect and build the underlying infrastructure for a dynamic web application.
+
+You will build this back-end architecture yourself using powerful server-side technologies, robust database systems, and REST API frameworks (such as Python and Django). Completing this project will help you to validate the server-side knowledge and data management skills that you have gained.
+
+What you will be able to develop
+
+You will build this web app yourself in React and use all of the excellent tools available. Putting your newly acquired skills into practice, you will demonstrate how to build and program part of a responsive web app.
+
+It includes the following elements:
+
+A home screen with information about the restaurant.
+
+A table reservation system.
+
+A profile screen for users to enter their personal details.
+
+Navigation that enables users to move between parts of the web app.
+
+Project preview
+
+In the video below, you can take a trip into the future and get a preview of what you'll be able to create with your new set of skills at the end of this program.
+
+That's what you'll be able to accomplish by the end of this Back-end development program. Pretty cool, right? It’s a modern application for the Little Lemon restaurant and the best thing about this project is that it’s part of your portfolio and you'll be able to showcase it to any prospective employer as proof of your abilities. It shows the multiple skills you will learn during this program.
+
+Conclusion
+
+In this reading, you explored a project for the Little Lemon restaurant that demonstrates the kind of development you will accomplish towards the end of the program.
+
+Best of luck in your coding journey.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_how-the-web-works/01_how-the-internet-works.en.srt
+TYPE: SRT
+TITLE: How The Internet Works
+
+[00:00:00,000 --> 00:00:01,755] Hello and welcome.
+[00:00:01,755 --> 00:00:03,120] Did you ever find yourself
+[00:00:03,120 --> 00:00:04,800] searching for something online?
+[00:00:04,800 --> 00:00:07,380] How long does it take to get a response from your search?
+[00:00:07,380 --> 00:00:08,880] You search for something and you get
+[00:00:08,880 --> 00:00:10,695] a response back in no time.
+[00:00:10,695 --> 00:00:12,540] That's really something, isn't it?
+[00:00:12,540 --> 00:00:15,345] But did you ever think about how it all happens?
+[00:00:15,345 --> 00:00:17,310] In this video, I will guide you through
+[00:00:17,310 --> 00:00:19,460] the basics of how the Internet works.
+[00:00:19,460 --> 00:00:21,010] Let's start at the beginning.
+[00:00:21,010 --> 00:00:23,160] You open your favorite app on your device
+[00:00:23,160 --> 00:00:25,560] and you're instantly connected to the world.
+[00:00:25,560 --> 00:00:28,050] This is all made possible because two devices connect
+[00:00:28,050 --> 00:00:30,915] and communicate via a wired or wireless connection,
+[00:00:30,915 --> 00:00:32,985] forming something called a network.
+[00:00:32,985 --> 00:00:35,820] You can connect multiple devices to this network.
+[00:00:35,820 --> 00:00:38,145] But this becomes very complicated very quickly,
+[00:00:38,145 --> 00:00:39,930] as each device needs to connect to
+[00:00:39,930 --> 00:00:42,520] every other device to communicate effectively.
+[00:00:42,520 --> 00:00:44,060] This problem is solved by
+[00:00:44,060 --> 00:00:45,800] something called a network switch that
+[00:00:45,800 --> 00:00:47,210] connects multiple devices and
+[00:00:47,210 --> 00:00:49,325] allows them to communicate with each other.
+[00:00:49,325 --> 00:00:51,020] The network switch can connect
+[00:00:51,020 --> 00:00:52,260] to other network switches,
+[00:00:52,260 --> 00:00:54,550] and now two networks can connect.
+[00:00:54,550 --> 00:00:56,640] These network switches then connect to
+[00:00:56,640 --> 00:00:58,340] more network switches until you have
+[00:00:58,340 --> 00:01:00,635] something called an interconnected network.
+[00:01:00,635 --> 00:01:02,480] This interconnected network has
+[00:01:02,480 --> 00:01:04,430] another name that you might be familiar with.
+[00:01:04,430 --> 00:01:06,155] It's called the Internet.
+[00:01:06,155 --> 00:01:07,850] When we use websites or
+[00:01:07,850 --> 00:01:09,845] video streaming services on the Internet,
+[00:01:09,845 --> 00:01:12,680] these are provided by computers called servers.
+[00:01:12,680 --> 00:01:14,810] Our devices are called clients.
+[00:01:14,810 --> 00:01:17,165] This is known as the client-server model.
+[00:01:17,165 --> 00:01:19,355] Internet connects the entire world.
+[00:01:19,355 --> 00:01:20,870] Have you ever had a video call with
+[00:01:20,870 --> 00:01:22,505] someone on another continent?
+[00:01:22,505 --> 00:01:24,410] That video data travel through
+[00:01:24,410 --> 00:01:27,455] large undersea cables connecting the world's networks.
+[00:01:27,455 --> 00:01:29,150] These cables can transfer
+[00:01:29,150 --> 00:01:31,655] huge volumes of data per second.
+[00:01:31,655 --> 00:01:33,860] There are a lot more technical details
+[00:01:33,860 --> 00:01:36,065] that go into making the Internet possible.
+[00:01:36,065 --> 00:01:38,165] But this is the main idea.
+[00:01:38,165 --> 00:01:39,980] Hopefully, this gave you
+[00:01:39,980 --> 00:01:42,960] the big picture of how the Internet works.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_how-the-web-works/02_what-is-a-web-server-and-how-does-it-work.en.srt
+TYPE: SRT
+TITLE: What Is A Web Server And How Does It Work
+
+[00:00:00,340 --> 00:00:02,935] A server is a computer that runs applications and
+[00:00:02,935 --> 00:00:05,917] services ranging from websites to instant messaging.
+[00:00:05,917 --> 00:00:10,031] It's called a server because it provides a service to another computer and
+[00:00:10,031 --> 00:00:11,936] its user also known as the client.
+[00:00:11,936 --> 00:00:16,395] It is typically stored in something called a data center with hundreds or thousands of
+[00:00:16,395 --> 00:00:21,540] other servers, all running different services connected to the internet.
+[00:00:21,540 --> 00:00:25,193] There are many different systems in data centers to ensure that servers have
+[00:00:25,193 --> 00:00:27,933] continuous power, continuous internet connection and
+[00:00:27,933 --> 00:00:30,640] are kept cool 24 hours per day.
+[00:00:30,640 --> 00:00:34,240] Did you know that there are data centers located all around the world?
+[00:00:34,240 --> 00:00:38,260] Many websites use these to allow you to access your content quickly from the data
+[00:00:38,260 --> 00:00:40,240] center nearest to you.
+[00:00:40,240 --> 00:00:43,560] The data center servers are built based on the server's purpose.
+[00:00:43,560 --> 00:00:46,183] For example, if the server is only to be used for
+[00:00:46,183 --> 00:00:49,350] storing images, it might have a lot of hard drive space.
+[00:00:49,350 --> 00:00:53,554] Whereas a server computing complex calculations might need a fast processor
+[00:00:53,554 --> 00:00:55,140] and a lot of memory.
+[00:00:55,140 --> 00:00:57,940] This is usually referred to as a server hardware.
+[00:00:57,940 --> 00:01:00,140] The physical components of a server.
+[00:01:00,140 --> 00:01:03,154] Once the server hardware is installed in the data center,
+[00:01:03,154 --> 00:01:04,577] a piece of code can now run.
+[00:01:04,577 --> 00:01:08,140] The code that runs on the hardware is commonly known as software.
+[00:01:08,140 --> 00:01:11,539] One way I like to remember this is to think of hardware as something you can
+[00:01:11,539 --> 00:01:12,543] physically touch and
+[00:01:12,543 --> 00:01:16,240] is difficult to change as you need to physically replace components.
+[00:01:16,240 --> 00:01:18,330] Software is soft or easy to change.
+[00:01:18,330 --> 00:01:21,140] You just replace the code running on the server.
+[00:01:21,140 --> 00:01:23,600] The services a server can run can vary but
+[00:01:23,600 --> 00:01:28,940] in this video you will learn about a type of service software known as a web server.
+[00:01:28,940 --> 00:01:32,804] A web server has many functions which includes website storage and
+[00:01:32,804 --> 00:01:36,610] administration, data storage, security and managing email.
+[00:01:36,610 --> 00:01:40,076] Another primary function is to handle something known as a web request.
+[00:01:40,076 --> 00:01:43,538] When you open a browser on your device and type the name of the website,
+[00:01:43,538 --> 00:01:48,040] it's the job of the web server to send you back that website's content.
+[00:01:48,040 --> 00:01:50,708] This process is known as the request-response cycle and
+[00:01:50,708 --> 00:01:53,140] you will learn more about it later.
+[00:01:53,140 --> 00:01:56,837] Web servers are also designed to respond to thousands of requests from clients
+[00:01:56,837 --> 00:01:57,840] per second.
+[00:01:57,840 --> 00:02:00,054] In this video, you learned about web servers and
+[00:02:00,054 --> 00:02:02,640] how they consist of hardware and software.
+[00:02:02,640 --> 00:02:06,572] You also learned that one of the primary roles of a web server is to respond to web
+[00:02:06,572 --> 00:02:07,951] requests from the client.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_how-the-web-works/03_what-are-websites-and-webpages.en.srt
+TYPE: SRT
+TITLE: What Are Websites And Webpages
+
+[00:00:00,540 --> 00:00:05,540] You may have heard the terms webpages and websites, but what's the difference?
+[00:00:05,540 --> 00:00:10,057] A web page is a document that displays images, texts, videos and other content in
+[00:00:10,057 --> 00:00:15,040] the web browser, a website is a collection of webpages that link together.
+[00:00:15,040 --> 00:00:17,612] You've likely visited many websites this week,
+[00:00:17,612 --> 00:00:20,181] in fact you're watching a video on one right now,
+[00:00:20,181 --> 00:00:25,240] let's explore an example where you visit your favorite encyclopedia website.
+[00:00:25,240 --> 00:00:29,542] When you arrive at the homepage, it contains many links to different articles
+[00:00:29,542 --> 00:00:33,254] clicking on one of those links brings you to a new webpage article and
+[00:00:33,254 --> 00:00:37,140] that article links to even more articles and other web pages.
+[00:00:37,140 --> 00:00:40,819] If all these webpages have a similar address in the web browser's address,
+[00:00:40,819 --> 00:00:44,640] it can be safe to assume that they belong to the same website.
+[00:00:44,640 --> 00:00:48,670] However, the links on the page do not all have to link to the same website,
+[00:00:48,670 --> 00:00:51,440] they can also link to other websites.
+[00:00:51,440 --> 00:00:54,844] For example, when you visit your favorite search engine and
+[00:00:54,844 --> 00:01:00,240] search for a phrase, the search results are a list of links to other websites.
+[00:01:00,240 --> 00:01:01,827] Did you know that as I'm talking to you,
+[00:01:01,827 --> 00:01:04,168] thousands of websites are being launched to the internet.
+[00:01:04,168 --> 00:01:08,997] Every day, hundreds of thousands of websites are launched, to put things into
+[00:01:08,997 --> 00:01:14,040] perspective the Great Pyramid of Giza has 2.3 million blocks of stone.
+[00:01:14,040 --> 00:01:15,265] So think about it,
+[00:01:15,265 --> 00:01:19,953] in one week there are as many new webpages as stones in the Great Pyramid.
+[00:01:19,953 --> 00:01:24,200] With current internet speeds, it would take three million years to download all
+[00:01:24,200 --> 00:01:25,886] the webpages on the internet and
+[00:01:25,886 --> 00:01:30,540] all of these billions of varied webpages rely on the same core technologies.
+[00:01:30,540 --> 00:01:33,800] Most people interact with websites in some form daily, but
+[00:01:33,800 --> 00:01:36,090] few know how webpage actually works.
+[00:01:36,090 --> 00:01:40,474] I mean, what's it made up of and just how does that webpage get from the web server
+[00:01:40,474 --> 00:01:42,840] to what you see on your screen or device?
+[00:01:42,840 --> 00:01:44,840] Well, let's explore that now.
+[00:01:44,840 --> 00:01:48,468] In its most basic form, a webpage is just a text document,
+[00:01:48,468 --> 00:01:51,354] you can open and edit with any text editor, but
+[00:01:51,354 --> 00:01:56,840] developers usually use more sophisticated tools for working with webpages.
+[00:01:56,840 --> 00:02:02,283] If you want to work with a webpage, you need to know about three technologies and
+[00:02:02,283 --> 00:02:07,650] understand how they interact, they are HTML, CSS and JavaScript.
+[00:02:07,650 --> 00:02:12,469] HTML structures the content you see, CSS controls the colors and style and
+[00:02:12,469 --> 00:02:16,006] JavaScript is responsible for the user interaction.
+[00:02:16,006 --> 00:02:19,428] As a web developer you will work with these technologies every day and
+[00:02:19,428 --> 00:02:21,840] understand how they work together.
+[00:02:21,840 --> 00:02:26,171] I always like to imagine it like this, think of a shop, HTML is the actual
+[00:02:26,171 --> 00:02:29,934] building, the structure, CSS is the interior decoration and
+[00:02:29,934 --> 00:02:33,768] landscaping outside and JavaScript is just like the business,
+[00:02:33,768 --> 00:02:37,740] the services offered and the people coming in and out.
+[00:02:37,740 --> 00:02:41,840] Let me give you a brief overview of each of these technologies now.
+[00:02:41,840 --> 00:02:44,732] HTML stands for hypertext markup language,
+[00:02:44,732 --> 00:02:48,340] it works by using something called markup tags.
+[00:02:48,340 --> 00:02:52,184] These tags describe the content that is displayed in the browser window,
+[00:02:52,184 --> 00:02:55,718] this content can be things like headings, paragraphs, images and
+[00:02:55,718 --> 00:02:58,384] even multimedia elements such as audio and video,
+[00:02:58,384 --> 00:03:01,940] the way html describes the content is known as markup.
+[00:03:01,940 --> 00:03:06,868] CSS is short for cascading style sheets and adds visual enhancements like colors
+[00:03:06,868 --> 00:03:11,060] and layout to the web page, this is commonly known as styling.
+[00:03:11,060 --> 00:03:15,340] It works by enhancing the HTML elements and telling them how to display.
+[00:03:15,340 --> 00:03:18,940] Have you ever noticed a friend changed their color or style of their hair?
+[00:03:18,940 --> 00:03:24,340] Well, your friend's hair is like the HTML and the color and style is CSS.
+[00:03:24,340 --> 00:03:26,111] The last technology is JavaScript,
+[00:03:26,111 --> 00:03:29,440] which is a programming language built into the browser.
+[00:03:29,440 --> 00:03:33,942] JavaScript provides web developers with tools for interactivity, data processing,
+[00:03:33,942 --> 00:03:35,540] control and action.
+[00:03:35,540 --> 00:03:39,780] Have you ever tried to log to a website only to be told that the information you
+[00:03:39,780 --> 00:03:43,823] provided was incorrect or browse your favorite video streaming site and
+[00:03:43,823 --> 00:03:46,340] seen content update in real time?
+[00:03:46,340 --> 00:03:48,624] Well, that's JavaScript in action,
+[00:03:48,624 --> 00:03:51,340] JavaScript is the powerhouse of a web page.
+[00:03:51,340 --> 00:03:54,463] It has the ability to manipulate the content that you see on the screen as
+[00:03:54,463 --> 00:03:56,140] you interact with it.
+[00:03:56,140 --> 00:03:59,804] In fact, without JavaScript websites would be kind of boring and
+[00:03:59,804 --> 00:04:02,467] very limited in terms of what you can do, okay,
+[00:04:02,467 --> 00:04:06,740] you now know about the essential technologies of web page contains.
+[00:04:06,740 --> 00:04:10,776] But how exactly does this code get translated to display the content that you
+[00:04:10,776 --> 00:04:11,858] see on your screen?
+[00:04:11,858 --> 00:04:15,602] When a copy of that webpage is sent from the web server to your browser,
+[00:04:15,602 --> 00:04:19,839] each line of code is processed in sequential order from first to last.
+[00:04:19,839 --> 00:04:23,336] As each line is interpreted, the browser creates the building blocks,
+[00:04:23,336 --> 00:04:26,540] which is the visual representation you see on the screen.
+[00:04:26,540 --> 00:04:30,878] This creation process is known as page rendering, the response from the web
+[00:04:30,878 --> 00:04:34,672] server must be a complete web page in order to fulfill the request,
+[00:04:34,672 --> 00:04:36,524] to show the page in the browser.
+[00:04:36,524 --> 00:04:40,208] You will learn more about page rendering from the additional reading at the end of
+[00:04:40,208 --> 00:04:40,867] this lesson.
+[00:04:40,867 --> 00:04:42,159] And there you have it,
+[00:04:42,159 --> 00:04:47,640] you now have joined the exclusive group of developers who know how web page works.
+[00:04:47,640 --> 00:04:50,293] You learned about the technologies that make up a web page and
+[00:04:50,293 --> 00:04:52,240] how they interact with each other.
+[00:04:52,240 --> 00:04:56,575] You also learned the page is rendered by the web browser to display what the end
+[00:04:56,575 --> 00:04:57,981] user sees on the screen.
+[00:04:57,981 --> 00:05:00,654] In the time since you started watching this video,
+[00:05:00,654 --> 00:05:05,254] another few 1000 websites launched, every one of them is another example of modern
+[00:05:05,254 --> 00:05:09,440] web developers building and adding to the ever growing internet.
+[00:05:09,440 --> 00:05:11,061] Are you ready to become one of them?
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_how-the-web-works/04_what-is-a-web-browser-and-how-does-it-work.en.srt
+TYPE: SRT
+TITLE: What Is A Web Browser And How Does It Work
+
+[00:00:00,000 --> 00:00:02,970] You use a web browser every day on your devices
+[00:00:02,970 --> 00:00:04,320] and you probably have one open
+[00:00:04,320 --> 00:00:06,255] right now watching this video.
+[00:00:06,255 --> 00:00:08,295] But do you really know how they work?
+[00:00:08,295 --> 00:00:11,580] In this video, you will learn what a web browser is and
+[00:00:11,580 --> 00:00:13,500] describe how it receives and displays
+[00:00:13,500 --> 00:00:15,945] content. Let's get started.
+[00:00:15,945 --> 00:00:18,480] A web browser, or browser for short,
+[00:00:18,480 --> 00:00:20,130] is a software application that you
+[00:00:20,130 --> 00:00:21,900] use to browse the World Wide Web.
+[00:00:21,900 --> 00:00:25,920] It works by sending a request to a web server and then
+[00:00:25,920 --> 00:00:28,080] receive a response containing the content that
+[00:00:28,080 --> 00:00:30,525] is to be displayed on the screen of your device.
+[00:00:30,525 --> 00:00:32,850] Once the browser is open on your device,
+[00:00:32,850 --> 00:00:34,830] there is the address bar where you input
+[00:00:34,830 --> 00:00:36,910] the address of the website that you want to visit.
+[00:00:36,910 --> 00:00:38,660] The address is commonly known as
+[00:00:38,660 --> 00:00:41,855] the Uniform Resource Locator or URL for short.
+[00:00:41,855 --> 00:00:44,390] The URL contains the protocol
+[00:00:44,390 --> 00:00:46,895] or the HTTP, the domain name,
+[00:00:46,895 --> 00:00:48,740] usually the name of the website,
+[00:00:48,740 --> 00:00:50,480] and the file path, or the
+[00:00:50,480 --> 00:00:52,655] path to the page that is displayed.
+[00:00:52,655 --> 00:00:55,595] When you make a request using this URL,
+[00:00:55,595 --> 00:00:58,594] the browser and server communicate using a protocol
+[00:00:58,594 --> 00:01:02,540] known as the Hypertext Transfer Protocol or HTTP.
+[00:01:02,540 --> 00:01:04,780] Once the web browser receives the content,
+[00:01:04,780 --> 00:01:07,130] it displays it on the screen of your device.
+[00:01:07,130 --> 00:01:09,860] This exchange of information is made possible
+[00:01:09,860 --> 00:01:12,680] by something known as the request response cycle.
+[00:01:12,680 --> 00:01:15,350] Now, let me demonstrate this using
+[00:01:15,350 --> 00:01:16,490] an example many of us are
+[00:01:16,490 --> 00:01:18,580] familiar with, searching the web.
+[00:01:18,580 --> 00:01:20,420] First, you open a web browser,
+[00:01:20,420 --> 00:01:22,060] which is a software application.
+[00:01:22,060 --> 00:01:25,385] Next, you type the name of your favorite search engine.
+[00:01:25,385 --> 00:01:27,050] The name you type contains
+[00:01:27,050 --> 00:01:28,630] something called a domain name.
+[00:01:28,630 --> 00:01:30,290] Then when you press Enter,
+[00:01:30,290 --> 00:01:32,900] the web browser sends a request across a network and
+[00:01:32,900 --> 00:01:34,310] connects to another computer on
+[00:01:34,310 --> 00:01:36,065] the Internet called a web server.
+[00:01:36,065 --> 00:01:38,600] The web server is a special type of computer that
+[00:01:38,600 --> 00:01:41,465] allows other computers to make requests for data.
+[00:01:41,465 --> 00:01:43,280] The web server responds by
+[00:01:43,280 --> 00:01:45,590] sending a webpage back to the browser.
+[00:01:45,590 --> 00:01:48,754] Once the browser receives all the response information,
+[00:01:48,754 --> 00:01:51,635] the search engine webpage is made visible.
+[00:01:51,635 --> 00:01:54,830] The web page is a coded document that is rendered by
+[00:01:54,830 --> 00:01:56,270] the browser and then presented
+[00:01:56,270 --> 00:01:58,309] visually to you, the end-user.
+[00:01:58,309 --> 00:02:00,335] Now that the search engine webpage
+[00:02:00,335 --> 00:02:01,820] is loaded in the browser,
+[00:02:01,820 --> 00:02:03,470] you interact with that page to
+[00:02:03,470 --> 00:02:04,940] search for what you want to find.
+[00:02:04,940 --> 00:02:07,310] For example, type restaurants near
+[00:02:07,310 --> 00:02:10,475] me in the search bar and press the search button.
+[00:02:10,475 --> 00:02:12,890] Once again, the browser prepares and sends
+[00:02:12,890 --> 00:02:15,545] a request to the same search engine web server.
+[00:02:15,545 --> 00:02:17,630] This time, the request contains
+[00:02:17,630 --> 00:02:19,220] the added instructions to search for
+[00:02:19,220 --> 00:02:21,545] the phrase restaurants near me.
+[00:02:21,545 --> 00:02:24,950] The search engine web server processes the request by
+[00:02:24,950 --> 00:02:26,480] taking the keyword and
+[00:02:26,480 --> 00:02:28,805] using it to find the requested data.
+[00:02:28,805 --> 00:02:31,549] This data is stored in something called a database,
+[00:02:31,549 --> 00:02:33,560] which is connected to the web server.
+[00:02:33,560 --> 00:02:35,330] The web server then picks up
+[00:02:35,330 --> 00:02:37,810] that data and sends it back to the browser.
+[00:02:37,810 --> 00:02:39,650] When the web browser receives
+[00:02:39,650 --> 00:02:41,555] the full response from the web server,
+[00:02:41,555 --> 00:02:43,850] it again renders a visible webpage
+[00:02:43,850 --> 00:02:45,425] with links to some restaurants,
+[00:02:45,425 --> 00:02:47,780] a map showing nearby locations and
+[00:02:47,780 --> 00:02:50,105] more related information such as reviews,
+[00:02:50,105 --> 00:02:52,105] lists, and even reservations.
+[00:02:52,105 --> 00:02:53,870] Success, and all made
+[00:02:53,870 --> 00:02:56,345] possible by computers having a conversation.
+[00:02:56,345 --> 00:02:59,770] You now learned how the request response cycle works.
+[00:02:59,770 --> 00:03:02,210] This web requests cycle is very similar for
+[00:03:02,210 --> 00:03:04,700] a number of other activities we do online,
+[00:03:04,700 --> 00:03:05,990] be it chatting with friends,
+[00:03:05,990 --> 00:03:07,550] watching our favorite movie,
+[00:03:07,550 --> 00:03:09,860] or sharing files with our work colleagues.
+[00:03:09,860 --> 00:03:13,250] That is just a brief summary of how the Internet works.
+[00:03:13,250 --> 00:03:15,350] The next time you search for something online,
+[00:03:15,350 --> 00:03:17,150] think of all the steps and data that gets
+[00:03:17,150 --> 00:03:20,010] exchanged to complete your request.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_how-the-web-works/05_web-hosting.en.srt
+TYPE: SRT
+TITLE: Web Hosting
+
+[00:00:00,350 --> 00:00:03,630] By now, you know that websites and files are
+[00:00:03,630 --> 00:00:06,510] stored on web servers located in datacenters.
+[00:00:06,510 --> 00:00:09,240] But what if you wanted to create your own website?
+[00:00:09,240 --> 00:00:11,220] Do you really need your own datacenter
+[00:00:11,220 --> 00:00:13,335] with specialized hardware and software?
+[00:00:13,335 --> 00:00:15,810] Thankfully, the answer is no.
+[00:00:15,810 --> 00:00:17,670] Developers can launch websites to
+[00:00:17,670 --> 00:00:20,505] the Internet using something known as web hosting.
+[00:00:20,505 --> 00:00:22,920] Web hosting is a service where you place
+[00:00:22,920 --> 00:00:24,150] your website and files on
+[00:00:24,150 --> 00:00:26,055] the hosting company's web server.
+[00:00:26,055 --> 00:00:28,320] You're essentially renting the space in
+[00:00:28,320 --> 00:00:30,690] return for stable and secure storage.
+[00:00:30,690 --> 00:00:33,480] You don't need to be a company to use a web host.
+[00:00:33,480 --> 00:00:35,640] Individuals can rent space too.
+[00:00:35,640 --> 00:00:37,380] In this video, you will learn
+[00:00:37,380 --> 00:00:39,060] about the different types of web hosting
+[00:00:39,060 --> 00:00:40,320] services that you can use for
+[00:00:40,320 --> 00:00:42,690] your websites and web applications.
+[00:00:42,690 --> 00:00:45,010] First, let me share with you some
+[00:00:45,010 --> 00:00:47,300] of the different hosting options available.
+[00:00:47,300 --> 00:00:49,495] These can include shared hosting,
+[00:00:49,495 --> 00:00:51,190] virtual private hosting,
+[00:00:51,190 --> 00:00:53,800] dedicated hosting, and Cloud hosting.
+[00:00:53,800 --> 00:00:55,060] Let's explore each of
+[00:00:55,060 --> 00:00:57,685] these hosting types in a little more detail now.
+[00:00:57,685 --> 00:00:59,620] The cheapest form of web hosting
+[00:00:59,620 --> 00:01:01,045] is known as shared hosting.
+[00:01:01,045 --> 00:01:03,100] You pay for a location on a web server
+[00:01:03,100 --> 00:01:06,190] containing many web hosting accounts with shared hosting.
+[00:01:06,190 --> 00:01:07,990] This means that you also share
+[00:01:07,990 --> 00:01:09,655] the server's processing power,
+[00:01:09,655 --> 00:01:11,620] memory, and bandwidth with
+[00:01:11,620 --> 00:01:14,095] other websites that might slow your performance.
+[00:01:14,095 --> 00:01:15,640] This option is best for
+[00:01:15,640 --> 00:01:18,445] a small website with a small number of visitors.
+[00:01:18,445 --> 00:01:20,620] Many developers also use this as
+[00:01:20,620 --> 00:01:22,960] a low-cost sandbox environment to practice
+[00:01:22,960 --> 00:01:25,975] deploying or hosting their personal websites.
+[00:01:25,975 --> 00:01:28,825] Some companies offer free shared hosting,
+[00:01:28,825 --> 00:01:30,790] but with limitations and often
+[00:01:30,790 --> 00:01:33,355] have advertisements embedded in the webpages.
+[00:01:33,355 --> 00:01:35,800] Sites with more considerable demands use
+[00:01:35,800 --> 00:01:39,035] virtual private servers or VPS.
+[00:01:39,035 --> 00:01:42,760] A VPS is a virtual server with dedicated CPU,
+[00:01:42,760 --> 00:01:45,295] memory, and bandwidth resources.
+[00:01:45,295 --> 00:01:47,515] It will be running on a hardware server with
+[00:01:47,515 --> 00:01:49,750] other VPS instances but as
+[00:01:49,750 --> 00:01:52,405] the resources are fixed per VPS instance,
+[00:01:52,405 --> 00:01:54,730] your website is unlikely to be impacted by
+[00:01:54,730 --> 00:01:57,220] the performance of other VPS instances.
+[00:01:57,220 --> 00:01:58,780] A VPS instance will be
+[00:01:58,780 --> 00:02:00,980] more expensive than shared hosting.
+[00:02:00,980 --> 00:02:04,540] The next option up is to use dedicated hosting.
+[00:02:04,540 --> 00:02:06,280] This will be a hardware server
+[00:02:06,280 --> 00:02:08,380] that is dedicated to you only.
+[00:02:08,380 --> 00:02:10,700] All hardware, CPU, memory,
+[00:02:10,700 --> 00:02:13,520] and bandwidth resources are yours to use.
+[00:02:13,520 --> 00:02:15,500] Generally, this option is more
+[00:02:15,500 --> 00:02:17,755] expensive than a VPS hosting.
+[00:02:17,755 --> 00:02:19,670] The last type of web hosting is
+[00:02:19,670 --> 00:02:21,540] something you may have heard of.
+[00:02:21,540 --> 00:02:24,470] Cloud hosting and the Cloud has grown in popularity over
+[00:02:24,470 --> 00:02:26,210] the last decade and is often
+[00:02:26,210 --> 00:02:29,065] mentioned in various news and services you use.
+[00:02:29,065 --> 00:02:31,250] With Cloud hosting, your website
+[00:02:31,250 --> 00:02:33,500] is run in something called a Cloud environment,
+[00:02:33,500 --> 00:02:37,025] which spans across multiple physical and virtual servers.
+[00:02:37,025 --> 00:02:39,679] If a physical or virtual server fails,
+[00:02:39,679 --> 00:02:41,030] your website will run on
+[00:02:41,030 --> 00:02:42,995] a different server and stay online.
+[00:02:42,995 --> 00:02:45,710] The main advantage of Cloud hosting is that you can use
+[00:02:45,710 --> 00:02:47,000] as many resources as you
+[00:02:47,000 --> 00:02:49,015] need without hardware limitations.
+[00:02:49,015 --> 00:02:52,065] However, you pay based on resource use.
+[00:02:52,065 --> 00:02:54,110] For example, if you transfer
+[00:02:54,110 --> 00:02:56,225] a file from the Cloud to a web browser,
+[00:02:56,225 --> 00:02:58,250] you'll pay for the bandwidth used for
+[00:02:58,250 --> 00:03:01,475] that transfer at a fractional cent cost per megabyte.
+[00:03:01,475 --> 00:03:04,369] While this can quickly become more expensive,
+[00:03:04,369 --> 00:03:06,500] it allows websites and web applications
+[00:03:06,500 --> 00:03:08,840] to scale their costs as popularity grows.
+[00:03:08,840 --> 00:03:12,215] This is how many of the major web applications operate.
+[00:03:12,215 --> 00:03:14,810] In this video, you learned about web hosting and
+[00:03:14,810 --> 00:03:16,010] the different hosting options
+[00:03:16,010 --> 00:03:18,050] available to individuals and companies.
+[00:03:18,050 --> 00:03:20,500] Soon you will build your very first website.
+[00:03:20,500 --> 00:03:21,800] Are you excited to get it
+[00:03:21,800 --> 00:03:23,855] hosted so you can share it with the world?
+[00:03:23,855 --> 00:03:26,465] For more information on web hosting and Services,
+[00:03:26,465 --> 00:03:28,070] please see the additional reading
+[00:03:28,070 --> 00:03:30,120] at the end of this lesson.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_how-the-web-works/06_additional-resources_instructions.html
+TYPE: HTML
+TITLE: Additional Resources Instructions
+
+Learn more
+
+Here is a list of resources that may be helpful as you continue your learning journey.
+
+What is a Web Server? (NGINX)
+
+https://www.f5.com/glossary/web-server
+
+What is a Web Browser? (Mozilla)
+
+https://www.mozilla.org/en-US/firefox/browsers/what-is-a-browser/
+
+Who invented the Internet? And why? (Kurzgesagt)
+
+https://youtu.be/21eFwbb48sE
+
+What is Cloud Computing? (Amazon)
+
+https://youtu.be/mxT233EdY5c
+
+Browser Engines (Wikipedia)
+
+https://en.wikipedia.org/wiki/Browser_engine
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/01_introduction-to-internet-protocols.en.srt
+TYPE: SRT
+TITLE: Introduction To Internet Protocols
+
+[00:00:00,840 --> 00:00:03,540] Email is a common communication
+[00:00:03,540 --> 00:00:05,120] method that we all know about.
+[00:00:05,120 --> 00:00:07,580] But before it existed, the alternative was
+[00:00:07,580 --> 00:00:10,460] to send mail to one another through the postal system.
+[00:00:10,460 --> 00:00:13,660] There is a surprising parallel between the postal system
+[00:00:13,660 --> 00:00:15,220] and how the computer sends and
+[00:00:15,220 --> 00:00:17,400] receives data across the Internet every day.
+[00:00:17,400 --> 00:00:19,835] Let's compare how they both work.
+[00:00:19,835 --> 00:00:22,090] Data sent across the Internet is
+[00:00:22,090 --> 00:00:24,330] quite an important part of our everyday lives,
+[00:00:24,330 --> 00:00:25,750] and it wouldn't be possible without
+[00:00:25,750 --> 00:00:28,750] Internet Protocol addresses or IP addresses.
+[00:00:28,750 --> 00:00:30,250] A useful way to think of
+[00:00:30,250 --> 00:00:33,010] IP addresses is that they function much like
+[00:00:33,010 --> 00:00:35,310] addresses in a postal system that make it
+[00:00:35,310 --> 00:00:36,430] possible for packets of
+[00:00:36,430 --> 00:00:38,445] information to be delivered to you.
+[00:00:38,445 --> 00:00:42,070] Like with the postal system, things can go wrong.
+[00:00:42,070 --> 00:00:44,190] But let's first go over how things
+[00:00:44,190 --> 00:00:46,755] work before we think about how they can go wrong.
+[00:00:46,755 --> 00:00:50,020] In this video, you will learn what IP addresses
+[00:00:50,020 --> 00:00:51,380] are and explore how
+[00:00:51,380 --> 00:00:53,880] computers send data across the Internet.
+[00:00:53,880 --> 00:00:55,520] You previously learned how
+[00:00:55,520 --> 00:00:57,300] computers connect to each other to form
+[00:00:57,300 --> 00:00:59,160] networks and how these networks
+[00:00:59,160 --> 00:01:01,335] connect to each other to form the Internet.
+[00:01:01,335 --> 00:01:04,940] When you send data between computers across the Internet,
+[00:01:04,940 --> 00:01:07,440] a common way of understanding this is that
+[00:01:07,440 --> 00:01:09,100] the computers are the destinations
+[00:01:09,100 --> 00:01:11,060] that request and receive the data,
+[00:01:11,060 --> 00:01:12,700] and the networks are the routes
+[00:01:12,700 --> 00:01:14,740] that the data travels across.
+[00:01:14,740 --> 00:01:18,260] What makes that possible is the Internet Protocol.
+[00:01:18,260 --> 00:01:20,960] Version 4 and version 6 are currently
+[00:01:20,960 --> 00:01:24,460] the two most widely used standards of Internet Protocol.
+[00:01:24,460 --> 00:01:27,500] Think of the old fashioned postal system again.
+[00:01:27,500 --> 00:01:29,300] When you send a letter to a friend,
+[00:01:29,300 --> 00:01:30,480] you need their address.
+[00:01:30,480 --> 00:01:32,500] Otherwise, they won't receive your letter.
+[00:01:32,500 --> 00:01:34,835] Computers work in a similar way.
+[00:01:34,835 --> 00:01:38,310] Every computer on a network is assigned an IP address.
+[00:01:38,310 --> 00:01:40,350] In protocol version 4,
+[00:01:40,350 --> 00:01:41,750] an IP address contains
+[00:01:41,750 --> 00:01:44,970] four octets separated by periods or dots.
+[00:01:44,970 --> 00:01:50,670] For example, 192.0.2.235.
+[00:01:50,670 --> 00:01:52,390] In protocol version 6,
+[00:01:52,390 --> 00:01:54,370] an IP address contains eight groups of
+[00:01:54,370 --> 00:01:57,210] hexadecimal digits separated by a colon.
+[00:01:57,210 --> 00:01:59,430] When you send data across a network,
+[00:01:59,430 --> 00:02:01,090] you send the data as a series of
+[00:02:01,090 --> 00:02:02,910] messages called IP packets,
+[00:02:02,910 --> 00:02:04,830] also known as datagrams.
+[00:02:04,830 --> 00:02:07,430] At a high level, IP packets
+[00:02:07,430 --> 00:02:10,920] contain a header and a payload, which is the data.
+[00:02:10,920 --> 00:02:13,970] Think of the old fashioned postal system again.
+[00:02:13,970 --> 00:02:15,650] When you send a letter, you not
+[00:02:15,650 --> 00:02:17,510] only include the recipient's address,
+[00:02:17,510 --> 00:02:18,970] but also your own address
+[00:02:18,970 --> 00:02:21,250] in case a return location is needed.
+[00:02:21,250 --> 00:02:23,070] IP packets are the same.
+[00:02:23,070 --> 00:02:25,290] They include the destination IP
+[00:02:25,290 --> 00:02:27,910] address and source IP address.
+[00:02:27,910 --> 00:02:30,190] These addresses are in the header along with
+[00:02:30,190 --> 00:02:32,820] some additional information to help deliver the packet.
+[00:02:32,820 --> 00:02:35,290] The payload contains the data
+[00:02:35,290 --> 00:02:37,790] of the packet and some of the other protocols,
+[00:02:37,790 --> 00:02:39,555] which we'll cover in a moment.
+[00:02:39,555 --> 00:02:41,240] Earlier, I mentioned that
+[00:02:41,240 --> 00:02:43,260] things can go wrong with a postal system.
+[00:02:43,260 --> 00:02:45,640] When sending multiple letters to a friend,
+[00:02:45,640 --> 00:02:48,835] it's possible they may arrive out of order.
+[00:02:48,835 --> 00:02:51,460] It's possible that a package will get damaged,
+[00:02:51,460 --> 00:02:53,000] or if you're really unlucky,
+[00:02:53,000 --> 00:02:54,700] a letter could get lost.
+[00:02:54,700 --> 00:02:57,840] These issues can happen to IP packets, too.
+[00:02:57,840 --> 00:02:59,960] They can arrive out of order,
+[00:02:59,960 --> 00:03:02,780] become damaged or corrupted during transit,
+[00:03:02,780 --> 00:03:05,415] or be dropped or lost during transit.
+[00:03:05,415 --> 00:03:07,090] To solve these problems,
+[00:03:07,090 --> 00:03:08,690] the payload part of the packets
+[00:03:08,690 --> 00:03:10,430] contains other protocols, too.
+[00:03:10,430 --> 00:03:12,610] You can think of them as another message
+[00:03:12,610 --> 00:03:14,890] inside the payload of the IP packet.
+[00:03:14,890 --> 00:03:16,750] The two most common protocols
+[00:03:16,750 --> 00:03:19,030] are the Transmission Control Protocol,
+[00:03:19,030 --> 00:03:20,825] referred to as TCP,
+[00:03:20,825 --> 00:03:23,095] and the User Datagram Protocol,
+[00:03:23,095 --> 00:03:24,870] also known as UDP.
+[00:03:24,870 --> 00:03:26,530] TCP can solve all
+[00:03:26,530 --> 00:03:28,730] three of the previously mentioned issues,
+[00:03:28,730 --> 00:03:31,950] but at the cost of a small delay when sending the data.
+[00:03:31,950 --> 00:03:34,030] This protocol is used for sending
+[00:03:34,030 --> 00:03:36,470] the data that must arrive correctly and in order,
+[00:03:36,470 --> 00:03:39,080] such as a text or image files.
+[00:03:39,080 --> 00:03:42,750] UDP solves the corrupt packet issue,
+[00:03:42,750 --> 00:03:44,530] but packets can still arrive
+[00:03:44,530 --> 00:03:46,590] out of order or not arrive at all.
+[00:03:46,590 --> 00:03:48,950] This protocol is used for sending
+[00:03:48,950 --> 00:03:51,190] data that can tolerate some data loss,
+[00:03:51,190 --> 00:03:54,270] such as voice calls or live video streaming.
+[00:03:54,270 --> 00:03:57,290] Both of these protocols contain payloads that contain
+[00:03:57,290 --> 00:04:00,570] further protocols inside of them. There you have it.
+[00:04:00,570 --> 00:04:02,950] The Internet uses Internet protocols,
+[00:04:02,950 --> 00:04:05,170] much like an old-fashioned postal system.
+[00:04:05,170 --> 00:04:07,070] These protocols can help to make sure
+[00:04:07,070 --> 00:04:08,990] that data arrives in order,
+[00:04:08,990 --> 00:04:10,390] does not become corrupted or
+[00:04:10,390 --> 00:04:12,370] lost or dropped during transit.
+[00:04:12,370 --> 00:04:14,330] Now, you're able to explain how
+[00:04:14,330 --> 00:04:15,770] IP addresses work and how
+[00:04:15,770 --> 00:04:18,710] computers send data across the Internet.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/02_introduction-to-http.en.srt
+TYPE: SRT
+TITLE: Introduction To Http
+
+[00:00:00,000 --> 00:00:02,685] Have you ever noticed the lock icon
+[00:00:02,685 --> 00:00:04,935] beside the URL in your web browser?
+[00:00:04,935 --> 00:00:07,125] This means that HTTPS,
+[00:00:07,125 --> 00:00:10,440] the secure version of HTTP is being used.
+[00:00:10,440 --> 00:00:13,695] HTTP is a core operational protocol
+[00:00:13,695 --> 00:00:15,105] of the world wide web.
+[00:00:15,105 --> 00:00:17,100] It is what enables your web browser to
+[00:00:17,100 --> 00:00:20,340] communicate with a web server that hosts a website.
+[00:00:20,340 --> 00:00:23,070] HTTP is the communication protocol
+[00:00:23,070 --> 00:00:25,440] you use whenever you browse the web.
+[00:00:25,440 --> 00:00:29,835] HTTP stands for Hypertext Transfer Protocol.
+[00:00:29,835 --> 00:00:32,415] It is a protocol used for transferring
+[00:00:32,415 --> 00:00:35,010] web resources such as HTML documents,
+[00:00:35,010 --> 00:00:38,310] images, styles, and other files.
+[00:00:38,310 --> 00:00:42,225] HTTP is a request response based protocol.
+[00:00:42,225 --> 00:00:45,710] A web browser or client sends an HTTP request to
+[00:00:45,710 --> 00:00:47,750] a server and the web server sends
+[00:00:47,750 --> 00:00:50,315] the HTTP response back to the browser.
+[00:00:50,315 --> 00:00:52,490] Next, let's start exploring
+[00:00:52,490 --> 00:00:55,105] the makeup of an HTTP request.
+[00:00:55,105 --> 00:00:58,685] An HTTP request consists of a method,
+[00:00:58,685 --> 00:01:02,180] path, version and headers.
+[00:01:02,180 --> 00:01:04,190] The HTTP method describes
+[00:01:04,190 --> 00:01:07,045] the type of action that the client must perform.
+[00:01:07,045 --> 00:01:11,555] The primary or the most commonly used HTTP methods are
+[00:01:11,555 --> 00:01:15,695] GET, POST, PUT, and DELETE.
+[00:01:15,695 --> 00:01:17,510] The GET method is used to
+[00:01:17,510 --> 00:01:19,975] retrieve information from the given server.
+[00:01:19,975 --> 00:01:23,570] The POST request is used to send data to the server.
+[00:01:23,570 --> 00:01:25,700] The PUT method updates whatever
+[00:01:25,700 --> 00:01:28,325] currently exists on the web server with something else.
+[00:01:28,325 --> 00:01:31,145] The DELETE method removes the resource.
+[00:01:31,145 --> 00:01:33,350] The path is the representation of
+[00:01:33,350 --> 00:01:35,555] where the resource is stored on the web server,
+[00:01:35,555 --> 00:01:37,850] for example if you wanted to
+[00:01:37,850 --> 00:01:40,520] request an image from a page in a website,
+[00:01:40,520 --> 00:01:43,250] then the URL in the address bar would need to
+[00:01:43,250 --> 00:01:44,600] contain the full path to
+[00:01:44,600 --> 00:01:46,925] that particular file on the web server,
+[00:01:46,925 --> 00:01:49,345] such as example dot com,
+[00:01:49,345 --> 00:01:53,320] forward slash images, forward slash image dot jpg.
+[00:01:53,320 --> 00:01:56,660] There are multiple versions of the HTTP protocol.
+[00:01:56,660 --> 00:01:58,475] I won't explore these right now,
+[00:01:58,475 --> 00:02:00,230] but I want you to be aware that Versions
+[00:02:00,230 --> 00:02:03,410] 1.1 and 2.0 are the most used.
+[00:02:03,410 --> 00:02:05,810] Finally, there are the headers.
+[00:02:05,810 --> 00:02:08,180] Headers contain additional information about
+[00:02:08,180 --> 00:02:11,420] the request and the client that is making the request.
+[00:02:11,420 --> 00:02:13,230] For certain requests methods,
+[00:02:13,230 --> 00:02:14,840] the request will also contain
+[00:02:14,840 --> 00:02:17,350] a body of content that the client is sending.
+[00:02:17,350 --> 00:02:19,730] Now, let's cover some details
+[00:02:19,730 --> 00:02:22,480] about the makeup of an HTTP response.
+[00:02:22,480 --> 00:02:24,950] HTTP responses follow a format
+[00:02:24,950 --> 00:02:26,585] similar to the request format.
+[00:02:26,585 --> 00:02:28,280] Following the header, the response
+[00:02:28,280 --> 00:02:29,705] will optionally contain
+[00:02:29,705 --> 00:02:31,580] a message body consisting of
+[00:02:31,580 --> 00:02:34,010] the response contents such as the HTML document,
+[00:02:34,010 --> 00:02:36,070] the image file and so forth.
+[00:02:36,070 --> 00:02:39,430] HTTP status codes contained within the header
+[00:02:39,430 --> 00:02:43,405] indicate if the HTTP request successfully completed.
+[00:02:43,405 --> 00:02:45,490] The code values are in the range of
+[00:02:45,490 --> 00:02:49,670] 100-599 and are grouped by purpose.
+[00:02:49,670 --> 00:02:51,040] The status message is
+[00:02:51,040 --> 00:02:53,395] a text representation of the status code.
+[00:02:53,395 --> 00:02:55,030] During your web browsing,
+[00:02:55,030 --> 00:02:57,175] have you ever encountered pages that display
+[00:02:57,175 --> 00:03:00,475] 404 error not found or 500 errors?
+[00:03:00,475 --> 00:03:02,240] Server is not responding.
+[00:03:02,240 --> 00:03:04,930] These are HTTP status codes.
+[00:03:04,930 --> 00:03:06,805] I want to briefly explain to you
+[00:03:06,805 --> 00:03:09,220] about the status codes and their grouping.
+[00:03:09,220 --> 00:03:11,845] There are five groups of status codes.
+[00:03:11,845 --> 00:03:14,555] They are grouped by the first digit of the error number.
+[00:03:14,555 --> 00:03:18,505] Informational is grouped 100-199.
+[00:03:18,505 --> 00:03:22,870] Successful responses are grouped from 200-299.
+[00:03:22,870 --> 00:03:27,085] Redirection messages are 300-399.
+[00:03:27,085 --> 00:03:31,185] Client error responses range from 400-499,
+[00:03:31,185 --> 00:03:35,440] and server error responses are 500-599.
+[00:03:35,440 --> 00:03:37,060] Information responses are
+[00:03:37,060 --> 00:03:39,445] provisional responses sent by the server.
+[00:03:39,445 --> 00:03:43,105] These responses are interim before the actual response.
+[00:03:43,105 --> 00:03:46,540] The most common information response is 100 continue,
+[00:03:46,540 --> 00:03:49,360] which indicates that the web client should continue to
+[00:03:49,360 --> 00:03:51,010] request or ignore the response
+[00:03:51,010 --> 00:03:52,990] if the request is already finished.
+[00:03:52,990 --> 00:03:55,000] Successful responses indicate that
+[00:03:55,000 --> 00:03:57,850] the request was successfully processed by the web server,
+[00:03:57,850 --> 00:03:59,650] with the most common success response
+[00:03:59,650 --> 00:04:00,910] being 200 OK.
+[00:04:00,910 --> 00:04:03,770] You're receiving these responses every day when you
+[00:04:03,770 --> 00:04:06,490] receive content successfully from a website.
+[00:04:06,490 --> 00:04:08,145] The meaning of OK,
+[00:04:08,145 --> 00:04:10,485] depends on the HTTP method.
+[00:04:10,485 --> 00:04:11,960] If the method is GET,
+[00:04:11,960 --> 00:04:13,880] it means that the resource is found and is
+[00:04:13,880 --> 00:04:16,550] included in the body of the HTTP response.
+[00:04:16,550 --> 00:04:19,040] If it's POST, it means that the resource was
+[00:04:19,040 --> 00:04:20,210] successfully transmitted to
+[00:04:20,210 --> 00:04:22,445] the web server and if it's PUT,
+[00:04:22,445 --> 00:04:23,930] the resource was successfully
+[00:04:23,930 --> 00:04:25,505] transmitted to the web server.
+[00:04:25,505 --> 00:04:28,150] Finally, if the method is DELETE,
+[00:04:28,150 --> 00:04:30,335] it means the resource was deleted.
+[00:04:30,335 --> 00:04:33,425] Redirection responses indicate to the web client
+[00:04:33,425 --> 00:04:34,820] that the requested resource
+[00:04:34,820 --> 00:04:36,380] has been moved to a different path.
+[00:04:36,380 --> 00:04:39,410] The most common response codes used are
+[00:04:39,410 --> 00:04:43,570] 301 moved permanently and 302 found.
+[00:04:43,570 --> 00:04:46,100] The difference between the redirection messages
+[00:04:46,100 --> 00:04:48,440] 301 and 302 is that
+[00:04:48,440 --> 00:04:50,210] 302 indicates a temporary
+[00:04:50,210 --> 00:04:54,160] redirection.The resource has been temporarily moved.
+[00:04:54,160 --> 00:04:56,705] When web browsers receive these responses,
+[00:04:56,705 --> 00:04:58,160] they will automatically submit
+[00:04:58,160 --> 00:05:01,070] the request for the resource at the new path.
+[00:05:01,070 --> 00:05:03,530] Client error responses indicate
+[00:05:03,530 --> 00:05:04,625] that the requests contained
+[00:05:04,625 --> 00:05:06,635] bad syntax or content
+[00:05:06,635 --> 00:05:09,010] and cannot be processed by the web server.
+[00:05:09,010 --> 00:05:12,950] The most common codes used are 400 is
+[00:05:12,950 --> 00:05:14,330] used when the web browser or
+[00:05:14,330 --> 00:05:17,285] client submitted bad data to the web server,
+[00:05:17,285 --> 00:05:20,600] 401 is used to indicate that the user
+[00:05:20,600 --> 00:05:22,010] must log into an account
+[00:05:22,010 --> 00:05:24,280] before the request can be processed,
+[00:05:24,280 --> 00:05:27,980] 403 is used to indicate the request was valid,
+[00:05:27,980 --> 00:05:30,680] but that the web server is refusing to process it.
+[00:05:30,680 --> 00:05:33,650] This is often used to indicate that a user does not have
+[00:05:33,650 --> 00:05:35,420] sufficient permissions to execute
+[00:05:35,420 --> 00:05:37,645] an action in a web application,
+[00:05:37,645 --> 00:05:39,980] 404 is used to indicate that
+[00:05:39,980 --> 00:05:42,725] the request resource was not found on the web server.
+[00:05:42,725 --> 00:05:45,500] Server error responses indicate that a failure
+[00:05:45,500 --> 00:05:46,730] occurred on the web server
+[00:05:46,730 --> 00:05:48,680] while trying to process the request.
+[00:05:48,680 --> 00:05:52,760] The most common code used is 500 internal server error,
+[00:05:52,760 --> 00:05:54,605] which is a generic error status
+[00:05:54,605 --> 00:05:57,820] indicating that the server failed to process the request.
+[00:05:57,820 --> 00:06:00,050] Now, have you ever bought something
+[00:06:00,050 --> 00:06:02,900] online and needed to enter your credit card information?
+[00:06:02,900 --> 00:06:04,880] You wouldn't want someone else to get
+[00:06:04,880 --> 00:06:07,585] this information from the HTTP request.
+[00:06:07,585 --> 00:06:10,485] This is where HTTPS is involved.
+[00:06:10,485 --> 00:06:14,075] HTTPS is the secure version of HTTP.
+[00:06:14,075 --> 00:06:17,615] It is used for secure communication between two computers
+[00:06:17,615 --> 00:06:19,160] so that nobody else can see
+[00:06:19,160 --> 00:06:21,625] the information being sent and received.
+[00:06:21,625 --> 00:06:24,500] It does this by using something called encryption.
+[00:06:24,500 --> 00:06:26,810] We won't cover encryption right now.
+[00:06:26,810 --> 00:06:29,810] Like in HTTP, the requests and responses
+[00:06:29,810 --> 00:06:33,310] still behave in the same way and have the same content.
+[00:06:33,310 --> 00:06:36,815] The big difference is that before the content is sent,
+[00:06:36,815 --> 00:06:39,185] it is turned into a secret code.
+[00:06:39,185 --> 00:06:41,270] Only the other computer can turn
+[00:06:41,270 --> 00:06:43,820] the secret code back into its original content.
+[00:06:43,820 --> 00:06:46,010] If someone else was to look at the code,
+[00:06:46,010 --> 00:06:50,315] it wouldn't be understandable. You use HTTPS every day.
+[00:06:50,315 --> 00:06:51,950] This is the lock icon you see
+[00:06:51,950 --> 00:06:54,710] beside the URL in your web browser.
+[00:06:54,710 --> 00:06:56,900] Before I finish, I want to leave you with
+[00:06:56,900 --> 00:06:58,880] a brief summary of HTTP.
+[00:06:58,880 --> 00:07:00,650] Firstly, it is a protocol
+[00:07:00,650 --> 00:07:02,735] used by web clients and web servers.
+[00:07:02,735 --> 00:07:06,515] It works to transfer web resources such as HTML files,
+[00:07:06,515 --> 00:07:09,530] and is the foundation of any data exchanges on the web.
+[00:07:09,530 --> 00:07:12,845] Also, remember that by using HTTPS,
+[00:07:12,845 --> 00:07:14,870] we send the information securely.
+[00:07:14,870 --> 00:07:16,985] Requests are sent by the client,
+[00:07:16,985 --> 00:07:18,590] usually a web browser,
+[00:07:18,590 --> 00:07:21,470] and the server replies with responses which may be
+[00:07:21,470 --> 00:07:24,515] the return of an image or an HTML page.
+[00:07:24,515 --> 00:07:28,355] HTTPS requests have a syntax that includes method,
+[00:07:28,355 --> 00:07:30,640] path, versions and headers.
+[00:07:30,640 --> 00:07:34,640] HTTP responses follow a similar format to the request.
+[00:07:34,640 --> 00:07:37,025] HTTP status codes indicate whether the
+[00:07:37,025 --> 00:07:39,830] HTTP requests successfully completed.
+[00:07:39,830 --> 00:07:42,080] The status code is a three-digit number that
+[00:07:42,080 --> 00:07:43,880] corresponds with groups representing
+[00:07:43,880 --> 00:07:45,445] different types of results.
+[00:07:45,445 --> 00:07:47,540] Well, now you know how
+[00:07:47,540 --> 00:07:50,615] the HTTP protocol request and response cycle works.
+[00:07:50,615 --> 00:07:52,940] You know about its methods and the elements that make
+[00:07:52,940 --> 00:07:56,340] up an HTTP request. Good job.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/03_http-examples_instructions.html
+TYPE: HTML
+TITLE: Http Examples Instructions
+
+This reading explores the contents of HTTP requests and responses in more depth.
+
+Request Line
+
+In HTTP/1.1, every HTTP request begins with a request line.
+
+The request line includes the HTTP method, the requested resource, and the HTTP protocol version.
+
+GET /home.html HTTP/1.1
+
+In this example,
+
+GET
+
+is the HTTP method,
+
+/home.html
+
+is the resource requested and HTTP 1.1 is the protocol used.
+
+HTTP Methods
+
+HTTP methods indicate the action that the client wants to perform on a resource on the web server.
+
+Common HTTP methods are:
+
+HTTP method
+
+Description
+
+GET
+
+The client requests a resource from the web server.
+
+POST
+
+The client submits data to a resource on the web server.
+
+PUT
+
+The client replaces a resource on the web server.
+
+DELETE
+
+The client deletes a resource on the web server.
+
+PATCH
+
+The client partially updates a resource on the web server.
+
+HTTP Request Headers
+
+After the request line, the request can include HTTP headers. A blank line separates the headers from the optional request body.
+
+A header contains a case-insensitive name, followed by a colon :, and then a value.
+
+Common request headers include:
+
+Host: example.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0
+Accept: */*
+Accept-Language: en
+Content-Type: application/json
+
+The
+
+Host
+
+header specifies the host of the server and indicates where the resource is requested from.
+
+The
+
+User-Agent
+
+header informs the web server about the specific client or browser that is making the request. It often includes the operating system (Windows, Mac, Linux), version and application vendor.
+
+The
+
+Accept
+
+header informs the web server what type of content the client will accept as the response.
+
+The
+
+Accept-Language
+
+header indicates the language and optionally the locale that the client prefers.
+
+The
+
+Content-type
+
+header indicates the type of content being transmitted in the request body.
+
+HTTP Request Body
+
+HTTP requests can optionally include a request body. A request body is often included with methods such as
+
+POST
+
+,
+
+PUT
+
+, and
+
+PATCH
+
+when the client needs to send data to the server.
+
+For example, a POST request can send data to create a resource:
+
+POST /users HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+"key1": "value1",
+"key2": "value2",
+"array1": ["value3", "value4"]
+}
+
+A
+
+PUT
+
+request is commonly used to replace an existing resource:
+
+PUT /users/1 HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+"id": 1,
+"key1": "value1",
+"key2": "value2"
+}
+
+A When the web server finishes processing an HTTP request, it sends back an HTTP response.
+
+In HTTP/1.1, the first line of the response is the status line. This line tells the client whether the request was successful or whether an error occurred.
+
+HTTP/1.1 200 OK
+
+The status line begins with the HTTP protocol version, followed by the status code and a reason phrase. The reason phrase is a short textual description of the status code.
+
+HTTP status codes
+
+The first digit of an HTTP status code indicates the category of the response: informational, successful, redirection, client error, or server error.
+
+Common status codes include:
+
+1XX Informational
+
+Status Code
+
+Reason Phrase
+
+Description
+
+100
+
+Continue
+
+The server received the request headers and should continue to send the request body.
+
+101
+
+Switching Protocols
+
+The client has requested the server to switch protocols and the server has agreed to do so.
+
+2XX Successful
+
+Status Code
+
+Reason Phrase
+
+Description
+
+200
+
+OK
+
+Standard response returned by the server to indicate it successfully processed the request.
+
+201
+
+Created
+
+The server successfully processed the request and a resource was created.
+
+202
+
+Accepted
+
+The server accepted the request for processing but the processing has not yet been completed.
+
+204
+
+No Content
+
+The server successfully processed the request but is not returning any content.
+
+3XX Redirection
+
+Status Code
+
+Reason Phrase
+
+Description
+
+301
+
+Moved Permanently
+
+This request and all future requests should be sent to the returned location.
+
+302
+
+Found
+
+This request should be sent to the returned location.
+
+4XX Client Error
+
+Status Code
+
+Reason Phrase
+
+Description
+
+400
+
+Bad Request
+
+The server cannot process the request due to a client error, e.g., invalid request or transmitted data is too large.
+
+401
+
+Unauthorized
+
+The client making the request is unauthorized and should authenticate.
+
+403
+
+Forbidden
+
+The request was valid but the server is refusing to process it. This is usually returned due to the client having insufficient permissions for the website, e.g., requesting an administrator action but the user is not an administrator.
+
+404
+
+Not Found
+
+The server did not find the requested resource.
+
+405
+
+Method Not Allowed
+
+The web server does not support the HTTP method used.
+
+5XX Server Error
+
+Status Code
+
+Reason Phrase
+
+Description
+
+500
+
+Internal Server Error
+
+A generic error status code given when an unexpected error or condition occurred while processing the request.
+
+502
+
+Bad Gateway
+
+The web server received an invalid response from the Application Server.
+
+503
+
+Service Unavailable
+
+The web server cannot process the request.
+
+HTTP Response Headers
+
+Following the status line, an HTTP/1.1 response can include response headers. A blank line separates the headers from the response body.
+
+Like request headers, there are many possible HTTP headers that can be included in a response.
+
+Common response headers include:
+
+Date: Fri, 11 Feb 2022 13:00:00 GMT
+Server: Apache/2.2.14 (Linux)
+Content-Length: 84
+Content-Type: text/html
+
+The
+
+Date
+
+header specifies the date and time the HTTP response was generated.
+
+The
+
+Server
+
+header describes the web server software used to generate the response.
+
+The
+
+Content-Length
+
+header describes the length of the response.
+
+The
+
+Content-Type
+
+header describes the media type of the resource returned (e.g. HTML document, image, video).
+
+HTTP Response Body
+
+Following the HTTP response headers is the HTTP response body. This is the main content of the HTTP response.
+
+The response body can contain different types of content, such as HTML documents, images, videos, JSON data, and other media types. The type of content is described by the Content-Type header.
+
+For example:
+
+HTTP/1.1 200 OK
+Date: Fri, 11 Feb 2022 13:00:00 GMT
+Server: Apache/2.2.14 (Linux)
+Content-Length: 84
+Content-Type: text/html
+
+<html>
+<body>
+<h1>Home page</h1>
+</body>
+</html>
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/04_intro-to-html-css-and-javascript.en.srt
+TYPE: SRT
+TITLE: Intro To Html Css And Javascript
+
+[00:00:00,000 --> 00:00:02,400] The web pages you visit every day are
+[00:00:02,400 --> 00:00:04,500] based on three core technologies,
+[00:00:04,500 --> 00:00:07,530] HTML, CSS, and JavaScript.
+[00:00:07,530 --> 00:00:10,200] Together, they enable you to create web pages and
+[00:00:10,200 --> 00:00:11,520] applications so you can
+[00:00:11,520 --> 00:00:13,560] offer any content you have seen online.
+[00:00:13,560 --> 00:00:15,510] In this video, I will demonstrate
+[00:00:15,510 --> 00:00:18,480] two examples you can create using these technologies.
+[00:00:18,480 --> 00:00:20,070] This is to help you understand
+[00:00:20,070 --> 00:00:21,720] how they interact with one another.
+[00:00:21,720 --> 00:00:24,090] Don't worry, you won't need to deal with
+[00:00:24,090 --> 00:00:26,475] the details of the three languages just yet.
+[00:00:26,475 --> 00:00:28,005] In the first example,
+[00:00:28,005 --> 00:00:30,990] I'm building a web page that displays a digital clock.
+[00:00:30,990 --> 00:00:33,540] It shows the hour, minutes, and seconds.
+[00:00:33,540 --> 00:00:35,895] The time is updated every second.
+[00:00:35,895 --> 00:00:37,720] I will work with three files,
+[00:00:37,720 --> 00:00:39,500] an HTML, a CSS,
+[00:00:39,500 --> 00:00:41,330] and a JavaScript file and
+[00:00:41,330 --> 00:00:43,970] you will explore the purpose of each one of them.
+[00:00:43,970 --> 00:00:45,905] To create the clock element,
+[00:00:45,905 --> 00:00:48,020] Let's first define our HTML code
+[00:00:48,020 --> 00:00:50,305] in a file called clock.html.
+[00:00:50,305 --> 00:00:52,400] The HTML code has an element that
+[00:00:52,400 --> 00:00:55,400] describes the content in hours, minutes, and seconds.
+[00:00:55,400 --> 00:00:57,740] If I only use the HTML file,
+[00:00:57,740 --> 00:00:59,390] the content would be shown without any
+[00:00:59,390 --> 00:01:01,535] style positioning or sizing,
+[00:01:01,535 --> 00:01:04,805] just simply as a display of six zeros representing
+[00:01:04,805 --> 00:01:08,495] time in the format of hours: minutes: seconds.
+[00:01:08,495 --> 00:01:11,165] To apply styles to the HTML element,
+[00:01:11,165 --> 00:01:15,740] the HTML code references a CSS file called styles.css.
+[00:01:15,740 --> 00:01:17,330] The web browser retrieves the
+[00:01:17,330 --> 00:01:19,895] styles.css file and processes it.
+[00:01:19,895 --> 00:01:22,550] The CSS code provides styling for the clock.
+[00:01:22,550 --> 00:01:25,835] It tells the browser the position, size, color,
+[00:01:25,835 --> 00:01:27,410] background, and font type,
+[00:01:27,410 --> 00:01:29,680] and size of each element on the screen.
+[00:01:29,680 --> 00:01:31,115] With that information,
+[00:01:31,115 --> 00:01:32,930] the browser updates the content and
+[00:01:32,930 --> 00:01:34,040] the sequence of zeros and
+[00:01:34,040 --> 00:01:37,165] colons now display a digital clock.
+[00:01:37,165 --> 00:01:39,260] Finally, we need to ensure
+[00:01:39,260 --> 00:01:41,255] the clock updates with the correct time.
+[00:01:41,255 --> 00:01:43,445] This is where JavaScript comes in.
+[00:01:43,445 --> 00:01:47,740] The HTML references a JavaScript file called clock.js.
+[00:01:47,740 --> 00:01:51,270] The browser will retrieve clock.js and process it.
+[00:01:51,270 --> 00:01:53,600] The JavaScript file contains code that
+[00:01:53,600 --> 00:01:56,180] every second updates the content of the hour,
+[00:01:56,180 --> 00:01:58,045] minute, and second elements.
+[00:01:58,045 --> 00:02:00,935] With the three files created and linked together,
+[00:02:00,935 --> 00:02:02,780] your clock is fully functional.
+[00:02:02,780 --> 00:02:04,535] The clock example demonstrates
+[00:02:04,535 --> 00:02:07,175] JavaScript dynamically updating content.
+[00:02:07,175 --> 00:02:10,210] JavaScript can also be used for interaction.
+[00:02:10,210 --> 00:02:12,650] The next example demonstrates how
+[00:02:12,650 --> 00:02:14,930] JavaScript can be used interactively.
+[00:02:14,930 --> 00:02:17,200] It's a web page that plays a video.
+[00:02:17,200 --> 00:02:19,100] Below the video, there is
+[00:02:19,100 --> 00:02:21,395] a button that plays or pauses the video.
+[00:02:21,395 --> 00:02:23,990] The button contains a play icon.
+[00:02:23,990 --> 00:02:26,840] My HTML page describes the content,
+[00:02:26,840 --> 00:02:29,870] which is the video element and the Play button element.
+[00:02:29,870 --> 00:02:31,774] The HTML code references
+[00:02:31,774 --> 00:02:34,235] a CSS file that the browser retrieves.
+[00:02:34,235 --> 00:02:37,180] It applies the styling to the video and button.
+[00:02:37,180 --> 00:02:39,005] The code in the HTML file
+[00:02:39,005 --> 00:02:41,405] also references a JavaScript file.
+[00:02:41,405 --> 00:02:42,950] The browser will retrieve the
+[00:02:42,950 --> 00:02:45,960] videoplayer.js file and process it.
+[00:02:45,960 --> 00:02:47,930] In our example, the code in
+[00:02:47,930 --> 00:02:50,530] the JavaScript file performs four actions.
+[00:02:50,530 --> 00:02:52,850] Firstly, it registers a listener on
+[00:02:52,850 --> 00:02:54,440] the button that will execute
+[00:02:54,440 --> 00:02:56,255] some code when the button is clicked.
+[00:02:56,255 --> 00:02:59,405] The second function is that when the code runs,
+[00:02:59,405 --> 00:03:01,775] it checks the current state of the video.
+[00:03:01,775 --> 00:03:03,755] The result of that check is,
+[00:03:03,755 --> 00:03:05,750] if the video is currently stopped,
+[00:03:05,750 --> 00:03:07,430] it begins playing the video and
+[00:03:07,430 --> 00:03:09,850] changes the button's icon to a stop icon.
+[00:03:09,850 --> 00:03:12,650] Or if the video is currently playing,
+[00:03:12,650 --> 00:03:14,240] it stops playing the video and
+[00:03:14,240 --> 00:03:17,000] changes the buttons icon to a play icon.
+[00:03:17,000 --> 00:03:18,800] Using the three files you
+[00:03:18,800 --> 00:03:21,200] create a fully interactive video player.
+[00:03:21,200 --> 00:03:23,930] A summary of your functioning video player application
+[00:03:23,930 --> 00:03:26,525] is when the user first sees a page,
+[00:03:26,525 --> 00:03:28,835] the video will be stopped by default.
+[00:03:28,835 --> 00:03:30,650] When they click the Play button,
+[00:03:30,650 --> 00:03:31,790] the button will change to
+[00:03:31,790 --> 00:03:34,625] a stop icon and the video will begin playing.
+[00:03:34,625 --> 00:03:36,620] When they click the button again,
+[00:03:36,620 --> 00:03:38,435] it will change back to a play button
+[00:03:38,435 --> 00:03:40,220] and the video will stop playing.
+[00:03:40,220 --> 00:03:42,650] I hope those examples give you an idea of how
+[00:03:42,650 --> 00:03:45,565] the three core files link and work together.
+[00:03:45,565 --> 00:03:47,190] In both the clock and video
+[00:03:47,190 --> 00:03:49,520] examples, the HTML file references
+[00:03:49,520 --> 00:03:51,875] the CSS and the JavaScript files.
+[00:03:51,875 --> 00:03:53,810] The CSS file is called on
+[00:03:53,810 --> 00:03:55,775] to format and style your application,
+[00:03:55,775 --> 00:03:58,370] and the code in the JavaScript file implements
+[00:03:58,370 --> 00:04:02,280] the core functions of the app and user interactivity.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/05_other-internet-protocols_instructions.html
+TYPE: HTML
+TITLE: Other Internet Protocols Instructions
+
+Hypertext Transfer Protocols (HTTP) are used on top of Transmission Control Protocol (TCP) to transfer webpages and other content from websites.
+This reading explores other protocols commonly used on the Internet.
+
+Dynamic Host Configuration Protocol (DHCP)
+
+You've learned that computers need IP addresses to communicate with each other. When your computer connects to a network, the Dynamic Host Configuration Protocol or DHCP as it is commonly known, is used to assign your computer an IP address.
+Your computer communicates over User Datagram Protocol (UDP) using the protocol with a type of server called a DHCP server. The server keeps track of computers on the network and their IP addresses. It will assign your computer an IP address and respond over the protocol to let it know which IP address to use. Once your computer has an IP address, it can communicate with other computers on the network.
+
+Domain Name System Protocol (DNS)
+
+Your computer needs a way to know with which IP address to communicate when you visit a website in your web browser, for example,
+
+meta.com
+
+. The Domain Name System Protocol, commonly known as DNS, provides this function. Your computer then checks with the DNS server associated with the domain name and then returns the correct IP address.
+
+Internet Message Access Protocol (IMAP)
+
+Do you check your emails on your mobile or tablet device? Or maybe you use an email application on your computer?
+Your device needs a way to download emails and manage your mailbox on the server storing your emails. This is the purpose of the Internet Message Access Protocol or IMAP.
+
+Simple Mail Transfer Protocol (SMTP)
+
+Now that your emails are on your device, you need a way to send emails. The Simple Mail Transfer Protocol, or SMTP, is used. It allows email clients to submit emails for sending via an SMTP server. You can also use it to receive emails from an email client, but IMAP is more commonly used.
+
+Post Office Protocol (POP)
+
+The Post Office Protocol (POP) is an older protocol used to download emails to an email client. The main difference in using POP instead of IMAP is that POP will delete the emails on the server once they have been downloaded to your local device. Although it is no longer commonly used in email clients, developers often use it to implement email automation as it is a more straightforward protocol than IMAP.
+
+File Transfer Protocol (FTP)
+
+When running your websites and web applications on the Internet, you'll need a way to transfer the files from your local computer to the server they'll run on. The standard protocol used for this is the File Transfer Protocol or FTP. FTP allows you to list, send, receive, and delete files on a server. Your server must run an FTP Server and you will need an FTP Client on your local machine. You'll learn more about these in a later course.
+
+Secure Shell Protocol (SSH)
+
+When you start working with servers, you'll also need a way to log in and interact with the computer remotely. The most common method of doing this is using the Secure Shell Protocol, commonly referred to as SSH. Using an SSH client allows you to connect to an SSH server running on a server to perform commands on the remote computer.
+All data sent over SSH is encrypted. This means that third parties cannot understand the data transmitted. Only the sending and receiving computers can understand the data.
+
+Secure File Transfer Protocol (SFTP)
+
+Historically, files were transferred using the standard File Transfer Protocol (FTP). However, plain FTP is now considered obsolete and deprecated across modern network security standards because it transmits both login credentials and data insecurely in cleartext. This means malicious third parties can easily intercept and read the information you are sending, posing a severe security risk when transmitting sensitive company files, software, and databases.
+
+To solve this, modern web hosting environments and server configurations require encrypted file transfer protocols. The primary standard used today is the SSH File Transfer Protocol (SFTP), which transfers files over the securely encrypted SSH protocol. Another secure alternative is FTPS (FTP over TLS). Fortunately, virtually all modern FTP clients fully support both SFTP and FTPS to ensure your data is transmitted securely.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/06_webpages-websites-and-web-apps.en.srt
+TYPE: SRT
+TITLE: Webpages Websites And Web Apps
+
+[00:00:00,000 --> 00:00:01,635] When you do something online,
+[00:00:01,635 --> 00:00:03,570] you are likely to encounter web pages,
+[00:00:03,570 --> 00:00:05,490] websites, and web applications.
+[00:00:05,490 --> 00:00:07,860] But how do they differ? As a developer,
+[00:00:07,860 --> 00:00:10,035] how do you decide which one to create?
+[00:00:10,035 --> 00:00:12,705] Let's explore the main features of each one.
+[00:00:12,705 --> 00:00:15,360] A typical web page is one single page that
+[00:00:15,360 --> 00:00:18,615] consists of HTML, CSS, and JavaScript.
+[00:00:18,615 --> 00:00:20,565] It displays images, text,
+[00:00:20,565 --> 00:00:22,860] videos, and other content in the web browser.
+[00:00:22,860 --> 00:00:26,070] If a web page is one single page, then a website is
+[00:00:26,070 --> 00:00:27,570] a collection of web pages that link
+[00:00:27,570 --> 00:00:29,505] together under one domain name.
+[00:00:29,505 --> 00:00:32,565] You've likely visited many websites this week.
+[00:00:32,565 --> 00:00:33,630] You know, when you visit
+[00:00:33,630 --> 00:00:35,445] your favorite encyclopedia website
+[00:00:35,445 --> 00:00:36,810] and the homepage has a lot of
+[00:00:36,810 --> 00:00:38,595] links to different articles,
+[00:00:38,595 --> 00:00:40,760] clicking on one of those links brings you
+[00:00:40,760 --> 00:00:42,890] to an article on a new web page,
+[00:00:42,890 --> 00:00:45,170] and that article links to more articles,
+[00:00:45,170 --> 00:00:46,450] and other web pages.
+[00:00:46,450 --> 00:00:47,900] Well, since all of
+[00:00:47,900 --> 00:00:50,420] these web pages exist under the same domain name,
+[00:00:50,420 --> 00:00:51,860] they are a website.
+[00:00:51,860 --> 00:00:53,450] The technical term for a link,
+[00:00:53,450 --> 00:00:55,070] you click on a hyperlink.
+[00:00:55,070 --> 00:00:57,820] This is because they link to hypertext content.
+[00:00:57,820 --> 00:01:01,560] Remember that HTML is Hypertext Markup Language.
+[00:01:01,560 --> 00:01:03,600] However, links themselves
+[00:01:03,600 --> 00:01:05,405] don't have to link to the same website.
+[00:01:05,405 --> 00:01:07,775] They can also link to other websites.
+[00:01:07,775 --> 00:01:09,590] For example when you go to
+[00:01:09,590 --> 00:01:12,080] your favorite search engine and search for a phrase,
+[00:01:12,080 --> 00:01:15,365] the search results are a list of links to other websites.
+[00:01:15,365 --> 00:01:18,140] You'll explore more about hyperlinks later.
+[00:01:18,140 --> 00:01:20,120] By now, you should probably know
+[00:01:20,120 --> 00:01:22,625] the difference between a web page and the websites,
+[00:01:22,625 --> 00:01:24,995] but what about a web application?
+[00:01:24,995 --> 00:01:28,010] This is where the definitions gets a little more blurred.
+[00:01:28,010 --> 00:01:29,600] The terms website and
+[00:01:29,600 --> 00:01:32,695] web application are often used interchangeably.
+[00:01:32,695 --> 00:01:34,880] The key difference between a website
+[00:01:34,880 --> 00:01:36,530] and web application is the level of
+[00:01:36,530 --> 00:01:38,360] interactivity, and dynamic content.
+[00:01:38,360 --> 00:01:41,300] The easy way to remember this is that a website
+[00:01:41,300 --> 00:01:42,680] is more informative and
+[00:01:42,680 --> 00:01:44,675] a web application is more interactive.
+[00:01:44,675 --> 00:01:46,585] Think of ordering food online.
+[00:01:46,585 --> 00:01:48,050] Let's say you would like to order
+[00:01:48,050 --> 00:01:50,405] some food and you go to your favorite site,
+[00:01:50,405 --> 00:01:52,670] the browser then displays a web page,
+[00:01:52,670 --> 00:01:55,630] you select some food from the menu and submit your order.
+[00:01:55,630 --> 00:01:57,635] Compare this to for example,
+[00:01:57,635 --> 00:01:59,660] a company website that displays information
+[00:01:59,660 --> 00:02:02,270] about themselves and the services they provide.
+[00:02:02,270 --> 00:02:04,255] In the food ordering example,
+[00:02:04,255 --> 00:02:06,170] the content displayed is specific
+[00:02:06,170 --> 00:02:08,315] to your user account and location,
+[00:02:08,315 --> 00:02:10,550] the web application displays content
+[00:02:10,550 --> 00:02:13,270] based on the user's input and interaction.
+[00:02:13,270 --> 00:02:15,615] Whereas with the company website
+[00:02:15,615 --> 00:02:17,930] the user simply views the content and
+[00:02:17,930 --> 00:02:19,130] this content is the same for
+[00:02:19,130 --> 00:02:21,020] everyone who visits the website.
+[00:02:21,020 --> 00:02:23,810] You should now be able to distinguish between web pages,
+[00:02:23,810 --> 00:02:25,699] websites, and web applications.
+[00:02:25,699 --> 00:02:27,110] You know that web pages at
+[00:02:27,110 --> 00:02:29,190] a particular domain make up a website,
+[00:02:29,190 --> 00:02:31,100] and that the key difference between websites,
+[00:02:31,100 --> 00:02:32,900] and web applications is the level of
+[00:02:32,900 --> 00:02:36,000] interactivity and dynamic content.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/07_developer-tools.en.srt
+TYPE: SRT
+TITLE: Developer Tools
+
+[00:00:00,660 --> 00:00:04,876] If a car breaks down, you can open the hood to examine the engine and
+[00:00:04,876 --> 00:00:06,923] to find out what's gone wrong.
+[00:00:06,923 --> 00:00:10,058] As a developer, if your front- end isn't working as expected,
+[00:00:10,058 --> 00:00:13,440] you can also open the hood to check what's going wrong.
+[00:00:13,440 --> 00:00:17,440] In fact, it's not just your own code that you can investigate.
+[00:00:17,440 --> 00:00:19,940] How about viewing other people's code.
+[00:00:19,940 --> 00:00:22,551] By the end of this video you'll be able to access and
+[00:00:22,551 --> 00:00:25,061] make use of common web browser developer tools.
+[00:00:26,140 --> 00:00:30,644] Most web browsers come equipped with a set of developer tools that allow developers
+[00:00:30,644 --> 00:00:33,940] to inspect their HTML, CSS and JavaScript code.
+[00:00:33,940 --> 00:00:38,932] Also, to trace HTTP request to the web server, investigate performance issues and
+[00:00:38,932 --> 00:00:41,540] review web page security.
+[00:00:41,540 --> 00:00:46,240] Let's find out more by exploring the homepage of the Little Lemon Cafe.
+[00:00:46,240 --> 00:00:50,940] To begin, I've just opened the Little Lemon Cafes web page on my Chrome browser.
+[00:00:50,940 --> 00:00:53,523] On the homepage, I can view their menu.
+[00:00:53,523 --> 00:00:57,100] But I want to explore the HTML structure of this menu.
+[00:00:57,100 --> 00:01:00,213] To do that, I need to open the developer tools.
+[00:01:00,213 --> 00:01:03,018] To open the developer tools in chrome,
+[00:01:03,018 --> 00:01:08,840] press the F12 key on your keyboard for PC or Command Option J on Mac.
+[00:01:08,840 --> 00:01:13,449] Alternatively, you can right click on the web page and select Inspect.
+[00:01:13,449 --> 00:01:17,098] There are various tabs on the top row of developer tools that provide
+[00:01:17,098 --> 00:01:18,643] different functionality.
+[00:01:18,643 --> 00:01:19,712] In this video,
+[00:01:19,712 --> 00:01:24,578] I'll give you a high level explanation of some of the most used tools.
+[00:01:24,578 --> 00:01:27,140] 1st, let's open the console tab.
+[00:01:27,140 --> 00:01:31,759] This tab outputs, JavaScript logs and errors from your web application.
+[00:01:31,759 --> 00:01:36,523] The sources tab shows all content resolved for the current page.
+[00:01:36,523 --> 00:01:40,296] It includes HTML, CSS, JavaScript, images and videos.
+[00:01:40,296 --> 00:01:43,354] With the network tab, you can inspect the timeline and
+[00:01:43,354 --> 00:01:47,440] details of HTTP Requests and responses for the web page.
+[00:01:47,440 --> 00:01:52,040] The performance tab shows what the web browser is doing over time.
+[00:01:52,040 --> 00:01:55,886] It is useful if your web application is running slow because you can pinpoint
+[00:01:55,886 --> 00:01:58,182] the functions that are taking the most time.
+[00:01:58,182 --> 00:02:01,800] The memory tab displays the parts of your code that are consuming the most
+[00:02:01,800 --> 00:02:03,040] resources.
+[00:02:03,040 --> 00:02:06,800] Finally, let's check the most used tab: the elements tab.
+[00:02:06,800 --> 00:02:09,957] You can use this tab to inspect the documents, HTML elements and
+[00:02:09,957 --> 00:02:11,540] their properties.
+[00:02:11,540 --> 00:02:14,936] For example, when I hover over an element in the elements tab,
+[00:02:14,936 --> 00:02:17,579] it highlights that element in the browser pane.
+[00:02:17,579 --> 00:02:20,022] On the right side of the panel, there are tabs for
+[00:02:20,022 --> 00:02:22,537] inspecting the details of the elements further.
+[00:02:22,537 --> 00:02:25,349] This panel shows us what CSS is applied to an element and
+[00:02:25,349 --> 00:02:28,740] the result of the element displayed in the browser.
+[00:02:28,740 --> 00:02:31,740] We will explore these details in a later lesson.
+[00:02:31,740 --> 00:02:35,002] For now, you just need to know that if you click on an HTML element,
+[00:02:35,002 --> 00:02:38,740] then the information for that element will appear in the tab.
+[00:02:38,740 --> 00:02:41,339] Now, I'm going to demonstrate a fun trick.
+[00:02:41,339 --> 00:02:46,040] If you double click the HTML, you can edit it in the web browser.
+[00:02:46,040 --> 00:02:50,641] For example, if I select the Our Menu body element, then I can change the first item
+[00:02:50,641 --> 00:02:53,561] in the menu from chicken Burger, to Turkey Burger.
+[00:02:54,840 --> 00:02:57,350] This doesn't change the content on the web server.
+[00:02:57,350 --> 00:03:00,440] It only updates it for me while the web pages open.
+[00:03:00,440 --> 00:03:02,661] If I open the web page again, it will reset.
+[00:03:03,840 --> 00:03:08,048] The Web browser developer tools are a valuable part of your development toolkit
+[00:03:08,048 --> 00:03:09,492] to help you investigate and
+[00:03:09,492 --> 00:03:13,740] diagnose problems and you now know how to access and make use of them.
+[00:03:13,740 --> 00:03:14,251] Great work.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/08_exercise-examine-a-web-page_instructions.html
+TYPE: HTML
+TITLE: Exercise Examine A Web Page Instructions
+
+Introduction
+
+In this exercise, you will practice examining an HTML page using the developer tools.
+
+Goal
+
+Inspect the HTML document using the developer tools in your browser.
+
+Objectives
+
+Find the HTML ID of the Little Lemon logo.
+
+Mac OS Note:
+
+There may be slight operational differences depending on the browser and version you use on a Mac. For instance, it varies when using
+
+Safari
+
+or another browser like
+
+Chrome
+
+or
+
+Firefox.
+
+Safari on Mac
+
+Go to
+
+Safari
+
+>
+
+Settings
+
+(or
+
+Preferences
+
+) from the top menu bar.
+
+Click on the
+
+Advanced
+
+tab.
+
+Check the box for
+
+"Show Develop menu in menu bar"
+
+at the bottom.
+
+Control-click (or right-click) the logo image.
+
+Select
+
+Inspect Element
+
+from the context menu.
+
+The
+
+Web Inspector
+
+will open for further inspection.
+
+Chrome or Firefox on Mac
+
+Chrome and Firefox have developer tools enabled by default.
+
+Control-click (or right-click) the logo image.
+
+Select
+
+Inspect
+
+(Chrome) or
+
+Inspect Element
+
+(Firefox) from the context menu.
+
+The developer tools will open for inspection.
+
+Mac OS summary:
+
+Safari
+
+requires enabling the
+
+Develop menu
+
+first (if not already enabled.)
+
+Chrome
+
+and
+
+Firefox
+
+come with inspection tools enabled by default.
+
+Instructions
+
+Step 1:
+
+Download the following file on your local system.
+
+Step 2:
+
+Unzip the file (Windows)
+
+On Windows, open your Downloads folder, right-click the file
+
+examine_the_page.zip
+
+and select Extract All.
+
+Step 2:
+
+Unzip the file (
+
+Mac
+
+)
+
+On Mac, open your Downloads folder and double click the file
+
+examine_the_page.zip
+
+.
+
+Once unzipped, there will be a folder named
+
+examine_the_page
+
+.
+
+Step 3:
+
+Open the folder and double click index.html to view the file in your local web browser. Verify that it looks similar to the image below.
+
+Tip:
+
+The page adapts to different screen sizes. Its appearance changes depending on the device you're using and the size of your browser window.
+
+Step 4:
+
+Windows: Right-click the Little Lemon logo and select Inspect (or Inspect Element)
+
+Mac: Control-click the logo image and select Inspect (or Inspect Element)
+
+Step 5:
+
+Inspect the line in the HTML for the logo in the developer tools panel. The line begins with <img.
+
+Note:
+
+In the line, there is an ID in the following format id="???". Note the value that the ID is equal to
+
+Tips
+
+If you get stuck, close the developer tools and start over.
+
+Review the lesson
+
+Developer Tools
+
+.
+
+OS Note:
+
+There may be slight operational differences depending on the browser and version you use on a Mac. For instance, it varies when using
+
+Safari
+
+or another browser like
+
+Chrome
+
+or
+
+Firefox.
+
+Safari on Mac
+
+Go to
+
+Safari
+
+>
+
+Settings
+
+(or
+
+Preferences
+
+) from the top menu bar.
+
+Click on the
+
+Advanced
+
+tab.
+
+Check the box for
+
+"Show Develop menu in menu bar"
+
+at the bottom.
+
+Control-click (or right-click) the logo image.
+
+Select
+
+Inspect Element
+
+from the context menu.
+
+The
+
+Web Inspector
+
+will open for further inspection.
+
+Chrome or Firefox on Mac
+
+Chrome and Firefox have developer tools enabled by default.
+
+Control-click (or right-click) the logo image.
+
+Select
+
+Inspect
+
+(Chrome) or
+
+Inspect Element
+
+(Firefox) from the context menu.
+
+The developer tools will open for inspection.
+
+In summary:
+
+Safari
+
+requires enabling the
+
+Develop menu
+
+first (if not already enabled.)
+
+Chrome
+
+and
+
+Firefox
+
+come with inspection tools enabled by default.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/09_exercise-edit-a-website-using-a-browser-developer-tools_instructions.html
+TYPE: HTML
+TITLE: Exercise Edit A Website Using A Browser Developer Tools Instructions
+
+Introduction
+
+In this exercise, you will practice editing an HTML page using the developer tools.
+
+Goal
+
+Edit the HTML document using the developer tools in your browser.
+
+Objectives
+
+Change the text of Our Menu to Little Lemon Menu.
+
+Instructions
+
+Step 1:
+
+Download the following file on your local system.
+
+Note: If you have completed the exercise Examine the Page, you can skip steps 1 and 2 as the file contains the same assets from that exercise.
+
+Step 2:
+
+Unzip the file.
+
+On Windows
+
+, open your Downloads folder, right-click the file
+
+examine_the_page.zip
+
+and select Extract All.
+
+On Mac, open your Downloads folder or the default location for your Downloads. The file might automatically unzip, but double-click and unzip it manually if needed. It should create a folder named '
+
+examine_the_page
+
+' and locate the file index.html inside.
+
+Step 3:
+
+Open the index.html file in your local browser for preview. Verify that it looks like this:
+
+Step 4:
+
+Right-click the
+
+Our Menu
+
+text and select
+
+Inspect
+
+or
+
+Inspect Element.
+
+Step 5:
+
+Double-click the
+
+Our Menu
+
+text in the Elements tab of the developer tools panel.
+
+Step 6:
+
+Change the text to
+
+Little Lemon Menu
+
+.
+
+Step 7:
+
+Close the developer tools.
+
+Step 8:
+
+Verify that the text has changed on the web page.
+
+Tips
+
+If you get stuck, close the developer tools and start from the beginning.
+
+Review the lesson
+
+Developer Tools
+
+.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/10_frameworks-and-libraries.en.srt
+TYPE: SRT
+TITLE: Frameworks And Libraries
+
+[00:00:00,000 --> 00:00:03,599] You are developing solutions but you need to save some time and build faster.
+[00:00:04,239 --> 00:00:06,880] What if some of your build problems have already been solved for you?
+[00:00:07,519 --> 00:00:12,479] Well, it's true. Someone has already figured out many key development processes and they are
+[00:00:12,479 --> 00:00:16,479] contained in frameworks and libraries that are used every day in software development.
+[00:00:17,200 --> 00:00:22,639] So what exactly are frameworks and libraries? Let's say you are not a developer but instead
+[00:00:22,639 --> 00:00:28,000] you work as a carpenter. You make chairs and sell them online. As a carpenter you don't design a
+[00:00:28,000 --> 00:00:32,639] new hammer for every chair you make. It makes much more sense to use an existing hammer.
+[00:00:33,360 --> 00:00:37,680] But of course you are a developer. As such it's important for you to know that to speed up
+[00:00:37,680 --> 00:00:41,680] development developers use already developed frameworks and libraries in their application
+[00:00:41,680 --> 00:00:46,880] development. These might be open source, meaning that the source code is freely available for
+[00:00:46,880 --> 00:00:51,840] anyone to modify and build from. There are thousands of open source libraries and frameworks
+[00:00:51,840 --> 00:00:56,959] available or they might be proprietary ones that are licensed or developed internally.
+[00:00:57,919 --> 00:01:03,599] Many developers use the terms framework and library interchangeably. So what's the difference
+[00:01:03,599 --> 00:01:09,040] between them? Libraries are reusable pieces of code that can be used by your application.
+[00:01:09,040 --> 00:01:14,639] They are purpose-built to provide a specific functionality. To give a more technical example
+[00:01:15,199 --> 00:01:20,559] you're building a small e-commerce website. When a user wants to register they need to provide
+[00:01:20,559 --> 00:01:26,080] their email address. Email addresses, while easy to read, can be complicated to validate.
+[00:01:26,720 --> 00:01:31,680] In fact email addresses are defined across several technical specifications. That's a
+[00:01:31,680 --> 00:01:37,040] lot of reading just to validate an email. Even if you do read through all the specifications
+[00:01:37,040 --> 00:01:42,000] there's no point in spending hours or even days implementing their standards because you have
+[00:01:42,000 --> 00:01:47,680] access to so many readily available libraries to validate email addresses. It is for specific
+[00:01:47,680 --> 00:01:54,080] functionality like validating an email address that libraries are useful. A developer simply
+[00:01:54,080 --> 00:01:59,440] uses the library to access the functionality they require and as a result they can have more time to
+[00:01:59,440 --> 00:02:04,559] continue focusing on the development of their application. Frameworks on the other hand provide
+[00:02:04,559 --> 00:02:09,919] a structure for developers to build with. Consider this in the context of our carpenter analogy.
+[00:02:10,639 --> 00:02:16,080] As a carpenter you create a lot of different chairs. Therefore there would be a blueprint
+[00:02:16,080 --> 00:02:21,440] for each chair to speed up building them. You can decide the type of wood to use but the dimensions
+[00:02:21,440 --> 00:02:26,880] and style of the chair are always the same. Frameworks act as a structure where the developer
+[00:02:26,880 --> 00:02:32,720] provides their own code that the framework interacts with. For example there are many frameworks for
+[00:02:32,720 --> 00:02:37,679] developing web applications. These frameworks handle functionality that is common to all web
+[00:02:37,679 --> 00:02:44,639] applications such as receiving HTTP requests and sending HTTP responses. The developer then adds
+[00:02:44,639 --> 00:02:49,919] their own code that implements the functionality of the web application. For instance with the
+[00:02:49,919 --> 00:02:55,839] e-commerce website example a framework would handle receiving HTTP requests. The developer
+[00:02:55,839 --> 00:03:00,639] would implement code that processes the request and returns a response from which the framework
+[00:03:00,639 --> 00:03:06,960] would send a response over HTTP. Now let's compare how the frameworks relate to libraries.
+[00:03:08,000 --> 00:03:13,199] Most frameworks use many libraries. The libraries that the framework uses can be used by your
+[00:03:13,199 --> 00:03:19,679] application. If you wish your application can also use other libraries. You also need to consider
+[00:03:19,679 --> 00:03:25,759] when to use a framework and when to use a library. Frameworks are considered opinionated and libraries
+[00:03:25,759 --> 00:03:31,520] are considered unopinionated. This is defined as the degree of freedom available to the developer
+[00:03:31,520 --> 00:03:37,119] to choose how to code a feature. The opinionatedness will vary between frameworks but by definition
+[00:03:37,119 --> 00:03:42,080] they will always be more opinionated than a library. Frameworks define the library's flow
+[00:03:42,080 --> 00:03:47,039] and control of an application whereas with libraries those are left to the developer to
+[00:03:47,039 --> 00:03:53,440] decide. As with everything there are advantages and disadvantages to both. Frameworks are a great
+[00:03:53,440 --> 00:03:59,360] way to reduce development time and enforce a structure on how code is written. They have many
+[00:03:59,360 --> 00:04:03,839] best practices already in place and contain most of what is needed to develop an application.
+[00:04:04,399 --> 00:04:09,039] However sometimes you may find that the way you need to code something doesn't fit into the
+[00:04:09,039 --> 00:04:14,720] structure of the framework. Other times you may find that some of the libraries the framework uses
+[00:04:14,720 --> 00:04:19,279] may conflict with the library that you are required to use and cause compatibility issues.
+[00:04:20,000 --> 00:04:24,959] If an application is built without a framework the developer will need to decide on the set
+[00:04:24,959 --> 00:04:28,959] of libraries they wish to use to achieve the functionality they must deliver.
+[00:04:28,959 --> 00:04:32,399] They will also need to take care that the selected libraries can work together.
+[00:04:32,959 --> 00:04:38,480] The upside to this is that they can replace libraries as needed. For example if a new better
+[00:04:38,480 --> 00:04:43,839] library is released the developer can replace the usage of the old library. This is much easier than
+[00:04:43,839 --> 00:04:49,440] replacing a framework. Frameworks and libraries give you the opportunity to reuse existing web
+[00:04:49,440 --> 00:04:55,359] app functions. This can result in faster development, fewer errors and more time for you to spend on the
+[00:04:55,359 --> 00:05:00,799] essential features of your application. Instead of reinventing the wheel you can use frameworks
+[00:05:00,799 --> 00:05:05,359] and libraries that are designed specifically to help your web app development processes.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/11_apis-and-services.en.srt
+TYPE: SRT
+TITLE: Apis And Services
+
+[00:00:00,000 --> 00:00:04,619] Every day you access information on your phone, like reading the news, purchasing
+[00:00:04,619 --> 00:00:08,472] goods and services or communicating with friends over social media.
+[00:00:08,472 --> 00:00:12,374] But how is all this information transferred behind the scenes?
+[00:00:12,374 --> 00:00:13,986] Your favorite websites and apps
+[00:00:13,986 --> 00:00:19,533] probably use API's and as a web developer, you'll discover that API is developer-
+[00:00:19,533 --> 00:00:24,860] friendly, easily accessible and a very valuable and useful development tool.
+[00:00:24,860 --> 00:00:29,214] API is the acronym for application programming interface.
+[00:00:29,214 --> 00:00:31,765] An API is a set of functions and procedures for
+[00:00:31,765 --> 00:00:36,334] creating applications that access the features or data of an operating system,
+[00:00:36,334 --> 00:00:38,165] application or other service.
+[00:00:38,165 --> 00:00:42,293] If this still sounds a bit vague, just remember that the term API,
+[00:00:42,293 --> 00:00:46,069] is intentionally open to many applications and use cases.
+[00:00:46,069 --> 00:00:51,077] As a web developer, a lot of the day to day job involves working with API's.
+[00:00:51,077 --> 00:00:56,123] Some common API's that web developers work with include Browser,
+[00:00:56,123 --> 00:00:58,878] API REST API and Sensor-Based API.
+[00:00:58,878 --> 00:01:03,480] Over the next few minutes, you'll explore each of these API types and
+[00:01:03,480 --> 00:01:05,676] review a few specific examples.
+[00:01:05,676 --> 00:01:09,345] To begin with, here's a brief outline of how APIs functions.
+[00:01:09,345 --> 00:01:10,790] In Software development,
+[00:01:10,790 --> 00:01:14,571] API's are often the bridge between different components or systems.
+[00:01:14,571 --> 00:01:17,681] This earns them names like gateway or middleware.
+[00:01:17,681 --> 00:01:22,144] The term is used widely to represent many different tools and systems.
+[00:01:22,144 --> 00:01:25,871] Let's consider some examples of different API use cases.
+[00:01:25,871 --> 00:01:29,033] One common type of API, is Browser or Web APIs,
+[00:01:29,033 --> 00:01:31,811] which are built into the browser itself.
+[00:01:31,811 --> 00:01:35,982] They extend the functionality of the browser by adding new services and
+[00:01:35,982 --> 00:01:40,154] are designed to simplify complex functions and provide easy syntax for
+[00:01:40,154 --> 00:01:41,978] building advanced features.
+[00:01:41,978 --> 00:01:44,413] A good example is the DOM API.
+[00:01:44,413 --> 00:01:48,655] The DOM API turns the HTML document into a tree of nodes that
+[00:01:48,655 --> 00:01:51,697] are represented as JavaScript objects.
+[00:01:51,697 --> 00:01:56,668] Another example is the geolocation API that returns coordinates of where
+[00:01:56,668 --> 00:01:58,305] the browser is located.
+[00:01:58,305 --> 00:02:03,887] There are also other API's available for fetching data known as Fetch API drawing,
+[00:02:03,887 --> 00:02:07,596] graphics or Canvas API keeping history or history API.
+[00:02:07,596 --> 00:02:11,532] And client side storage also known as Web Storage API.
+[00:02:11,532 --> 00:02:16,580] Another critical type of API for web development is the RESTful or REST API.
+[00:02:16,580 --> 00:02:21,242] This kind of API provides data for popular web and mobile apps.
+[00:02:21,242 --> 00:02:23,068] These are also called web servers.
+[00:02:23,068 --> 00:02:26,155] Let's explore REST in a bit more detail.
+[00:02:26,155 --> 00:02:28,897] REST or representational state transfer,
+[00:02:28,897 --> 00:02:32,907] is a set of principles that help build highly efficient API's.
+[00:02:32,907 --> 00:02:37,151] One of the main responsibilities of these kinds of API's is sending and
+[00:02:37,151 --> 00:02:40,276] receiving data to and from a centralized database.
+[00:02:40,276 --> 00:02:44,034] We can query our own REST API or third party ones.
+[00:02:44,034 --> 00:02:45,428] One last type of API,
+[00:02:45,428 --> 00:02:49,858] that you might encounter as a web developer is a Sensor-Based API.
+[00:02:49,858 --> 00:02:54,882] This is what the internet of things also known as IOT is based on.
+[00:02:54,882 --> 00:02:58,989] These are actual physical sensors that are interconnected with each other.
+[00:02:58,989 --> 00:03:04,279] The sensors can communicate through API and track and respond to physical data.
+[00:03:04,279 --> 00:03:08,742] Some examples are Philips hue, smart lights and node bots.
+[00:03:08,742 --> 00:03:10,907] That's a lot of API to think about.
+[00:03:10,907 --> 00:03:15,785] Fortunately, for web developers the most common data API is a RESTful API which
+[00:03:15,785 --> 00:03:20,178] as you've learned is a web server that provides responses to requests.
+[00:03:20,178 --> 00:03:24,210] These API web servers are designed to provide the data backbone for
+[00:03:24,210 --> 00:03:26,740] a web client like a web page or mobile app.
+[00:03:26,740 --> 00:03:31,660] This means that these API's must be able to accomplish things like getting data or
+[00:03:31,660 --> 00:03:33,030] GET, creating data.
+[00:03:33,030 --> 00:03:38,516] Also referred to as POST updating data or PUT and deleting data DELETE.
+[00:03:38,516 --> 00:03:41,038] API uses REST principles and
+[00:03:41,038 --> 00:03:45,641] good design practices to create discoverable interfaces.
+[00:03:45,641 --> 00:03:48,553] This helps us get the exact response expected.
+[00:03:48,553 --> 00:03:50,575] But exactly how do they work?
+[00:03:50,575 --> 00:03:53,303] Here's a closer description of their activity.
+[00:03:53,303 --> 00:03:58,540] These API's use endpoints to specify how different resources can be accessed.
+[00:03:58,540 --> 00:04:02,532] The endpoint is built into the URL when accessing the API.
+[00:04:02,532 --> 00:04:07,246] Once the endpoint is hit, the API performs whatever server side
+[00:04:07,246 --> 00:04:10,508] processing is needed to build the response.
+[00:04:10,508 --> 00:04:15,004] Two common forms of response are full web pages and data format based on
+[00:04:15,004 --> 00:04:16,867] JavaScript called JSON.
+[00:04:16,867 --> 00:04:20,435] In this video, you explored some API's and as a web developer,
+[00:04:20,435 --> 00:04:23,952] you will frequently work with many different types of API's.
+[00:04:23,952 --> 00:04:27,765] You will often use API's to extend the abilities of systems or
+[00:04:27,765 --> 00:04:30,860] to act as a bridge between different components.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/12_what-is-an-ide.en.srt
+TYPE: SRT
+TITLE: What Is An Ide
+
+[00:00:00,340 --> 00:00:02,723] Think of a group of construction workers.
+[00:00:02,723 --> 00:00:06,177] Every worker has a toolbox that helps them get their job done.
+[00:00:06,177 --> 00:00:09,140] As a developer, you'll also use many tools.
+[00:00:09,140 --> 00:00:12,332] One of the main tools in your toolbox is the integrated development
+[00:00:12,332 --> 00:00:14,040] environment or IDE.
+[00:00:14,040 --> 00:00:17,992] By the end of this video you'll be able to identify an IDE and
+[00:00:17,992 --> 00:00:21,880] explain the benefits of using an IDE during development.
+[00:00:21,880 --> 00:00:26,801] An integrated development environment or IDE is software for building applications.
+[00:00:26,801 --> 00:00:31,738] An IDE is just like a text editor except instead of writing documents
+[00:00:31,738 --> 00:00:33,480] you're writing code.
+[00:00:33,480 --> 00:00:38,047] There are many IDEs available, some are specific to one programming
+[00:00:38,047 --> 00:00:41,915] language while others support many languages in one IDE.
+[00:00:41,915 --> 00:00:45,197] Let's explore some common IDE features.
+[00:00:45,197 --> 00:00:47,957] Here I am working within an IDE.
+[00:00:47,957 --> 00:00:50,634] First let's cover syntax highlighting.
+[00:00:50,634 --> 00:00:55,405] To improve readability for developers, IDEs have syntax highlighting.
+[00:00:55,405 --> 00:00:58,662] What this means, is that special keywords of the programming language
+[00:00:58,662 --> 00:01:01,866] are highlighted in different colors so that the developer can quickly
+[00:01:01,866 --> 00:01:04,739] differentiate these keywords from other texts.
+[00:01:04,739 --> 00:01:09,325] For example, if you're writing JavaScript code without syntax highlighting,
+[00:01:09,325 --> 00:01:12,590] it could be harder to identify keywords from other texts.
+[00:01:12,590 --> 00:01:17,411] With syntax highlighting, that gets much easier because the JavaScript keywords and
+[00:01:17,411 --> 00:01:19,534] variables are colored differently.
+[00:01:19,534 --> 00:01:22,840] Now, let's explore error highlighting.
+[00:01:22,840 --> 00:01:25,464] Just like checking spelling in a text document,
+[00:01:25,464 --> 00:01:28,926] IDEs can highlight mistakes you make in your programming code.
+[00:01:28,926 --> 00:01:32,802] For example, if I delete the equal symbol where it's needed,
+[00:01:32,802 --> 00:01:35,840] my IDE will highlight the error.
+[00:01:35,840 --> 00:01:38,586] Another feature of IDEs is autocomplete.
+[00:01:38,586 --> 00:01:42,763] When you're typing a message on your phone, it suggests words as you type.
+[00:01:42,763 --> 00:01:45,815] An IDE's autocomplete is a similar feature.
+[00:01:45,815 --> 00:01:48,550] Since programming languages have special keywords,
+[00:01:48,550 --> 00:01:53,140] IDEs can offer suggestions to autocomplete words as you start typing them.
+[00:01:53,140 --> 00:01:57,818] Additionally, another feature called IntelliSense can make IDEs very smart and
+[00:01:57,818 --> 00:02:00,640] even able to understand your code.
+[00:02:00,640 --> 00:02:02,754] They can detect variables and functions and
+[00:02:02,754 --> 00:02:05,840] offer them as suggestions during autocomplete.
+[00:02:05,840 --> 00:02:10,686] For example, if I have a JavaScript function named myFunction defined at
+[00:02:10,686 --> 00:02:15,608] the top of the JavaScript file, then as soon as I start typing the letter m my
+[00:02:15,608 --> 00:02:18,913] IDE suggest this function as an autocompletion.
+[00:02:18,913 --> 00:02:20,653] Then there is refactoring.
+[00:02:20,653 --> 00:02:25,190] Since IDEs understand your code, they can help you if you need to change it.
+[00:02:25,190 --> 00:02:27,562] To demonstrate how refactoring works,
+[00:02:27,562 --> 00:02:31,966] let's continue with the myFunction function that I defined a moment ago.
+[00:02:31,966 --> 00:02:35,723] In the code, the function is then called multiple times.
+[00:02:35,723 --> 00:02:38,933] It can also be called in the code of other files too.
+[00:02:38,933 --> 00:02:41,383] But what if you need to rename this function?
+[00:02:41,383 --> 00:02:45,516] You would need to rename it in every file that uses the function ensuring that you
+[00:02:45,516 --> 00:02:47,940] update those files to use the new name.
+[00:02:47,940 --> 00:02:49,921] This process is known as refactoring,
+[00:02:49,921 --> 00:02:54,440] changing the structure of the code without changing the functionality.
+[00:02:54,440 --> 00:02:58,089] Doing this manually is very time- consuming and prone to error.
+[00:02:58,089 --> 00:03:02,540] If you mistyped the new function name in one place, the application will break.
+[00:03:02,540 --> 00:03:06,144] Since the IDE understand your code, it can assist with refactoring and
+[00:03:06,144 --> 00:03:09,640] automatically update the function name across all files.
+[00:03:09,640 --> 00:03:11,540] That saves a lot of time.
+[00:03:11,540 --> 00:03:13,840] Let's rename our function now.
+[00:03:13,840 --> 00:03:17,180] I just right click on the function and select 'Rename Symbol'.
+[00:03:17,180 --> 00:03:20,040] Then I change it from myFunction to ourFunction.
+[00:03:20,040 --> 00:03:24,144] The IDE then updates all references of that function name.
+[00:03:24,144 --> 00:03:27,702] IDEs come with a lot of other features to help investigate bugs and
+[00:03:27,702 --> 00:03:29,780] collaborate with other developers.
+[00:03:29,780 --> 00:03:33,714] Many even allow you to extend their functionality using plugins and
+[00:03:33,714 --> 00:03:37,178] extensions, but that's beyond the scope of this lesson.
+[00:03:37,178 --> 00:03:40,640] We have explored some features of IDEs in this video.
+[00:03:40,640 --> 00:03:44,928] You now know how IDEs operate as part of the developers toolbox to write code more
+[00:03:44,928 --> 00:03:46,540] effectively.
+[00:03:46,540 --> 00:03:47,051] Well done.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/13_setting-up-your-local-development-environment_instructions.html
+TYPE: HTML
+TITLE: Setting Up Your Local Development Environment Instructions
+
+This reading walks you through the steps to set up an Integrated Development Environment, or IDE, on a Windows and on a Mac (further down below).
+
+The IDE you'll be using in the course is Visual Studio Code, which Microsoft provides for free and comes with a wealth of plugins and extensions to make your life as a developer easier.
+
+You have two options for using Visual Studio Code to complete your course activities:
+
+Option 1: Use Visual Studio Code in-browser with Coursera Labs
+
+Coursera’s platform offers an in-browser version of Visual Studio Code which is preconfigured and requires no local setup. You can access the Visual Studio Code environment through the “Lab” items included in this course. Your work and files will be saved and available within this in-browser lab while you have course access.
+
+Option 2: Work on your local device
+
+You can also choose to complete your work on your local machine if you prefer. This will require a few steps of set up in advance.
+
+First, you need to download the IDE from Microsoft's website -
+
+https://code.visualstudio.com/download
+
+.
+
+Select the download based on your operating system.
+
+Windows
+
+Step 1:
+
+Download the Windows installer.
+
+Step 2:
+
+Open the file to install it once the download is complete.
+
+Step 3:
+
+Review and accept the license agreement, then click Next.
+
+Step 4:
+
+Keep the default value when prompted for the destination location and click next.
+
+Step 5:
+
+On the additional tasks view, make sure that
+
+Add to PATH
+
+is selected.
+
+Step 6:
+
+Click next.
+
+Step 7:
+
+Click install when the ready to install page appears.
+
+Step 8:
+
+Click finish once completed, and the application will launch.
+
+Mac
+
+Step 1:
+
+Download the application based on the chipset you have. M1 macs use Apple Silicon, and older Macs use Intel. If you are not sure, choose the Universal option.
+
+Step 2:
+
+Go to your Downloads folder once the download is complete.
+
+Step 3:
+
+Double-click the zip file to extract the contents.
+
+Step 4:
+
+Drag and drop the .app file to the application link in Finder below.
+
+Step 5:
+
+Open the app.
+
+Linux
+
+Please refer to the
+
+official Linux installation guide
+
+for Visual Studio Code.
+
+Selecting a working directory
+
+Now that you have Visual Studio Code set up create a folder on your device that you'll use to do course exercises.
+
+Open Visual Studio Code, go to
+
+File
+
+and select
+
+Open Folder
+
+. Using the file browser, select the folder you just created.
+
+Congratulations, you're set up now to begin writing some code.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/14_visual-studio-code-on-coursera_instructions.html
+TYPE: HTML
+TITLE: Visual Studio Code On Coursera Instructions
+
+In addition to having Visual Studio Code installed on your own computer, in this course and throughout this program, you'll have the opportunity to work in Visual Studio Code right here on Coursera!
+
+As you progress through the course, you'll be able to write code in hands-on activities called
+
+Labs
+
+. In these labs you'll be able to open Visual Studio Code and start writing code without ever leaving the course.
+
+You'll have plenty of opportunities to see Labs in action later in the course, but for now, use the images below as a visual guide to how Labs will look and operate in your browser.
+
+NOTE:
+
+This
+
+guide
+
+uses screenshots
+
+to show you where to find important buttons, menus, and other controls. However,
+
+you
+
+can't click or interact
+
+with the images in this reading. They are here to alert you to the location and use of commands to prepare you for the actual lab exercises.
+
+The Labs contain instructions explaining the coding task.
+
+Please note that the image above is for demonstration of how the lab will appear for you. When you click the button
+
+Open Lab
+
+in the actual lab, a new tab will open with Visual Studio Code already set up and ready for you to start writing code!
+
+You'll see all the files for the lab in the Project folder in the left sidebar.
+
+And the large editor area where you write your code for the lab.
+
+You may need to use a tool called the Terminal from time to time to complete course activities. You can open this by selecting the
+
+Terminal
+
+option in the upper Visual Studio Code toolbar.
+
+How to download files from your Visual Studio Code Lab to your local device
+
+1. Select the
+
+Lab Files
+
+button in your Lab Toolbar.
+
+2. You'll be able to download your full workspace, specific folders, or individual files through the checkbox selection tool.
+
+3. After you've selected these files, use the
+
+Download
+
+link to download your files to your local device.
+
+How to upload local files to your Visual Studio Code Lab
+
+If you'd like to upload your course files from your local device to your Visual Studio Code lab,
+
+drag and drop
+
+your file from your local device into the Visual Studio Code file tree.
+
+How to get a fresh copy of course-provided starter files
+
+Your work will be saved and will persist within your Visual Studio Code lab while you are enrolled in the course. If you'd like to get a fresh copy of the original instructor-provided files at any time, you can do this through the
+
+Lab Help
+
+option in your Lab Toolbar. Don't worry - your original work and files will still remain in your lab until you personally remove or delete them, even when refreshing your files through the steps below.
+
+1. First rename your original files to something like
+
+[yourfilename] [original].[your file extension]`.
+
+You can do this by right-clicking on your file in the Visual Studio Code file tree, selecting
+
+Rename
+
+, and providing a new file name.
+
+For example, for index.html, this could be renamed to
+
+`index [original].html`
+
+2. Select
+
+Lab Help
+
+from your Lab Toolbar and then select
+
+Get latest version.
+
+3. You should now
+
+see a fresh copy of the original instructor-provided files in your lab, in addition to your own (renamed) files.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/15_module-summary-get-started-with-web-development.en.srt
+TYPE: SRT
+TITLE: Module Summary Get Started With Web Development
+
+[00:00:00,240 --> 00:00:03,476] You've reached the end of this module on web development.
+[00:00:03,476 --> 00:00:08,284] Over the course of this module, you've explored the basics of how the web works
+[00:00:08,284 --> 00:00:12,977] and familiarized yourself with key concepts in core internet technologies.
+[00:00:12,977 --> 00:00:16,170] Let's recap the key skills that you gained along the way.
+[00:00:16,170 --> 00:00:20,604] You started the module with an overview of how the web works and
+[00:00:20,604 --> 00:00:25,302] explored the basics of web pages, web servers and web browsers.
+[00:00:25,302 --> 00:00:29,854] In terms of web pages, you should now be able to differentiate
+[00:00:29,854 --> 00:00:34,847] between a website and a web page by outlining the key elements of each.
+[00:00:34,847 --> 00:00:41,118] Outline the purpose of HTML and CSS and provide an explanation of how they work.
+[00:00:41,118 --> 00:00:45,950] And identify the benefits that JavaScript provides to a web page like
+[00:00:45,950 --> 00:00:48,622] interactivity and data processing.
+[00:00:48,622 --> 00:00:52,998] You've also explored the basics of web servers and should be able
+[00:00:52,998 --> 00:00:57,703] to explain how a data center provides storage and power for web servers.
+[00:00:57,703 --> 00:01:02,154] Differentiate between the key functions of web server hardware and
+[00:01:02,154 --> 00:01:06,761] software and outline how a web server handles requests through HTTP or
+[00:01:06,761 --> 00:01:08,880] hypertext transfer protocol.
+[00:01:08,880 --> 00:01:13,999] And you explored the third key technology of the web, which is web browsers.
+[00:01:13,999 --> 00:01:20,043] Following this exploration, you should now be able to explain what a web browser is,
+[00:01:20,043 --> 00:01:24,454] describe how a web browser receives content from a web server and
+[00:01:24,454 --> 00:01:28,806] displays it for users and outline the request-response cycle.
+[00:01:28,806 --> 00:01:34,577] After your study of how the web works, you investigated core internet technologies.
+[00:01:34,577 --> 00:01:39,065] You should now be able to explain the concept of IP addresses and
+[00:01:39,065 --> 00:01:44,486] how they facilitate the transfer of data across the internet, demonstrate
+[00:01:44,486 --> 00:01:49,908] an understanding of how HTTP functions and identify common HTTP methods and
+[00:01:49,908 --> 00:01:54,674] outline how HTML, CSS and JavaScript interact with one another
+[00:01:54,674 --> 00:01:59,299] to generate web pages, differentiate between a web page, website and
+[00:01:59,299 --> 00:02:03,073] web app, identify the front end and back end of a web app and
+[00:02:03,073 --> 00:02:05,867] list common web browser developer tools.
+[00:02:05,867 --> 00:02:10,316] And finally, you should be able to demonstrate an understanding of
+[00:02:10,316 --> 00:02:15,312] libraries and frameworks along with their advantages and disadvantages,
+[00:02:15,312 --> 00:02:19,138] identify an application programming interface or API and
+[00:02:19,138 --> 00:02:24,604] explain how it's utilized in application development and explain the purpose and
+[00:02:24,604 --> 00:02:28,607] benefits of an IDE or integrated development environment.
+[00:02:28,607 --> 00:02:32,809] Now that you have completed this module, you should be able to demonstrate your
+[00:02:32,809 --> 00:02:35,644] knowledge of the basic concepts of how the web works.
+[00:02:35,644 --> 00:02:39,184] And you've also demonstrated your understanding of core Internet
+[00:02:39,184 --> 00:02:40,062] technologies.
+[00:02:40,062 --> 00:02:42,756] You've made a great start on your learning journey.
+[00:02:42,756 --> 00:02:43,751] Excellent work.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/16_additional-resources_index.html
+TYPE: HTML
+TITLE: Additional Resources Index
+
+Firefox DevTools User Docs — Firefox Source Docs documentation
+
+Firefox Source Docs
+
+Quick search
+
+Overview
+
+A Glossary of Common Terms
+
+A Quick Guide to Mozilla Applications
+
+Getting Started
+
+Getting Set Up To Work On The Firefox Codebase
+
+Working On Firefox
+
+Working on Firefox
+
+Bug Handling
+
+Firefox Crash Reporting
+
+Firefox User Guide
+
+3D view
+
+about:debugging
+
+Accessibility Inspector
+
+Application
+
+Browser Console
+
+Browser Toolbox
+
+Custom Formatters
+
+The Firefox JavaScript Debugger
+
+Debugger-API
+
+Deprecated tools
+
+DevTools API
+
+DevToolsColors
+
+DOM Property Viewer
+
+Eyedropper
+
+Index
+
+JavaScript Tracer
+
+JSON viewer
+
+All keyboard shortcuts
+
+Local Mode
+
+Measure a portion of the page
+
+Memory
+
+Migrating from Firebug
+
+Network Monitor
+
+Page Inspector
+
+Performance Tool
+
+Responsive Design Mode
+
+Rulers
+
+Settings
+
+Shader Editor
+
+Storage Inspector
+
+Style Editor
+
+Taking screenshots
+
+Tips
+
+Toolbox
+
+Validators
+
+View Source
+
+Web Audio Editor
+
+Web Console
+
+Working with iframes
+
+Firefox DevTools User Docs
+
+The Core Tools
+
+Page Inspector
+
+Web Console
+
+JavaScript Debugger
+
+Network Monitor
+
+Performance Panel
+
+Responsive Design Mode
+
+Accessibility inspector
+
+Application panel
+
+More Tools
+
+AI Tools
+
+Connecting the Developer Tools
+
+Debugging the browser
+
+Extending DevTools
+
+Migrating from Firebug
+
+Contribute
+
+Source Code Documentation
+
+Governance
+
+Firefox Front-end
+
+DOM
+
+Editor
+
+Style system (CSS) & Layout
+
+Graphics
+
+Processes, Threads and IPC
+
+Getting started
+
+Architecture overview
+
+Contributing
+
+Bugs and issues
+
+Firefox DevTools Contributor Docs
+
+Toolkit
+
+SpiderMonkey
+
+JS Loader
+
+GeckoView
+
+Fenix
+
+Focus for Android
+
+WebIDL
+
+libpref
+
+Networking
+
+Remote Protocols
+
+Services
+
+Permissions
+
+File Handling
+
+Firefox on macOS
+
+Firefox on Windows
+
+Firefox AI Runtime
+
+Page Extractor
+
+Accessibility
+
+Media Playback
+
+Code quality
+
+Writing Rust Code
+
+Rust Components
+
+Gecko Profiler
+
+Performance
+
+Database bindings (SQLite, KV, …)
+
+XPCOM
+
+NSPR
+
+Network Security Services (NSS)
+
+Web Security Checks in Gecko
+
+RLBox sandboxing
+
+The Firefox Build System
+
+Mach
+
+Pushing to Try
+
+Build System
+
+Firefox CI and Taskgraph
+
+Managing Documentation
+
+Vendoring Third Party Components
+
+Testing & Test Infrastructure
+
+Automated Testing
+
+Understanding Treeherder Results
+
+Sheriffed intermittent failures
+
+Turning on Firefox tests for a new configuration
+
+Avoiding intermittent tests
+
+Debugging Intermittent Test Failures
+
+Testing Policy
+
+Configuration Changes
+
+Browser chrome mochitests
+
+Chrome Tests
+
+geckodriver
+
+Test Verification
+
+WebRender Tests
+
+Mochitest
+
+XPCShell tests
+
+TPS
+
+web-platform-tests
+
+GTest
+
+Fuzzing
+
+Sanitizer
+
+Performance Testing
+
+Code coverage
+
+Testing & Debugging Rust Code
+
+AI Agent Tools
+
+AI Agent Tools for Firefox Development
+
+Releases & Updates
+
+Mozilla Update Infrastructure
+
+Watershed Updates
+
+Desupport Updates
+
+Update Verify
+
+Localization & Internationalization
+
+Internationalization
+
+Localization
+
+Firefox and Python
+
+mozbase
+
+Using third-party Python packages
+
+Metrics Collected in Firefox
+
+Firefox metrics
+
+Firefox Source Docs
+
+Firefox DevTools User Docs
+
+Report an issue
+/
+View page source
+
+Firefox DevTools User Docs
+
+Firefox Developer Tools is a set of web developer tools built into Firefox. You can use them to examine, edit, and debug HTML, CSS, and JavaScript.
+
+This section contains detailed guides to all of the tools as well as information on how to debug Firefox for Android, how to extend DevTools, and how to debug the browser as a whole.
+
+If you have any feedback on DevTools or want to contribute to the project, you can join the DevTools community.
+
+Note
+
+If you are just getting started with web development and using developer tools, our learning docs will help you — see Getting started with the Web and What are browser developer tools? for good starting points.
+
+The Core Tools
+
+You can open the Firefox Developer Tools from the menu by selecting Tools > Web Developer > Web Developer Tools or use the keyboard shortcut Ctrl + Shift + I or F12 on Windows and Linux, or Cmd + Opt + I on macOS.
+
+The ellipsis menu on the right-hand side of Developer Tools contains several commands that let you perform actions or change tool settings.
+
+This button only appears when there are multiple iframes on a page. Click it to display a list of the iframes on the current page and select the one with which you want to work.
+
+Click this button to take a screenshot of the current page. (Note: This feature is not turned on by default and must be enabled in settings before the icon will appear.)
+
+Toggles Responsive Design Mode
+
+Opens the menu that includes docking options, the ability to show or hide the split console, and Developer Tools settings. The menu also includes links to the documentation for Firefox Web Tools and the Mozilla Community.
+
+Closes the Developer Tools
+
+Page Inspector
+
+View and edit page content and layout. Visualize many aspects of the page including the box model, animations, and grid layouts
+
+Web Console
+
+See messages logged by a web page and interact with the page using JavaScript.
+
+JavaScript Debugger
+
+Stop, step through, and examine the JavaScript running on a page.
+
+Network Monitor
+
+See the network requests made when a page is loaded.
+
+Performance Panel
+
+Analyze your site’s general responsiveness, JavaScript, and layout performance.
+
+Responsive Design Mode
+
+See how your website or app will look and behave on different devices and network types.
+
+Accessibility inspector
+
+Provides a means to access the page’s accessibility tree, allowing you to check what’s missing or otherwise needs attention.
+
+Application panel
+
+Provides tools for inspecting and debugging modern web apps (also known as Progressive Web Apps). This includes inspection of service workers and web app manifests
+
+Note
+
+The collective term for the UI inside which the DevTools all live is the Toolbox
+
+More Tools
+
+These developer tools are also built into Firefox. Unlike the “Core Tools” above, you might not use them every day.
+
+Memory
+
+Figure out which objects are keeping memory in use.
+
+Storage Inspector
+
+Inspect cookies, local storage, indexedDB, and session storage present in a page.
+
+DOM Property Viewer
+
+Inspect the page’s DOM properties, functions, etc.
+
+Eyedropper
+
+Select a color from the page.
+
+Style Editor
+
+View and edit CSS styles for the current page.
+
+Taking screenshot
+
+Take a screenshot of the entire page or of a single element.
+
+Measure a portion of the page
+
+Measure a specific area of a web page.
+
+Rulers
+
+Overlay horizontal and vertical rulers on a web page
+
+Custom formatters
+
+Customize the way objects are displayed within the DevTools.
+
+JavaScript tracer
+
+Live display all JavaScript function calls.
+
+Local Mode
+
+Easily open local files through custom https:// URL.
+
+For the latest developer tools and features, try Firefox Developer Edition.
+
+Download Firefox Developer Edition
+
+AI Tools
+
+Firefox DevTools MCP
+
+A Model Context Protocol (MCP) server that enables AI assistants to automate and interact with Firefox.
+
+Connecting the Developer Tools
+
+If you open the developer tools using keyboard shortcuts or the equivalent menu items, they’ll target the document hosted by the currently active tab. But you can attach the tools to a variety of other targets, too, both within the current browser and in different browsers or even different devices.
+
+about:debugging
+
+Debug add-ons, content tabs, and workers running in the browser.
+
+Connecting to Firefox for Android
+
+Connect the developer tools to an instance of Firefox running on an Android device.
+
+Connecting to iframes
+
+Connect the developer tools to a specific iframe in the current page.
+
+Debugging the browser
+
+By default, the developer tools are attached to a web page or web app. But you can also connect them to the browser as a whole. This is useful for browser and add-on development.
+
+Browser Console
+
+See messages logged by the browser itself and by add-ons, and run JavaScript code in the browser’s scope.
+
+Browser Toolbox
+
+Attach the Developer Tools to the browser itself.
+
+Extending DevTools
+
+For information on extending the Firefox DevTools, see Extending the developer tools over in the Browser Extensions section of MDN.
+
+Migrating from Firebug
+
+Firebug has come to the end of its lifespan (see Firebug lives on in Firefox DevTools for details of why), and we appreciate that some people will find migrating to another less familiar set of DevTools to be challenging. To ease a transition from Firebug to the Firefox developer tools, we have written a handy guide — Migrating from Firebug
+
+Contribute
+
+If you want to help improve the developer tools, these resources will get you started.
+
+Get Involved
+
+Our community website explains how to get involved.
+
+codetribute.mozilla.org
+
+A tool helping to find bugs to work on.
+
+Read source docs
+
+Firefox DevTools source code documentation.
+
+Previous
+Next
+
+Built with Sphinx using a
+theme
+provided by Read the Docs.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_core-internet-technologies/16_additional-resources_instructions.html
+TYPE: HTML
+TITLE: Additional Resources Instructions
+
+Learn more​
+
+Here is a list of resources that may be helpful as you continue your learning journey.
+
+HTTP Overview (Mozilla)
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+
+Introduction to Networking by Dr.Charles R Severance
+
+https://www.amazon.com/Introduction-Networking-How-Internet-Works/dp/1511654945/
+
+Chrome Developer Tools Overview (Google)
+
+https://developer.chrome.com/docs/devtools/overview/
+
+Firefox Developer Tools User Docs (Mozilla)
+
+https://firefox-source-docs.mozilla.org/devtools-user/index.html
+
+Getting Started with Visual Studio Code (Microsoft)
+
+https://code.visualstudio.com/docs

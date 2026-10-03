@@ -1,0 +1,37 @@
+COURSE MATERIALS — TEXT-ONLY COMPENDIUM
+============================================
+
+COURSE: Claude Code
+  claude-code_Modulo_01.txt — Module: Scaling Up Software Engineering With Claude Code Generative Ai
+  claude-code_Modulo_02.txt — Module: Generative Ai Claude Code Code Quality
+  claude-code_Modulo_03.txt — Module: Building Process Context In Claude Code
+  claude-code_Modulo_04.txt — Module: Version Control Parallel Development With Claude Code
+  claude-code_Modulo_05.txt — Module: Improving Claude Code Scalability Reasoning
+  claude-code_Modulo_06.txt — Module: Multimodal Prompting Process
+  claude-code_Curso_Completo.txt — all modules in one file
+
+COURSE: Introduction to Back-End Development
+  introduction-to-back-end-development_Modulo_01.txt — Module: Get Started With Web Development
+  introduction-to-back-end-development_Modulo_02.txt — Module: Introduction To Html And Css
+  introduction-to-back-end-development_Modulo_03.txt — Module: Ui Frameworks
+  introduction-to-back-end-development_Modulo_04.txt — Module: End Of Course Graded Assessment
+  introduction-to-back-end-development_Curso_Completo.txt — all modules in one file
+
+COURSE: Learning How to Learn
+  learning-how-to-learn_Modulo_01.txt — Module: What Is Learning
+  learning-how-to-learn_Modulo_02.txt — Module: Chunking
+  learning-how-to-learn_Modulo_03.txt — Module: Procrastination And Memory
+  learning-how-to-learn_Modulo_04.txt — Module: Renaissance Learning And Unlocking Your Potential
+  learning-how-to-learn_Modulo_05.txt — Module: Resources
+  learning-how-to-learn_Curso_Completo.txt — all modules in one file
+
+HOW TO READ THESE FILES
+- Each module file brings together subtitles and readable text from PDFs, presentations, and HTML resources found in that module.
+- SRT captions keep their timestamps. PDF text keeps page numbers. Presentation text keeps slide numbers.
+- Duplicate plain-text transcripts are skipped when the same lesson has an SRT, to avoid repeating the same lecture twice.
+- This script extracts and organizes source content. It does not generate a human-like explanation or an AI summary.
+- For a detailed explained summary, open a course's Curso_Completo.txt in Claude Code and ask it to create a source-grounded study guide, preserving definitions, examples, steps, and references.
+
+Modules created: 15
+Source files included: 322
+Output folder: C:\Users\ronal\OneDrive\Escritorio\coursera\resumenes_cursos_txt

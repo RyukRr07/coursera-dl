@@ -1,0 +1,163 @@
+Introduction to Back-End Development
+MODULE 04: End Of Course Graded Assessment
+==================================================================================
+
+This file collects the readable text from this module's subtitles and learning materials. Source paths are kept below each section.
+
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_graded-assessment/01_course-1-recap-introduction-to-web-development.en.srt
+TYPE: SRT
+TITLE: Course 1 Recap Introduction To Web Development
+
+[00:00:00,000 --> 00:00:02,190] In this course, you were introduced
+[00:00:02,190 --> 00:00:04,200] to the foundations of web development.
+[00:00:04,200 --> 00:00:06,945] Let's do a brief recap of what you covered.
+[00:00:06,945 --> 00:00:10,350] Module 1 was get started with web development.
+[00:00:10,350 --> 00:00:11,865] In this first module,
+[00:00:11,865 --> 00:00:13,470] you learned about the different types of
+[00:00:13,470 --> 00:00:15,060] web developers and the roles
+[00:00:15,060 --> 00:00:16,800] and responsibilities of front-end,
+[00:00:16,800 --> 00:00:18,945] back-end, and full-stack developers.
+[00:00:18,945 --> 00:00:22,275] You gained knowledge about the core technologies of HTML,
+[00:00:22,275 --> 00:00:24,720] CSS, and JavaScript, and
+[00:00:24,720 --> 00:00:27,345] explored the concept of how the Internet works.
+[00:00:27,345 --> 00:00:29,960] The module also featured an example to
+[00:00:29,960 --> 00:00:32,705] show what a day in the life of a web developer is like.
+[00:00:32,705 --> 00:00:36,290] Next, you learned more about webpages, web servers,
+[00:00:36,290 --> 00:00:38,420] and web browsers, and how they all
+[00:00:38,420 --> 00:00:41,150] work together to create what we call the Internet.
+[00:00:41,150 --> 00:00:42,890] You covered what happens when
+[00:00:42,890 --> 00:00:44,330] you send a request to look for
+[00:00:44,330 --> 00:00:45,770] something online and how
+[00:00:45,770 --> 00:00:47,690] that information gets back to you.
+[00:00:47,690 --> 00:00:49,580] Then you were introduced to
+[00:00:49,580 --> 00:00:52,565] core Internet technologies and how they interact.
+[00:00:52,565 --> 00:00:54,980] You explore some web browser tools that you
+[00:00:54,980 --> 00:00:57,520] can use to help you code more efficiently.
+[00:00:57,520 --> 00:01:00,710] Finally, you learned what an IDE is
+[00:01:00,710 --> 00:01:04,285] and how it can help you speed up your work to write code.
+[00:01:04,285 --> 00:01:08,545] An introduction to HTML and CSS followed Module 2.
+[00:01:08,545 --> 00:01:12,410] In Module 2, you learned about HTML and CSS.
+[00:01:12,410 --> 00:01:16,505] In HTML, you discovered how to create an HTML document,
+[00:01:16,505 --> 00:01:18,500] use simple HTML tags
+[00:01:18,500 --> 00:01:21,050] and linked documents to create a website.
+[00:01:21,050 --> 00:01:25,010] Then you learned about the Document Object Model or DOM,
+[00:01:25,010 --> 00:01:26,450] and how it's used to display
+[00:01:26,450 --> 00:01:28,715] the content that you see on your device.
+[00:01:28,715 --> 00:01:30,830] In addition, you covered
+[00:01:30,830 --> 00:01:33,110] techniques to improve web accessibility
+[00:01:33,110 --> 00:01:35,060] and some assistive technologies available to
+[00:01:35,060 --> 00:01:37,510] provide universal access to the Internet.
+[00:01:37,510 --> 00:01:41,765] Next, you learned how to use CSS to style webpages.
+[00:01:41,765 --> 00:01:43,910] You explored how to select and style
+[00:01:43,910 --> 00:01:45,980] elements and use text, color,
+[00:01:45,980 --> 00:01:48,260] and alignment to make the web pages you
+[00:01:48,260 --> 00:01:51,815] create look great and offer a great user experience.
+[00:01:51,815 --> 00:01:55,160] You then use your new HTML and CSS skills
+[00:01:55,160 --> 00:01:57,445] together to create a webpage.
+[00:01:57,445 --> 00:02:00,080] In Module 3, you learned how
+[00:02:00,080 --> 00:02:02,120] to use the Bootstrap framework to build
+[00:02:02,120 --> 00:02:04,220] responsive interfaces and got to know
+[00:02:04,220 --> 00:02:07,145] the benefits of working with UI Frameworks.
+[00:02:07,145 --> 00:02:09,830] First, you were introduced to the concept of
+[00:02:09,830 --> 00:02:12,725] responsive design and working with libraries.
+[00:02:12,725 --> 00:02:15,080] Then you learned how to get started with
+[00:02:15,080 --> 00:02:17,150] the Bootstrap library and how to use
+[00:02:17,150 --> 00:02:19,250] Bootstrap styles and you explored
+[00:02:19,250 --> 00:02:21,895] some alternative UI frameworks and libraries.
+[00:02:21,895 --> 00:02:23,930] Finally, you were introduced to
+[00:02:23,930 --> 00:02:25,940] the JavaScript library React.
+[00:02:25,940 --> 00:02:27,680] You learned why it was created by
+[00:02:27,680 --> 00:02:30,365] meta-engineers and how it works at a high level.
+[00:02:30,365 --> 00:02:31,820] You then briefly explored
+[00:02:31,820 --> 00:02:34,415] the virtual DOM component hierarchy
+[00:02:34,415 --> 00:02:36,850] and some alternatives to React.
+[00:02:36,850 --> 00:02:39,735] Well done on completing this course recap.
+[00:02:39,735 --> 00:02:41,735] Now it's time to put into practice
+[00:02:41,735 --> 00:02:44,075] all that you've learned in the graded assessment.
+[00:02:44,075 --> 00:02:47,255] Are you ready to edit your biographical webpage?
+[00:02:47,255 --> 00:02:49,230] Good luck.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_graded-assessment/02_about-the-ungraded-lab-improve-your-bio-page-with-bootstrap_instructions.html
+TYPE: HTML
+TITLE: About The Ungraded Lab Improve Your Bio Page With Bootstrap Instructions
+
+In the next item, you will complete an Ungraded Lab where you will update the biographical page you created in Week 2 - Introduction to HTML5 and CSS to use Bootstrap.
+
+The expected outcome is a two-column biographical page with your name and a photo in the left column and your favorite music artists and films in the right column.
+
+Note:
+
+Your profile image may look slightly different from the example image depending on the provided photo.jpg file and your browser preview size. Focus on whether the image is responsive and whether the page layout matches the expected structure. On larger screens, the bio section and profile image should appear on the left, while the lists and profile button should appear on the right. On smaller screens, these sections should stack vertically.
+
+Proceed to the next item to begin the Ungraded Lab.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_graded-assessment/03_exemplar_instructions.html
+TYPE: HTML
+TITLE: Exemplar Instructions
+
+By updating your biographical page to use Bootstrap, your new page should be similar to the image below.
+
+Your HTML file structure and content should be similar to the snippet below. Note where the Bootstrap CSS classes were used in the different HTML elements.
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Bio Page</title>
+<link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div id="bio" class="col-12 col-lg-6 text-center">
+<h1>Jane</h1>
+<img src="photo.jpg" class="img-fluid" />
+</div>
+<div id="more" class="col-12 col-md-6">
+<h2>Favorite Music Artists</h2>
+<ul>
+<li>Metallica</li>
+<li>Bob Marley</li>
+<li>Madonna</li>
+<li>The Beatles</li>
+<li>Pink Floyd</li>
+</ul>
+<h2>Favorite Films</h2>
+<ol>
+<li>Pulp Fiction</li>
+<li>The Godfather</li>
+<li>The Lord of the Rings</li>
+<li>Iron Man</li>
+<li>Inception</li>
+</ol>
+<a href="https://www.meta.com/user/123" class="btn btn-primary">My Meta Profile</a>
+</div>
+</div>
+</div>
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+Note: This example assumes you have the Bootstrap CSS and JS files downloaded to your local folder. If you are coding this from scratch, you will need to replace the href and src links in the head and body with the official Bootstrap CDN links. Additionally, remember that if your browser preview window is small, the columns will stack vertically. You must maximize your browser window to see the side-by-side layout!
+
+As a developer, Bootstrap is one of the many libraries in your toolkit to help build web applications. Bootstrap has many utilities and components. We encourage you to read their documentation and experiment further with styling your webpage.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_course-wrap-up/01_next-steps_instructions.html
+TYPE: HTML
+TITLE: Next Steps Instructions
+
+Congratulations! You've taken another step toward improving your knowledge, skills, and qualifications.
+
+In the next course, you'll learn about programming in Python. Python is a high-level programming language that works on many different platforms and is used for a large number of programming applications. You'll begin by learning the basics of Python, like syntax and looping. You'll then learn to perform basic programming tasks such as declaring functions and working with errors and exceptions. You also learn about programming paradigms. Finally, you'll learn how to work with Python modules, packages, libraries, and tools.

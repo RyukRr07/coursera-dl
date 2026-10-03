@@ -1,0 +1,506 @@
+Claude Code
+MODULE 04: Version Control Parallel Development With Claude Code
+===============================================================================
+
+This file collects the readable text from this module's subtitles and learning materials. Source paths are kept below each section.
+
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/01_claude-code-version-control-git-branches.en.srt
+TYPE: SRT
+TITLE: Claude Code Version Control Git Branches
+
+[00:00:00,000 --> 00:00:03,799] Every single human being that writes code makes mistakes.
+[00:00:03,799 --> 00:00:05,639] I am a human, I write code,
+[00:00:05,639 --> 00:00:07,280] I make mistakes all the time.
+[00:00:07,280 --> 00:00:11,079] We have all kinds of systems for dealing with this, things like tests.
+[00:00:11,079 --> 00:00:15,479] But one of the really powerful things that we have is version control.
+[00:00:15,479 --> 00:00:19,440] Because version control gives us the ability to figure out where mistakes were
+[00:00:19,440 --> 00:00:23,440] initially made to go back in time, undo things,
+[00:00:23,440 --> 00:00:26,239] isolate things, critically important.
+[00:00:26,559 --> 00:00:29,200] And it's critically important when we're using AI labor for
+[00:00:29,200 --> 00:00:34,159] our software engineering with cloud code that we take advantage of version control.
+[00:00:34,159 --> 00:00:39,840] In fact, maybe the one most important thing that I do when I set up a new
+[00:00:39,840 --> 00:00:46,240] cloud.md file is I tell it how to deal with version control and what I want.
+[00:00:46,240 --> 00:00:52,279] So, the very first thing I almost always do in a cloud.md file is I tell it,
+[00:00:52,279 --> 00:00:56,759] before you make any change, create and check out a feature branch named and
+[00:00:56,759 --> 00:00:59,840] then I give it a template for how I want the branch named.
+[00:00:59,840 --> 00:01:03,439] Make and then commit your changes in this branch.
+[00:01:03,439 --> 00:01:07,040] Now, as we've seen, this becomes global context.
+[00:01:07,040 --> 00:01:11,360] This is the type of thing that no matter what, I always want it to do.
+[00:01:11,360 --> 00:01:15,199] Now, you don't have to do this, you could manually do this.
+[00:01:15,199 --> 00:01:18,120] But I don't like to manually do it if I don't have to.
+[00:01:18,120 --> 00:01:21,639] I like to make sure that cloud code goes and does it.
+[00:01:21,639 --> 00:01:24,559] Now, this does all kinds of awesome things for us.
+[00:01:24,559 --> 00:01:30,360] One is that we can easily go and look at all of the changes that get made,
+[00:01:30,360 --> 00:01:32,680] because they're isolated within a branch.
+[00:01:32,680 --> 00:01:36,440] We can ditch that branch and go back to where we were very,
+[00:01:36,440 --> 00:01:39,319] very easily if we don't like what's done.
+[00:01:39,319 --> 00:01:45,440] Now, when you go and you write and you instruct cloud code to create and
+[00:01:45,440 --> 00:01:49,480] work with branches or however you're gonna do it in version control,
+[00:01:49,480 --> 00:01:54,440] I strongly suggest that you use this idea of templating within your prompts and
+[00:01:54,440 --> 00:01:59,080] basically giving it a template for how to name things to ensure consistency.
+[00:02:00,160 --> 00:02:04,680] It might go and fetch the list of branch names and
+[00:02:04,680 --> 00:02:10,520] use them as examples to learn from, but probably not unless you tell it to do that.
+[00:02:11,559 --> 00:02:15,720] Generally, the simplest, easiest way to do this is to give it some type of rough
+[00:02:15,720 --> 00:02:18,800] little template about how to name its branches.
+[00:02:18,800 --> 00:02:23,039] And honestly, probably a better way of doing this than what I've got here is to
+[00:02:23,039 --> 00:02:27,759] give it AI naming so that you can differentiate between human-created
+[00:02:27,759 --> 00:02:30,279] branches and AI-created branches.
+[00:02:30,279 --> 00:02:36,000] So always go in and give it information on how to use your version control.
+[00:02:36,000 --> 00:02:39,880] And I think the best thing to do, in my opinion, is always to have it start its
+[00:02:39,880 --> 00:02:44,479] work in a new branch with a very specific naming convention and
+[00:02:44,479 --> 00:02:45,279] do all of its work there.
+[00:02:45,880 --> 00:02:48,399] So now if I go in and I tell it to add a feature,
+[00:02:48,399 --> 00:02:51,360] like add the ability to dynamically create new categories for expenses.
+[00:02:51,360 --> 00:02:54,839] Now, I don't explicitly say this is a feature, but it figures it out.
+[00:02:54,839 --> 00:02:55,839] It goes off.
+[00:02:55,839 --> 00:02:59,080] The first thing it does is ask me if it can run this get command.
+[00:02:59,080 --> 00:03:00,720] And it's going and creating and
+[00:03:00,720 --> 00:03:04,559] checking out a new branch called Feature Dynamic Categories.
+[00:03:04,559 --> 00:03:06,960] We can see it here that now that it's running,
+[00:03:06,960 --> 00:03:09,279] it tells us it's switched to this new branch.
+[00:03:09,279 --> 00:03:12,520] And then it'll go and do all of its work in that branch.
+[00:03:12,520 --> 00:03:17,919] Now, what I really love about this as well is I have to admit, and
+[00:03:17,919 --> 00:03:22,600] if you ever go and look at my GitHub, you will see I write terrible commit
+[00:03:22,600 --> 00:03:25,000] messages because I'm lazy.
+[00:03:25,000 --> 00:03:28,559] And one of the things that's awesome about AI labor for software engineering
+[00:03:28,559 --> 00:03:32,759] is some of these things that we can get lazy about and I'm super lazy about.
+[00:03:32,759 --> 00:03:36,360] And I'm in an academic environment, so often I get away with this.
+[00:03:36,360 --> 00:03:38,679] But if you were in a real environment, maybe you're doing better commit
+[00:03:38,720 --> 00:03:40,119] messages.
+[00:03:40,119 --> 00:03:43,440] It is incredibly good at writing detailed commit messages,
+[00:03:43,440 --> 00:03:46,600] detailed documentation, things like this that a lot of human developers,
+[00:03:47,800 --> 00:03:52,000] because we're under time pressures and other things, may not have the time for.
+[00:03:52,000 --> 00:03:56,919] So, goes, checks out the branch, does all of its work, and then it commits it.
+[00:03:56,919 --> 00:04:01,720] And it often, if you tell it to commit, writes awesome commit messages.
+[00:04:01,720 --> 00:04:06,119] Again, this is something where you might want to give it instructions
+[00:04:06,119 --> 00:04:08,119] about how to write a great commit message.
+[00:04:08,119 --> 00:04:11,919] You could even tell it go and check the log and
+[00:04:11,919 --> 00:04:15,320] read the style of the commit messages there, learn from those examples, and
+[00:04:15,320 --> 00:04:16,760] then write new ones.
+[00:04:16,760 --> 00:04:20,519] And then I can go, and after it finishes implementing it, in this case,
+[00:04:20,519 --> 00:04:24,320] this new feature, I can go and look at that feature that it's implemented.
+[00:04:24,320 --> 00:04:27,119] It's done this great job with adding dynamic categories so
+[00:04:27,119 --> 00:04:30,399] I can add new categories to my expense tracking application.
+[00:04:30,399 --> 00:04:33,160] But if I go in this and I look at it and I'm like, you know what?
+[00:04:33,160 --> 00:04:37,480] Not what I want, no harm, no foul, I just throw that branch away and move on.
+[00:04:37,480 --> 00:04:39,880] And I'm right back to where I was.
+[00:04:39,880 --> 00:04:41,959] The other thing that's amazing is if we have it go and
+[00:04:41,959 --> 00:04:46,640] implement features and branches, we can also tell it to go and
+[00:04:46,640 --> 00:04:51,720] merge branches, or cherry pick, or do things that are really useful
+[00:04:51,720 --> 00:04:54,000] that combine things that it's done in different branches.
+[00:04:54,000 --> 00:04:59,119] And it's a super powerful way of having it do work, but doing it in a controlled way.
+[00:04:59,119 --> 00:05:02,040] Now, when we think of big development teams,
+[00:05:02,040 --> 00:05:05,559] version control is a critical part of development teams.
+[00:05:05,559 --> 00:05:09,200] And it helps us to scale up the development process.
+[00:05:09,200 --> 00:05:13,959] And the practices that work in version control for big teams are the same
+[00:05:13,959 --> 00:05:18,040] practices we want to employ because we want to be able to scale up our AI labor and
+[00:05:18,040 --> 00:05:21,040] have it do lots of work for us.
+[00:05:21,040 --> 00:05:25,799] And if we don't think carefully about our version control strategy,
+[00:05:25,799 --> 00:05:28,640] how we do all of these things, we can quickly end up in a mess.
+[00:05:28,640 --> 00:05:32,480] And the simplest way to end up in a mess is not to have it use version control,
+[00:05:32,480 --> 00:05:36,040] not to have it create branches, not to have structure and process around this stuff.
+[00:05:36,040 --> 00:05:39,320] So it's a critically, critically important task.
+[00:05:39,320 --> 00:05:43,160] It's going, instructing, cloud code, how to use version control, and
+[00:05:43,160 --> 00:05:44,760] your principles around how to use it.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/02_allowing-claude-code-to-work-in-parallel-with-git-worktrees_instructions.html
+TYPE: HTML
+TITLE: Allowing Claude Code To Work In Parallel With Git Worktrees Instructions
+
+Git Worktrees with Claude Code: Parallel Development in Isolation
+
+Git worktrees combined with Claude Code create a powerful workflow for parallel development. Instead of juggling multiple branches on a single working directory, you can have multiple isolated environments where different Claude Code instances work simultaneously on separate features without any conflicts.
+
+What Are Git Worktrees?
+
+Git worktrees allow you to check out multiple branches from the same repository into separate directories. Each worktree has its own working directory with isolated files, while sharing the same Git history and reflog.
+
+Think of it this way:
+
+Traditional workflow
+
+: One working directory, switch between branches
+
+Worktree workflow
+
+: Multiple working directories, each with its own branch
+
+Setting Up Parallel Development Environments
+
+Creating Your First Worktree
+
+Let's say you're working on your expense tracker app and need to develop two features simultaneously: a data export system and an analytics dashboard.
+
+Step 1: Ask Claude Code to Set Up Worktrees
+
+I want to develop two features in parallel for my expense tracker app using Git worktrees:
+
+1. Data export system (CSV, PDF, JSON exports)
+2. Analytics dashboard (charts, insights, trends)
+
+Please help me set up the worktree environment:
+1. Create a worktree for the export feature at ../expense-tracker-export with branch
+feature/data-export
+2. Create a worktree for the analytics feature at ../expense-tracker-analytics with branch
+feature/analytics-dashboard
+3. List all worktrees to confirm they were created
+4. Explain what each worktree will contain and how they're isolated
+
+I want to be able to work on both features simultaneously without conflicts.
+
+Your directory structure now looks something like:
+
+/expense-tracker-ai/ # Main worktree (main branch)
+
+/expense-tracker-export/ # Export worktree (feature/data-export)
+
+/expense-tracker-analytics/ # Analytics worktree (feature/analytics-dashboard)
+
+Launching Claude Code in Each Worktree
+
+Each worktree is a complete, independent development environment. Now, open two different terminal windows and start Claude Code in each of the separate worktrees:
+
+Terminal 1 - Export Feature:
+
+cd ../expense-tracker-export
+claude
+
+Terminal 2 - Analytics Feature:
+
+cd ../expense-tracker-analytics
+claude
+
+You can now safely run Claude Code in parallel to develop multiple expense tracker features simultaneously.
+
+Each worktree operates in complete isolation - changes made in one worktree won't affect the others, and you can test each feature independently without any conflicts. This means you can have Claude working on your export system in one terminal while simultaneously developing the analytics dashboard in another, all without the risk of breaking existing functionality or interfering with each other's work. The parallel development approach allows you to make rapid progress on multiple fronts while maintaining clean, conflict-free code.
+
+Merging Worktree Features Back to Main
+
+Prerequisites
+
+You have completed features in separate worktrees
+
+Features are committed and working in their respective branches
+
+You're in the main project directory on the original branch you built worktrees off of
+
+Stop Claude Code in each of the separate terminals so that you don't confuse yourself!
+
+Run Claude Code in the main project directory on the original branch
+
+Step 1: Ask Claude Code to Handle the Integration
+
+I have two features developed in parallel worktrees that I need to integrate:
+- feature/data-export (export functionality)
+- feature/analytics-dashboard (analytics functionality)
+
+Please help me integrate these features:
+1. Create a new integration branch called "integration/export-analytics"
+2. Merge feature/data-export into the integration branch
+3. Merge feature/analytics-dashboard into the integration branch
+4. Resolve any merge conflicts that arise
+5. Test that both features work together
+6. Run all tests to ensure nothing is broken
+
+I want to integrate these safely before merging to main.
+
+Result
+
+Your parallel features are now integrated into your main branch, and all worktrees are cleaned up. Test your application to ensure everything works together!
+
+Make These Reusable Commands!
+
+Parallel Work Command
+
+Save this as .claude/commands/parallel-work.md
+
+I want to develop features in parallel for my expense tracker app using Git worktrees: $ARGUMENTS
+
+Think about how to divide the work up into separate features unless this has been
+clearly explained already.
+
+Please help me set up the worktree environment:
+1. For each feature mentioned, create a worktree at ../expense-tracker-[feature-name]
+with branch feature/[feature-name]
+2. Set up the development environment in each worktree
+3. List all worktrees to confirm they were created
+4. Explain what each worktree will contain and how they're isolated
+
+I want to be able to work on all features simultaneously without conflicts.
+
+Integration Command
+
+Integrate Parallel Work Command
+
+Save this as .claude/commands/integrate-parallel-work.md
+
+I have features developed in parallel worktrees that I need to integrate: $ARGUMENTS
+
+Please help me integrate these features:
+1. Create a new integration branch called "integration/parallel-features"
+2. For each feature name provided, merge the branch feature/[feature-name] into the integration branch
+3. Resolve any merge conflicts that arise
+4. Test that all features work together
+5. Run all tests to ensure nothing is broken
+6. Once integration is successful, merge to main and clean up branches
+
+I want to integrate these safely before merging to main.
+
+Example Command Usage:
+/integrate-parallel-work budget-tracking notifications user-settings
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/03_claude-subagents-tasks_instructions.html
+TYPE: HTML
+TITLE: Claude Subagents Tasks Instructions
+
+Subagents are one of Claude Code's most powerful features for handling complex projects and large codebases. They allow you to run multiple specialized Claude instances in parallel, each with their own context and focus area.
+
+What Are Subagents?
+
+Subagents are lightweight instances of Claude Code running in a task via the Task Tool. When a subagent is running, you can actually see that the output says "Task(Performing task X)".
+
+The key benefits of subagents include:
+
+Independent context windows
+
+: Each subagent maintains its own context, preventing information overflow
+
+Parallel execution
+
+: Multiple subagents can work simultaneously on different aspects of your project
+
+Specialized focus
+
+: Each subagent can be given a specific domain or task to concentrate on
+
+Basic Subagent Usage
+
+Running Two Specialized Subagents
+
+Here's a practical example of running two subagents to analyze different parts of your application:
+
+Can you run two subagents?
+One of them should analyze improvements to the back-end that could be made.
+One of them should analyze improvements that could be made to the front end.
+Please run them in parallel.
+
+When you run this command, Claude Code will create two parallel tasks:
+
+Each subagent will:
+
+Focus exclusively on their assigned domain (backend vs frontend)
+
+Use their own context window to dive deep into relevant files
+
+Provide specialized recommendations based on their area of expertise
+
+Exploring Large Codebases
+
+One interesting fact is that you can actually run multiple subagents in parallel. For example, you can launch 4 parallel tasks with this prompt:
+
+Explore the codebase using 4 tasks in parallel.
+Each agent should explore different directories.
+
+This approach is particularly valuable for:
+
+Large codebases
+
+: When you need to understand multiple components quickly
+
+Initial project assessment
+
+: Getting a comprehensive overview without overwhelming a single context window
+
+Domain separation
+
+: Having different subagents focus on different architectural layers
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/04_parallel-feature-development-with-subagents-tasks-and-git-worktrees_instructions.html
+TYPE: HTML
+TITLE: Parallel Feature Development With Subagents Tasks And Git Worktrees Instructions
+
+This tutorial shows how to use Claude Code's subagent system to implement features in separate worktrees simultaneously, all from a single Claude Code session. We want Claude Code to do all of the work of setting up work trees, getting them ready for development, and spawning subtasks to work on features in each worktree.
+
+For all of this to work, it is critical that you have the right directory structure AND run Claude Code in the correct folder. We will be running Claude Code from a different location than we did in the past.
+
+/parent-directory/ # <- Run Claude Code from HERE
+├── expense-tracker-ai/ # Main project
+
+Start Claude Code in the Parent Directory
+
+# Navigate to the parent directory containing the main project
+cd /parent-directory-of-expense-tracker-ai
+
+# Start Claude Code here
+claude
+
+Create the Parallel Agents Command
+
+Now, let's create a reusable command to work on features in parallel using subagents and worktrees. This command works most reliably when we give it the specific folder that the
+
+Save this as .claude/commands/parallel-agents.md
+
+I want to develop features in parallel using Git worktrees and subagents: $ARGUMENTS
+
+You are in the parent folder of the main repo. You will need to change to the main repo
+folder to create the worktrees.
+
+Please execute this complete workflow:
+
+PHASE 1 - SETUP WORKTREES:
+For each feature mentioned:
+1. Create a worktree at ../expense-tracker-[feature-name] with branch feature/[feature-name]
+2. Set up the development environment in each worktree (if needed)
+3. List all worktrees created
+
+PHASE 2 - SPAWN SUBAGENTS:
+For each feature, run a subagent in parallel with these instructions:
+- You are working in the expense-tracker-[feature-name] worktree directory
+- This is a completely isolated development environment
+- Implement the [feature-name] feature with full functionality
+- Include proper testing and error handling
+- Compile and run tests, but don't attempt to run the application (e.g., don't do "npm run" or "npm run dev &", etc.)
+- When complete, write a detailed summary in [feature-name].work.txt in the main expense-tracker-ai directory
+- The summary should include: what was implemented, files created/modified, dependencies added, testing approach, and integration notes
+
+PHASE 3 - COORDINATION:
+- Monitor all subagents working in parallel
+- Ensure each subagent completes their feature implementation
+- Verify each subagent creates their work summary file
+
+PHASE 4 - FINAL SUMMARY:
+After all subagents complete:
+1. Read all the .work.txt files created by subagents
+2. Provide a comprehensive summary of what was accomplished
+3. List all features implemented and their status
+4. Provide next steps for integration
+
+Execute this complete parallel development workflow.
+
+Be Amazed
+
+Let's invoke our parallel-agents command with some features to implement.
+
+/parallel-agents Implement a simple top expense categories page and a simple top vendors page
+
+You should see some amazing work on Claude Code's part that looks like somewhat similar to this:
+
+⏺ Let me check if this is a git repository first:
+
+⏺ Bash(git status)
+⎿  On branch feature_export_system
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed)
+… +13 lines (ctrl+r to expand)
+
+⏺ Good, we're already in the git repository. Now let me create the worktrees:
+
+⏺ Bash(git worktree add ../expense-tracker-top-expense-categories -b feature/top-expense-categories)
+⎿  HEAD is now at 6637792 Merge branch 'feature/analytics-dashboard' into integration/export-analytics
+Preparing worktree (new branch 'feature/top-expense-categories')
+
+⏺ Bash(git worktree add ../expense-tracker-top-vendors -b feature/top-vendors)
+⎿  HEAD is now at 6637792 Merge branch 'feature/analytics-dashboard' into integration/export-analytics
+Preparing worktree (new branch 'feature/top-vendors')
+
+⏺ Update Todos
+⎿  ☒ Change to main repo directory and set up worktrees
+☒ Create worktree for top expense categories feature
+☒ Create worktree for top vendors feature
+☐ Spawn parallel subagents for both features
+☐ Monitor subagent progress and collect summaries
+☐ Provide final comprehensive summary
+
+⏺ Let me verify the worktrees were created and install dependencies:
+
+⏺ Bash(git worktree list)
+⎿  /Users/juleswhite/Downloads/ai-work/expense-tracker-ai 6637792 [feature_export_system]
+/Users/juleswhite/Downloads/ai-work/expense-tracker-top-expense-categories 6637792 [feature/top-expense-categories]
+/Users/juleswhite/Downloads/ai-work/expense-tracker-top-vendors 6637792 [feature/top-vendors]
+
+⏺ Bash(cd ../expense-tracker-top-expense-categories && npm install)
+⎿  added 340 packages, and audited 341 packages in 5s
+
+137 packages are looking for funding
+… +3 lines (ctrl+r to expand)
+
+⏺ Bash(cd ../expense-tracker-top-vendors && npm install)
+⎿  added 340 packages, and audited 341 packages in 5s
+
+137 packages are looking for funding
+… +3 lines (ctrl+r to expand)
+
+⏺ Perfect! Now I'll spawn subagents to work on both features in parallel:
+
+⏺ Task(Implement top expense categories)
+⎿  > expense-tracker-ai@0.1.0 build
+> next build
+
+… +26 lines (ctrl+r to expand)
+Bash(npm run build)
+Waiting…
++11 more tool uses
+
+⏺ Task(Implement top vendors page)
+⎿  Updated ../expense-tracker-top-vendors/app/components/Navigation.tsx with 1 addition
+Bash(npm run build)
+Waiting…
++11 more tool uses
+
+At the very end, you should see something amazing like this:
+
+FINAL SUMMARY - Parallel Feature Development Complete
+
+Features Successfully Implemented:
+
+1. Top Expense Categories Page (feature/top-expense-categories)
+
+- Location: /app/categories/page.tsx
+- Features:
+- Categories sorted by total spending with visual bar charts
+- Shows spending amounts, percentages, and transaction counts
+- Color-coded categories with emojis (Food 🍕, Transportation 🚗, etc.)
+- Summary statistics including total spending and top category
+- Real-time data synchronization across tabs
+- Loading and empty states
+
+2. Top Vendors Page (feature/top-vendors)
+
+- Location: /app/vendors/page.tsx
+- Features:
+- Vendors sorted by total spending (top 10)
+- Shows spending amounts, transaction counts, and last transaction dates
+- Dynamic color-coded bar charts for visual comparison
+- Summary cards with total vendors, spending, and top vendor
+- Aggregates expenses by description field (vendor name)
+- Responsive design with loading/empty states
+
+Worktrees Created:
+
+- ../expense-tracker-top-expense-categories (branch: feature/top-expense-categories)
+- ../expense-tracker-top-vendors (branch: feature/top-vendors)
+
+Files Modified in Both Features:
+
+- /app/components/Navigation.tsx - Added links for both new pages
+
+Next Steps for Integration:
+
+1. Merge feature/top-expense-categories into your integration branch
+2. Merge feature/top-vendors into your integration branch
+3. Resolve any navigation conflicts (both features modify Navigation.tsx)
+4. Test both features together in the integrated application
+5. Consider adding links from dashboard to these new analytics pages

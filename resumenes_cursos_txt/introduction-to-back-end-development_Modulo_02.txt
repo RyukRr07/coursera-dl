@@ -1,0 +1,2476 @@
+Introduction to Back-End Development
+MODULE 02: Introduction To Html And Css
+===============================================================================
+
+This file collects the readable text from this module's subtitles and learning materials. Source paths are kept below each section.
+
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-html/01_what-is-hyper-text-markup-language.en.srt
+TYPE: SRT
+TITLE: What Is Hyper Text Markup Language
+
+[00:00:00,000 --> 00:00:02,715] When a team of builders begin constructing a building,
+[00:00:02,715 --> 00:00:05,775] one of their key tasks is to assemble the frame.
+[00:00:05,775 --> 00:00:08,040] It doesn't matter what building it is.
+[00:00:08,040 --> 00:00:11,535] It always starts with a frame of beams and rafters.
+[00:00:11,535 --> 00:00:13,320] Once in place, the frame
+[00:00:13,320 --> 00:00:15,150] guides the rest of the construction.
+[00:00:15,150 --> 00:00:17,450] If you compare a building with a web page,
+[00:00:17,450 --> 00:00:20,430] an HTML document is a lot like the frame,
+[00:00:20,430 --> 00:00:22,920] is a basic structure assembled with
+[00:00:22,920 --> 00:00:25,470] different components such as tags and elements.
+[00:00:25,470 --> 00:00:27,525] In this video, you will learn about
+[00:00:27,525 --> 00:00:29,220] HTML documents and the difference
+[00:00:29,220 --> 00:00:31,575] between HTML tags and elements.
+[00:00:31,575 --> 00:00:33,390] To begin, let me tell you
+[00:00:33,390 --> 00:00:35,695] a short story about where it all started.
+[00:00:35,695 --> 00:00:38,255] Sir Tim Berners-Lee, a physicist,
+[00:00:38,255 --> 00:00:40,280] often thought about how he and his colleagues
+[00:00:40,280 --> 00:00:42,860] from around the world would share information.
+[00:00:42,860 --> 00:00:45,110] He was so used to browsing information
+[00:00:45,110 --> 00:00:48,335] online that it might seem a silly thing to ponder about.
+[00:00:48,335 --> 00:00:50,810] Actually, that question was very relevant at
+[00:00:50,810 --> 00:00:54,124] the time and started the development of HTML,
+[00:00:54,124 --> 00:00:57,365] which you'd like to explore the very first web page.
+[00:00:57,365 --> 00:00:59,450] I know just where to find it.
+[00:00:59,450 --> 00:01:01,580] The first web page was created in
+[00:01:01,580 --> 00:01:04,340] 1999 by Sir Tim Berners-Lee.
+[00:01:04,340 --> 00:01:06,500] He worked at the European Organization for
+[00:01:06,500 --> 00:01:08,795] Nuclear Research or CERN,
+[00:01:08,795 --> 00:01:11,555] and originally proposed HTML.
+[00:01:11,555 --> 00:01:14,420] The first version of HTML was released in
+[00:01:14,420 --> 00:01:18,575] 1991 along with the first web browser and web server.
+[00:01:18,575 --> 00:01:22,070] HTML stands for Hypertext Markup Language.
+[00:01:22,070 --> 00:01:23,890] But what does that mean exactly?
+[00:01:23,890 --> 00:01:27,790] Hypertext is text which contains links to other text.
+[00:01:27,790 --> 00:01:29,530] Markup refers to tags and
+[00:01:29,530 --> 00:01:31,505] elements used within a document.
+[00:01:31,505 --> 00:01:35,965] For now, let's just focus on some of the basics of HTML.
+[00:01:35,965 --> 00:01:39,190] HTML is simply a text file with
+[00:01:39,190 --> 00:01:42,260] a specific structure that consists of elements and tags.
+[00:01:42,260 --> 00:01:44,590] Also take note that HTML files
+[00:01:44,590 --> 00:01:47,125] usually have a dot HTML suffix.
+[00:01:47,125 --> 00:01:49,855] For instance, when you visit a website,
+[00:01:49,855 --> 00:01:51,940] the first page that is returned to the browser
+[00:01:51,940 --> 00:01:54,445] is often called index.html.
+[00:01:54,445 --> 00:01:58,210] Now, let's explore what HTML tags and elements are.
+[00:01:58,210 --> 00:02:00,190] Each HTML element consists of
+[00:02:00,190 --> 00:02:03,100] an opening tag enclosed in angle brackets.
+[00:02:03,100 --> 00:02:05,525] For example to create a paragraph,
+[00:02:05,525 --> 00:02:07,430] you type a left angle bracket,
+[00:02:07,430 --> 00:02:09,185] the letter p for paragraph,
+[00:02:09,185 --> 00:02:10,985] and then a right angle bracket.
+[00:02:10,985 --> 00:02:13,790] Most elements are paired with a closing tag,
+[00:02:13,790 --> 00:02:16,710] which has a forward slash off to the left angle bracket.
+[00:02:16,710 --> 00:02:18,230] For example you close
+[00:02:18,230 --> 00:02:20,285] the paragraph element with a left angle bracket,
+[00:02:20,285 --> 00:02:23,530] a forward slash the letter p and a right angle bracket.
+[00:02:23,530 --> 00:02:27,125] HTML elements usually have some content inside them.
+[00:02:27,125 --> 00:02:29,120] For example between the opening
+[00:02:29,120 --> 00:02:30,935] and closing tags of a paragraph,
+[00:02:30,935 --> 00:02:33,760] you add the text of the paragraph you want to write.
+[00:02:33,760 --> 00:02:36,820] HTML elements can also contain other elements,
+[00:02:36,820 --> 00:02:39,575] for example you can add an italics element
+[00:02:39,575 --> 00:02:40,985] inside a paragraph element
+[00:02:40,985 --> 00:02:43,190] to make texts appear in italics.
+[00:02:43,190 --> 00:02:46,400] Elements can also be empty or self-closing,
+[00:02:46,400 --> 00:02:49,415] meaning they do not have a closing HTML tag.
+[00:02:49,415 --> 00:02:51,725] One example of a self-closing element
+[00:02:51,725 --> 00:02:52,880] is the line break tag.
+[00:02:52,880 --> 00:02:55,880] You can add a line break tag in a paragraph tag to
+[00:02:55,880 --> 00:02:57,575] move content to the following line
+[00:02:57,575 --> 00:02:59,405] by typing left angle bracket,
+[00:02:59,405 --> 00:03:00,770] the letters br,
+[00:03:00,770 --> 00:03:02,255] then right angle bracket.
+[00:03:02,255 --> 00:03:04,250] At the end of a self-closing tag,
+[00:03:04,250 --> 00:03:06,530] you simply add a right angle bracket.
+[00:03:06,530 --> 00:03:07,760] You can also close
+[00:03:07,760 --> 00:03:09,110] the right angle bracket by
+[00:03:09,110 --> 00:03:11,395] typing a forward slash right before it.
+[00:03:11,395 --> 00:03:13,580] Now that you know what elements and tags are,
+[00:03:13,580 --> 00:03:16,100] you will explore what HTML standards are.
+[00:03:16,100 --> 00:03:18,305] The rules and structure for elements and tags
+[00:03:18,305 --> 00:03:20,630] are known as the HTML specification.
+[00:03:20,630 --> 00:03:22,460] The HTML specification is
+[00:03:22,460 --> 00:03:24,965] maintained by the World Wide Web Consortium,
+[00:03:24,965 --> 00:03:27,770] or W3C, as it is commonly known.
+[00:03:27,770 --> 00:03:30,575] Whenever the HTML specification changes,
+[00:03:30,575 --> 00:03:33,289] a new version of HTML is standardized,
+[00:03:33,289 --> 00:03:35,865] the current version is HTML 5.
+[00:03:35,865 --> 00:03:38,330] To summarize, HTML elements
+[00:03:38,330 --> 00:03:39,730] with their opening and closing tags,
+[00:03:39,730 --> 00:03:42,830] and angle brackets build up an HTML document.
+[00:03:42,830 --> 00:03:45,560] These elements form the structure of a web page
+[00:03:45,560 --> 00:03:48,625] and describe to the web browser what to display.
+[00:03:48,625 --> 00:03:52,070] For example the browser reads an HTML page that has
+[00:03:52,070 --> 00:03:56,165] an image tags display an image file called icon.png.
+[00:03:56,165 --> 00:03:57,680] Next, it reads
+[00:03:57,680 --> 00:04:00,865] a p tag to display a paragraph under that image.
+[00:04:00,865 --> 00:04:03,320] But the browser reads the HTML document and
+[00:04:03,320 --> 00:04:06,710] displays the web page to the user in a very basic format.
+[00:04:06,710 --> 00:04:08,510] Now, if you want to tell
+[00:04:08,510 --> 00:04:10,415] the browser how to display the web page,
+[00:04:10,415 --> 00:04:12,290] you should use CSS.
+[00:04:12,290 --> 00:04:15,010] You will learn more about CSS in this course.
+[00:04:15,010 --> 00:04:18,005] By now, you have learned how HTML tags are used
+[00:04:18,005 --> 00:04:19,340] to create elements that
+[00:04:19,340 --> 00:04:21,095] build the structure of a web page.
+[00:04:21,095 --> 00:04:22,805] You'll have an opportunity to explore
+[00:04:22,805 --> 00:04:25,860] HTML in action in this course.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-html/02_html-documents.en.srt
+TYPE: SRT
+TITLE: Html Documents
+
+[00:00:00,000 --> 00:00:02,190] In this video, I will guide you  through the
+[00:00:02,190 --> 00:00:04,280] blueprints of a HTML document.
+[00:00:05,280 --> 00:00:06,590] I will create a very simple webpage
+[00:00:06,590 --> 00:00:09,945] for a restaurant called Little Lemon.
+[00:00:09,945 --> 00:00:11,210] The great thing about HTML documents
+[00:00:11,210 --> 00:00:13,235] is that you don't need the web to view them.
+[00:00:13,235 --> 00:00:15,990] Yes, they don't have to be hosted on
+[00:00:15,990 --> 00:00:19,825] a web server for you to view them in your web browser.
+[00:00:19,825 --> 00:00:21,700] You can save HTML files on
+[00:00:21,700 --> 00:00:22,660] your computer and view them
+[00:00:22,660 --> 00:00:24,490] locally with your web browser,
+[00:00:24,490 --> 00:00:27,430] almost like eating takeaways at home.
+[00:00:27,430 --> 00:00:29,460] By the end of this video, you'll be
+[00:00:29,460 --> 00:00:30,900] able to identify the structure
+[00:00:30,900 --> 00:00:34,295] of a HTML document and create a basic webpage,.
+[00:00:34,295 --> 00:00:37,630] To create a HTML file and Visual Studio Code.
+[00:00:37,630 --> 00:00:41,755] Right-click in the Explorer panel and select New File.
+[00:00:41,755 --> 00:00:44,460] I'll name it index.html.
+[00:00:44,460 --> 00:00:47,090] By now you know that HTML documents
+[00:00:47,090 --> 00:00:49,400] are made up of elements and tags.
+[00:00:49,400 --> 00:00:51,965] But before I can add elements or tags,
+[00:00:51,965 --> 00:00:52,060] I first need to create
+[00:00:52,060 --> 00:00:55,740] a standard HTML structure
+[00:00:55,740 --> 00:00:58,290] which starts with the DOCTYPE declaration tag.
+[00:00:58,290 --> 00:01:01,860] This notifies the web browser that is a HTML documents.
+[00:01:01,860 --> 00:01:04,535] Next, I create the HTML tag,
+[00:01:04,535 --> 00:01:08,085] which is also known as the HTML root element.
+[00:01:08,085 --> 00:01:11,965] Inside the HTML tag,
+[00:01:11,965 --> 00:01:12,295] I add two main elements.
+[00:01:12,295 --> 00:01:15,080] The head and the body elements.
+[00:01:15,080 --> 00:01:17,080] Is important to note that nothing inside
+[00:01:17,080 --> 00:01:19,655] the head element is displayed
+[00:01:19,655 --> 00:01:21,955] as a webpage in the web browser.
+[00:01:21,955 --> 00:01:23,860] In the head section, you add information or
+[00:01:23,860 --> 00:01:26,649] metadata about the HTML documents.
+[00:01:26,649 --> 00:01:30,620] It is not part of the content of the webpage.
+[00:01:30,620 --> 00:01:32,660] For example, inside the head tag,
+[00:01:32,660 --> 00:01:35,370] you always create the title elements.
+[00:01:35,590 --> 00:01:36,880] This is the title that is displayed
+[00:01:36,880 --> 00:01:38,485] in the web browser tab.
+[00:01:38,485 --> 00:01:41,990] I can also link to CSS files and
+[00:01:41,990 --> 00:01:44,435] define Meta tags in the head section.
+[00:01:44,435 --> 00:01:46,730] Meta tags can, for instance,
+[00:01:46,730 --> 00:01:49,800] specify the description of the web page,
+[00:01:49,800 --> 00:01:51,300] keywords for search engines
+[00:01:51,300 --> 00:01:53,325] and the author of the web page.
+[00:01:53,325 --> 00:01:55,380] Next up, I add the content of
+[00:01:55,380 --> 00:01:57,420] the webpage inside the body tag.
+[00:01:57,420 --> 00:02:00,910] The body can contain elements such as headings,
+[00:02:00,910 --> 00:02:04,340] paragraphs, images, and videos.
+[00:02:04,340 --> 00:02:06,290] Let me start by adding a main heading on
+[00:02:06,290 --> 00:02:09,240] the webpage by using the H1 tag.
+[00:02:09,500 --> 00:02:11,805] Inside the H1 tag,
+[00:02:11,805 --> 00:02:14,470] I typed the heading, Our Menu.
+[00:02:14,660 --> 00:02:17,875] That's good. Now I need to start creating my menu.
+[00:02:17,875 --> 00:02:19,770] I want to add two items.
+[00:02:19,770 --> 00:02:21,790] To do that, I add two subheadings.
+[00:02:21,790 --> 00:02:24,300] For this, I use the H2 tag.
+[00:02:24,700 --> 00:02:25,350] The menu items in the subheadings are
+[00:02:25,350 --> 00:02:28,080] falafel and pasta salad.
+[00:02:28,280 --> 00:02:31,895] But first I need to save the file by pressing But first, I need to save the file by pressing
+[00:02:31,895 --> 00:02:33,255] the keys Control and S or if you're on a Mac,
+[00:02:33,255 --> 00:02:36,980] Command and S. Now,
+[00:02:36,980 --> 00:02:38,430] I right-click on my index.html file in
+[00:02:38,430 --> 00:02:42,825] the explorer panel and select Reveal in File Explorer.
+[00:02:42,825 --> 00:02:45,015] If you're not using Windows operating system, ,
+[00:02:45,015 --> 00:02:46,440] this may be called reveal in
+[00:02:46,440 --> 00:02:49,825] finder or reveal in file browser.
+[00:02:49,825 --> 00:02:52,800] Now the file browser opens and lists the file.
+[00:02:52,800 --> 00:02:55,830] I double-click on index.html
+[00:02:55,830 --> 00:02:57,260] and it opens in the web browser.
+[00:02:57,260 --> 00:02:59,435] Great, it's all there.
+[00:02:59,435 --> 00:03:01,635] The title that displays in the browser tab
+[00:03:01,635 --> 00:03:04,065] matches the title that I added to the head section
+[00:03:04,065 --> 00:03:06,500] and the content is displayed in
+[00:03:06,500 --> 00:03:10,465] the browser window but it is still a bit empty.
+[00:03:10,465 --> 00:03:12,845] I go back to Visual Studio Code
+[00:03:12,845 --> 00:03:15,840] and add a short description for each dish.
+[00:03:15,840 --> 00:03:16,030] I do this by adding
+[00:03:16,030 --> 00:03:21,060] a paragraph tag below each subheading H2.
+[00:03:21,670 --> 00:03:23,605] Let's imagine a nice falafel.
+[00:03:23,605 --> 00:03:31,380] I type chickpea, herbs, and spices.
+[00:03:31,380 --> 00:03:35,720] What goes into the pasta salad again?
+[00:03:35,720 --> 00:03:38,800] Lettuce, vegetables, and mozzarella.
+[00:03:38,800 --> 00:03:41,460] Yummy. I save the file again to update the changes.
+[00:03:41,460 --> 00:03:48,100] and open it in my web browser again
+[00:03:48,220 --> 00:03:49,100] There you go. Now the ingredients
+[00:03:49,100 --> 00:03:52,930] are also included in the menu.
+[00:03:52,930 --> 00:03:55,125] Some of the best websites are websites about food.
+[00:03:55,125 --> 00:03:57,120] Whenever you need some inspiration,
+[00:03:57,120 --> 00:04:00,925] search for food website ideas online,
+[00:04:00,925 --> 00:04:02,770] you will be fascinated.
+[00:04:02,770 --> 00:04:05,425] Now that you know some basic HTML tags,
+[00:04:05,425 --> 00:04:09,949] try to identify where they were used in those websites.
+[00:04:09,949 --> 00:04:11,600] There are many HTML tags
+[00:04:11,600 --> 00:04:13,385] that you can use in your webpages.
+[00:04:13,385 --> 00:04:14,840] But now you're familiar with
+[00:04:14,840 --> 00:04:16,430] the few elementary ones and I
+[00:04:16,430 --> 00:04:17,810] encourage you to start practicing with
+[00:04:17,810 --> 00:04:19,400] them. Best of luck.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-html/03_simple-html-tags_instructions.html
+TYPE: HTML
+TITLE: Simple Html Tags Instructions
+
+There are many tags available in HTML. Here you will learn about common tags that you'll use as a developer.
+
+Headings
+
+Headings allow you to display titles and subtitles on your webpage.
+
+<body>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+</body>
+
+The following displays in the web browser:
+
+Paragraphs
+
+Paragraphs contain text content.
+
+<p>
+This paragraph
+contains a lot of lines
+but they are ignored.
+</p>
+
+The following displays in the web browser:
+
+Note
+
+that putting content on a new line is ignored by the web browser.
+
+Line Breaks
+
+As you've learned, line breaks in the paragraph tag line are ignored by HTML. Instead, they must be specified using the
+
+<br>
+
+tag. The
+
+<br>
+
+tag does not need a closing tag.
+
+<p>
+This paragraph<br>
+contains a lot of lines<br>
+and they are displayed.
+</p>
+
+The following displays in the web browser:
+
+Strong
+
+Strong tags can be used to indicate that a range of text has importance.
+
+The difference between the <strong> tag and <b> (bold) tag in HTML lies primarily in their
+
+semantic meaning
+
+and
+
+intended use
+
+rather than their visual representation. Here is a detailed comparison:
+
+<p>
+No matter how much the dog barks: <strong>don't feed him chocolate</strong>.
+</p>
+
+The following displays in the web browser:
+
+Bold
+
+Bold tags can be used to draw the reader's attention to a range of text.
+
+<p>
+The primary colors are <b>red</b>, <b>yellow</b> and <b>blue</b>.
+</p>
+
+<p>
+In case of emergency, <b>push the red button</b>.
+</p>
+
+The following displays in the web browser:
+
+Both paragraphs use the <b> tag to draw attention to specific words or phrases. Use <b> when you want text to appear bold without indicating that it has special importance.`
+
+Bold tags should be used to draw attention but not to indicate that something is more important. Consider the following example:
+
+The three core technologies of the Internet are <b>HTML</b>, <b>CSS</b> and <b>Javascript</b>.
+
+The following displays in the web browser:
+
+Emphasis
+
+Emphasis tags can be used to add emphasis to text.
+
+<p>
+Wake up <em>now</em>!
+</p>
+
+The following displays in the web browser:
+
+Italics
+
+Italics tags can be used to offset a range of text.
+
+<p>
+The term <i>HTML</i> stands for HyperText Markup Language.
+</p>
+
+The following displays in the web browser:
+
+Emphasis vs. Italics
+
+The difference between the <em> (emphasis) tag and the <i> (italics) tag in HTML lies in their
+
+semantic meaning
+
+and intended use rather than their default appearance. By default both tags will have the same visual effect in the web browser, however the difference is in the meaning.
+
+Emphasis tags stress the text contained in them. Let's explore the following example:
+
+I <em>really</em> want ice cream.
+
+The following displays in the web browser:
+
+Italics represent off-set text and should be used for technical terms, titles, a thought or a phrase from another language, for example:
+
+My favourite book is <i>Dracula</i>.
+
+The following displays in the web browser:
+
+Screen readers will not announce any difference if an
+
+italics
+
+tag is used.
+
+Lists
+
+You can add lists to your web pages. There are two types of lists in HTML.
+
+Lists can be unordered using the
+
+<ul>
+
+tag. List items are specified using the
+
+<li>
+
+tag, for example:
+
+<ul>
+<li>Tea</li>
+<li>Sugar</li>
+<li>Milk</li>
+</ul>
+
+This displays in the web browser as:
+
+Lists can also be ordered using the
+
+<ol>
+
+tag. Again, list items are specified using the
+
+<li>
+
+tag.
+
+<ol>
+<li>Rocky</li>
+<li>Rocky II</li>
+<li>Rocky III</li>
+</ol>
+
+This displays as the following in the web browser.
+
+Div tags
+
+A
+
+<div>
+
+tag defines a content division in an HTML document. It acts as a generic container and has no effect on the content unless it is styled by CSS.
+
+The following example shows a
+
+<div>
+
+element that contains a paragraph element:
+
+<div>
+<p>This is a paragraph inside a div</p>
+</div>
+
+This displays as the following in the web browser.
+
+It can be nested inside other elements, for example:
+
+<div>
+<div>
+<p>This is a paragraph inside a div that’s inside another div</p>
+</div>
+</div>
+
+This displays in the web browser as:
+
+As mentioned, the div has no impact on content unless it is styled by CSS. Let’s add a small CSS rule that styles all divs on the page.
+
+Don't worry about the meaning of the CSS just yet, you'll explore CSS further in a later lesson. In summary, you're applying a rule that adds a border and some visual spacing to the element.
+
+<style>
+div {
+border: 1px solid black;
+padding: 2px;
+}
+</style>
+<div>
+<div>
+<p>This is a paragraph inside stylized divs</p>
+</div>
+</div>
+
+This displays in the web browser as:
+
+Div elements are an important part of building webpages. More advanced usage of div elements will be explored in another course.
+
+Comments
+
+If you want to leave a comment in the code for other developers, it can be added as:
+
+<!-- This is a comment -->
+
+The comment will not be displayed in the web browser.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-html/04_linking-documents.en.srt
+TYPE: SRT
+TITLE: Linking Documents
+
+[00:00:00,540 --> 00:00:03,110] By now you should know how to build a basic webpage but
+[00:00:03,110 --> 00:00:05,000] how do you build a website?
+[00:00:05,000 --> 00:00:09,500] Remember, websites consists of multiple webpages linked together.
+[00:00:09,500 --> 00:00:11,060] To link pages together.
+[00:00:11,060 --> 00:00:14,900] You use the anchor tag anchor tag create hyperlinks or
+[00:00:14,900 --> 00:00:16,500] links as they are commonly known.
+[00:00:16,500 --> 00:00:17,000] In this video,
+[00:00:17,000 --> 00:00:23,240] you will learn how to link different web pages together to create your own website.
+[00:00:23,240 --> 00:00:24,800] In my project folder.
+[00:00:24,800 --> 00:00:26,900] I now create a second webpage for
+[00:00:26,900 --> 00:00:31,300] Little Lemon that will contain the address of the restaurant.
+[00:00:31,300 --> 00:00:35,600] I right click in the explorer panel to create a new file and
+[00:00:35,600 --> 00:00:38,700] name it location.html.
+[00:00:38,700 --> 00:00:49,184] I use the same file structure created in my index  file but add new content
+[00:00:49,184 --> 00:00:56,800] I add a new H1 tag for the heading and type our location.
+[00:00:56,800 --> 00:01:01,766] Next I add a paragraph tag and insert the address
+[00:01:01,766 --> 00:01:07,951] 123 Home Road, Main Districts, Capital city.
+[00:01:07,951 --> 00:01:12,640] I press control and S to save the file or command and S on Mac.
+[00:01:12,640 --> 00:01:16,280] Now that my new file with the restaurant location is created.
+[00:01:16,280 --> 00:01:25,059] Let's navigate back to index.html to add a link from there to location.html file.
+[00:01:25,059 --> 00:01:28,393] Below the last paragraph tag I add the anchor or
+[00:01:28,393 --> 00:01:33,961] a tag followed by the href tribute or hypertext reference.
+[00:01:33,961 --> 00:01:38,000] Now I need to specify where the hypertext reference should link to.
+[00:01:38,000 --> 00:01:44,520] I typed the file name, location.html so that my index.html file will link to it.
+[00:01:44,520 --> 00:01:48,200] Within a tag I can also add a descriptive text that is
+[00:01:48,200 --> 00:01:51,400] displayed as a link name on my web page.
+[00:01:51,540 --> 00:01:55,000] So I type our location.
+[00:01:55,000 --> 00:02:00,814] The text our location will now display on the web page in the browser as
+[00:02:00,814 --> 00:02:01,151] a clickable link.
+[00:02:01,340 --> 00:02:04,640] Let's test see if it works.
+[00:02:04,640 --> 00:02:08,700] I saved the file to update it with the changes and open it in my web browser by
+[00:02:08,700 --> 00:02:15,411] right clicking on the index.html file and selecting Reveal in File Explorer.
+[00:02:15,411 --> 00:02:19,883] If you're not on Windows, this may be called Reveal in Finder or
+[00:02:19,883 --> 00:02:21,091] Reveal in File Browser.
+[00:02:21,740 --> 00:02:24,651] I then double click on the index file.
+[00:02:24,740 --> 00:02:29,711] The words are location are displayed in blue by the web browser, success.
+[00:02:29,711 --> 00:02:35,440] If I click on the blue link, the browser opens the location.html file.
+[00:02:35,440 --> 00:02:40,140] You can now link different HTML files together to create your website.
+[00:02:40,140 --> 00:02:42,861] Best of luck.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-html/05_adding-images-to-a-webpage-with-html.en.srt
+TYPE: SRT
+TITLE: Adding Images To A Webpage With Html
+
+[00:00:00,470 --> 00:00:03,459] A picture is worth 1000 words as they say.
+[00:00:03,459 --> 00:00:07,368] I think you will agree that a website without pictures wouldn't provide a very
+[00:00:07,368 --> 00:00:08,561] good user experience.
+[00:00:08,561 --> 00:00:10,904] Especially websites about food.
+[00:00:10,904 --> 00:00:17,146] My example website about Little Lemon could certainly use a few images.
+[00:00:17,146 --> 00:00:23,125] In this video you will learn how to add images to HTML documents using the image
+[00:00:23,125 --> 00:00:26,356] or IMG tag as it is commonly known.
+[00:00:26,356 --> 00:00:29,781] I have two image files in my project folder,
+[00:00:29,781 --> 00:00:34,359] one name falafel.jpeg and another named salad.jpeg.
+[00:00:34,359 --> 00:00:36,247] Similar to what I did with document links,
+[00:00:36,247 --> 00:00:41,511] I have to specify the link to the image file using the image tag.
+[00:00:41,511 --> 00:00:44,278] Images are not inserted into web pages.
+[00:00:44,278 --> 00:00:50,863] Instead we use image tags in HTML to link to image files.
+[00:00:50,863 --> 00:00:55,046] The image tag then creates a placeholder for the image on the web page.
+[00:00:55,046 --> 00:00:59,829] To add an image tag, I type img and inside it I add
+[00:00:59,829 --> 00:01:05,219] the src attribute or source attribute as it is known.
+[00:01:05,219 --> 00:01:14,577] I type falafel.jpeg As a source for
+[00:01:14,577 --> 00:01:23,710] one image, And salad.jpeg,
+[00:01:23,714 --> 00:01:27,602] for the other image.
+[00:01:27,602 --> 00:01:32,840] Let's save the file and open it in the web browser.
+[00:01:32,840 --> 00:01:38,758] The images are displayed but they are way too big.
+[00:01:38,759 --> 00:01:41,897] Luckily there are several ways to set the size of an image but
+[00:01:41,898 --> 00:01:46,242] in this video I will just demonstrate how to do this in HTML.
+[00:01:46,242 --> 00:01:49,681] Right after the sourcing in the image tag,
+[00:01:49,681 --> 00:01:52,197] you can specify the dimensions of an image.
+[00:01:52,197 --> 00:01:58,364] I first add the width attribute, And set it to 240 pixels.
+[00:01:58,364 --> 00:02:02,402] Then I add the height attribute and
+[00:02:02,402 --> 00:02:07,057] set it to 135 pixels.
+[00:02:07,057 --> 00:02:14,245] I'll set the other image to the same dimensions.
+[00:02:14,653 --> 00:02:23,942] Let's save and view it in the browser again.
+[00:02:23,942 --> 00:02:26,195] Much better, the images are smaller.
+[00:02:26,195 --> 00:02:31,334] But there is one important attribute that you should always include with image tags.
+[00:02:31,334 --> 00:02:34,757] It is good practice to add a short description for images.
+[00:02:34,757 --> 00:02:39,394] It helps improve accessibility for people using assistive technologies and
+[00:02:39,394 --> 00:02:42,112] it can also improve search engine rankings.
+[00:02:42,112 --> 00:02:47,536] You can add image descriptions with the alternative text attribute also known as
+[00:02:47,536 --> 00:02:49,652] the alt attribute.
+[00:02:49,652 --> 00:02:53,087] Still within the image tag after the dimensions attributes you can add
+[00:02:53,087 --> 00:02:56,377] the alt attribute.
+[00:02:56,377 --> 00:03:00,028] I will type a short description, A falafel and for
+[00:03:00,028 --> 00:03:05,157] the other image I will type, A pasta salad.
+[00:03:05,157 --> 00:03:12,145] I will save the HTML file again and open it in the web browser.
+[00:03:12,145 --> 00:03:15,098] The all text is not displayed anywhere on the site but
+[00:03:15,098 --> 00:03:19,855] will be read by assistive technologies such as screen readers.
+[00:03:19,855 --> 00:03:23,755] Screen readers and other accessibility tools use the alt attribute to provide
+[00:03:23,755 --> 00:03:25,242] information to their users.
+[00:03:25,242 --> 00:03:29,503] Now you know how to add images to websites with the image tag.
+[00:03:29,503 --> 00:03:33,168] Little Lemon website is now ready for everyone who uses the web.
+[00:03:33,168 --> 00:03:37,120] Have fun while you make your sites colorful by adding images
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-html/06_use-html-to-work-with-data-in-tables.en.srt
+TYPE: SRT
+TITLE: Use Html To Work With Data In Tables
+
+[00:00:00,000 --> 00:00:03,345] My website for little lemon is coming on well,
+[00:00:03,345 --> 00:00:07,005] but some key information is still missing, the prices.
+[00:00:07,005 --> 00:00:09,670] The best way to add information like
+[00:00:09,670 --> 00:00:13,685] a price list is by using an HTML table.
+[00:00:13,685 --> 00:00:14,710] You might be familiar with columns and
+[00:00:14,710 --> 00:00:16,780] rows in spreadsheets software.
+[00:00:16,780 --> 00:00:19,300] HTML tables look similar and allow you to
+[00:00:19,300 --> 00:00:23,300] neatly organize content in rows and columns.
+[00:00:23,300 --> 00:00:26,940] Websites almost always have information that needs to
+[00:00:26,940 --> 00:00:28,200] be organized in a way that makes
+[00:00:28,200 --> 00:00:30,685] it quick and easy to read.
+[00:00:30,685 --> 00:00:32,580] For example, the schedule of an event,
+[00:00:32,580 --> 00:00:35,420] available sizes of clothing items,
+[00:00:35,420 --> 00:00:37,175] or the specs of a camera.
+[00:00:37,175 --> 00:00:40,570] In this video, I will demonstrate how to create
+[00:00:40,570 --> 00:00:43,180] a simple table for the prices of little lemon.
+[00:00:43,180 --> 00:00:46,040] I want to add a table with the prices to
+[00:00:46,040 --> 00:00:48,440] the bottom of the index.html page.
+[00:00:48,440 --> 00:00:50,455] So I already have it open.
+[00:00:50,455 --> 00:00:53,465] Still within the body elements below the anchor elements,
+[00:00:53,465 --> 00:00:55,430] I add the table tag.
+[00:00:55,430 --> 00:01:00,885] Inside of it, I add two table row tags or TR tags,
+[00:01:00,885 --> 00:01:01,925] as they're commonly referred to.
+[00:01:01,925 --> 00:01:04,930] This will create a row for each of the dishes.
+[00:01:04,930 --> 00:01:08,520] Now I need to add table data tags or
+[00:01:08,520 --> 00:01:11,750] TD tags so that I can include the prices.
+[00:01:11,750 --> 00:01:14,435] Table data tags define the contents of table cells.
+[00:01:14,435 --> 00:01:18,660] So I need to add two of those inside each row,
+[00:01:18,660 --> 00:01:25,630] one for the dish and one for its price.
+[00:01:25,920 --> 00:01:27,270] In the first row, I type
+[00:01:27,270 --> 00:01:30,415] Falafel inside the first table data tag.
+[00:01:30,415 --> 00:01:32,725] In the second table data tag,
+[00:01:32,725 --> 00:01:35,830] I add the price, let's say $10.
+[00:01:35,830 --> 00:01:38,270] I do the same with the second row.
+[00:01:38,270 --> 00:01:42,610] I type Pasta Salad inside the first table data tag,
+[00:01:42,690 --> 00:01:47,605] and a price of $12 inside the second table data tag.
+[00:01:47,605 --> 00:01:55,770] Now I will save the file and open it in my web browser.
+[00:01:55,820 --> 00:01:59,310] Great. The prices display at the bottom of the webpage.
+[00:01:59,310 --> 00:02:00,560] However, the table is not
+[00:02:00,560 --> 00:02:02,675] displayed like a regular table at the moment,
+[00:02:02,675 --> 00:02:05,220] but I will style it soon.
+[00:02:05,220 --> 00:02:07,880] To make it more clear for my users,
+[00:02:07,880 --> 00:02:10,640] I'm going to add headers to the columns now.
+[00:02:10,640 --> 00:02:13,890] To do this, I add a new row to
+[00:02:13,890 --> 00:02:16,990] the top of the table with the table row tag.
+[00:02:16,990 --> 00:02:18,660] Then use the table header tag or
+[00:02:18,660 --> 00:02:21,490] TH tag for the heading cells.
+[00:02:21,490 --> 00:02:24,360] I need to add two table header tags.
+[00:02:24,360 --> 00:02:27,930] I type dish in the first column's heading,
+[00:02:27,930 --> 00:02:30,540] and price in the second heading.
+[00:02:30,540 --> 00:02:32,060] I save the HTML and refresh it
+[00:02:32,060 --> 00:02:39,010] again to check the update in the browser. Yes. The page layout is now better.
+[00:02:39,010 --> 00:02:41,370] The information that's presented much
+[00:02:41,370 --> 00:02:44,650] clearer now that the columns have headings,
+[00:02:44,650 --> 00:02:47,515] but it is not displayed like a table, yet.
+[00:02:47,515 --> 00:02:49,390] I will add a bit of CSS to
+[00:02:49,390 --> 00:02:51,370] improve the styling of the table.
+[00:02:51,370 --> 00:02:54,055] Don't worry about the details just yet.
+[00:02:54,055 --> 00:02:56,080] But I would like to add a little bit of magic
+[00:02:56,080 --> 00:03:00,970] now to get you excited about styling.
+[00:03:00,970 --> 00:03:02,460] I will add a style tag.
+[00:03:02,460 --> 00:03:12,710] I will add a one pixel border to the table.
+[00:03:12,710 --> 00:03:19,670] Let's save the file again and open it in the browser.
+[00:03:19,970 --> 00:03:22,690] Now the table has a border around all the cells.
+[00:03:22,690 --> 00:03:25,540] This is just a quick method of styling a table.
+[00:03:25,540 --> 00:03:27,160] Later you will learn how to do this
+[00:03:27,160 --> 00:03:30,580] using best practices with CSS.
+[00:03:30,580 --> 00:03:32,630] Congratulations. You now know how to
+[00:03:32,630 --> 00:03:34,715] add tables to HTML files.
+[00:03:34,715 --> 00:03:39,520] I use tables extensively and I am sure you will too.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-html/07_what-are-forms.en.srt
+TYPE: SRT
+TITLE: What Are Forms
+
+[00:00:00,340 --> 00:00:03,908] Today you can order almost anything directly to your home.
+[00:00:03,908 --> 00:00:07,989] But did you know that one of the functionalities that makes online shopping
+[00:00:07,989 --> 00:00:09,840] possible is HTML forms.
+[00:00:09,840 --> 00:00:10,666] Without them,
+[00:00:10,666 --> 00:00:14,551] you would not be able to enter your credit card details during checkout.
+[00:00:14,551 --> 00:00:17,040] But forms are not limited to e commerce.
+[00:00:17,040 --> 00:00:20,783] You can use forms practically every day on the internet.
+[00:00:20,783 --> 00:00:24,227] When you log into your favorite website, you do it using a form.
+[00:00:24,227 --> 00:00:28,203] In this video, I'll take you through the steps to create a form and
+[00:00:28,203 --> 00:00:30,981] introduce you to a few different input types.
+[00:00:30,981 --> 00:00:34,203] But first, let's briefly explore how forms work.
+[00:00:34,203 --> 00:00:38,584] To put it simply when a user enters data on a website an HTML form
+[00:00:38,584 --> 00:00:42,817] submits an HTTP request containing the data to the server.
+[00:00:42,817 --> 00:00:46,040] But how do you create a form in the first place?
+[00:00:46,040 --> 00:00:49,075] You define forms with the HTML form tags.
+[00:00:49,075 --> 00:00:52,536] Forms also have an optional form attribute called action.
+[00:00:52,536 --> 00:00:58,028] Action specifies the URL or path that the form should submit the request to.
+[00:00:58,028 --> 00:01:01,119] When the action attribute is not specified,
+[00:01:01,119 --> 00:01:05,443] it submits the request to the same path as the current web page.
+[00:01:05,443 --> 00:01:07,620] There is also the FORM method,
+[00:01:07,620 --> 00:01:14,040] with the FORM method you can specify the HTTP method to use for the HTTP request.
+[00:01:14,040 --> 00:01:18,862] There are two HTTP methods to submit the form data, GET and POST.
+[00:01:18,862 --> 00:01:23,740] Remember the GET HTTP method retrieves information from the server.
+[00:01:23,740 --> 00:01:27,114] The POST HTTP method sends data to the server.
+[00:01:27,114 --> 00:01:31,940] When a user submits a form, one of these HTTP methods is used.
+[00:01:31,940 --> 00:01:34,941] We'll explore how this is done on a later course.
+[00:01:34,941 --> 00:01:39,544] Now let's explore how to add fields that the user can enter data into.
+[00:01:39,544 --> 00:01:42,265] First, let's add a simple text field.
+[00:01:42,265 --> 00:01:44,897] For example, a user name field.
+[00:01:44,897 --> 00:01:48,140] The fields in a form are specified by input tags.
+[00:01:48,140 --> 00:01:51,039] Note that the input tag does not need a closing tag.
+[00:01:51,039 --> 00:01:52,083] But if I want to,
+[00:01:52,083 --> 00:01:56,957] I could close the tag by adding a forward slash before the end of the input tag.
+[00:01:56,957 --> 00:02:01,706] When I use the text input type, it displays a text field on the web page.
+[00:02:01,706 --> 00:02:05,203] But a text box on its own isn't very user friendly, so
+[00:02:05,203 --> 00:02:07,239] I will now add a label above it.
+[00:02:07,239 --> 00:02:08,630] By adding the label tag,
+[00:02:08,630 --> 00:02:12,940] the form will now display the word user name above the input field.
+[00:02:12,940 --> 00:02:15,574] Next, let's add a password field.
+[00:02:15,574 --> 00:02:19,610] In this case I won't use the text input type since I don't want the password to be
+[00:02:19,610 --> 00:02:20,840] visible.
+[00:02:20,840 --> 00:02:23,057] HTML has an input type specific for
+[00:02:23,057 --> 00:02:26,276] passwords that will mask the user's input data.
+[00:02:26,276 --> 00:02:30,110] The user name will be visible and the password will be masked.
+[00:02:30,110 --> 00:02:34,240] Finally, I need to add a button so the user can submit the form.
+[00:02:34,240 --> 00:02:37,257] So I used the input type, submit.
+[00:02:37,257 --> 00:02:39,558] When the user clicks the submit button,
+[00:02:39,558 --> 00:02:43,901] the HTTP request containing the form content will be sent to the web server.
+[00:02:43,901 --> 00:02:48,238] In summary, you use the form tag at the start of a form where after you indicate
+[00:02:48,238 --> 00:02:50,940] the method that should be used.
+[00:02:50,940 --> 00:02:54,209] You can create labels for input types with the label tag,
+[00:02:54,209 --> 00:02:57,624] you use the text input type for a text input like a user name.
+[00:02:57,624 --> 00:03:00,865] For a password, you use the password input type.
+[00:03:00,865 --> 00:03:05,264] To add a submit button to a form, you use the submit input type.
+[00:03:05,264 --> 00:03:07,540] There are many different input types available.
+[00:03:07,540 --> 00:03:10,891] For example, you can add checkboxes to a form.
+[00:03:10,891 --> 00:03:14,640] To do this, you use the checkboxess input type.
+[00:03:14,640 --> 00:03:18,765] You use the name and value attributes to configure how the data is sent to the server.
+[00:03:18,765 --> 00:03:20,200] Each box can be checked or unchecked.
+[00:03:20,324 --> 00:03:24,640] you will explore this in more depth in a later course.
+[00:03:24,640 --> 00:03:28,397] Radio buttons on the other hand are like checkboxes except
+[00:03:28,397 --> 00:03:31,398] only one button can be checked in the group.
+[00:03:31,398 --> 00:03:35,540] Checking one radio button will uncheck all the other radio buttons.
+[00:03:35,540 --> 00:03:39,370] There are also other types of inputs such as the number, email and
+[00:03:39,370 --> 00:03:40,563] file upload types.
+[00:03:40,563 --> 00:03:44,040] However, some input fields do not use the input tags.
+[00:03:44,040 --> 00:03:46,779] For instance the multi line text field.
+[00:03:46,779 --> 00:03:49,755] The text input type that I showed you earlier is only for
+[00:03:49,755 --> 00:03:51,251] single line text content.
+[00:03:52,540 --> 00:03:55,427] To allow users to enter multiple lines of text,
+[00:03:55,427 --> 00:03:58,903] I need to use the text area tag instead of text input type.
+[00:03:58,903 --> 00:04:03,422] Another type of input that does not use the input tag is a drop down list which
+[00:04:03,422 --> 00:04:05,948] contains items that the user can select.
+[00:04:05,948 --> 00:04:11,240] This time, you use the select tag and for the items on the list you use option tags.
+[00:04:11,240 --> 00:04:16,189] You now know how HTML forms work and the different input types, developers use.
+[00:04:16,189 --> 00:04:20,902] You covered form tags such as text, password, checkbox,
+[00:04:20,902 --> 00:04:23,363] radio, text area and select.
+[00:04:23,363 --> 00:04:26,540] I can't imagine my life without online shopping.
+[00:04:26,540 --> 00:04:30,849] Next time you order something online, notice all the types of input the form
+[00:04:30,849 --> 00:04:33,760] includes and how you, as a user interacts with it.
+[00:04:33,760 --> 00:04:37,866] You might notice that the user experience of some forms is better than others.
+[00:04:37,866 --> 00:04:41,133] I'm sure that you are now able to choose appropriate input types for
+[00:04:41,133 --> 00:04:42,461] the forms that you create.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-html/08_introduction-to-the-dom.en.srt
+TYPE: SRT
+TITLE: Introduction To The Dom
+
+[00:00:00,240 --> 00:00:02,640] Imagine your favorite social media site.
+[00:00:02,640 --> 00:00:06,750] If it was just an HTML document, users would be able to scroll the page,
+[00:00:06,750 --> 00:00:11,202] look at pictures and read text but they wouldn't be able to log in like posts or
+[00:00:11,202 --> 00:00:13,412] get notifications for new messages.
+[00:00:13,412 --> 00:00:17,673] In order to allow users to do these things, they need to be able to interact
+[00:00:17,673 --> 00:00:21,961] with objects on the page such as the reaction icons or the comment button.
+[00:00:23,054 --> 00:00:27,455] Let me put it differently, an HTML document must be represented in
+[00:00:27,455 --> 00:00:31,699] a certain way, so that JavaScript code can query and update it,
+[00:00:31,699 --> 00:00:34,625] to do this we use the document object model.
+[00:00:34,625 --> 00:00:38,866] In this video, I will unpack what the DOM is, how it is created and
+[00:00:38,866 --> 00:00:42,893] how JavaScript interacts with the DOM to make sites dynamic.
+[00:00:42,893 --> 00:00:48,940] When your web browser receives an HTML page, it constructs a DOM to represent it.
+[00:00:48,940 --> 00:00:53,714] DOM stands for Document Object Model and it is simply a tree, structure or
+[00:00:53,714 --> 00:00:56,940] model of the objects in your HTML file.
+[00:00:56,940 --> 00:01:01,561] To understand the DOM, I want you to think of a simple HTML page, remember that
+[00:01:01,561 --> 00:01:06,055] an HTML document has opening and closing tags for the document and the head.
+[00:01:06,055 --> 00:01:10,228] And inside the head tags you have title tags, then you have the body and
+[00:01:10,228 --> 00:01:14,240] inside the body there might be elements such as div tags.
+[00:01:14,240 --> 00:01:18,736] Okay, now, let me guide you through how a DOM would be generated,
+[00:01:18,736 --> 00:01:24,040] the DOM has a series of objects each representing a single HTML element.
+[00:01:24,040 --> 00:01:29,440] At the root of the DOM is the html object and it contains the head and body object.
+[00:01:29,440 --> 00:01:32,965] From there, the head object houses the title object and
+[00:01:32,965 --> 00:01:36,740] the title object contains its text object.
+[00:01:36,740 --> 00:01:41,051] The body object contains the two div objects, the first div houses,
+[00:01:41,051 --> 00:01:45,240] the h1 object which again houses its text object.
+[00:01:45,240 --> 00:01:49,342] The second div object contains the paragraph object which contains its text
+[00:01:49,342 --> 00:01:50,240] object.
+[00:01:50,240 --> 00:01:54,445] In summary, all the elements in the HTML file are represented as objects in
+[00:01:54,445 --> 00:01:57,040] the document object model.
+[00:01:57,040 --> 00:01:59,536] I just took you through a very simple webpage,
+[00:01:59,536 --> 00:02:02,640] webpages typically have hundreds of elements.
+[00:02:02,640 --> 00:02:06,825] Can you imagine how complex the DOM of a highly interactive modern web page is?
+[00:02:06,825 --> 00:02:09,582] You as a developer can use JavaScript to access and
+[00:02:09,582 --> 00:02:12,540] modify the DOM to make your webpages dynamic.
+[00:02:12,540 --> 00:02:15,424] In fact, in a later course you will learn how to access and
+[00:02:15,424 --> 00:02:19,340] modify the structure of the DOM and its elements in different ways.
+[00:02:19,340 --> 00:02:22,652] Now that you know what the DOM is and how it is referenced,
+[00:02:22,652 --> 00:02:25,964] let me briefly explain common DOM and JavaScript uses.
+[00:02:25,964 --> 00:02:30,572] For each element, you can access the HTML attributes and content, this means you can
+[00:02:30,572 --> 00:02:34,640] update the existing content that is displayed in the web browser.
+[00:02:34,640 --> 00:02:38,060] For instance, you could write some JavaScript to update the seconds,
+[00:02:38,060 --> 00:02:40,840] minutes and hours of a digital clock on a website.
+[00:02:40,840 --> 00:02:45,536] Or if you develop a movie streaming website, you can write code that responds
+[00:02:45,536 --> 00:02:50,040] to user actions such as clicking mouse over scrolling and so on.
+[00:02:50,040 --> 00:02:53,174] In this way you can allow a preview of the movie to play when
+[00:02:53,174 --> 00:02:56,740] the user hovers the mouse over the movie's poster.
+[00:02:56,740 --> 00:03:00,559] Or you can think of a log in page, when users click the Login button,
+[00:03:00,559 --> 00:03:04,840] you can disable the button so that it cannot be clicked again.
+[00:03:04,840 --> 00:03:07,772] The web application would bring them to a new web page or
+[00:03:07,772 --> 00:03:10,912] would re-enable the button, if a log in error occurred.
+[00:03:10,912 --> 00:03:15,372] You can even add DOM objects to dynamically add new HTML content to a live
+[00:03:15,372 --> 00:03:16,440] web page.
+[00:03:16,440 --> 00:03:20,800] For instance, you can add an error message to a form if the user inserts invalid
+[00:03:20,800 --> 00:03:23,508] data, DOM objects can also be deleted which will
+[00:03:23,508 --> 00:03:27,240] remove the corresponding HTML displayed in the browser.
+[00:03:27,240 --> 00:03:29,073] Think of a to-do list on a website,
+[00:03:29,073 --> 00:03:32,840] you can remove an item from the list when the user clicks on it.
+[00:03:32,840 --> 00:03:38,240] Another major use of JavaScript and the DOM is to animate the HTML elements.
+[00:03:38,240 --> 00:03:41,013] This can be quite complex depending on the animation but
+[00:03:41,013 --> 00:03:44,740] there are many libraries available that aim to simplify this.
+[00:03:44,740 --> 00:03:49,204] For example, when a page first loads, you can fade in the page contents or
+[00:03:49,204 --> 00:03:51,724] when a user receives an instant message,
+[00:03:51,724 --> 00:03:55,140] a notification can pop up in the web browser.
+[00:03:55,140 --> 00:03:58,348] Many JavaScript libraries and frameworks rely on the DOM,
+[00:03:58,348 --> 00:04:00,797] one of these libraries is the react library.
+[00:04:00,797 --> 00:04:05,183] By now, you know what the DOM is, how it is constructed and the wonderful things
+[00:04:05,183 --> 00:04:09,061] web developers can do with it to create modern interactive websites.
+[00:04:10,140 --> 00:04:13,716] Next time you use your favorite social media site think about how the DOM is
+[00:04:13,716 --> 00:04:16,960] working behind the scenes to change the color of that like button.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-html/09_web-accessibility.en.srt
+TYPE: SRT
+TITLE: Web Accessibility
+
+[00:00:00,075 --> 00:00:04,213] as a web developer you should try to ensure that everyone can access and
+[00:00:04,213 --> 00:00:08,003] enjoy the internet almost like an architect that needs to design
+[00:00:08,003 --> 00:00:11,741] a building with ramps and rails so that it is accessible by all.
+[00:00:11,741 --> 00:00:15,451] You need to build a website in a certain way to improve accessibility.
+[00:00:15,451 --> 00:00:17,842] When the Web Accessibility Initiative or
+[00:00:17,842 --> 00:00:18,368] WAI
+[00:00:18,368 --> 00:00:20,185] was launched in 1997.
+[00:00:20,185 --> 00:00:21,790] The creator of the World Wide Web.
+[00:00:21,790 --> 00:00:26,767] Sir, Tim Berners-Lee said the power of the Web is in its universality access
+[00:00:26,767 --> 00:00:30,959] by everyone regardless of disability is an essential aspect.
+[00:00:30,959 --> 00:00:33,791] Web accessibility aims to allow people with
+[00:00:33,791 --> 00:00:38,163] disabilities to understand navigate and interact with websites.
+[00:00:38,163 --> 00:00:42,141] A common misunderstanding is that it refers to visual disabilities but
+[00:00:42,141 --> 00:00:46,385] in fact it includes all disabilities that affect interaction with websites
+[00:00:46,385 --> 00:00:49,434] such as audio and visual disabilities, cognitive and
+[00:00:49,434 --> 00:00:53,301] neurological disabilities and physical and speech disabilities.
+[00:00:53,301 --> 00:00:54,452] The W3C.
+[00:00:54,452 --> 00:00:58,034] Web Accessibility Initiative developed specifications and
+[00:00:58,034 --> 00:01:00,591] supporting resources for accessibility.
+[00:01:00,591 --> 00:01:04,111] These are considered international standards for web accessibility.
+[00:01:04,111 --> 00:01:10,067] In fact web accessibility is becoming a requirement in many industries. In 2016.
+[00:01:10,067 --> 00:01:14,487] The European Union approved the web accessibility directive which requires
+[00:01:14,487 --> 00:01:19,315] websites and mobile applications of public sector bodies to be accessible to those
+[00:01:19,315 --> 00:01:20,545] with disabilities.
+[00:01:20,545 --> 00:01:24,535] Let's explore some examples of how accessibility is provided to those with
+[00:01:24,535 --> 00:01:25,981] different disabilities.
+[00:01:25,981 --> 00:01:30,794] People living with disabilities often use assistive technologies to aid them in
+[00:01:30,794 --> 00:01:35,321] browsing the web. Screen reader software can read the content of websites and
+[00:01:35,321 --> 00:01:38,026] everything that is happening on the device.
+[00:01:38,026 --> 00:01:42,261] Screen readers are used not only by blind and vision impaired users but
+[00:01:42,261 --> 00:01:45,575] also by those with reading or learning difficulties.
+[00:01:45,575 --> 00:01:50,303] Speech recognition software can turn spoken words into computer commands or
+[00:01:50,303 --> 00:01:51,911] dictate inputting text.
+[00:01:51,911 --> 00:01:55,174] This is useful for people who may not be able to use a mouse or
+[00:01:55,174 --> 00:01:59,572] keyboard due to physical or neurological disabilities. Subtitles and video
+[00:01:59,572 --> 00:02:04,381] scripts and videos provide assistance to those with audio and visual disabilities.
+[00:02:04,381 --> 00:02:07,866] There are many steps that you can take to improve accessibility.
+[00:02:07,866 --> 00:02:11,356] It is good practice to think of accessibility from the beginning of
+[00:02:11,356 --> 00:02:15,427] a project, it is a lot harder to rework the project to be accessible later on.
+[00:02:15,427 --> 00:02:20,193] If you use the correct HTML structure and appropriate elements as a foundation, it
+[00:02:20,193 --> 00:02:24,959] will greatly improve accessibility. In this course you will learn to structure your
+[00:02:24,959 --> 00:02:29,522] HTML properly and follow best practices to support assistive technologies for
+[00:02:29,522 --> 00:02:34,016] example having text that is not contained within proper tags like paragraph or
+[00:02:34,016 --> 00:02:39,091] heading tags makes it harder for assistive technologies to interact with the content.
+[00:02:39,091 --> 00:02:42,714] Similarly using multiple line breaks to break up text and
+[00:02:42,714 --> 00:02:46,121] add space also presents barriers to accessibility.
+[00:02:46,121 --> 00:02:49,375] These are just simple examples to improve web accessibility.
+[00:02:49,375 --> 00:02:54,167] However, in the future you'll probably develop very complex user interfaces and
+[00:02:54,167 --> 00:02:57,248] to make them accessible may not be as straightforward
+[00:02:57,248 --> 00:02:58,965] as just having correct HTML.
+[00:02:58,965 --> 00:03:03,953] Fortunately one of the tasks of the WAI is to define the accessible rich internet
+[00:03:03,953 --> 00:03:05,375] application or aria.
+[00:03:05,375 --> 00:03:07,100] Specification.
+[00:03:07,100 --> 00:03:11,801] The aria specification outlines different techniques to improve accessibility for
+[00:03:11,801 --> 00:03:12,852] complex web apps.
+[00:03:12,852 --> 00:03:16,854] Now, you know about different assistive technologies and that you should use
+[00:03:16,854 --> 00:03:21,051] the correct HTML structure and appropriate elements to improve accessibility.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-html/10_additional-resources_instructions.html
+TYPE: HTML
+TITLE: Additional Resources Instructions
+
+Learn more​
+
+Here is a list of resources that may be helpful as you continue your learning journey.
+
+HTML Elements Reference (Mozilla)
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+The Form Element (Mozilla)
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+
+What is the Document Object Model? (W3C)
+
+https://www.w3.org/TR/WD-DOM/introduction.html
+
+ARIA in HTML (W3C via Github)
+
+https://w3c.github.io/html-aria/
+
+ARIA Authoring Practices (W3C)
+
+https://www.w3.org/TR/wai-aria-practices-1.2/
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-html/10_additional-resources_introduction.html
+TYPE: HTML
+TITLE: Additional Resources Introduction
+
+What is the Document Object Model?
+
+What is the Document Object Model?
+
+Editors
+Jonathan Robie, Texcel Research
+
+Introduction
+
+The Document Object Model (DOM) is a programming API for HTML and
+XML documents. It defines the logical structure of documents and
+the way a document is accessed and manipulated. In the DOM specification,
+the term "document" is used in the broad sense - increasingly, XML is being used as a
+way of representing many different kinds of information that may
+be stored in diverse systems, and much of this would traditionally
+be seen as data rather than as documents. Nevertheless, XML presents
+this data as documents, and the DOM may be used to manage this data.
+With the Document
+Object Model, programmers can create and build documents, navigate
+their structure, and add, modify, or delete elements and content.
+Anything found in an HTML or XML document can be accessed,
+changed, deleted, or added using the Document Object Model,
+with a few exceptions - in particular, the DOM interfaces for
+the internal subset and external subset have not yet been specified.
+As a W3C specification, one important objective for the Document
+Object Model is to provide a standard programming interface that
+can be used in a wide variety of environments and applications.
+The Document Object Model can be used with any programming
+language. In order to provide precise, language-independent specification
+of the Document Object Model interfaces, we have chosen to define
+the specifications in OMG IDL, as defined in the CORBA 2.2
+specification.
+In addition to the OMG IDL specification,
+we provide language bindings for Java and ECMAScript (an
+industry-standard scripting language based on JavaScript and
+JScript). Note: OMG IDL is used only as a language-independent and
+implementation-neutral way to specify interfaces. Various other
+IDLs could have been used; the use of OMG IDL does not imply a
+requirement to use a specific object binding runtime.
+
+What the Document Object Model is
+
+The Document Object Model is a programming API for documents.
+The object model itself closely resembles the structure of the
+documents it models. For instance, consider this table, taken
+from an HTML document:
+<TABLE>
+<ROWS>
+<TR>
+<TD>Shady Grove</TD>
+<TD>Aeolian</TD>
+</TR>
+<TR>
+<TD>Over the River, Charlie</TD>
+<TD>Dorian</TD>
+</TR>
+</ROWS>
+</TABLE>
+
+The Document Object Model represents this table like this:
+
+DOM representation of the example table
+
+In the Document Object Model, documents have a logical
+structure which is very much like a tree; to be more precise, it
+is like a "forest" or "grove" which can
+contain more than one tree. However, the Document Object Model
+does not specify that documents be implemented as a
+tree or a grove , nor
+does it specify how the relationships among objects be
+implemented in any way. In other words, the object model
+specifies the logical model for the programming interface, and
+this logical model may be implemented in any way that a
+particular implementation finds convenient. In this
+specification, we use the term structure model to
+describe the tree-like representation of a document; we
+specifically avoid terms like "tree" or
+"grove" in order to avoid implying a particular
+implementation. One important property of DOM structure models
+is structural isomorphism: if any two Document
+Object Model implementations are used to create a representation
+of the same document, they will create the same structure model,
+with precisely the same objects and relationships.
+The name "Document Object Model" was chosen because
+it is an "object model" is used in the traditional
+object oriented design sense: documents are modeled using
+objects, and the model encompasses not only the structure of a
+document, but also the behavior of a document and the objects
+of which it is composed. In other words, the nodes in the
+above diagram do not represent a data structure, they
+represent objects, which have functions and identity. As an
+object model, the Document Object Model identifies:
+
+the interfaces and objects used to represent and manipulate
+a document
+
+the semantics of these interfaces and objects - including
+both behavior and attributes
+
+the relationships and collaborations among these interfaces
+and objects
+
+The structure of SGML documents has traditionally been
+represented by an abstract data model, not by an object model.
+In an abstract data model, the model is centered around the
+data. In object oriented programming languages, the data itself
+is encapsulated in objects which hide the data, protecting it
+from direct external manipulation. The functions associated with
+these objects determine how the objects may be manipulated, and
+they are part of the object model.
+The Document Object Model currently consists of two parts,
+DOM Core and DOM HTML. The DOM Core represents the
+functionality used for XML documents, and also serves as the
+basis for DOM HTML. All DOM implementations must support the
+interfaces listed as "fundamental" in the Core specification;
+in addition, XML implementations must support the interfaces
+listed as "extended" in the Core specification. The Level 1
+DOM HTML specification defines additional functionality
+needed for HTML documents.
+
+What the Document Object Model is not
+
+This section is designed to give a more precise understanding
+of the Document Object Model by distinguishing it from other
+systems that may seem to be like it.
+
+Although the Document Object Model was strongly influenced
+by Dynamic HTML, in Level 1, it does not implement all of
+Dynamic HTML. In particular, events have not yet been defined.
+Level 1 is designed to lay a firm foundation for this kind
+of functionality by providing a robust, flexible model of the
+document itself.
+
+The Document Object Model is not a binary specification. Document
+Object Model programs written in the same language will be
+source code compatible across platforms, but the Document
+Object Model does not define any form of binary
+interoperability.
+
+The Document Object Model is not a way of persisting objects
+to XML or HTML. Instead of specifying how objects may be
+represented in XML, the Document Object Model specifies how
+XML and HTML documents are represented as objects, so that
+they may be used in object oriented programs.
+
+The Document Object Model is not a set of data structures,
+it is an object model that specifies interfaces. Although this
+document contains diagrams showing parent/child relationships,
+these are logical relationships defined by the programming
+interfaces, not representations of any particular internal
+data structures.
+
+The Document Object Model does not define "the true
+inner semantics" of XML or HTML. The semantics of those
+languages are defined by the languages themselves. The
+Document Object Model is a programming model designed to
+respect these semantics. The Document Object Model does not
+have any ramifications for the way you write XML and HTML
+documents; any document that can be written in these languages
+can be represented in the Document Object Model.
+
+The Document Object Model, despite its name, is not a
+competitor to the Component Object Model (COM). COM, like
+CORBA, is a language independent way to specify interfaces and
+objects; the Document Object Model is a set of interfaces and
+objects designed for managing HTML and XML documents. The DOM
+may be implemented using language-independent systems like COM
+or CORBA; it may also be implemented using language-specific
+bindings like the Java or ECMAScript bindings specified in
+this document.
+
+Where the Document Object Model came from
+
+The Document Object Model originated as a specification to
+allow JavaScript scripts and Java programs to be portable among
+web browsers. Dynamic HTML was the immediate ancestor of the
+Document Object Model, and it was originally thought of largely
+in terms of browsers. However, when the Document Object Model
+Working Group was formed, it was also joined by vendors in other
+domains, including HTML or XML editors and document
+repositories. Several of these vendors had worked with SGML
+before XML was developed; as a result, the Document Object Model
+has been influenced by SGML Groves and the HyTime standard. Some
+of these vendors had also developed their own object models for
+documents in order to provide programming APIs for SGML/XML
+editors or document repositories, and these object models have
+also influenced the Document Object Model.
+
+Entities and the DOM Core
+
+In the fundamental DOM interfaces, there are no objects representing
+entities. Numeric character references, and references to the
+pre-defined entities in HTML and XML, are replaced by the
+single character that makes up the entity's replacement.
+For example, in:
+
+<p>This is a dog &amp; a cat</p>
+
+the "&amp;"
+will be replaced by the character "&", and the
+text in the <p> element will form a single continuous
+sequence of characters. The representation of general
+entities, both internal and external, are defined within the
+extended (XML) interfaces of the Level 1 specification.
+Note: When a DOM representation of a document is serialized
+as XML or HTML text, applications will need to check each
+character in text data to see if it needs to be escaped
+using a numeric or pre-defined entity. Failing to do so
+could result in invalid HTML or XML.
+
+DOM Interfaces and DOM Implementations
+
+The DOM specifies interfaces which may be used to manage XML or
+HTML documents. It is important to realize that these interfaces
+are an abstraction - much like "abstract base classes" in C++,
+they are a means of specifying a way to access and manipulate an
+application's internal representation of a document. In
+particular, interfaces do not imply a particular concrete
+implementation. Each DOM application is free to maintain
+documents in any convenient representation, as long as the
+interfaces shown in this specification are supported. Some
+DOM implementations will be existing programs that use the
+DOM interfaces to access software written long before the
+DOM specification existed. Therefore, the DOM is designed
+to avoid implementation dependencies; in particular,
+
+Attributes defined in the IDL do not imply concrete
+objects which must have specific data members - in the
+language bindings, they are translated to a pair of
+get()/set() functions, not to a data member. (Read-only
+functions have only a get() function in the language
+bindings).
+
+DOM applications may provide additional interfaces
+and objects not found in this specification and still be
+considered DOM compliant.
+
+Because we specify interfaces and not the actual
+objects that are to be created, the DOM can not know what
+constructors to call for an implementation. In general,
+DOM users call the createXXX() methods on the Document
+class to create document structures, and DOM
+implementations create their own internal representations
+of these structures in their implementations of the
+createXXX() functions.
+
+Limitations of Level One
+
+The DOM Level 1 specification is intentionally limited to
+those methods needed to represent and manipulate document
+structure and content.
+Future Levels of the DOM specification will provide:
+
+A structure model for the internal subset and the
+external subset.
+
+Validation against a schema.
+
+Control for rendering documents via stylesheets.
+
+Access control.
+
+Thread-safety.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_css-basics/01_selecting-and-styling.en.srt
+TYPE: SRT
+TITLE: Selecting And Styling
+
+[00:00:00,000 --> 00:00:05,559] I'd like you to think of a physical building and its structure, interior, exterior and
+[00:00:05,559 --> 00:00:07,280] decorations.
+[00:00:07,280 --> 00:00:12,720] In a similar fashion, when it comes to websites and web apps, you can think of HTML as being
+[00:00:12,720 --> 00:00:14,760] the frame and structure.
+[00:00:14,760 --> 00:00:22,739] CSS, however, is the paint, wallpaper, fixtures, artwork and overall style or look and feel.
+[00:00:22,739 --> 00:00:29,719] In other words, CSS tells the web browser how to display HTML elements on screen.
+[00:00:29,719 --> 00:00:34,119] When using CSS, there are five elements you need to understand.
+[00:00:34,119 --> 00:00:39,200] A declaration block starts with a left curly bracket and ends with the matching right curly
+[00:00:39,200 --> 00:00:40,939] bracket.
+[00:00:40,939 --> 00:00:44,880] In between these curly brackets are the style declarations.
+[00:00:44,880 --> 00:00:47,400] Let's cover these elements one by one.
+[00:00:47,400 --> 00:00:50,880] The first element of the CSS rule is the selector.
+[00:00:50,880 --> 00:00:55,680] This indicates which HTML element or elements you want to style.
+[00:00:55,680 --> 00:01:00,639] For example, you can create a rule that uses the h1 selector to change the colour of all
+[00:01:00,639 --> 00:01:04,400] heading 1 tags in a web page to grey.
+[00:01:04,400 --> 00:01:11,400] In this case, h1 is the selector, colour is property and grey is the value of the property.
+[00:01:11,400 --> 00:01:16,080] You then create a declaration block using opening and closing curly brackets.
+[00:01:16,080 --> 00:01:20,080] The declaration block holds information about the properties and values that you are going
+[00:01:20,080 --> 00:01:22,319] to apply to the selector.
+[00:01:22,400 --> 00:01:26,120] Now let's focus on the structure of the declaration block.
+[00:01:26,120 --> 00:01:31,239] Each declaration is made up of two parts, a property and a value.
+[00:01:31,239 --> 00:01:35,720] For example, in this case, the properties that you want to change are the colour and
+[00:01:35,720 --> 00:01:39,519] the background colour of the header or selector.
+[00:01:39,519 --> 00:01:43,639] Once you have decided which properties you want to define, then you must assign each
+[00:01:43,639 --> 00:01:45,540] property a value.
+[00:01:45,540 --> 00:01:49,480] The colour property gets a value of blue and the background colour property gets a value
+[00:01:49,480 --> 00:01:50,660] of grey.
+[00:01:50,660 --> 00:01:56,459] This will result in all heading 1 tags displaying blue text on a grey background in the browser.
+[00:01:56,459 --> 00:02:01,339] By now you'll have learned that CSS tells the web browser how to display HTML elements
+[00:02:01,339 --> 00:02:03,099] on screen.
+[00:02:03,099 --> 00:02:08,100] Now let's work through an example to change a set of heading elements using different
+[00:02:08,100 --> 00:02:09,740] CSS rules.
+[00:02:09,740 --> 00:02:14,940] I will share a pro tip demonstrating how to install and use the VS Code extension Live
+[00:02:14,940 --> 00:02:17,740] Preview to speed up your workflow.
+[00:02:18,179 --> 00:02:22,100] Ok, so I'm back in Visual Studio Code here.
+[00:02:22,100 --> 00:02:26,460] Did you know that you can add additional functionality by using extensions?
+[00:02:26,460 --> 00:02:32,300] If you click on the Extensions tab, you can install the Live Preview extension by Microsoft.
+[00:02:32,300 --> 00:02:37,580] If you are running VS Code locally, you can install and use this extension.
+[00:02:37,580 --> 00:02:43,220] Once installed, right-click on your HTML file in the Explorer panel and select Live Preview
+[00:02:43,220 --> 00:02:45,059] Show Preview.
+[00:02:45,059 --> 00:02:51,539] When you update an HTML file, you immediately notice the changes in Visual Studio Code.
+[00:02:51,539 --> 00:02:58,979] In this video, I will demonstrate how to create a CSS file and style some HTML elements.
+[00:02:58,979 --> 00:03:06,220] Before I start styling elements, let's create a simple HTML document named index.html.
+[00:03:06,220 --> 00:03:14,740] To demonstrate how CSS works, I will use an example created previously.
+[00:03:14,740 --> 00:03:22,940] First I create a file named style.css.
+[00:03:22,940 --> 00:03:27,779] For my webpage to use this CSS file, I need to link it to the head element of the HTML
+[00:03:27,779 --> 00:03:30,139] file.
+[00:03:30,139 --> 00:03:36,100] To link to a stylesheet, you use the link tag, which must be assigned two attributes,
+[00:03:36,100 --> 00:03:38,139] rel and href.
+[00:03:38,139 --> 00:03:43,740] The rel attribute is assigned to stylesheet, and the href attribute is assigned to the
+[00:03:43,740 --> 00:03:46,160] name of the stylesheet file.
+[00:03:46,160 --> 00:03:49,979] In this example, it's style.css.
+[00:03:49,979 --> 00:03:56,220] I am now ready to apply CSS to the index.html file, using style rules that I will write
+[00:03:56,220 --> 00:03:59,339] in the style.css file.
+[00:03:59,339 --> 00:04:04,139] The selector I am creating applies the CSS rule to all H1 elements.
+[00:04:04,139 --> 00:04:07,740] This type of selector is called an HTML type selector.
+[00:04:07,740 --> 00:04:12,779] The properties in the declaration block allow me to change how the selected elements are
+[00:04:13,460 --> 00:04:18,339] For example, I'm setting the color property of all the H1 elements to display text in
+[00:04:18,339 --> 00:04:19,339] purple.
+[00:04:19,339 --> 00:04:22,059] I save the file using ctrl and s.
+[00:04:22,059 --> 00:04:29,500] Notice that this change occurs immediately, and there is no need to refresh the webpage.
+[00:04:29,500 --> 00:04:33,980] So now, what if I want to only style a single H1 element?
+[00:04:33,980 --> 00:04:40,299] I can add an id attribute to the H1 tag that I want to style, and in my CSS file, I create
+[00:04:40,299 --> 00:04:42,179] a rule for that id.
+[00:04:42,179 --> 00:04:43,179] Let's do that now.
+[00:04:43,179 --> 00:04:48,339] First, I create an id rule, using the hash symbol, and then the name header 1.
+[00:04:48,339 --> 00:04:54,019] Then I define the CSS properties of that rule to change the color value to green.
+[00:04:54,019 --> 00:04:58,260] I apply the rule, and save the file using ctrl and s.
+[00:04:58,260 --> 00:05:02,779] Notice that the text for the heading, chapter 1, on the webpage turns green.
+[00:05:02,779 --> 00:05:07,859] You may be wondering, why does the first CSS rule not apply to the H1 element with the
+[00:05:07,859 --> 00:05:09,200] id?
+[00:05:09,200 --> 00:05:13,399] This is because of something called CSS precedence and specificity.
+[00:05:13,399 --> 00:05:18,119] This is a complex statement, but basically, the browser will use the most precise selector
+[00:05:18,119 --> 00:05:20,119] for an HTML element.
+[00:05:20,119 --> 00:05:26,640] CSS has a set of hierarchy rules which dictate which rule will apply to an element.
+[00:05:26,640 --> 00:05:32,600] In this example, the id rule takes precedence over the HTML type selector rule.
+[00:05:32,600 --> 00:05:36,440] You can learn more about CSS selector rules and precedence from the additional reading
+[00:05:36,440 --> 00:05:38,399] at the end of this lesson.
+[00:05:38,399 --> 00:05:43,839] Congratulations, you have now learned about the selection and styling in CSS.
+[00:05:43,839 --> 00:05:45,640] Let's quickly recap.
+[00:05:45,640 --> 00:05:50,359] After choosing a selector for your styles, you create a declaration block using opening
+[00:05:50,359 --> 00:05:52,799] and closing curly brackets.
+[00:05:52,799 --> 00:05:58,519] Inside of the code block, you write a declaration which consists of a property value, pair ending
+[00:05:58,519 --> 00:06:00,519] in a semicolon.
+[00:06:00,519 --> 00:06:06,040] And all these parts together, the selector, code block, and declaration, make up a CSS
+[00:06:06,040 --> 00:06:07,040] rule.
+[00:06:07,040 --> 00:06:12,799] I encourage you to add some CSS rules to your HTML documents to practice selecting and styling.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_css-basics/02_different-types-of-selectors_instructions.html
+TYPE: HTML
+TITLE: Different Types Of Selectors Instructions
+
+When styling a web page, there are many types of selectors available that allow developers to be as broad or as specific as they need to be when selecting HTML elements to apply CSS rules to.
+
+Here you will learn about some of the common CSS selectors that you will use as a developer.
+
+Element Selectors
+
+The element selector allows developers to select HTML elements based on their element type.
+
+For example, if you use
+
+p
+
+as the selector, the rule will apply to all
+
+p
+
+elements on the webpage.
+
+HTML
+
+<p>Once upon a time...</p>
+<p>In a hidden land...</p>
+
+CSS
+
+p { 
+color: blue; 
+}
+
+ID Selectors
+
+The ID selector uses the id attribute of an HTML element. Since the id is unique within a webpage, it allows the developer to select a specific element for styling. ID selectors are prefixed with a
+
+#
+
+character.
+
+HTML
+
+<span id="latest">New!</span>
+
+CSS
+
+#latest { 
+background-color: purple; 
+}
+
+Class Selectors
+
+Elements can also be selected based on the class attribute applied to them. The CSS rule has been applied to all elements with the specified class name. The class selector is prefixed with a
+
+.
+
+character.
+
+In the following example, the CSS rule applies to both elements as they have the
+
+navigation
+
+CSS class applied to them.
+
+HTML
+
+<a class="navigation">Go Back</a>
+<p class="navigation">Go Forward</p>
+
+CSS
+
+.navigation { 
+margin: 2px;
+}
+
+Element with Class Selector
+
+A more specific method for selecting HTML elements is by first selecting the HTML element, then selecting the CSS class or ID.
+
+The example below selects all
+
+p
+
+elements that have the CSS class
+
+introduction
+
+applied to them.
+
+HTML
+
+<p class="introduction"></p>
+
+CSS
+
+p.introduction {
+margin: 2px;
+}
+
+Descendant Selectors
+
+Descendant selectors are useful if you need to select HTML elements that are contained within another selector.
+
+Let's explore an example.
+
+You have the following HTML structure and CSS rule.
+
+HTML
+
+<div id="blog">
+<h1>Latest News</h1>
+<div>
+<h1>Today's Weather</h1>
+<p>The weather will be sunny</p>
+</div>
+<p>Subscribe for more news</p>
+</div>
+<div>
+<h1>Archives</h1>
+</div>
+
+CSS
+
+#blog h1 {
+color: blue;
+}
+
+The CSS rule will select all
+
+h1
+
+elements that are contained within the element with the ID
+
+blog
+
+. The CSS rule will not apply to the
+
+h1
+
+element containing the text
+
+Archives
+
+.
+
+The structure of a descendant selector is a CSS selector, followed by a single space character, followed by another CSS selector.
+
+Multiple descendants can also be selected. For example, to select all
+
+h1
+
+elements that are descendants of
+
+div
+
+elements which are descendants of the
+
+blog
+
+element, the selector is specified as follows.
+
+CSS
+
+#blog div h1 {
+color: blue;
+}
+
+Child Selectors
+
+Child selectors are more specific than descendant selectors. They only select elements that are immediate descendants (children) of a selector (the parent).
+
+For example, you have the following HTML structure:
+
+HTML
+
+<div id="blog">
+<h1>Latest News</h1>
+<div>
+<h1>Today's Weather</h1>
+<p>The weather will be sunny</p>
+</div>
+<p>Subscribe for more news</p>
+</div>
+
+If you wanted to style the
+
+h1
+
+element containing the text
+
+Latest News
+
+, you can use the following child selector:
+
+CSS
+
+#blog > h1 {
+color: blue;
+}
+
+This will select the element with the ID
+
+blog
+
+(the parent), then it will select all
+
+h1
+
+elements that are contained directly in that element (the children). The structure of the child selector is a CSS selector followed by the child combinator symbol
+
+>
+
+followed by another CSS selector.
+
+Note
+
+that this will not go beyond a single depth level. Therefore, the CSS rule will
+
+not
+
+be applied to the
+
+h1
+
+element containing the text
+
+Today's Weather
+
+.
+
+:hover Pseudo-Class
+
+A special keyword called a pseudo-class allows developers to select elements based on their state. Don't worry too much about what that means right now. For now, let's look at how the hover pseudo-class allows you to style an element when the mouse cursor hovers over the element.
+
+The simplest example of this is changing the color of a hyperlink when it is hovered over. To do this, you add the
+
+:hover
+
+pseudo-class to the end of the selector. In the following example, adding
+
+:hover
+
+to the
+
+a
+
+element will change the color of the hyperlink to orange when it is hovered over.
+
+CSS
+
+a:hover {
+color: orange;
+}
+
+This pseudo-class is very useful for creating visual effects based on user interaction.
+
+Other Selectors
+
+There are many other CSS selectors available to style your webpage.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_css-basics/03_text-and-color-in-css_instructions.html
+TYPE: HTML
+TITLE: Text And Color In Css Instructions
+
+As you design websites, you'll be working a lot with colors and text. There are many different ways to display text and equally as many ways to define colors.
+
+This reading covers how text and color work in CSS.
+
+Color
+
+Colors are used in many CSS properties, for example:
+
+p { 
+color: blue; 
+}
+
+From CSS Version 3, there are five main ways to reference a color.
+
+By RGB value,
+
+By RGBA value,
+
+By HSL value,
+
+By hex value and
+
+By predefined color names.
+
+RGB value
+
+RGB is a color model that adds the colors red (R), green (G) and blue (B) together to create colors. This is based on how the human eye sees colors.
+
+Each value is defined as a number between
+
+0
+
+and
+
+255
+
+, representing the intensity of that color.
+
+For example, the color red would have the RGB value of
+
+255,0,0
+
+since the intensity of the red color would be 100% while blue and green would be 0%.
+
+The color black then would be
+
+0,0,0
+
+and the color white
+
+255,255,255
+
+.
+
+When using RGB values in CSS, they can be defined using the
+
+rgb
+
+keyword:
+
+p { 
+color: rgb(255, 0, 0); 
+}
+
+RGBA value
+
+RGBA extends RGB by adding an alpha (A) channel, which controls the opacity of the color.
+
+Similar to RGB, RGBA can be specified in CSS using the rgba() function:
+
+p {
+color: rgba(255, 0, 0, 0.8);
+}
+
+The first three values represent red, green, and blue. The fourth value represents alpha and can range from 0 (fully transparent) to 1 (fully opaque). In this example, 0.8 represents 80% opacity.
+
+HSL value
+
+HSL is a color model defined by
+
+Hue (H), Saturation (S), and Lightness (L)
+
+. It provides another way to describe colors by specifying the color itself, its intensity, and how light or dark it appears.
+
+Hue
+
+represents the color and is expressed as an angle around a color wheel, from 0 to 360 degrees. For example, 0 degrees represents red, 120 degrees represents green, and 240 degrees represents blue.
+
+Saturation
+
+represents the intensity of the color and is expressed as a percentage from 0% to 100%. A saturation of 0% produces a shade of gray, while 100% represents the full intensity of the selected hue.
+
+Lightness
+
+represents how light or dark the color appears and is also expressed as a percentage from 0% to 100%. A lightness of 0% produces black, 50% displays the selected hue at its standard lightness, and 100% produces white.
+
+Note:
+
+The diagrams below are simplified visualizations of the HSL color model. In CSS, hue, saturation, and lightness are specified as separate values, with hue represented as an angle and saturation and lightness represented as percentages.
+
+In CSS, you can use the hsl() function to define a color using HSL:
+
+p {
+color: hsl(0, 100%, 50%);
+}
+
+In this example, 0 represents the hue red, 100% represents full saturation, and 50% represents the lightness.
+
+Saturation is the distance from the center of the circle to its edge. The saturation value is represented by a percentage from 0% to 100% where 0% is the center of the circle and 100% is its edge. For example, 0% will mean that the color is more grey and 100% represents the full color.
+
+Lightness is the third element of this color model. Think of it as turning the circle into a 3D cylinder where the bottom of the cylinder is more black and toward the top is more white. Therefore, lightness is the distance from the bottom of the cylinder to the top. Again, lightness is represented by a percentage from 0% to 100% where 0% is the bottom of the cylinder and 100% is its top. In other words, 0% will mean that the color is more black and 100% is white.
+
+Hex value
+
+Colors can be specified using a hexadecimal value. If you're unfamiliar with hexadecimal, think of it as a different number set.
+
+Decimal is what you use every day. Digits range from
+
+0
+
+to
+
+9
+
+before tens and hundreds are used.
+
+Hexadecimal is similar, except it has 16 digits. This is counted as
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+
+.
+
+In fact, you can convert between decimal and hexadecimal. Decimal
+
+10
+
+is equal to hexadecimal
+
+A
+
+. Hexadecimal
+
+F
+
+is equal to decimal
+
+15
+
+.
+
+Hexadecimal can also go to tens and hundreds. For example, decimal
+
+16
+
+is equal to hexadecimal
+
+10
+
+, with
+
+10
+
+being the next number after
+
+F
+
+.
+
+It can be a little confusing at first but don't worry, there are plenty of converters available if you get stuck.
+
+Colors specified using hexadecimal are prefixed with a
+
+#
+
+symbol followed by the RGB value in hexadecimal format.
+
+For example, the color red which is RGB
+
+255,0,0
+
+would be written as hexadecimal
+
+#FF0000
+
+.
+
+Again don't worry if you get stuck, there are plenty of converters available for this too!
+
+Predefined color names
+
+Modern web browsers support 140 predefined color names. These color names are for convenience purposes and can be mapped to equivalent hex/RGB/HSL values.
+
+Some common color names available are listed below.
+
+black
+silver
+gray
+white
+maroon
+red
+purple
+fuchsia
+green
+lime
+olive
+yellow
+navy
+blue
+teal
+aqua
+
+Text
+
+With CSS there are many ways to change how text is displayed. In this section, you'll learn the most common text manipulation CSS properties.
+
+Text Color
+
+The
+
+color
+
+property sets the color of text. The following CSS sets the text color for all paragraph elements to red.
+
+p { 
+color: red;
+}
+
+Text Font and Size
+
+There are many different fonts to display text on your computer. In simple terms, a font is a collection of text characters written in a specific style and size.
+
+If you've used a word processor before, you're probably familiar with the fonts Times New Roman and Calibri.
+
+To set the font used by text in CSS you use the
+
+font-family
+
+property.
+
+p { 
+font-family: "Courier New", monospace;
+}
+
+Since computers vary in what fonts they have installed, it is recommended to include several fonts when using the
+
+font-family
+
+property. These are specified in a fallback order, meaning that if the first font is not available, it will check for the second font. If the second font is not available, then it will check for the third font and so on. If none of the fonts are available, it will use the browser's default font.
+
+To set the size of the font, the
+
+font-size
+
+property is used.
+
+p { 
+font-family: "Courier New", monospace;
+font-size: 12px;
+}
+
+Text Transformation
+
+Text transformation is useful if you want to ensure the correct capitalization of the text content. In the example below, the CSS rule will change all text in paragraph elements to uppercase using the
+
+text-transform
+
+property:
+
+p { 
+text-transform: uppercase;
+}
+
+The most commonly used values for the
+
+text-transform
+
+property are:
+
+uppercase
+
+,
+
+lowercase
+
+,
+
+capitalize
+
+and
+
+none
+
+. The default value used is
+
+none,
+
+which means the text displays as it was written in the HTML document.
+
+Text Decoration
+
+The
+
+text-decoration
+
+property is useful to apply additional decoration to text such as underlining and line-through (strikethrough).
+
+p { 
+text-decoration: underline;
+}
+
+It is possible to set the color, thickness and styling of the decoration too. In the example below, the underline will be a solid red line that is 5 pixels thick.
+
+p { 
+text-decoration: underline red solid 5px;
+}
+
+If this is confusing, don't worry. These properties can be individually set using the
+
+text-decoration-line
+
+,
+
+text-decoration-color
+
+,
+
+text-decoration-style
+
+and
+
+text-decoration-thickness
+
+properties. Let's use the same example again and define it using the individual properties:
+
+p { 
+text-decoration-line: underline;
+text-decoration-color: red;
+text-decoration-style: solid;
+text-decoration-thickness: 5px;
+}
+
+The most common
+
+text-decoration-line
+
+values used are:
+
+underline
+
+,
+
+overline
+
+,
+
+line-through
+
+and
+
+none
+
+. None is the default value to use no text decoration.
+
+There are many styles available for the
+
+text-decoration-style
+
+property;
+
+solid
+
+,
+
+double
+
+,
+
+dotted
+
+,
+
+dashed
+
+and
+
+wavy
+
+. The
+
+text-decoration-style
+
+property requires the decoration line to be defined. If the decoration style is not specified,
+
+solid
+
+will be used.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_css-basics/04_box-model-introduction.en.srt
+TYPE: SRT
+TITLE: Box Model Introduction
+
+[00:00:00,000 --> 00:00:02,220] Just like a busy day at a restaurant,
+[00:00:02,220 --> 00:00:05,130] a website can easily look squashed and busy,
+[00:00:05,130 --> 00:00:08,160] with waiters having to maneuver their way around and
+[00:00:08,160 --> 00:00:11,505] customers chairs up against each other, it can get messy.
+[00:00:11,505 --> 00:00:13,440] Good restaurants usually have
+[00:00:13,440 --> 00:00:15,360] carefully planned layouts to make
+[00:00:15,360 --> 00:00:17,130] customers feel comfortable and
+[00:00:17,130 --> 00:00:19,365] allow waiters to move around with ease.
+[00:00:19,365 --> 00:00:21,600] Sometimes creative web development
+[00:00:21,600 --> 00:00:23,805] requires thinking inside the box.
+[00:00:23,805 --> 00:00:26,099] In this video, I will demonstrate
+[00:00:26,099 --> 00:00:28,485] how to use the box model in CSS
+[00:00:28,485 --> 00:00:30,570] to create an appealing layout and allow
+[00:00:30,570 --> 00:00:33,495] users' eyes to easily flow between content.
+[00:00:33,495 --> 00:00:37,515] When an HTML document and CSS style sheet are downloaded,
+[00:00:37,515 --> 00:00:39,330] the web browser needs to know
+[00:00:39,330 --> 00:00:41,745] how to display the elements on the screen.
+[00:00:41,745 --> 00:00:43,550] To do this, it allocates
+[00:00:43,550 --> 00:00:45,865] a rectangle or box to each element.
+[00:00:45,865 --> 00:00:49,330] CSS rules are applied to the boxes of the elements.
+[00:00:49,330 --> 00:00:51,570] This is known as the box model.
+[00:00:51,570 --> 00:00:54,000] Every box consists of four parts.
+[00:00:54,000 --> 00:00:55,805] The content, the padding,
+[00:00:55,805 --> 00:00:58,880] the border, and finally, the margin.
+[00:00:58,880 --> 00:01:01,595] The content is the actual content of the element,
+[00:01:01,595 --> 00:01:03,340] like the text or the image.
+[00:01:03,340 --> 00:01:04,910] Its size is known as
+[00:01:04,910 --> 00:01:07,385] the content width and content height.
+[00:01:07,385 --> 00:01:09,680] Browsers are clever and by default,
+[00:01:09,680 --> 00:01:11,120] they will calculate the width and
+[00:01:11,120 --> 00:01:13,250] height based on the content itself.
+[00:01:13,250 --> 00:01:15,230] Fortunately, developers can
+[00:01:15,230 --> 00:01:17,590] control the size to manipulate the layout.
+[00:01:17,590 --> 00:01:19,280] You can do this by applying
+[00:01:19,280 --> 00:01:22,085] CSS rules to the content, such as width,
+[00:01:22,085 --> 00:01:24,125] minimum width, maximum width,
+[00:01:24,125 --> 00:01:27,050] height, minimum height, and maximum height.
+[00:01:27,050 --> 00:01:29,380] Let's move on to the padding.
+[00:01:29,380 --> 00:01:32,205] The padding extends the content size.
+[00:01:32,205 --> 00:01:33,710] Its size is known as
+[00:01:33,710 --> 00:01:36,710] the padding box width and the padding box height.
+[00:01:36,710 --> 00:01:38,330] The thickness of the padding is
+[00:01:38,330 --> 00:01:39,875] determined by the padding-top,
+[00:01:39,875 --> 00:01:42,970] padding-bottom, padding- left and padding-right.
+[00:01:42,970 --> 00:01:46,100] The padding box width can be calculated as
+[00:01:46,100 --> 00:01:47,630] content width plus padding
+[00:01:47,630 --> 00:01:50,050] left side plus padding right side.
+[00:01:50,050 --> 00:01:52,430] You can calculate the padding box height
+[00:01:52,430 --> 00:01:53,915] by adding the content height,
+[00:01:53,915 --> 00:01:57,215] the padding top side and padding bottom side together.
+[00:01:57,215 --> 00:01:59,855] Next, let me show you how you set the border.
+[00:01:59,855 --> 00:02:02,585] The border goes around the padding and content.
+[00:02:02,585 --> 00:02:04,010] Its size is known as
+[00:02:04,010 --> 00:02:06,390] the border box width and border box height.
+[00:02:06,390 --> 00:02:08,570] You can set different types of borders,
+[00:02:08,570 --> 00:02:11,320] such as solid border or a dashed border.
+[00:02:11,320 --> 00:02:13,819] To understand how this plays out practically,
+[00:02:13,819 --> 00:02:15,665] I will demonstrate the HTML,
+[00:02:15,665 --> 00:02:18,245] the CSS style, and the physical border.
+[00:02:18,245 --> 00:02:21,675] To set the border, you can write border width thin,
+[00:02:21,675 --> 00:02:25,245] border width medium, and border width thick.
+[00:02:25,245 --> 00:02:27,290] Now, let me share with you
+[00:02:27,290 --> 00:02:29,105] a pro developer tip to help you
+[00:02:29,105 --> 00:02:30,170] calculate the size of
+[00:02:30,170 --> 00:02:33,535] your HTML elements when working with the box model.
+[00:02:33,535 --> 00:02:37,690] An HTML element is equal to the size of the border box.
+[00:02:37,690 --> 00:02:39,515] To get the border box width,
+[00:02:39,515 --> 00:02:41,630] you add the padding box width plus
+[00:02:41,630 --> 00:02:45,085] the border left side plus the border right side.
+[00:02:45,085 --> 00:02:48,200] You can calculate the border box height by adding
+[00:02:48,200 --> 00:02:50,825] the padding box height and the border top side,
+[00:02:50,825 --> 00:02:52,990] as well as the border bottom side.
+[00:02:52,990 --> 00:02:56,025] Lastly, let me show you how to set the margin.
+[00:02:56,025 --> 00:02:58,020] Following on from what you have just learned,
+[00:02:58,020 --> 00:03:01,220] do you have an idea of what the CSS rule might be?
+[00:03:01,220 --> 00:03:03,410] The margin extends the border area to
+[00:03:03,410 --> 00:03:06,040] separate the element from its neighboring elements.
+[00:03:06,040 --> 00:03:08,780] Its size is known as the margin box width,
+[00:03:08,780 --> 00:03:10,220] a margin box height.
+[00:03:10,220 --> 00:03:12,350] To specify the margin sides,
+[00:03:12,350 --> 00:03:14,075] you write, margin-top,
+[00:03:14,075 --> 00:03:16,445] followed by the value, the margin-bottom,
+[00:03:16,445 --> 00:03:18,650] margin-left, and margin-right follow
+[00:03:18,650 --> 00:03:20,590] the exact same notation.
+[00:03:20,590 --> 00:03:22,235] We can also set the padding,
+[00:03:22,235 --> 00:03:24,950] border and margin width shorthand properties,
+[00:03:24,950 --> 00:03:26,855] but more on this later.
+[00:03:26,855 --> 00:03:30,140] Lastly, let's calculate the size of the margin box.
+[00:03:30,140 --> 00:03:33,185] Can you guess how? The margin box width
+[00:03:33,185 --> 00:03:36,065] can be calculated by adding the border box width,
+[00:03:36,065 --> 00:03:39,940] the margin left-side and the margin right-side together.
+[00:03:39,940 --> 00:03:43,580] To get the margin box height at the border box height,
+[00:03:43,580 --> 00:03:46,970] margin top side and margin bottom side together.
+[00:03:46,970 --> 00:03:48,875] To easily remember this,
+[00:03:48,875 --> 00:03:50,965] think of the content as yourself.
+[00:03:50,965 --> 00:03:53,260] The padding is like the thickness of your clothes.
+[00:03:53,260 --> 00:03:56,075] The border is like the silhouette or outline
+[00:03:56,075 --> 00:03:58,070] and the margin is the personal space
+[00:03:58,070 --> 00:03:59,885] between you and another person.
+[00:03:59,885 --> 00:04:02,665] In this video, I've opened the box model for you.
+[00:04:02,665 --> 00:04:06,470] Inside it is the content and around it flows the padding,
+[00:04:06,470 --> 00:04:08,445] the border fits around the padding.
+[00:04:08,445 --> 00:04:10,190] Lastly, the margin is
+[00:04:10,190 --> 00:04:12,545] the empty space keeping elements apart.
+[00:04:12,545 --> 00:04:14,120] You will work with the box model
+[00:04:14,120 --> 00:04:15,560] in every website you develop,
+[00:04:15,560 --> 00:04:16,910] so I encourage you to start
+[00:04:16,910 --> 00:04:19,740] practicing with it in your designs.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_css-basics/05_document-flow-block-vs-in-line.en.srt
+TYPE: SRT
+TITLE: Document Flow Block Vs In Line
+
+[00:00:00,540 --> 00:00:04,339] By now you've learned how CSS styles individual html elements,
+[00:00:04,339 --> 00:00:09,240] but how does the web browser know where to place the elements on the screen?
+[00:00:09,240 --> 00:00:11,819] The web browsers normal way of calculating
+[00:00:11,819 --> 00:00:15,979] the position of html elements on the screen is called document flow.
+[00:00:15,979 --> 00:00:19,960] By default, nearly all html elements are organized into one of two
+[00:00:19,960 --> 00:00:22,961] categories namely in block and inline elements.
+[00:00:24,240 --> 00:00:28,555] A block-level element will occupy the full horizontal width of its parent element and
+[00:00:28,555 --> 00:00:31,140] the vertical height of its content.
+[00:00:31,140 --> 00:00:34,940] Each block-level element will have a new line before and after.
+[00:00:34,940 --> 00:00:38,768] Therefore, multiple block-level elements will stack on top of each other
+[00:00:38,768 --> 00:00:40,640] like a stack of boxes.
+[00:00:40,640 --> 00:00:44,740] Inline elements only occupy the width and height of their content.
+[00:00:44,740 --> 00:00:48,340] They don't appear on a new line, hence the name inline.
+[00:00:48,340 --> 00:00:52,249] Therefore, multiple inline elements can form a row of elements.
+[00:00:52,249 --> 00:00:57,540] When coding in html, you need to be able to recognize and use block elements.
+[00:00:57,540 --> 00:01:03,040] Some examples of block-level elements include the tags, div form and heading.
+[00:01:03,040 --> 00:01:06,440] You also need to be familiar with common inline elements.
+[00:01:06,440 --> 00:01:10,914] These include the tags anchor, image, input label, bold,
+[00:01:10,914 --> 00:01:13,161] italics, emphasis and span.
+[00:01:14,240 --> 00:01:17,614] Let me demonstrate the difference between block and
+[00:01:17,614 --> 00:01:22,761] inline now by using an example of an html file containing div and span elements.
+[00:01:23,840 --> 00:01:26,968] Okay, so, I've opened Visual Studio Code here,
+[00:01:26,968 --> 00:01:31,645] I will now demonstrate an example where you will learn about document flow.
+[00:01:31,645 --> 00:01:36,027] First, I want you to notice that I have a div element containing three
+[00:01:36,027 --> 00:01:38,740] sentences of Lorem ipsum.
+[00:01:38,740 --> 00:01:42,962] A div or division element is used to divide content into sections.
+[00:01:42,962 --> 00:01:45,610] If you don't speak Latin, don't worry.
+[00:01:45,610 --> 00:01:49,651] Lauren Ipsum is placeholder text that has been used since the 1500s.
+[00:01:51,140 --> 00:01:55,661] Each sentence contains a span element that you may recall are inline elements.
+[00:01:56,740 --> 00:02:01,361] Notice that all text is displayed in an unbroken flow of content in the browser.
+[00:02:02,640 --> 00:02:05,740] In the code I have div and span elements.
+[00:02:05,740 --> 00:02:09,857] I am now going to change the middle sentence from a span to a div tag.
+[00:02:09,857 --> 00:02:14,593] Because the div tag is a block-level element, notice that the sentence has been
+[00:02:14,593 --> 00:02:19,240] moved to a new line and the span element after it is also a new line.
+[00:02:19,240 --> 00:02:24,140] It's possible to change elements from block-level to inline and vice versa.
+[00:02:24,140 --> 00:02:26,961] This can be done using the display CSS property.
+[00:02:28,140 --> 00:02:31,332] Let me add a CSS file called style.css.
+[00:02:31,332 --> 00:02:36,738] In my html file, let me give the middle sentence div element an Id.
+[00:02:36,738 --> 00:02:43,540] I now add a rule in the CSS file to change the element to an inline element.
+[00:02:43,540 --> 00:02:48,852] To create the CSS rule, I type #middle and open the curly brackets.
+[00:02:48,852 --> 00:02:53,760] On the next line, I type display: inline;
+[00:02:53,760 --> 00:02:56,706] And on the next line I close the curly brackets,
+[00:02:56,706 --> 00:03:00,740] notice that the div has now changed to an inline element.
+[00:03:00,740 --> 00:03:03,951] If I want to change it back, I can just remove the property.
+[00:03:05,440 --> 00:03:10,240] I have deleted the rule in the code to change the element to an inline element.
+[00:03:10,240 --> 00:03:14,351] Another way to achieve this outcome is to set the display property to block.
+[00:03:15,440 --> 00:03:18,228] I have now changed the value for display to block.
+[00:03:18,228 --> 00:03:22,419] In another video, I will demonstrate to you that there are other values you
+[00:03:22,419 --> 00:03:27,640] can set for the display property to change the layout behavior of an element.
+[00:03:27,640 --> 00:03:32,740] Congratulations, you have now learned about block and inline elements in html.
+[00:03:32,740 --> 00:03:36,116] It's important for developers to be comfortable working with each and
+[00:03:36,116 --> 00:03:37,361] to know the differences.
+[00:03:38,640 --> 00:03:42,537] It's important to remember that block elements begin on a new line and
+[00:03:42,537 --> 00:03:45,040] take up the full width of the page.
+[00:03:45,040 --> 00:03:49,174] And inline elements work within the flow of surrounding content rather than
+[00:03:49,174 --> 00:03:50,861] breaking onto their own line.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_css-basics/06_alignment-basics_instructions.html
+TYPE: HTML
+TITLE: Alignment Basics Instructions
+
+Let's explore how to align text and HTML elements using CSS.
+
+Let's first focus on horizontal alignment. Vertical alignment is more difficult so you'll explore that later on.
+
+Text Alignment
+
+Aligning text within an HTML element is very simple. To do this, you use the
+
+text-align
+
+CSS property. In the following example, the CSS rule is setting the text of all paragraph elements to be center aligned.
+
+p {
+text-align: center;
+}
+
+Text alignment can be set to "
+
+left"
+
+, "
+
+right"
+
+, "
+
+center",
+
+and "
+
+justify"
+
+.
+
+The
+
+justify
+
+alignment spreads the text out so that every line of the text has the same width.
+
+The default alignment is
+
+left
+
+for languages that are left-to-right such as English. For right-to-left languages such as Arabic, the default alignment is
+
+right
+
+.
+
+HTML Element Alignment
+
+HTML element alignment is more complicated than text alignment. To align HTML elements, you must consider the box model and document flow from previous lessons. Aligning an HTML element is done by changing the properties of its box model and how it impacts the document flow.
+
+HTML Element Center Alignment
+
+To center align an element, you set a width on the element and push its margins out to fill the remaining available space of the parent element as in the following HTML structure:
+
+<div class="parent">
+<div class="child">
+</div>
+</div>
+
+In your CSS, you'll set the
+
+parent
+
+element to have a red border to visualize the space it occupies:
+
+.parent {
+border: 4px solid red;
+}
+
+The
+
+child
+
+element will have a width equal to 50% of the
+
+parent
+
+element with a padding of 20 pixels. Note that
+
+padding: 20px
+
+is shorthand for setting the padding top, bottom, left and right to
+
+20px
+
+. To visualize the space it occupies, set the border to green:
+
+.child {
+width: 50%;
+padding: 20px;
+border: 4px solid green;
+}
+
+To align the element to the center, set its
+
+margin
+
+property to
+
+auto
+
+. The
+
+auto
+
+will tell the browser to calculate the margin automatically based on the space available.
+
+.child {
+width: 50%;
+padding: 20px;
+border: 4px solid green;
+margin: auto;
+}
+
+The result is the
+
+child
+
+element is centered within the
+
+parent
+
+element:
+
+It is important to note that this works because the
+
+div
+
+element is a block-level element.
+
+If you want to align an inline element like
+
+img
+
+, you will need to change it to a block-level element. Similar to the
+
+div
+
+example, you add the
+
+img
+
+to a parent element:
+
+<div class="parent">
+<img src="photo.png" class="child">
+</div>
+
+The CSS rule then changes the
+
+img
+
+element to a block-level element and sets its margin to
+
+auto:
+
+.child {
+display: block;
+width: 50%;
+margin: auto;
+}
+
+To be more precise, in CSS you can set only the left and right margins to auto. This allows you to set the top and bottom margins to specific values if needed.
+
+.child {
+display: block;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+}
+
+HTML Element Left / Right Alignment
+
+The two most common ways to left and right align elements are to use the
+
+float
+
+property and the
+
+position
+
+property.
+
+The
+
+position
+
+property has several value options that impact how the element displays in the document flow. You'll explore how to use the
+
+position
+
+property later on. For now, let's focus on the
+
+float
+
+property.
+
+The
+
+float
+
+property sets an element's position relative to the text content within a parent element. Text will wrap around the element.
+
+In the following example, the image will be aligned to the right of the
+
+div
+
+element. The text content will wrap around the image:
+
+HTML
+
+<div class="parent">
+<img src="photo.png" class="child"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio eget leo auctor porta sit amet sit amet justo. Donec fermentum quam in diam volutpat, at lacinia diam placerat. Aenean quis feugiat sem. Suspendisse a dui massa. Phasellus scelerisque, mi vestibulum iaculis tristique, orci tellus gravida nisi, in pellentesque elit massa ut lorem. Sed elementum ornare nunc vel cursus. Duis sed enim in nulla efficitur convallis sed eget dolor. Curabitur scelerisque eros erat, in vulputate dolor consequat vel. Praesent ac sapien condimentum, ultricies libero at, auctor orci. Curabitur ut augue ac massa convallis faucibus sed in magna. Phasellus scelerisque auctor est a auctor. Nam laoreet sem sapien, porta imperdiet urna laoreet eu. Morbi dolor turpis, congue id bibendum eget, viverra et risus. Quisque vitae erat id tortor ullamcorper maximus.
+</div>
+
+CSS
+
+.child {
+float: right;
+}
+
+The following displays in the web browser:
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_css-basics/07_additional-resources_instructions.html
+TYPE: HTML
+TITLE: Additional Resources Instructions
+
+Learn more​
+
+Here is a list of resources that may be helpful as you continue your learning journey.
+
+CSS Reference (Mozilla)
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+HTML and CSS: Design and build websites by Jon Duckett
+
+https://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189/
+
+CSS Definitive Guide by Eric Meyer
+
+https://www.amazon.com/CSS-Definitive-Guide-Visual-Presentation/dp/1449393195/
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 03_creating-a-web-page/01_module-summary-introduction-to-html-and-css.en.srt
+TYPE: SRT
+TITLE: Module Summary Introduction To Html And Css
+
+[00:00:00,000 --> 00:00:01,260] You've reached the end of
+[00:00:01,260 --> 00:00:05,220] this introductory module on HTML5 and CSS.
+[00:00:05,220 --> 00:00:07,050] It's now time to review what
+[00:00:07,050 --> 00:00:08,955] you've learned in these lessons.
+[00:00:08,955 --> 00:00:11,880] This module started with a lesson on the basics of
+[00:00:11,880 --> 00:00:15,090] HTML or Hypertext Markup Language.
+[00:00:15,090 --> 00:00:17,580] You began this lesson by exploring the answer
+[00:00:17,580 --> 00:00:20,310] to the question, what is HTML?
+[00:00:20,310 --> 00:00:22,530] You learned to describe
+[00:00:22,530 --> 00:00:24,945] the purpose of HTML in a web browser,
+[00:00:24,945 --> 00:00:27,555] demonstrate the use of HTML tags,
+[00:00:27,555 --> 00:00:31,335] including how to ensure that you use the correct syntax,
+[00:00:31,335 --> 00:00:34,035] identify how HTML elements
+[00:00:34,035 --> 00:00:36,240] are utilized in a web document.
+[00:00:36,240 --> 00:00:39,620] You also explored HTML documents,
+[00:00:39,620 --> 00:00:41,405] and you should now be able to
+[00:00:41,405 --> 00:00:44,135] outline the structure of an HTML page,
+[00:00:44,135 --> 00:00:45,995] including the root, head,
+[00:00:45,995 --> 00:00:47,740] body and other elements,
+[00:00:47,740 --> 00:00:51,380] demonstrate how to build basic HTML documents by
+[00:00:51,380 --> 00:00:53,450] combining common key elements and
+[00:00:53,450 --> 00:00:56,135] tags in order to create a structure,
+[00:00:56,135 --> 00:00:58,760] and explain how to create a link between
+[00:00:58,760 --> 00:01:00,920] HTML documents with the use of
+[00:01:00,920 --> 00:01:03,845] an href or hypertext reference attribute,
+[00:01:03,845 --> 00:01:06,680] to redirect users between the documents.
+[00:01:06,680 --> 00:01:09,290] You should also be able to add
+[00:01:09,290 --> 00:01:12,245] images to a web page with HTML code,
+[00:01:12,245 --> 00:01:16,160] utilize HTML to manipulate data in tables,
+[00:01:16,160 --> 00:01:20,185] and build HTML forms with a wide range of input types.
+[00:01:20,185 --> 00:01:21,920] You then moved on to study
+[00:01:21,920 --> 00:01:24,110] the Document Object Model or DOM,
+[00:01:24,110 --> 00:01:28,355] a tree structure or model of objects in an HTML page.
+[00:01:28,355 --> 00:01:30,770] During your investigation of the DOM,
+[00:01:30,770 --> 00:01:32,285] you learned how to
+[00:01:32,285 --> 00:01:34,310] explain what the DOM is,
+[00:01:34,310 --> 00:01:37,390] and the purpose that it serves with an HTML document,
+[00:01:37,390 --> 00:01:39,890] demonstrate how the DOM is created from
+[00:01:39,890 --> 00:01:43,910] an HTML page by exploring the elements that generate it,
+[00:01:43,910 --> 00:01:46,205] and visualizing it in diagram form,
+[00:01:46,205 --> 00:01:49,640] and provide a high level description of common instances
+[00:01:49,640 --> 00:01:50,990] in which web developers
+[00:01:50,990 --> 00:01:53,500] interact with the DOM through JavaScript.
+[00:01:53,500 --> 00:01:56,300] These include, updating content,
+[00:01:56,300 --> 00:01:59,965] setting up events, and animating HTML elements.
+[00:01:59,965 --> 00:02:03,155] You also explored the concept of web accessibility
+[00:02:03,155 --> 00:02:06,545] by exploring how people with disabilities can understand,
+[00:02:06,545 --> 00:02:09,170] navigate, and interact with websites.
+[00:02:09,170 --> 00:02:11,555] Following your exploration of this topic,
+[00:02:11,555 --> 00:02:13,430] you should now be able to
+[00:02:13,430 --> 00:02:15,260] demonstrate high level knowledge of
+[00:02:15,260 --> 00:02:17,090] assistive technologies used to
+[00:02:17,090 --> 00:02:18,890] browse the web like screen
+[00:02:18,890 --> 00:02:21,410] reading and speech recognition software,
+[00:02:21,410 --> 00:02:23,600] make use of basic techniques to
+[00:02:23,600 --> 00:02:26,150] improve the accessibility of your web projects,
+[00:02:26,150 --> 00:02:28,750] such as correct HTML structure.
+[00:02:28,750 --> 00:02:31,595] Following this Introduction to HTML5,
+[00:02:31,595 --> 00:02:33,860] you then covered a lesson on the basics of
+[00:02:33,860 --> 00:02:36,665] CSS or Cascading Style Sheets.
+[00:02:36,665 --> 00:02:38,690] The lesson began with an overview of
+[00:02:38,690 --> 00:02:40,760] selecting and styling in which you
+[00:02:40,760 --> 00:02:43,490] learn to write CSS rules in
+[00:02:43,490 --> 00:02:46,790] order to style elements within HTML document,
+[00:02:46,790 --> 00:02:48,770] demonstrate an understanding of
+[00:02:48,770 --> 00:02:51,035] the box model and its key features,
+[00:02:51,035 --> 00:02:54,265] and explain the concept of document flow.
+[00:02:54,265 --> 00:02:56,330] You then demonstrated your skills in
+[00:02:56,330 --> 00:02:59,555] these topics by creating a biographical webpage,
+[00:02:59,555 --> 00:03:01,220] the first of many webpages you'll
+[00:03:01,220 --> 00:03:03,350] create in this specialization.
+[00:03:03,350 --> 00:03:05,720] You should now be familiar with the basics
+[00:03:05,720 --> 00:03:08,200] of HTML5 and CSS.
+[00:03:08,200 --> 00:03:10,010] Well done. You're making
+[00:03:10,010 --> 00:03:12,810] good progress on your learning journey.
