@@ -1,0 +1,437 @@
+Claude Code
+MODULE 06: Multimodal Prompting Process
+======================================================
+
+This file collects the readable text from this module's subtitles and learning materials. Source paths are kept below each section.
+
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/01_exercise-from-coffee-stained-napkin-to-production-code-with-multimodal-prompting_instructions.html
+TYPE: HTML
+TITLE: Exercise From Coffee Stained Napkin To Production Code With Multimodal Prompting Instructions
+
+You're sitting in a coffee shop brainstorming your expense tracker app when inspiration strikes. You grab a napkin and start sketching your ideas, but your latte leaves a few stains on your masterpiece. No problem - Claude Code can turn even the messiest sketches into polished, production-ready code.
+
+The Scenario
+
+You've been using your basic expense tracker for a few weeks, but you realize you need a better way to visualize your spending patterns. During your morning coffee break, you sketch out an idea for an "Expense Insights" dashboard on the only paper available - a coffee shop napkin.
+
+Your sketch includes:
+
+A header saying "Monthly Insights"
+
+A donut chart showing spending by category
+
+A list of your top 3 spending categories with amounts
+
+A "spending streak" indicator (days without overspending)
+
+Some coffee ring stains that you decide add character
+
+The Sketch
+
+You did a pretty good job with your sketch (well, really Claude did a good job):
+
+Exercise: Transforming Sketch to Code
+
+Step 1: Set Up Your Environment
+
+Make sure you're in your expense tracker project directory and start Claude Code:
+
+cd expense-tracker-ai
+claude
+
+Exercise: Transforming Sketch to Code
+
+Step 1: Save Your Napkin Design
+
+First, you need to save the napkin mockup as an image file that you can show to Claude Code.
+
+Right-click on the napkin design above and select "Save image as..." or "Save picture as..."
+
+Save it as napkin-insights-mockup.png in your expense tracker project folder or Desktop.
+
+Step 3: Show Claude Your "Napkin" Sketch
+
+Now comes the magic moment - you're about to show Claude Code your rough sketch and watch it transform into production-ready code. Use this prompt (
+
+UPDATE THE PATH TO THE IMAGE
+
+):
+
+I sketched an expense insights dashboard on a napkin at a coffee shop.
+Please implement this as a React component called MonthlyInsights.
+
+Looking at this sketch: /your/path/to/the/napkin-insights-mockup.png
+
+Implement a new screen in the application that mirrors what you see in the mockup.
+
+(You can also drag/drop the image into the prompt area of Claude Code)
+
+Team Whiteboard to Code: Building While You're on Break
+
+Picture this: You've just wrapped up an intense team meeting where everyone was sketching ideas on the whiteboard. The board is covered with user flows, component layouts, and architecture diagrams. Instead of losing momentum while the team takes a coffee break, you can take pictures of the whiteboard and have Claude Code implement multiple versions of your ideas - so when you return with fresh coffee, you have working prototypes to evaluate.
+
+What's Easier to Show Than Tell: Visual Communication in Development
+
+When working with Claude Code, certain concepts are dramatically easier to communicate through images than through text descriptions. Understanding when to reach for a screenshot, sketch, or diagram can save you time and lead to much better results.
+
+UI/UX Design and Layout
+
+Spatial Relationships
+
+Why visual wins:
+
+Describing how elements should be positioned relative to each other is incredibly verbose and prone to misinterpretation.
+
+Text approach:
+
+"The search bar should be centered horizontally at the top, with the logo 20px to the left, and the user avatar 15px to the right. Below that, there should be a navigation menu with equal spacing between items, and the main content area should start 40px below the navigation..."
+
+Visual approach:
+
+Shows wireframe or mockup
+
+"Implement this layout exactly as shown."
+
+Color Schemes and Visual Hierarchy
+
+Why visual wins:
+
+Colors, gradients, shadows, and visual emphasis are nearly impossible to describe precisely.
+
+Text approach:
+
+"Use a blue that's not too dark but not too light, kind of like a professional blue but warmer, with a subtle gradient that goes from slightly lighter at the top to slightly darker at the bottom..."
+
+Visual approach:
+
+Shows color palette or existing design
+
+"Match these exact colors and visual treatment."
+
+Responsive Behavior
+
+Why visual wins:
+
+How layouts should adapt across screen sizes involves complex spatial reasoning.
+
+Text approach:
+
+"On mobile, the sidebar should collapse into a hamburger menu, the cards should stack vertically instead of in a grid, and the font sizes should scale down proportionally while maintaining readability..."
+
+Visual approach:
+
+Shows mobile and desktop screenshots side by side
+
+"Make it responsive like this."
+
+Data Visualization and Charts
+
+Chart Types and Styling
+
+Why visual wins:
+
+The appearance of charts involves many subtle design decisions that are hard to articulate.
+
+Text approach:
+
+"Create a donut chart with the hole about 40% of the radius, use these five colors but make sure they're visually distinct, add labels that don't overlap, and position the legend to the right unless there's not enough space..."
+
+Visual approach:
+
+Shows example chart or sketch
+
+"Create a chart that looks like this."
+
+Dashboard Layouts
+
+Why visual wins:
+
+Dashboards involve complex arrangements of multiple data visualizations.
+
+Text approach:
+
+"Put the main KPI cards at the top in a row of four, then below that have a large chart taking up two-thirds of the width with a smaller chart on the right, and below that have a table that spans the full width..."
+
+Visual approach:
+
+Shows dashboard mockup
+
+"Implement this dashboard layout."
+
+User Flows and Interactions
+
+Multi-Step Processes
+
+Why visual wins:
+
+User flows involve state changes, conditional logic, and multiple screens that are hard to describe linearly.
+
+Text approach:
+
+"First the user sees a form, then after they submit they go to a confirmation page, but if there's an error they stay on the form with error messages, and if they're not logged in they go to login first, unless they're a guest user in which case..."
+
+Visual approach:
+
+Shows flow diagram with arrows and decision points
+
+"Implement this user flow."
+
+Animation and Transitions
+
+Why visual wins:
+
+Motion and timing are inherently visual concepts.
+
+Text approach:
+
+"When the modal opens, it should slide in from the bottom with a smooth easing function, not too fast but not too slow, and the background should fade to dark but not completely black..."
+
+Visual approach:
+
+Shows video or animated GIF
+
+"Make it animate like this."
+
+Error States and Edge Cases
+
+Visual Bug Reports
+
+Why visual wins:
+
+Layout issues, styling problems, and visual glitches are immediately obvious in screenshots.
+
+Text approach:
+
+"The button text is being cut off and there's weird spacing around the form fields, and the colors don't look right, and on mobile the navigation is overlapping the content..."
+
+Visual approach:
+
+Shows screenshot of the problem
+
+"Fix what's wrong in this screenshot."
+
+Empty States and Loading States
+
+Why visual wins:
+
+These states involve specific visual messaging and layout considerations.
+
+Text approach:
+
+"When there's no data, show a friendly message with an illustration, maybe something about getting started, and make sure it's centered and not too empty-looking..."
+
+Visual approach:
+
+Shows examples of good empty states
+
+"Design empty states like these examples."
+
+Architecture and System Design
+
+System Architecture Diagrams
+
+Why visual wins:
+
+System relationships, data flow, and component interactions are spatial concepts.
+
+Text approach:
+
+"The frontend talks to the API gateway which routes to three microservices, each with their own database, and there's a message queue between the order service and the inventory service..."
+
+Visual approach:
+
+Shows architecture diagram
+
+"Implement this system architecture."
+
+Database Schema Relationships
+
+Why visual wins:
+
+Table relationships, foreign keys, and data modeling are inherently visual.
+
+Text approach:
+
+"Users have many expenses, expenses belong to categories, categories can have subcategories, and there's a many-to-many relationship between expenses and tags..."
+
+Visual approach:
+
+Shows entity relationship diagram
+
+"Create this database schema."
+
+Complex Business Logic
+
+Decision Trees and Conditional Logic
+
+Why visual wins:
+
+Complex if/then scenarios are easier to follow visually.
+
+Text approach:
+
+"If the user is premium and the expense is over $100 but less than $1000 and it's in the food category and it's a weekday, then apply the premium discount, but if it's a weekend or they're not premium..."
+
+Visual approach:
+
+Shows decision flowchart
+
+"Implement this business logic flow."
+
+Workflow Diagrams
+
+Why visual wins:
+
+Business processes involve multiple actors, decision points, and parallel flows.
+
+Text approach:
+
+"The manager approves the expense, then it goes to accounting, but if it's over $500 it needs director approval first, and if it's travel-related it also needs HR review..."
+
+Visual approach:
+
+Shows workflow diagram
+
+"Build this approval workflow."
+
+Performance and Technical Issues
+
+Performance Profiling Results
+
+Why visual wins:
+
+Performance data involves charts, timelines, and visual patterns.
+
+Text approach:
+
+"The main thread is blocked for about 200ms during rendering, there's a memory leak that gradually increases over time, and there are several functions that take longer than expected..."
+
+Visual approach:
+
+Shows DevTools performance profile
+
+"Optimize based on this performance analysis."
+
+Network Architecture
+
+Why visual wins:
+
+Network topologies, load balancing, and infrastructure are spatial concepts.
+
+Text approach:
+
+"Put a load balancer in front of three application servers, with a database cluster behind them, and CDN for static assets, with monitoring on everything..."
+
+Visual approach:
+
+Shows network topology diagram
+
+"Set up this infrastructure."
+
+When Visual Communication Transforms Productivity
+
+Design Handoffs
+
+Instead of writing detailed specifications, designers can show mockups and Claude Code can implement them directly.
+
+Bug Reports
+
+Screenshots with annotations are infinitely more useful than textual descriptions of visual problems.
+
+Stakeholder Communication
+
+Showing working prototypes based on sketches creates immediate understanding and feedback.
+
+Code Reviews
+
+Before/after screenshots help reviewers understand the impact of changes.
+
+Documentation
+
+Visual examples in documentation are more effective than purely textual explanations.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/02_start-by-fixing-the-process-context-not-the-code.en.srt
+TYPE: SRT
+TITLE: Start By Fixing The Process Context Not The Code
+
+[00:00:00,000 --> 00:00:06,039] When you're getting started with Claude code, it is absolutely inevitable that something
+[00:00:06,039 --> 00:00:07,800] really specific is going to happen.
+[00:00:07,800 --> 00:00:12,720] And that thing is, is that Claude is going to go and write a bunch of lines of code that
+[00:00:12,720 --> 00:00:17,319] don't quite do what you want, they're not designed the way you want, the style isn't
+[00:00:17,319 --> 00:00:20,760] what you want, and you have a couple of different options in that point.
+[00:00:20,760 --> 00:00:25,639] Now you could reach in there and you could directly yourself edit that code, move things
+[00:00:25,639 --> 00:00:27,479] around, tweak things.
+[00:00:27,479 --> 00:00:29,799] Yeah, you could absolutely do that.
+[00:00:29,799 --> 00:00:34,080] You could also go and just directly prompt Claude and tell it what to fix.
+[00:00:34,080 --> 00:00:37,119] You could give it a new prompt, P, and say, go and fix this.
+[00:00:37,119 --> 00:00:39,599] And you can absolutely do that too.
+[00:00:39,599 --> 00:00:43,520] But I want you to think about doing something much, much more valuable.
+[00:00:43,520 --> 00:00:48,319] You have to remember that as a programmer now, a programmer that's working with software
+[00:00:48,319 --> 00:00:56,119] AI, software engineering, artificial intelligence, labor, you are programming that labor.
+[00:00:56,119 --> 00:01:04,160] Your goal is to program the process, to program the context, to build a process and a context
+[00:01:04,160 --> 00:01:08,599] to where that AI labor gets it right like 100% of the time.
+[00:01:08,599 --> 00:01:12,440] You don't want to go and hand edit a bunch of stuff because you're limiting the scalability.
+[00:01:12,440 --> 00:01:16,860] If every time it makes a mistake, you have to go in and fix it by hand, that's not what
+[00:01:16,860 --> 00:01:17,860] you want to do.
+[00:01:17,860 --> 00:01:23,239] So what you want to do is have a process that over time gets more and more repeatable, better
+[00:01:23,239 --> 00:01:26,720] and better, has just the right context.
+[00:01:26,720 --> 00:01:31,680] So instead, when you have this situation, what you want to do is you want to go and
+[00:01:31,680 --> 00:01:36,239] start by updating one, those Claude.md files.
+[00:01:36,239 --> 00:01:42,800] So go and upload that Claude.md file, and then you want to go and update all the commands.
+[00:01:42,800 --> 00:01:45,360] So those are the things you want to go and update.
+[00:01:45,360 --> 00:01:51,279] Because this stuff over here, these files like Claude.md and the commands, that stuff
+[00:01:51,279 --> 00:01:52,639] is repeatable.
+[00:01:52,639 --> 00:01:55,720] And when you go and you edit it, basically what you're doing is you're programming the
+[00:01:55,720 --> 00:01:57,199] process.
+[00:01:57,199 --> 00:01:59,680] You're going and you're putting context.
+[00:01:59,680 --> 00:02:03,819] You're programmatically essentially, even though it's English or whatever language you're
+[00:02:03,819 --> 00:02:10,059] working in, even though it's that and it's not the traditional programming and computing
+[00:02:10,059 --> 00:02:13,000] languages that you're used to, you're still programming.
+[00:02:13,000 --> 00:02:14,279] You're programming the process.
+[00:02:14,279 --> 00:02:16,240] You're programming the context.
+[00:02:16,240 --> 00:02:21,360] And that's what you want to go and focus on is say, what do I need to figure, you know,
+[00:02:21,360 --> 00:02:28,080] go and figure out inside of that Claude.md file or that command file that's not quite enough.
+[00:02:28,080 --> 00:02:29,559] Where can I add specificity?
+[00:02:29,559 --> 00:02:31,679] Where can I add additional instructions?
+[00:02:31,679 --> 00:02:37,839] Where can I add additional examples of the right thing to do or important context that's missing?
+[00:02:37,839 --> 00:02:41,559] And that's what you want to go and do is you want to go and edit those files.
+[00:02:41,559 --> 00:02:46,660] Because editing your Claude.md and editing your commands creates repeatability.
+[00:02:46,660 --> 00:02:51,380] The more effort you put into refining those files, what you're going to get is a more
+[00:02:51,380 --> 00:02:53,059] repeatable process.
+[00:02:53,059 --> 00:02:55,119] You're going to get a more scalable process.
+[00:02:55,119 --> 00:03:01,000] Because every time you go in and you put something into those files that leads to Claude making
+[00:03:01,000 --> 00:03:06,039] better decisions overall and producing better code, it's going to mean that you get to be
+[00:03:06,039 --> 00:03:08,759] a little more hands off on the process.
+[00:03:08,759 --> 00:03:12,559] And the more hands off you are on the process, the more scalable it is.
+[00:03:12,559 --> 00:03:17,740] For example, if you were going to try and sort a bunch of numbers, would you write a
+[00:03:17,740 --> 00:03:21,740] program that every 10th number shows you the numbers and ask you if it's right?
+[00:03:21,740 --> 00:03:25,839] No, you would go and you would write a program that can sort them correctly.
+[00:03:25,839 --> 00:03:29,660] You would put guardrails, you would test it, and you would refine it over time to where
+[00:03:29,660 --> 00:03:32,080] it can go and sort autonomously.
+[00:03:32,080 --> 00:03:36,679] Because that's far more scalable than having you check every 10th number or check the sorting
+[00:03:36,679 --> 00:03:38,839] after every 10th number.
+[00:03:38,839 --> 00:03:42,399] And that's the kind of thing that you're doing now is you have to have that mentality that
+[00:03:42,399 --> 00:03:48,199] I'm going to go and refine the Claude.md files, I'm going to refine the command files
+[00:03:48,199 --> 00:03:54,160] so that the process itself gets better, more repeatable, more trustworthy over time.
+[00:03:54,160 --> 00:03:59,979] So every bit of time that you spend editing the code itself is time that you should really
+[00:03:59,979 --> 00:04:03,279] be thinking to yourself, what could I change in the Claude.md file?
+[00:04:03,279 --> 00:04:07,240] Or what could I change in the commands that would make it so that I don't have to edit
+[00:04:07,240 --> 00:04:08,679] it next time?
+[00:04:08,679 --> 00:04:14,279] And all the time that you spend editing those files, improving them, is time that's going
+[00:04:14,279 --> 00:04:21,279] to lead to more repeatable processes, more higher quality code, and it's going to allow
+[00:04:21,279 --> 00:04:23,640] you to scale this up much further.
+[00:04:23,640 --> 00:04:27,160] Now of course, if it makes a mistake, you're going to go and fix the code or you're going
+[00:04:27,160 --> 00:04:28,799] to prompt it to go and fix the code.
+[00:04:28,799 --> 00:04:32,760] In fact, I would encourage you to go and prompt it to fix the code, because that will often
+[00:04:32,760 --> 00:04:37,519] help you figure out what to tell it that will give it the context it needs or the additional
+[00:04:37,519 --> 00:04:41,980] instruction it needs to go and see its mistake and fix it.
+[00:04:41,980 --> 00:04:46,200] But before you get to that, every time it makes a mistake, every time it does something
+[00:04:46,200 --> 00:04:51,440] different than you expected, spend the time to go and improve your Claude.md file or to
+[00:04:51,440 --> 00:04:56,040] improve your command files to improve things overall for the process and the scalability.

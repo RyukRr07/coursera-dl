@@ -1,0 +1,1212 @@
+Claude Code
+MODULE 03: Building Process Context In Claude Code
+=================================================================
+
+This file collects the readable text from this module's subtitles and learning materials. Source paths are kept below each section.
+
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/01_global-persistent-context-claude-md.en.srt
+TYPE: SRT
+TITLE: Global Persistent Context Claude Md
+
+[00:00:00,000 --> 00:00:01,300] I want you to think about
+[00:00:01,300 --> 00:00:03,260] how much institutional knowledge
+[00:00:03,260 --> 00:00:05,605] each member of your development team has.
+[00:00:05,605 --> 00:00:07,180] When you have a new team member,
+[00:00:07,180 --> 00:00:09,290] what they have to do to get up to speed.
+[00:00:09,290 --> 00:00:11,000] They have to go and they have to look through
+[00:00:11,000 --> 00:00:12,760] the codebase to understand it.
+[00:00:12,760 --> 00:00:15,900] They have to be given ReadMe's and other things to
+[00:00:15,900 --> 00:00:17,160] understand your coding style
+[00:00:17,160 --> 00:00:18,860] and conventions and your rules.
+[00:00:18,860 --> 00:00:20,860] They have to go talk to other developers.
+[00:00:20,860 --> 00:00:22,740] They have to get feedback on what they're doing.
+[00:00:22,740 --> 00:00:24,020] They have to get a huge amount
+[00:00:24,020 --> 00:00:25,380] of context in order to know
+[00:00:25,380 --> 00:00:26,560] how to write software the
+[00:00:26,560 --> 00:00:28,220] way that your team writes software,
+[00:00:28,220 --> 00:00:29,680] and what are the rules to follow in
+[00:00:29,680 --> 00:00:31,605] all the important architectural decisions.
+[00:00:31,605 --> 00:00:33,250] What you have to realize
+[00:00:33,250 --> 00:00:35,450] is that Claude Code is no different.
+[00:00:35,450 --> 00:00:37,950] It is a new team member that you are onboarding
+[00:00:37,950 --> 00:00:40,550] and you have to do work to train your team member.
+[00:00:40,550 --> 00:00:42,950] Now, one of the most basic things that we do,
+[00:00:42,950 --> 00:00:44,510] and we're going to be doing throughout
+[00:00:44,510 --> 00:00:45,590] working with Claude Code,
+[00:00:45,590 --> 00:00:47,410] is we're going to be providing it this context
+[00:00:47,410 --> 00:00:49,205] that it needs in order to do the right thing.
+[00:00:49,205 --> 00:00:50,950] The things that tell it what type
+[00:00:50,950 --> 00:00:52,830] of coding style to use,
+[00:00:52,830 --> 00:00:54,960] and what to do and when it's building a new feature.
+[00:00:54,960 --> 00:00:56,390] Does it need to create a feature branch
+[00:00:56,390 --> 00:00:57,910] and get what does it need to do?
+[00:00:57,910 --> 00:01:01,010] All of this stuff is critical context
+[00:01:01,010 --> 00:01:03,400] that has to go into Claude Code.
+[00:01:03,400 --> 00:01:07,040] Now, every time we go and we work with Claude Code,
+[00:01:07,040 --> 00:01:08,970] we are going to be prompting it,
+[00:01:08,970 --> 00:01:11,095] and the prompt is our set
+[00:01:11,095 --> 00:01:12,560] of instructions that we are giving it,
+[00:01:12,560 --> 00:01:15,830] but also our instructions can have critical context.
+[00:01:15,830 --> 00:01:18,360] We can go in and tell it to build a feature,
+[00:01:18,360 --> 00:01:19,800] or we can tell it to build a feature
+[00:01:19,800 --> 00:01:21,260] using a specific library.
+[00:01:21,260 --> 00:01:23,445] We can give it additional contextual information,
+[00:01:23,445 --> 00:01:25,840] or we can say, whenever we build features,
+[00:01:25,840 --> 00:01:29,035] we use SOLID design principles or functional design,
+[00:01:29,035 --> 00:01:30,950] or whatever it is that you care about,
+[00:01:30,950 --> 00:01:32,900] but the key is you're always going to be giving it
+[00:01:32,900 --> 00:01:36,160] a combination of instructions and context,
+[00:01:36,160 --> 00:01:39,100] information that it needs to know in order
+[00:01:39,100 --> 00:01:40,700] to carry out the instructions
+[00:01:40,700 --> 00:01:42,640] the way that you want them carried out.
+[00:01:42,640 --> 00:01:44,680] Now, this is an important point,
+[00:01:44,680 --> 00:01:46,960] and I want to talk about it for a moment,
+[00:01:46,960 --> 00:01:49,240] because it is critical.
+[00:01:49,240 --> 00:01:50,720] One of the things that we see is,
+[00:01:50,720 --> 00:01:53,900] people go and give instructions to generative AI,
+[00:01:53,900 --> 00:01:55,680] to Claude Code, but
+[00:01:55,680 --> 00:01:58,740] the instructions have many different interpretations.
+[00:01:58,740 --> 00:02:01,180] Now, what I want you to think about is
+[00:02:01,180 --> 00:02:03,160] context is what we use to
+[00:02:03,160 --> 00:02:05,860] give specificity to our instructions.
+[00:02:05,860 --> 00:02:09,060] Context is what we use to basically give
+[00:02:09,060 --> 00:02:12,260] Claude Code a more specific target
+[00:02:12,260 --> 00:02:14,070] to hit with its development.
+[00:02:14,070 --> 00:02:15,440] If you think about it,
+[00:02:15,440 --> 00:02:18,740] if Claude Code is shooting an arrow out of a bow,
+[00:02:18,740 --> 00:02:20,540] if we give it a really big target,
+[00:02:20,540 --> 00:02:22,740] that's a really broad general instruction.
+[00:02:22,740 --> 00:02:25,200] Basically, tell it something like we see here,
+[00:02:25,200 --> 00:02:27,270] write an app for tracking expenses.
+[00:02:27,270 --> 00:02:29,440] We're not telling it how to do it.
+[00:02:29,440 --> 00:02:31,480] We're not telling it the process to do it.
+[00:02:31,480 --> 00:02:33,760] We're not telling it anything about our repository.
+[00:02:33,760 --> 00:02:35,500] We're not telling it about our coding style.
+[00:02:35,500 --> 00:02:37,140] We're not telling it what types of libraries.
+[00:02:37,140 --> 00:02:38,660] We're not even telling it what type of app.
+[00:02:38,660 --> 00:02:41,220] Is this a mobile app? Is this a web app?
+[00:02:41,220 --> 00:02:42,500] Is this a desktop app?
+[00:02:42,500 --> 00:02:45,275] You see, we're leaving all this ambiguity,
+[00:02:45,275 --> 00:02:47,140] and the reason we have all that ambiguity is
+[00:02:47,140 --> 00:02:49,435] because we haven't given it sufficient context.
+[00:02:49,435 --> 00:02:51,410] On the other hand, if we go and increase
+[00:02:51,410 --> 00:02:53,070] the amount of context we're giving it,
+[00:02:53,070 --> 00:02:54,670] we're shrinking down the target.
+[00:02:54,670 --> 00:02:57,950] We're giving it a much more specific target to shoot for.
+[00:02:57,950 --> 00:02:59,570] In this example, we say,
+[00:02:59,570 --> 00:03:01,330] write a NextJs web app that uses
+[00:03:01,330 --> 00:03:04,570] NextUI for tracking Webix or for tracking expenses.
+[00:03:04,570 --> 00:03:06,250] This is a really specific target.
+[00:03:06,250 --> 00:03:07,370] It's giving it much more
+[00:03:07,370 --> 00:03:09,205] specific instructions on what to do.
+[00:03:09,205 --> 00:03:12,110] We are always going to be shooting for
+[00:03:12,110 --> 00:03:14,350] something that has the specificity
+[00:03:14,350 --> 00:03:15,970] we need to get what we want.
+[00:03:15,970 --> 00:03:17,790] Now, it doesn't mean we're
+[00:03:17,790 --> 00:03:19,450] always giving it something super specific,
+[00:03:19,450 --> 00:03:20,670] because what we've talked
+[00:03:20,670 --> 00:03:23,165] about is we don't want to micromanage.
+[00:03:23,165 --> 00:03:26,500] We want to make sure that we are doing things in
+[00:03:26,500 --> 00:03:30,540] a way that allow us to scale our AI development labor,
+[00:03:30,540 --> 00:03:33,040] having it make important design decisions,
+[00:03:33,040 --> 00:03:34,540] but at the same time, we have to give it
+[00:03:34,540 --> 00:03:36,560] enough context so that we get what we want.
+[00:03:36,560 --> 00:03:38,460] What we're always going to be doing is trying to
+[00:03:38,460 --> 00:03:41,840] balance what context we give it and when,
+[00:03:41,840 --> 00:03:46,240] and how much that context constrains what it can do,
+[00:03:46,240 --> 00:03:48,300] because sometimes we want it to go and
+[00:03:48,300 --> 00:03:51,620] dream up the right solution within certain boundaries,
+[00:03:51,620 --> 00:03:54,100] and if we overconstrain what we tell it,
+[00:03:54,100 --> 00:03:56,420] if we give it a really narrow target,
+[00:03:56,420 --> 00:03:58,380] it may miss some important thing that it could
+[00:03:58,380 --> 00:04:00,550] have done that we would have cared about.
+[00:04:00,550 --> 00:04:01,640] What we're always doing is
+[00:04:01,640 --> 00:04:04,345] balancing how much context we give it.
+[00:04:04,345 --> 00:04:06,480] Now one of the most basic things that we can
+[00:04:06,480 --> 00:04:08,920] do with Claude to give it context
+[00:04:08,920 --> 00:04:11,360] is we can give it essentially persistent context
+[00:04:11,360 --> 00:04:14,155] through a file called CLAUDE.md.
+[00:04:14,155 --> 00:04:17,355] Now, if you start a new Claude Code project,
+[00:04:17,355 --> 00:04:21,230] and you go into the user interface,
+[00:04:21,230 --> 00:04:23,905] and you go in and you start typing init,
+[00:04:23,905 --> 00:04:25,570] this handy command will come up,
+[00:04:25,570 --> 00:04:26,890] which is initialize a new
+[00:04:26,890 --> 00:04:29,870] CLAUDE.md file with codebase documentation.
+[00:04:29,870 --> 00:04:32,950] Now, what you can think of this as is
+[00:04:32,950 --> 00:04:35,210] CLAUDE.md is essentially like
+[00:04:35,210 --> 00:04:37,930] a base set of context that is provided.
+[00:04:37,930 --> 00:04:40,070] Every time you go and type in a prompt,
+[00:04:40,070 --> 00:04:42,150] this is contextual information that is
+[00:04:42,150 --> 00:04:45,035] provided with your prompt to Claude Code.
+[00:04:45,035 --> 00:04:47,970] This is stuff that is always available to it when
+[00:04:47,970 --> 00:04:51,280] you're prompting it, super valuable information.
+[00:04:51,280 --> 00:04:54,550] What the init command does is it basically does like
+[00:04:54,550 --> 00:04:56,130] a new team member that's
+[00:04:56,130 --> 00:04:57,860] never worked with your codebase before,
+[00:04:57,860 --> 00:05:00,160] and is going to go and explore the codebase,
+[00:05:00,160 --> 00:05:01,450] and you can think of it as
+[00:05:01,450 --> 00:05:03,390] giving them a documentation exercise.
+[00:05:03,390 --> 00:05:04,870] You realize, you know what? We haven't
+[00:05:04,870 --> 00:05:06,770] written much documentation in the project.
+[00:05:06,770 --> 00:05:08,410] A really great way of getting
+[00:05:08,410 --> 00:05:10,490] this team member up to speed is to have
+[00:05:10,490 --> 00:05:12,290] them go and read through the code and
+[00:05:12,290 --> 00:05:14,620] try to build accurate documentation.
+[00:05:14,620 --> 00:05:16,630] That's what this command is essentially doing,
+[00:05:16,630 --> 00:05:18,230] is having Claude Code go and
+[00:05:18,230 --> 00:05:20,470] explore your codebase and gather
+[00:05:20,470 --> 00:05:25,370] information and express it in a concise way in CLAUDE.md.
+[00:05:25,370 --> 00:05:27,960] Now, you can also go
+[00:05:27,960 --> 00:05:31,520] and edit this CLAUDE.md file directly yourself.
+[00:05:31,520 --> 00:05:34,460] You can use Claude itself to go and explore your codebase
+[00:05:34,460 --> 00:05:37,640] and initialize it and write it for you,
+[00:05:37,640 --> 00:05:40,620] but you absolutely want to go and edit this
+[00:05:40,620 --> 00:05:42,600] yourself to go and inject
+[00:05:42,600 --> 00:05:45,475] all important context that you might want to have.
+[00:05:45,475 --> 00:05:47,610] For example, you want
+[00:05:47,610 --> 00:05:49,350] to give it the stuff that it goes and explores,
+[00:05:49,350 --> 00:05:50,830] like a roadmap to your code,
+[00:05:50,830 --> 00:05:52,650] a high-level overview of
+[00:05:52,650 --> 00:05:55,230] where things are and what the basic structure is.
+[00:05:55,230 --> 00:05:56,550] You may want to give it things
+[00:05:56,550 --> 00:05:57,650] like the design principles,
+[00:05:57,650 --> 00:05:59,750] like the SOLID principle that we saw.
+[00:05:59,750 --> 00:06:01,370] If we really want SOLID code,
+[00:06:01,370 --> 00:06:02,830] or we really want functional code,
+[00:06:02,830 --> 00:06:04,670] or we really want a certain style
+[00:06:04,670 --> 00:06:07,850] or something to be there, we can go and spell it out.
+[00:06:07,850 --> 00:06:10,670] We can also tell it important process information.
+[00:06:10,670 --> 00:06:12,510] You are always going to do X,
+[00:06:12,510 --> 00:06:14,885] and if you've got some important step,
+[00:06:14,885 --> 00:06:18,100] if every team member writes a text file in
+[00:06:18,100 --> 00:06:19,800] a particular directory before they start
+[00:06:19,800 --> 00:06:22,280] a feature explaining their design and rationale,
+[00:06:22,280 --> 00:06:24,000] tell Claude Code to do that,
+[00:06:24,000 --> 00:06:26,040] whatever that is, and you can give it
+[00:06:26,040 --> 00:06:28,460] a sequence of steps or things that it should follow.
+[00:06:28,460 --> 00:06:30,220] Now, this is not
+[00:06:30,220 --> 00:06:32,480] guaranteed that it's going to follow this stuff.
+[00:06:32,480 --> 00:06:34,600] It's not guaranteed that it's going to work.
+[00:06:34,600 --> 00:06:36,460] It's just providing context
+[00:06:36,460 --> 00:06:37,780] that hopefully will steer it in
+[00:06:37,780 --> 00:06:39,060] the right direction and will
+[00:06:39,060 --> 00:06:40,970] hopefully allow it to hit that target.
+[00:06:40,970 --> 00:06:42,770] Now when it goes and it pulls that
+[00:06:42,770 --> 00:06:45,600] bow back and it shoots that arrow,
+[00:06:45,600 --> 00:06:48,000] it may nail that target, but sometimes it may miss,
+[00:06:48,000 --> 00:06:49,400] and we just have to accept that,
+[00:06:49,400 --> 00:06:50,540] but what our goal is is
+[00:06:50,540 --> 00:06:51,820] to give it information that gives it
+[00:06:51,820 --> 00:06:53,360] a target that's going to help it
+[00:06:53,360 --> 00:06:55,480] reliably get what we want out of it.
+[00:06:55,480 --> 00:06:59,220] Now, once we go and
+[00:06:59,220 --> 00:07:03,280] we actually begin giving Claude instructions,
+[00:07:03,280 --> 00:07:05,120] when we go and re-run something,
+[00:07:05,120 --> 00:07:09,945] it's going to use Claude to give it this context.
+[00:07:09,945 --> 00:07:12,020] Let's say that I really care
+[00:07:12,020 --> 00:07:13,960] about those SOLID design principles,
+[00:07:13,960 --> 00:07:15,360] and I wanted to always write
+[00:07:15,360 --> 00:07:16,700] code with SOLID design principles.
+[00:07:16,700 --> 00:07:18,025] Now what we saw was,
+[00:07:18,025 --> 00:07:19,680] originally, it didn't
+[00:07:19,680 --> 00:07:21,170] write with SOLID design principles.
+[00:07:21,170 --> 00:07:23,140] Now I'm picking SOLID design principles,
+[00:07:23,140 --> 00:07:24,580] because I don't think they're necessarily
+[00:07:24,580 --> 00:07:26,020] a common thing to follow,
+[00:07:26,020 --> 00:07:27,940] and I wanted SOLID design principles
+[00:07:27,940 --> 00:07:30,240] because I think for the code that we were generating,
+[00:07:30,240 --> 00:07:32,620] by default, it does not follow them.
+[00:07:32,620 --> 00:07:35,200] I wanted something that we can see that if
+[00:07:35,200 --> 00:07:38,645] we add something to CLAUDE.md, it'll really follow it.
+[00:07:38,645 --> 00:07:41,140] I'm going to go into that Claude file,
+[00:07:41,140 --> 00:07:43,330] and all I'm going to put in is this, IMPORTANT!!!
+[00:07:43,330 --> 00:07:46,140] : DO THIS FOR ALL CODE. We'll talk a little about this.
+[00:07:46,140 --> 00:07:47,800] There's a little bit of prompt engineering going
+[00:07:47,800 --> 00:07:50,240] on to structure this context.
+[00:07:50,240 --> 00:07:52,420] Whenever you write code, it must,
+[00:07:52,420 --> 00:07:55,200] in all caps, follow the SOLID design principles.
+[00:07:55,200 --> 00:07:57,560] Never write code that violates these principles.
+[00:07:57,560 --> 00:07:59,700] If you do, you will be asked to refactor it.
+[00:07:59,700 --> 00:08:03,240] Now, you can go and put all things in here.
+[00:08:03,240 --> 00:08:04,700] We've talked about different types of things
+[00:08:04,700 --> 00:08:06,520] you might want to put in and process in this,
+[00:08:06,520 --> 00:08:09,220] but we're putting one simple instruction in.
+[00:08:09,220 --> 00:08:13,180] Now what happens if we go back and we run Claude Code,
+[00:08:13,180 --> 00:08:16,160] and we tell it to write a 20-line Python function
+[00:08:16,160 --> 00:08:17,540] that can store data persistently?
+[00:08:17,540 --> 00:08:18,950] Remember, we were doing this before,
+[00:08:18,950 --> 00:08:20,180] but when we did this before,
+[00:08:20,180 --> 00:08:21,700] it didn't naturally write
+[00:08:21,700 --> 00:08:24,720] SOLID code. Well, what does it do?
+[00:08:24,720 --> 00:08:27,160] When it starts the process and
+[00:08:27,160 --> 00:08:29,620] starts printing out messages, notice what it says.
+[00:08:29,620 --> 00:08:31,760] I'll create a Python function that stores data
+[00:08:31,760 --> 00:08:35,115] persistently while following SOLID design principles.
+[00:08:35,115 --> 00:08:36,880] Now, it has immediately
+[00:08:36,880 --> 00:08:39,000] picked up on whenever I write code,
+[00:08:39,000 --> 00:08:40,980] it has to have SOLID design principles.
+[00:08:40,980 --> 00:08:44,500] This CLAUDE.md file is critical for giving
+[00:08:44,500 --> 00:08:46,820] it contextual information that it
+[00:08:46,820 --> 00:08:50,015] should always have regardless of the task.
+[00:08:50,015 --> 00:08:54,075] This is important information that goes into CLAUDE.md.
+[00:08:54,075 --> 00:08:56,190] Now, we can then go and look at the code it wrote.
+[00:08:56,190 --> 00:08:58,050] We can verify, yes,
+[00:08:58,050 --> 00:08:59,630] this is writing code that has
+[00:08:59,630 --> 00:09:01,750] that SOLID design principle style
+[00:09:01,750 --> 00:09:04,190] that wasn't what it naturally came with.
+[00:09:04,190 --> 00:09:09,240] Now, CLAUDE.md, critically important file.
+[00:09:09,240 --> 00:09:11,260] It is going to be context that
+[00:09:11,260 --> 00:09:13,560] is available every time you run a prompt,
+[00:09:13,560 --> 00:09:15,440] and you're going to want to go in here and you're
+[00:09:15,440 --> 00:09:17,620] going to want to put in very specific,
+[00:09:17,620 --> 00:09:20,215] important things that it should always know.
+[00:09:20,215 --> 00:09:22,500] Now something I mentioned at the beginning,
+[00:09:22,500 --> 00:09:24,520] and I want to just hint at again is,
+[00:09:24,520 --> 00:09:29,305] does this mean that we have 1,000-page CLAUDE.md file?
+[00:09:29,305 --> 00:09:31,595] No, it does not. This is
+[00:09:31,595 --> 00:09:36,625] super important global information that it always needs.
+[00:09:36,625 --> 00:09:38,650] There are going to be lots of cases
+[00:09:38,650 --> 00:09:40,110] where we're doing tasks,
+[00:09:40,110 --> 00:09:41,790] and we want to introduce
+[00:09:41,790 --> 00:09:44,985] context solely for that specific task.
+[00:09:44,985 --> 00:09:47,390] There's lots of different ways that we can do that.
+[00:09:47,390 --> 00:09:50,490] In fact, Claude goes and discovers context,
+[00:09:50,490 --> 00:09:53,470] all interesting ways that we'll talk about,
+[00:09:53,470 --> 00:09:56,790] but what we want in this file is the essential stuff.
+[00:09:56,790 --> 00:09:58,650] For example, if no matter what,
+[00:09:58,650 --> 00:10:02,390] you want it to do X at the start of its work,
+[00:10:02,390 --> 00:10:03,670] then you're going to go and put that in
+[00:10:03,670 --> 00:10:05,570] there, that's process information.
+[00:10:05,570 --> 00:10:07,290] If no matter what it needs to
+[00:10:07,290 --> 00:10:08,990] know something about your coding style,
+[00:10:08,990 --> 00:10:10,590] you're going to go and put that in there,
+[00:10:10,590 --> 00:10:13,310] and it gives it essentially an institutional memory
+[00:10:13,310 --> 00:10:14,870] for every single prompt,
+[00:10:14,870 --> 00:10:17,120] but it's not the right place for all contexts,
+[00:10:17,120 --> 00:10:19,450] and we'll talk more about that.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/02_writing-claude-md-files_instructions.html
+TYPE: HTML
+TITLE: Writing Claude Md Files Instructions
+
+What is Claude.md?
+
+Claude.md is your AI team member's persistent memory - essential context that's available in every prompt. Just like onboarding a new developer, you need to provide Claude Code with the institutional knowledge it needs to work effectively on your team.
+
+The CONTEXT Framework for Claude.md Design
+
+Use this acronym to remember the key principles:
+
+C
+
+lear and Concise Instructions
+
+O
+
+perational Processes
+
+N
+
+aming and Standards
+
+T
+
+esting and Quality Gates
+
+E
+
+xamples and References
+
+X
+
+pectations and Boundaries
+
+T
+
+ools and Dependencies
+
+Core Principles
+
+1. Essential Information Only
+
+Claude.md should contain
+
+global
+
+information that applies to every task. Don't overwhelm it with project-specific details that only apply to certain features.
+
+2. Specificity Creates Better Targets
+
+Context narrows the target from broad instructions to precise outcomes. "Write solid code" is vague; "Follow SOLID design principles for all object-oriented code" is actionable.
+
+3. Process Over Micromanagement
+
+Define workflows and checks, not implementation details. Let Claude make architectural decisions within your guardrails.
+
+Example 1: Web Application Development Team
+
+# Project: TaskFlow Web Application
+
+## Core Principles
+**IMPORTANT**: Whenever you write code, it MUST follow SOLID design principles. Never write code that violates these principles. If you do, you will be asked to refactor it.
+
+## Development Workflow
+1. Before making any changes, create and checkout a feature branch named `feature-[brief-description]`
+2. Write comprehensive tests for all new functionality
+3. Compile code and run all tests before committing
+4. Write detailed commit messages explaining the changes and rationale
+5. Commit all changes to the feature branch
+
+## Architecture Overview
+- **Frontend**: Next.js 14 with TypeScript and Tailwind CSS
+- **State Management**: Zustand for client state, React Query for server state
+- **Backend**: Node.js with Express and Prisma ORM
+- **Database**: PostgreSQL
+- **Testing**: Jest for unit tests, Playwright for E2E
+
+## Code Standards
+- Use TypeScript for all new code with strict type checking
+- Follow the existing component structure in `/src/components`
+- API routes follow RESTful conventions in `/src/pages/api`
+- Use Prisma schema definitions for all database operations
+- CSS classes should use Tailwind utilities; custom CSS only when necessary
+
+## Quality Gates
+- All code must compile without warnings
+- Test coverage must remain above 80%
+- All tests must pass before committing
+- ESLint and Prettier must pass without errors
+
+## File Organization
+- Components: `/src/components/[feature]/[ComponentName].tsx`
+- Pages: `/src/pages/[route].tsx`
+- Utilities: `/src/lib/[category]/[utility].ts`
+- Types: `/src/types/[domain].ts`
+
+Example 2: Python Data Science Project
+
+# Project: Customer Analytics Pipeline
+
+## Development Standards
+- **Language**: Python 3.11+
+- **Code Style**: Follow PEP 8 strictly, use Black for formatting
+- **Type Hints**: Required for all function signatures and class definitions
+- **Documentation**: Docstrings required for all public functions and classes
+
+## Workflow Requirements
+1. Create feature branch: `analysis-[description]` or `model-[description]`
+2. Write unit tests for all data processing functions
+3. Run `pytest` and ensure all tests pass
+4. Run `black .` and `flake8` before committing
+5. Update relevant documentation in `/docs` if adding new features
+
+## Project Structure
+- `/src/data`: Data ingestion and preprocessing modules
+- `/src/models`: ML model definitions and training scripts
+- `/src/analysis`: Exploratory analysis notebooks and scripts
+- `/src/utils`: Shared utility functions
+- `/tests`: Comprehensive test suite
+- `/configs`: Configuration files for different environments
+
+## Data Handling Standards
+- Use Pandas for data manipulation, prefer vectorized operations
+- All data files must be documented in `/data/README.md`
+- Use Pydantic models for data validation and serialization
+- Never commit raw data files to version control
+- Use environment variables for database connections and API keys
+
+## ML/Analysis Guidelines
+- Use scikit-learn for standard ML algorithms
+- Notebook naming: `YYYY-MM-DD-[initials]-[description].ipynb`
+- Save all trained models with versioning in `/models/trained`
+- Use MLflow for experiment tracking
+- Include model performance metrics in commit messages
+
+## Dependencies
+- Core: pandas, numpy, scikit-learn, matplotlib, seaborn
+- ML: xgboost, lightgbm, optuna
+- Data: sqlalchemy, pydantic, requests
+- Testing: pytest, pytest-cov
+
+Example 3: Mobile App Development (React Native)
+
+# Project: FitnessTracker Mobile App
+
+## Platform Requirements
+- **Framework**: React Native 0.72+ with TypeScript
+- **State Management**: Redux Toolkit with RTK Query
+- **Navigation**: React Navigation v6
+- **UI Library**: Native Base for consistent design
+- **Platform Support**: iOS 14+ and Android API 24+
+
+## Branch Strategy
+1. Create feature branches: `mobile-[feature-name]`
+2. Use conventional commits: `feat:`, `fix:`, `refactor:`, etc.
+3. Test on both iOS and Android before committing
+4. Run `npm run lint` and `npm run type-check` before commits
+
+## Code Organization
+- **Screens**: `/src/screens/[FeatureName]/[ScreenName]Screen.tsx`
+- **Components**: `/src/components/[ComponentName]/index.tsx`
+- **Navigation**: `/src/navigation/[NavigatorName]Navigator.tsx`
+- **Services**: `/src/services/[serviceName].ts`
+- **Store**: `/src/store/slices/[featureName]Slice.ts`
+
+## Mobile-Specific Standards
+- Use React Native's built-in components before third-party libraries
+- Implement proper error boundaries for crash prevention
+- Use AsyncStorage for local data persistence
+- Follow platform-specific design guidelines (iOS Human Interface, Material Design)
+- Optimize images and use vector graphics when possible
+
+## Testing Requirements
+- Unit tests with Jest and React Native Testing Library
+- E2E tests with Detox for critical user flows
+- Test on physical devices before major releases
+- Performance testing with Flipper profiling
+
+## Performance Guidelines
+- Use FlatList for large datasets, never ScrollView
+- Implement proper memoization with React.memo and useMemo
+- Lazy load heavy components and screens
+- Monitor bundle size and use code splitting when necessary
+
+Example 4: Enterprise Backend Service
+
+# Project: Payment Processing Microservice
+
+## Service Architecture
+- **Framework**: Spring Boot 3.1 with Java 17
+- **Database**: PostgreSQL with JPA/Hibernate
+- **Security**: OAuth 2.0 with JWT tokens
+- **Documentation**: OpenAPI 3.0 specifications
+- **Deployment**: Docker containers with Kubernetes
+
+## Development Workflow
+1. Create feature branch: `backend-[ticket-number]-[description]`
+2. Write integration tests for all new endpoints
+3. Update OpenAPI documentation for API changes
+4. Run full test suite: `./gradlew test integrationTest`
+5. Ensure Docker build succeeds: `docker build -t payment-service .`
+6. Commit with ticket reference: `feat: [TICKET-123] Add payment validation`
+
+## Code Standards
+- Follow Google Java Style Guide
+- Use Spring Boot conventions for package structure
+- All REST endpoints must have comprehensive validation
+- Use DTOs for all external API contracts
+- Implement proper exception handling with @ControllerAdvice
+
+## Package Structure
+- `controller`: REST endpoints and request/response handling
+- `service`: Business logic and transaction management
+- `repository`: Data access layer with JPA repositories
+- `config`: Configuration classes and beans
+- `dto`: Data Transfer Objects for API contracts
+- `entity`: JPA entities for database mapping
+- `exception`: Custom exceptions and error handling
+
+## Security Requirements
+- All endpoints require authentication except health checks
+- Validate all inputs with Bean Validation annotations
+- Use parameterized queries to prevent SQL injection
+- Log security events for audit trail
+- Never expose internal entity models in API responses
+
+## Quality Gates
+- Minimum 85% test coverage (unit + integration)
+- All dependencies must be up-to-date and vulnerability-free
+- SonarQube quality gate must pass
+- All database migrations must be reversible
+- Performance tests must complete under 200ms for standard operations
+
+## Monitoring and Logging
+- Use structured logging with JSON format
+- Include correlation IDs for request tracing
+- Monitor key metrics: response time, error rate, throughput
+- Implement health checks for Kubernetes readiness/liveness probes
+
+Example 5: DevOps Infrastructure Project
+
+# Project: Multi-Cloud Infrastructure Platform
+
+## Infrastructure as Code Standards
+- **Primary Tool**: Terraform with HCL
+- **Cloud Providers**: AWS, Azure, GCP
+- **Configuration Management**: Ansible playbooks
+- **Container Orchestration**: Kubernetes with Helm charts
+- **Monitoring**: Prometheus, Grafana, ELK stack
+
+## Workflow Requirements
+1. Create infrastructure branch: `infra-[environment]-[component]`
+2. Run `terraform plan` and review changes carefully
+3. Test in development environment first
+4. Update documentation in `/docs/runbooks`
+5. Peer review required for production changes
+6. Use conventional commits with clear impact description
+
+## Directory Structure
+- `/terraform/[provider]/[environment]/`: Environment-specific configurations
+- `/ansible/playbooks/`: Configuration management scripts
+- `/k8s/[namespace]/`: Kubernetes manifests and Helm charts
+- `/scripts/`: Automation and deployment scripts
+- `/docs/`: Architecture decisions and runbooks
+
+## Security and Compliance
+- All secrets must use external secret management (AWS Secrets Manager, etc.)
+- Enable encryption at rest and in transit for all data stores
+- Implement least-privilege access policies
+- Use service accounts, never personal credentials in automation
+- Maintain audit logs for all infrastructure changes
+
+## Deployment Principles
+- Use blue-green deployments for zero-downtime updates
+- Implement automatic rollback on health check failures
+- Tag all resources with environment, owner, and cost-center
+- Use infrastructure modules for reusability across environments
+- Implement proper backup and disaster recovery procedures
+
+## Monitoring and Alerting
+- Set up alerts for resource utilization > 80%
+- Monitor certificate expiration dates
+- Track deployment success/failure rates
+- Implement SLA monitoring for critical services
+- Use runbooks for common incident response procedures
+
+## Cost Optimization
+- Implement auto-scaling policies for dynamic workloads
+- Use spot instances where appropriate for non-critical workloads
+- Regular cost reviews with resource rightsizing
+- Implement resource lifecycle policies for cleanup
+
+Example 6: Open Source Library Development
+
+# Project: DataValidator - Python Data Validation Library
+
+## Library Design Principles
+- **API Design**: Simple, intuitive, and Pythonic
+- **Dependencies**: Minimal external dependencies
+- **Compatibility**: Python 3.8+ support
+- **Performance**: Optimize for speed and memory efficiency
+- **Documentation**: Comprehensive with examples
+
+## Development Workflow
+1. Create feature branch: `feature-[functionality]` or `fix-[issue-number]`
+2. Write tests first (TDD approach)
+3. Ensure 100% test coverage for new code
+4. Update documentation and examples
+5. Run full test suite across Python versions: `tox`
+6. Update CHANGELOG.md with clear user-facing description
+
+## Code Quality Standards
+- Follow PEP 8 with line length limit of 88 characters
+- Use type hints for all public APIs
+- Docstrings required for all public functions/classes (Google style)
+- Use dataclasses or Pydantic for structured data
+- Implement proper error handling with custom exceptions
+
+## Project Structure
+- `/src/datavalidator/`: Main library code
+- `/tests/`: Comprehensive test suite
+- `/docs/`: Sphinx documentation
+- `/examples/`: Usage examples and tutorials
+- `/benchmarks/`: Performance testing scripts
+
+## Testing Requirements
+- Unit tests with pytest for all functionality
+- Property-based testing with Hypothesis for edge cases
+- Performance benchmarks for critical paths
+- Integration tests with popular data libraries (pandas, numpy)
+- Test matrix: Python 3.8, 3.9, 3.10, 3.11, 3.12
+
+## Documentation Standards
+- README with quick start guide and installation
+- API documentation generated from docstrings
+- Tutorial notebooks for common use cases
+- Performance guidelines and best practices
+- Migration guides for major version changes
+
+## Release Process
+- Semantic versioning (MAJOR.MINOR.PATCH)
+- Automated testing on multiple Python versions
+- Code coverage reports and quality metrics
+- Security scanning for vulnerabilities
+- Automated PyPI releases via GitHub Actions
+
+## Community Guidelines
+- Welcome contributions with clear CONTRIBUTING.md
+- Issue templates for bugs and feature requests
+- Code of conduct for inclusive community
+- Regular maintenance and dependency updates
+- Responsive to community feedback and issues
+
+Best Practices Summary
+
+Do's:
+
+✅ Use clear, actionable language
+
+✅ Provide specific tools and frameworks
+
+✅ Define quality gates and testing requirements
+
+✅ Include workflow processes
+
+✅ Specify naming conventions
+
+✅ Reference established design principles
+
+Don'ts:
+
+❌ Include task-specific details that only apply sometimes
+
+❌ Write 1000-page documentation dumps
+
+❌ Use vague instructions like "write good code"
+
+❌ Forget to specify version control workflows
+
+❌ Micromanage implementation details
+
+❌ Include temporary or changing information
+
+Remember the Balance
+
+Claude.md gives Claude Code a specific target to hit while still allowing creative problem-solving within your constraints. It's your team's institutional knowledge distilled into essential, persistent context that makes every interaction more effective.
+
+The goal is to scale your AI development labor by providing the right context at the right level - enough specificity to get what you want, but not so much constraint that it can't innovate within your boundaries.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/03_reusable-targeted-context-process-claude-code-commands.en.srt
+TYPE: SRT
+TITLE: Reusable Targeted Context Process Claude Code Commands
+
+[00:00:00,000 --> 00:00:04,360] Put yourself in the shoes of that new developer again.
+[00:00:04,360 --> 00:00:09,800] And your team has sat down and very diligently documented every single important piece of
+[00:00:09,800 --> 00:00:12,739] information that new developer needs.
+[00:00:12,739 --> 00:00:17,719] All of the processes, all of the stylistic things, where all the pieces of code are.
+[00:00:17,719 --> 00:00:21,500] And they've documented it in like a 400 page document.
+[00:00:21,500 --> 00:00:25,420] And you give that developer their very first task and you hand them the document and say
+[00:00:25,420 --> 00:00:28,879] now read all of this in order to perform that task.
+[00:00:28,879 --> 00:00:30,280] But what's going to happen, right?
+[00:00:30,280 --> 00:00:33,159] This is overwhelming amount of context, right?
+[00:00:33,159 --> 00:00:37,360] Probably the task that they're performing doesn't need all of this other stuff.
+[00:00:37,360 --> 00:00:42,400] There's probably like a page or maybe half a page of really relevant information that
+[00:00:42,400 --> 00:00:45,799] they need for that task that you're having to perform.
+[00:00:45,799 --> 00:00:49,119] And this is something that we have to be careful of when we're working with Cloud Code is we
+[00:00:49,119 --> 00:00:54,680] want to give it the right context at the right time for the task that it's performing.
+[00:00:54,680 --> 00:00:59,560] So we want to tell it things like exactly the process to perform that task, as well
+[00:00:59,560 --> 00:01:04,480] as the critical information it needs to know related to what it's about to do.
+[00:01:04,480 --> 00:01:09,400] If we're overwhelming it all the time by dumping hundreds of pages of unrelated stuff, it may
+[00:01:09,400 --> 00:01:12,120] pick up on something that really isn't important.
+[00:01:12,120 --> 00:01:14,400] It may drown out the important things.
+[00:01:14,400 --> 00:01:18,360] For example, that developer may get tired after a while flipping through these hundreds
+[00:01:18,360 --> 00:01:21,680] of pages and miss something important that they need to know about.
+[00:01:21,680 --> 00:01:27,120] When you boil it down, you give them targeted context, targeted process to follow that helps
+[00:01:27,120 --> 00:01:29,080] make sure the right thing gets done.
+[00:01:29,080 --> 00:01:35,319] Now, luckily, we have the ability to do the same thing in Cloud Code through these commands.
+[00:01:35,319 --> 00:01:39,120] And let's talk about what a command is and how we use them.
+[00:01:39,120 --> 00:01:42,199] So let's say we want to do something over and over again.
+[00:01:42,199 --> 00:01:47,120] Like we want to do a code review and we want to have a way of instructing Cloud Code to
+[00:01:47,120 --> 00:01:48,120] do a code review.
+[00:01:48,639 --> 00:01:52,879] Well, a code review is going to require a lot of important contextual information and
+[00:01:52,879 --> 00:01:57,120] also process information, like the style, the types of things that we care about in
+[00:01:57,120 --> 00:02:02,720] the code review, how we communicate them, examples of good code that the person should
+[00:02:02,720 --> 00:02:06,720] probably go and look at in order to do the code review and understand what you want.
+[00:02:06,720 --> 00:02:10,360] There's all kinds of ways that you will teach that person and instruct that person.
+[00:02:10,360 --> 00:02:13,000] And we can instruct Cloud Code very similarly.
+[00:02:13,000 --> 00:02:18,000] Now, what we do is we create a Cloud Code command.
+[00:02:18,000 --> 00:02:24,639] So within a project or within your home folder, you can go into the .cloud folder and create
+[00:02:24,639 --> 00:02:28,199] a commands folder and then you can create markdown files.
+[00:02:28,199 --> 00:02:36,080] And these markdown files essentially become prompts for Cloud Code that you can pre-select
+[00:02:36,080 --> 00:02:41,839] off of the command line menu, but they're also relevant contextual information.
+[00:02:41,839 --> 00:02:47,119] So you can go and it's essentially similar to going and typing directly into the command
+[00:02:47,240 --> 00:02:52,839] line interface, a very long prompt with a lot of important information for Cloud Code.
+[00:02:52,839 --> 00:02:56,880] Now you could go and type all this in over and over, or you can have a document with
+[00:02:56,880 --> 00:03:01,800] all of these prompts saved where you copy and paste prompts in and that would work too.
+[00:03:01,800 --> 00:03:06,520] But a much more convenient way to do this is to actually create these Cloud Code commands
+[00:03:06,520 --> 00:03:11,240] because now they can also become artifacts that if we want to, we can put them into version
+[00:03:11,240 --> 00:03:13,759] control so other team members have them.
+[00:03:13,759 --> 00:03:19,600] We can go and tweak them over time to improve our AI labor that's doing our development.
+[00:03:19,600 --> 00:03:24,919] So all kinds of reasons why having it written down as part of the project can be super powerful.
+[00:03:24,919 --> 00:03:28,360] Now we may want to have it just as our home directory, something general that we always
+[00:03:28,360 --> 00:03:32,800] do and have available for all our projects, but we can also have project specific things
+[00:03:32,800 --> 00:03:35,759] that get versioned and are part of the project.
+[00:03:35,759 --> 00:03:38,199] So let's take a look at a code review command.
+[00:03:38,199 --> 00:03:45,240] Now at the end of the day, these markdown files, these command markdown files are prompts
+[00:03:45,240 --> 00:03:48,960] and they have a couple of placeholders that we can put in that we'll see.
+[00:03:48,960 --> 00:03:51,240] So here is a sample code review.
+[00:03:51,240 --> 00:03:56,800] Now this one is highly specific, being done in a very specific way for a specific reason
+[00:03:56,800 --> 00:04:01,139] that we'll talk about in a minute to showcase a couple of interesting ideas.
+[00:04:01,139 --> 00:04:06,320] But here's the prompt, carefully perform a code review of arguments.
+[00:04:06,320 --> 00:04:11,039] This is a placeholder for something that we'll see in a minute when we type into the
+[00:04:11,039 --> 00:04:13,479] Cloud Code command line interface.
+[00:04:13,479 --> 00:04:17,720] But basically we can type in and run a command, but we can give it arguments.
+[00:04:17,720 --> 00:04:22,119] And so this is a placeholder where the arguments will be dropped in.
+[00:04:22,119 --> 00:04:25,720] Examples of excellent code that you should try to match the design slash style slash
+[00:04:25,720 --> 00:04:31,500] conventions of are, and I give it a file in the project, and then I said first read a
+[00:04:31,500 --> 00:04:35,160] file that is closest to whatever code you are evaluating and then identify its core
+[00:04:35,160 --> 00:04:38,040] design style, coding, and other principles.
+[00:04:38,040 --> 00:04:41,679] Then create a detailed critique of the code based on these principles and outputted it
+[00:04:41,679 --> 00:04:47,279] to brackets file name dot review dot MD for each file that you review.
+[00:04:47,279 --> 00:04:55,480] Now this is essentially a prompt, it is a template and anytime I want, I can go into
+[00:04:55,480 --> 00:04:59,880] Cloud, which I've created this, I can go into Cloud Code and I can rerun this thing.
+[00:04:59,880 --> 00:05:01,799] Now I want to talk about a couple of things.
+[00:05:01,799 --> 00:05:03,279] Again, we've talked about these arguments.
+[00:05:03,279 --> 00:05:08,720] This is a placeholder where the arguments to the command will be dumped in, but there's
+[00:05:08,720 --> 00:05:11,959] a couple other things that I'm doing from a prompt engineering perspective, and in fact
+[00:05:11,959 --> 00:05:15,519] I highly recommend doing a prompt engineering class to understand all of the neat tricks
+[00:05:15,519 --> 00:05:18,160] you can do with prompts that can be useful.
+[00:05:18,160 --> 00:05:20,359] One thing I'm doing is I'm creating a template.
+[00:05:20,359 --> 00:05:26,279] I'm telling it basically, I want you to, when you do a code review, to save it as a file
+[00:05:26,279 --> 00:05:30,320] and giving it some process information, but here's how I want you to name it.
+[00:05:30,320 --> 00:05:35,000] I'm giving it basically a template that it's going to intelligently fill in, just like
+[00:05:35,000 --> 00:05:40,239] a human being would read this and say, oh, they're not literally asking me to save it
+[00:05:40,239 --> 00:05:45,720] as brackets file name dot review dot MD, no, they're telling me I should fill this in.
+[00:05:45,720 --> 00:05:51,160] You can intelligently use placeholders and other types of things to tell it how to name
+[00:05:51,160 --> 00:05:55,799] things, how to reuse results, all kinds of interesting things can be done, but you can
+[00:05:55,799 --> 00:06:00,799] basically templatize the prompt and give it bounds on what it's going to do.
+[00:06:00,799 --> 00:06:03,679] This is basically putting a bound on naming.
+[00:06:03,679 --> 00:06:13,320] Now if I go into Cloud Code after I save this and I type a slash here, what I get now is
+[00:06:13,320 --> 00:06:19,760] the ability to see all of the commands, and now I have that code review command show up,
+[00:06:19,760 --> 00:06:24,040] and what we can see is that there's arguments, and if I go in and I select the code review
+[00:06:24,040 --> 00:06:30,119] command and I choose, for example, a specific file, that file becomes the arguments that
+[00:06:30,119 --> 00:06:35,959] are going to be passed in and filled into that prompt before it is passed to Cloud Code.
+[00:06:35,959 --> 00:06:42,440] So what this is right here, this second part after the selection of the command name, this
+[00:06:42,440 --> 00:06:45,000] is basically the arguments that are going to go into that prompt.
+[00:06:45,000 --> 00:06:49,119] So if I go and I run this, what we'll see is now it says I'll perform a code review
+[00:06:49,119 --> 00:06:53,839] of category manager dot TSX, so it's basically filled in that prompt, then you can see it's
+[00:06:53,839 --> 00:06:55,079] to-dos.
+[00:06:55,079 --> 00:06:58,320] Its to-dos are built from looking at my prompt.
+[00:06:58,320 --> 00:07:02,559] It was basically a template for a prompt that's now injected and sent to Cloud Code, and it
+[00:07:02,559 --> 00:07:06,480] says I'm going to read app slash page dot TSX, very specific instruction, I gave it
+[00:07:06,480 --> 00:07:11,640] for a purpose so we could see this following directions, I'm going to read category manager,
+[00:07:11,640 --> 00:07:16,359] write a review of category manager dot TSX dot review dot MD, you notice how it's following
+[00:07:16,359 --> 00:07:21,200] my template for the naming of where it's naming the file, I'm going to identify design principles
+[00:07:21,200 --> 00:07:23,959] and I'm going to create a detailed critique.
+[00:07:23,959 --> 00:07:29,160] And then it goes off and it actually creates a critique and again we're seeing it using
+[00:07:29,160 --> 00:07:32,799] my template for the naming of the file that it created.
+[00:07:32,799 --> 00:07:38,679] So these commands give us the ability to do all kinds of really useful things.
+[00:07:38,679 --> 00:07:43,040] They basically give us a reusable way to prompt it consistently.
+[00:07:43,040 --> 00:07:47,119] They allow us to inject targeted context that it needs to know.
+[00:07:47,119 --> 00:07:56,160] So for example, maybe I don't want all code reviews to use app dot TSX as the prototypical
+[00:07:56,160 --> 00:07:58,480] file to go and look at to understand the design.
+[00:07:58,480 --> 00:08:02,279] Maybe that's only in certain cases, and if that's true, I can go and have different types
+[00:08:02,279 --> 00:08:06,739] of code reviews for different parts of the application, maybe front end or back end.
+[00:08:06,739 --> 00:08:08,640] And so I can explain that.
+[00:08:08,640 --> 00:08:11,040] The other thing I can do is I can inject process.
+[00:08:11,040 --> 00:08:14,480] I told it to first go and read that file before doing something.
+[00:08:14,480 --> 00:08:18,079] I told it the order of operations and so it followed that.
+[00:08:18,079 --> 00:08:19,920] So I can inject process.
+[00:08:19,920 --> 00:08:25,220] So the commands give us the ability to reusably prompt, inject targeted context and targeted
+[00:08:25,220 --> 00:08:32,719] process into Cloud Code and super valuable thing is to go in and build up a series of
+[00:08:32,719 --> 00:08:35,599] targeted commands for your project.
+[00:08:35,599 --> 00:08:42,840] Now one interesting thing you can do is actually go and ask Cloud Code to look at your project
+[00:08:42,880 --> 00:08:48,559] and dream up what might be valuable commands and prompts that could be run.
+[00:08:48,559 --> 00:08:50,039] But that's beyond the scope of this video.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/04_creating-claude-commands_instructions.html
+TYPE: HTML
+TITLE: Creating Claude Commands Instructions
+
+What are Claude Code Commands?
+
+While claude.md provides global context for every interaction, commands deliver
+
+targeted context and process for specific, repeatable tasks
+
+. Think of commands as specialized instruction sets that give Claude Code exactly what it needs to know for particular workflows - without overwhelming it with irrelevant information.
+
+The TARGETED Framework for Command Design
+
+Use this acronym to create effective commands:
+
+T
+
+ask-Specific Instructions
+
+A
+
+rguments and Placeholders
+
+R
+
+eusable Process Steps
+
+G
+
+uided Examples and References
+
+E
+
+xplicit Output Requirements
+
+T
+
+emplate-Based Naming
+
+E
+
+rror Handling and Edge Cases
+
+D
+
+ocumentation and Context
+
+Core Principles
+
+1. Right Context at the Right Time
+
+Commands solve the "400-page manual" problem by providing only the relevant context needed for a specific task, avoiding information overload.
+
+2. Reusable Consistency
+
+Commands ensure the same high-quality process is followed every time a task is performed, scaling your best practices across your AI labor.
+
+3. Template-Driven Automation
+
+Use placeholders and templates to make commands flexible while maintaining structure and naming conventions.
+
+Command Structure and Location
+
+Commands are stored as markdown files in .claude/commands/ directory:
+
+Project-specific
+
+: .claude/commands/ (versioned with your project)
+
+Global commands
+
+: ~/.claude/commands/ (available across all projects)
+
+Command Management Tips
+
+Organization Strategies
+
+By Function
+
+: plan-feature.md, impl-api.md, test-unit.md, deploy-prod.md, ...
+
+By Domain
+
+: auth-login.md, user-profile.md, payment-process.md, order-create.md, ...
+
+By Role
+
+: dev-review.md, qa-automation.md, ops-deploy.md, pm-requirements.md, ...
+
+Version Control
+
+Store project commands in .claude/commands/ for team sharing
+
+Use descriptive commit messages when updating commands
+
+Review command changes as part of code review process
+
+Command Evolution
+
+Regularly review and update commands based on team feedback
+
+Archive outdated commands rather than deleting them
+
+Document command changes in project changelog
+
+Commands transform Claude Code from a general assistant into a specialized team member with deep knowledge of your specific workflows. They ensure consistent, high-quality execution of repetitive tasks while providing the targeted context needed for complex operations.
+
+Examples of Commands
+
+These commands are not meant to be used "as-is". You should take them and adapt them for your project. The goal is to provide inspiration for what a command might look like, not what it should look like. The best commands will be customized to your specific project.
+
+Example 1: Code Review Command
+
+File
+
+: .claude/commands/code-review.md
+
+# Code Review Command
+
+Carefully perform a comprehensive code review of $ARGUMENTS.
+
+## Review Standards
+Examples of excellent code that you should match the design/style/conventions of:
+- `src/components/UserProfile/UserProfile.tsx` (React components)
+- `src/utils/dataValidation.ts` (utility functions)
+- `src/hooks/useUserData.ts` (custom hooks)
+
+## Process
+1. **First**: Read the example files above to understand our design patterns, naming conventions, and code style
+2. **Second**: Analyze $ARGUMENTS against these standards
+3. **Third**: Create detailed critique covering:
+- Code structure and organization
+- Adherence to established patterns
+- Performance considerations
+- Security implications
+- Maintainability concerns
+- Test coverage gaps
+
+## Output Requirements
+- Save review as `ai-code-reviews/{filename}.review.md` for each file reviewed
+- Include specific line references for issues
+- Provide concrete suggestions for improvements
+- Rate overall quality: Excellent/Good/Needs Improvement/Poor
+- Estimate refactoring effort: Low/Medium/High
+
+## Review Checklist
+- Follows project naming conventions
+- Proper error handling implemented
+- No hardcoded values, secrets, or magic numbers
+- Appropriate comments and documentation
+- Follows existing design principles and consistent with exemplars
+- No obvious security vulnerabilities
+- Performance optimizations considered
+
+Example 2: API Test
+
+File
+
+: .claude/commands/api-test
+
+# API Testing Command
+
+Create comprehensive API tests for: $ARGUMENTS
+
+## Testing Strategy
+Test the following API endpoints and scenarios based on $ARGUMENTS:
+
+1. **Happy Path Testing**:
+- Valid request formats
+- Expected response structures
+- Proper HTTP status codes
+
+2. **Error Handling Testing**:
+- Invalid request payloads
+- Authentication failures
+- Authorization edge cases
+- Rate limiting scenarios
+
+3. **Edge Cases**:
+- Boundary value testing
+- Large payload handling
+- Concurrent request handling
+- Network timeout scenarios
+
+## Test Structure Template
+Create tests in `/tests/api/{endpoint-name}.test.ts`:
+
+```typescript
+describe('{Endpoint Name} API', () => {
+describe('POST /{endpoint}', () => {
+it('should create {resource} with valid data', async () => {
+// Test implementation
+});
+
+it('should return 400 for invalid data', async () => {
+// Test implementation
+});
+
+it('should require authentication', async () => {
+// Test implementation
+});
+});
+
+describe('GET /{endpoint}', () => {
+// Additional test cases
+});
+});
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/05_in-context-learning-teaching-with-examples.en.srt
+TYPE: SRT
+TITLE: In Context Learning Teaching With Examples
+
+[00:00:00,000 --> 00:00:04,380] What's the very first thing that I do when I'm dropped into a new code base that I'm
+[00:00:04,380 --> 00:00:05,780] going to contribute to?
+[00:00:05,780 --> 00:00:10,659] Well, usually the very first thing I do is I probably go and read some documentation.
+[00:00:10,659 --> 00:00:14,300] And that gives me a lot of contextual information about how the project is laid out.
+[00:00:14,300 --> 00:00:18,340] But the second thing that I typically do that's really, really important and valuable is I
+[00:00:18,340 --> 00:00:20,180] go and I look at the code itself.
+[00:00:20,180 --> 00:00:24,920] Because when I start reading the code, I learn all kinds of things about the style that things
+[00:00:24,920 --> 00:00:29,780] are written in, sort of architectural decisions, how they design things, how they think, how
+[00:00:29,780 --> 00:00:35,959] they name, all kinds of really valuable information is contained within the code itself.
+[00:00:35,959 --> 00:00:41,939] All kinds of stylistic architectural design stuff that isn't going to likely be documented.
+[00:00:41,939 --> 00:00:45,840] And this becomes really valuable to me because I can then go and emulate that style.
+[00:00:45,840 --> 00:00:49,840] In fact, if you think about it, with human beings and other developers, one of the most
+[00:00:49,840 --> 00:00:54,240] important and powerful things that we do is we teach through example.
+[00:00:54,240 --> 00:00:58,360] We show examples of good code, what we want things to look like.
+[00:00:58,439 --> 00:01:04,480] We don't necessarily explain every last detail of why that's beautiful code or why it's what
+[00:01:04,480 --> 00:01:07,559] we want, but we show lots of great examples.
+[00:01:07,559 --> 00:01:12,080] If you're going and you're learning to write, you read great works by great authors and
+[00:01:12,080 --> 00:01:18,400] all of their writing, and you learn from looking examples of what they do.
+[00:01:18,400 --> 00:01:20,540] And Cloud Code is the same way.
+[00:01:20,540 --> 00:01:22,239] It can learn through an example.
+[00:01:22,239 --> 00:01:29,720] And examples are often really powerful, information-dense ways of communicating with Cloud Code and
+[00:01:29,720 --> 00:01:34,160] can be more powerful than trying to spell out a list of instructions.
+[00:01:34,160 --> 00:01:36,319] Now what do I mean by this?
+[00:01:36,319 --> 00:01:41,000] Well, I want to go back to this Cloud Code command I did for a code review, and I want
+[00:01:41,000 --> 00:01:43,400] to talk about this for a second.
+[00:01:43,400 --> 00:01:46,860] When I told it to do the code review, I taught it through an example.
+[00:01:46,860 --> 00:01:50,720] I said examples of excellent code review that you should try to match the design style slash
+[00:01:51,199 --> 00:01:55,879] convention of are, and I gave it a page, or basically app slash page dot TSX.
+[00:01:55,879 --> 00:02:00,180] Now I probably should have had multiple files here, you know, demonstrating a variety of
+[00:02:00,180 --> 00:02:03,360] different great examples, but I just gave it one.
+[00:02:03,360 --> 00:02:08,759] Now what I'm telling it is go and look at, read this thing, and learn by example.
+[00:02:08,759 --> 00:02:15,360] And then I tell it, here, read the file, and learn the design, the style, other things.
+[00:02:15,360 --> 00:02:20,639] So I'm telling it, go look at it, don't do exactly what's there, but learn from the style.
+[00:02:20,679 --> 00:02:24,919] Now the question is, can it really learn from example by looking at it?
+[00:02:24,919 --> 00:02:27,520] Well, let's go and see.
+[00:02:27,520 --> 00:02:32,080] So I'm going to start off with kind of a silly example in Cloud, and then we're going to
+[00:02:32,080 --> 00:02:36,240] see that, yeah, Cloud Code can absolutely learn by example.
+[00:02:36,240 --> 00:02:41,559] So I go into Cloud, regular Cloud, this is not Cloud Code, and I just say, write a poem,
+[00:02:41,559 --> 00:02:45,320] write about Nashville, Tennessee, in the same style as this poem.
+[00:02:45,320 --> 00:02:50,320] And I take an excerpt from, I believe, now I'm forgetting where this was, I think this
+[00:02:50,320 --> 00:02:55,059] is an excerpt from The Odyssey, and I give it an excerpt from The Odyssey, and it goes
+[00:02:55,059 --> 00:02:58,919] and it writes this sort of epic style about Nashville.
+[00:02:58,919 --> 00:03:03,279] Sing to me, O Muse, of the melodious city that rises from the rolling hills beside the
+[00:03:03,279 --> 00:03:08,600] winding Cumberland River, that's Nashville, many songs as echoed through her streets.
+[00:03:08,600 --> 00:03:13,320] And it goes and it writes about Nashville in the style of The Odyssey.
+[00:03:13,320 --> 00:03:16,679] And I apologize in advance because I forgot where I pulled my example from.
+[00:03:16,679 --> 00:03:19,259] I think it's The Odyssey, it may not be.
+[00:03:19,259 --> 00:03:21,100] I'm human, I'm fallible, just like AI.
+[00:03:21,100 --> 00:03:24,860] So it's possible I didn't pull from that, I didn't immediately look at it.
+[00:03:24,860 --> 00:03:30,259] But the key thing is it knows the style of the example that I gave it, and it's replicating
+[00:03:30,259 --> 00:03:32,660] it in its writing about Nashville.
+[00:03:32,660 --> 00:03:37,820] I didn't have to tell it to give it this sort of like elaborate sort of style, like sing
+[00:03:37,820 --> 00:03:39,899] to me, O Muse, right?
+[00:03:39,899 --> 00:03:42,119] Like that's not the way it's going to naturally write.
+[00:03:42,119 --> 00:03:45,419] But I've given an example and I've told it to write like that example, and if you look
+[00:03:45,419 --> 00:03:51,820] at the example, it starts with tell me O Muse of that ingenious hero who traveled far
+[00:03:51,820 --> 00:03:56,460] and wide after he had sacked the famous town of Troy.
+[00:03:56,460 --> 00:04:00,979] It's going and it's replicating that style, but writing about a new topic.
+[00:04:00,979 --> 00:04:04,899] And that's something that we are going to be doing all the time when we are building
+[00:04:04,899 --> 00:04:08,500] code and we're working with Cloud Code as a software engineer, is it's going to read
+[00:04:08,500 --> 00:04:15,220] how the prior code has been written, and it's going to follow the example of what it sees.
+[00:04:15,220 --> 00:04:17,779] And probably we're going to want it to do that.
+[00:04:17,779 --> 00:04:21,739] Now what's interesting is it's really good at following an example.
+[00:04:21,739 --> 00:04:26,220] So good that if I go and I say, write some dense Python code that is inspired by this
+[00:04:26,220 --> 00:04:34,019] poem, it can turn out Python code that has this same sort of flowery, elaborate language
+[00:04:34,019 --> 00:04:36,299] that was in the original example that we gave.
+[00:04:36,299 --> 00:04:42,940] It now says def invoke O Muse of that ingenious code which traveled far and wide, and it has
+[00:04:42,940 --> 00:04:47,500] all of this code now that has sort of that epic style to it.
+[00:04:47,500 --> 00:04:52,380] And then if I go in and I start a totally new conversation, right?
+[00:04:52,380 --> 00:04:56,500] So now I've ditched all that stuff that I did before, and I just take that file it wrote
+[00:04:56,500 --> 00:05:00,459] with that code that has this sort of crazy style and just go back to look at it, right?
+[00:05:00,459 --> 00:05:04,420] This is not your natural Python code that you're writing.
+[00:05:04,420 --> 00:05:07,739] So this is not what it's naturally inclined to write.
+[00:05:07,739 --> 00:05:11,380] But if I go in and I give it that file and I say read and understand the style architecture
+[00:05:11,380 --> 00:05:16,739] and coding conventions of this code, now write a sorting algorithm in the same style,
+[00:05:16,739 --> 00:05:21,380] it says, okay, looking at this delightful Homeric, epic in Python form, I can see the
+[00:05:21,380 --> 00:05:26,420] distinctive style, epic invocations as function names, nested functions representing the hero's
+[00:05:26,420 --> 00:05:31,140] journey, and then it goes and it writes a sorting algorithm in the same style.
+[00:05:31,140 --> 00:05:36,980] Invoke O Muse of that disordered array which traveled through memory seeking the blessed.
+[00:05:36,980 --> 00:05:41,619] And then it goes on and does things like arrays that wandered seeking order, and it
+[00:05:41,619 --> 00:05:42,739] has the orders.
+[00:05:42,739 --> 00:05:43,739] Now notice what it did.
+[00:05:43,739 --> 00:05:47,179] I didn't tell it how to write in that epic style.
+[00:05:47,179 --> 00:05:52,700] I said read this code in the example of this code and write a sorting algorithm in the
+[00:05:52,700 --> 00:05:53,700] same style.
+[00:05:53,700 --> 00:05:59,380] I didn't tip it off exactly what the style was, or if you imagine if you had to write
+[00:05:59,380 --> 00:06:04,579] out a list of instructions of how to write code in this style, it's gonna be a very long
+[00:06:04,579 --> 00:06:05,579] list of instructions.
+[00:06:06,179 --> 00:06:11,619] But if you simply give it an example, it can learn from the example and replicate it.
+[00:06:11,619 --> 00:06:14,579] And we are gonna be using this all the time with Cloud Code.
+[00:06:14,579 --> 00:06:21,220] It's going to be reading your existing code and typically learning from the style of what's
+[00:06:21,220 --> 00:06:22,380] there.
+[00:06:22,380 --> 00:06:27,260] If you tell it to do a code review and you tell it to go read a file and learn from it,
+[00:06:27,260 --> 00:06:30,140] it's going to learn from it and probably follow the style of it.
+[00:06:30,140 --> 00:06:34,920] In fact, this is one of the powerful ways that we can teach is one, by making sure that
+[00:06:34,920 --> 00:06:39,959] our code actually reflects the style that we want and the architecture and principles.
+[00:06:39,959 --> 00:06:43,720] If it doesn't, we want to tell it to go and refactor it and improve it to create good
+[00:06:43,720 --> 00:06:50,760] examples that it can follow, but we have to realize that the code itself becomes examples
+[00:06:50,760 --> 00:06:53,600] that it will then be influenced by.
+[00:06:53,600 --> 00:06:57,119] We can tell it and specifically inject examples of what we want.
+[00:06:57,119 --> 00:06:59,959] We can tell it good files to look at.
+[00:06:59,959 --> 00:07:04,399] We can put this into our prompts, but it's a super important thing to know.
+[00:07:04,920 --> 00:07:06,359] We can give it examples.
+[00:07:06,359 --> 00:07:10,640] We don't just have to tell it declaratively, here's what I want you to do.
+[00:07:10,640 --> 00:07:12,480] We can teach it through examples.
+[00:07:12,480 --> 00:07:17,559] And this is one of the really powerful ways that Cloud Code is going to pick up context
+[00:07:17,559 --> 00:07:19,079] and figure out what to do.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/06_exercise-building-a-documentation-generator_instructions.html
+TYPE: HTML
+TITLE: Exercise Building A Documentation Generator Instructions
+
+Objective
+
+Build a Claude Code command that automatically generates both technical documentation for developers and user-friendly guides for end users when you add a new feature.
+
+Setup
+
+Create a new command file: .claude/commands/document-feature.md
+
+Your Task
+
+Write a command that takes a feature name and generates:
+
+Developer Documentation
+
+- Technical specs, API details, implementation notes
+
+User Documentation
+
+- Simple guide with screenshots placeholders, step-by-step instructions
+
+Command Structure
+
+Your command should:
+
+Accept a feature name as input
+
+Analyze the relevant code files
+
+Generate two separate documentation files in appropriate directories
+
+Follow your project's existing documentation patterns
+
+Include placeholders for screenshots in user docs
+
+Add proper cross-references between the two doc types
+
+Example Usage
+
+Should generate:
+
+docs/dev/password-reset-implementation.md
+
+docs/user/how-to-reset-password.md
+
+Bonus Points
+
+Make the command detect if the feature is frontend/backend/full-stack and adjust documentation accordingly
+
+Make it automatically capture and insert screenshots in user-facing documentation
+
+Auto-link to related existing documentation
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/07_contribute-help-build-a-curated-resource-of-great-commands-claude-md-etc_instructions.html
+TYPE: HTML
+TITLE: Contribute Help Build A Curated Resource Of Great Commands Claude Md Etc Instructions
+
+The power of Claude Code multiplies when we share proven patterns, commands, and processes. As you develop workflows that genuinely improve your productivity, consider contributing them back to the community. Submit pull requests with your most effective Claude Code commands, well-crafted CLAUDE.md templates, innovative process documentation, and creative solutions to common development challenges. Whether it's a command that automates your testing workflow, a CLAUDE.md structure that perfectly captures your project context, or a process that streamlines code reviews, your contributions help other developers skip the trial-and-error phase and jump straight to productive AI-assisted development. Every shared command becomes a building block for the next developer's breakthrough.
+
+https://github.com/juleswhite/claude-code

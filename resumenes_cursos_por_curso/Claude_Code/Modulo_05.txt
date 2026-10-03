@@ -1,0 +1,576 @@
+Claude Code
+MODULE 05: Improving Claude Code Scalability Reasoning
+=====================================================================
+
+This file collects the readable text from this module's subtitles and learning materials. Source paths are kept below each section.
+
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/01_being-claude-codes-hands-eyes-and-ears.en.srt
+TYPE: SRT
+TITLE: Being Claude Codes Hands Eyes And Ears
+
+[00:00:00,000 --> 00:00:03,759] I think of software engineering as a search process, right?
+[00:00:03,759 --> 00:00:09,000] I go out and I make some changes and then I do a bunch of things to see if those changes
+[00:00:09,000 --> 00:00:10,319] worked or not, right?
+[00:00:10,319 --> 00:00:13,279] I compile my code and I see if I get any error messages.
+[00:00:13,279 --> 00:00:16,319] I go and I run the test to see if I broke anything.
+[00:00:16,319 --> 00:00:19,739] And then maybe I get to the end and I go and look at the user interface and I interact
+[00:00:19,739 --> 00:00:22,719] with it and see if it does what I want and if people like it.
+[00:00:22,719 --> 00:00:27,200] And if all that passes, then I keep those changes and move forward with them.
+[00:00:27,200 --> 00:00:31,319] And if something goes wrong, then I'll go and iterate and try to find a different version
+[00:00:31,319 --> 00:00:36,919] of my code that fixes the bug or improves the satisfaction of the end users or whatever
+[00:00:36,919 --> 00:00:37,919] it is.
+[00:00:37,919 --> 00:00:41,240] But I view it as this sort of holistic search process where I'm trying to figure out how
+[00:00:41,240 --> 00:00:45,700] to change my code to improve some outcome that I care about.
+[00:00:45,700 --> 00:00:47,240] Maybe it's fixing a bug.
+[00:00:47,240 --> 00:00:49,080] Maybe it's making the users happy.
+[00:00:49,080 --> 00:00:50,279] Whatever it is.
+[00:00:50,279 --> 00:00:55,279] But one of the key things that I have to do is I have to get feedback on what happened.
+[00:00:55,360 --> 00:01:01,439] Now, Cloud Code has excellent tools to get lots of kinds of feedback.
+[00:01:01,439 --> 00:01:02,439] So it's really good.
+[00:01:02,439 --> 00:01:06,559] It can go and run the compiler, particularly if you tell it to do so.
+[00:01:06,559 --> 00:01:12,519] Now, this is always an important thing to do is to tell Cloud Code to go and try to
+[00:01:12,519 --> 00:01:15,160] compile the code, to try to run the test.
+[00:01:15,160 --> 00:01:18,559] If you don't tell it to, it may not try to.
+[00:01:18,559 --> 00:01:22,480] You want to do this because it needs feedback on whether or not its changes were correct
+[00:01:22,480 --> 00:01:23,480] or not.
+[00:01:23,680 --> 00:01:29,360] Limit the amount of work that you have to do to decide if what it did was good or not.
+[00:01:29,360 --> 00:01:33,959] So one of the important things we have to do is we have to give Cloud Code feedback.
+[00:01:33,959 --> 00:01:39,599] Now sometimes there's things that are just hard to give it feedback on.
+[00:01:39,599 --> 00:01:44,000] Things that we can't automate for some reason or that we haven't built the infrastructure
+[00:01:44,000 --> 00:01:45,199] to automate.
+[00:01:45,199 --> 00:01:49,639] And in those cases, what we want to do is we want to essentially be Cloud's hands, eyes
+[00:01:49,639 --> 00:01:56,400] and ears to give it feedback, allow it to do things that it can't easily do programmatically.
+[00:01:56,400 --> 00:02:00,360] Compiling the code, running tests, those are things it can easily do on its own, but there
+[00:02:00,360 --> 00:02:03,160] are certain things it can't do easily.
+[00:02:03,160 --> 00:02:06,419] Like maybe it can't interact with your user interface because you don't have a testing
+[00:02:06,419 --> 00:02:08,240] setup that allows that.
+[00:02:08,240 --> 00:02:15,479] So this becomes something that's super important when you're doing user interfaces and you're
+[00:02:15,479 --> 00:02:16,479] writing applications.
+[00:02:16,520 --> 00:02:20,880] Now when I just said go and create this expense application, it didn't build any sort of automated
+[00:02:20,880 --> 00:02:25,399] UI testing infrastructure for me that it could go and automate UI tests.
+[00:02:25,399 --> 00:02:30,320] So the way I tested it was I went and I was Cloud's hands, eyes and ears.
+[00:02:30,320 --> 00:02:35,360] I went in and I clicked add expense and oh no, one of the changes that it made blew something
+[00:02:35,360 --> 00:02:38,160] up and this big error message showed up.
+[00:02:38,160 --> 00:02:40,160] Now what is the right way to handle this?
+[00:02:40,160 --> 00:02:44,080] Well, the wrong way to handle this is to say Cloud Code made this terrible mistake.
+[00:02:44,080 --> 00:02:45,080] It's so silly.
+[00:02:45,080 --> 00:02:46,080] How could it make this mistake?
+[00:02:46,679 --> 00:02:50,160] So instead of using AI coding tools again, which is what a lot of people do, the right
+[00:02:50,160 --> 00:02:55,119] way to do is to gently give Cloud Code feedback on what went wrong.
+[00:02:55,119 --> 00:03:00,320] That is we want to complete the cycle so that it can go and learn from its mistakes.
+[00:03:00,320 --> 00:03:05,779] So what I did and what you should always do whenever you have some type of error or something
+[00:03:05,779 --> 00:03:11,119] that goes wrong outside of Cloud Code's loop that it doesn't know about is that is critical
+[00:03:11,119 --> 00:03:13,360] context that it needs.
+[00:03:13,360 --> 00:03:18,720] So I would copy and paste the error message or screenshot it or whatever it is to capture
+[00:03:18,720 --> 00:03:23,559] the context that Cloud is going to need, Cloud Code is going to need in order to understand
+[00:03:23,559 --> 00:03:25,199] the mistake.
+[00:03:25,199 --> 00:03:27,919] In this case, I copied and pasted the text.
+[00:03:27,919 --> 00:03:33,360] I pasted it back in as the next prompt after it had made the changes.
+[00:03:33,360 --> 00:03:37,119] So lots of different ways you can do this, but in this case it had just finished working
+[00:03:37,119 --> 00:03:41,320] on the feature, thought it was all done, all the tests passed, everything's good.
+[00:03:41,320 --> 00:03:45,559] And so I go back and unfortunately rain on its parade and I provide it context about
+[00:03:45,559 --> 00:03:46,559] what happened.
+[00:03:46,559 --> 00:03:53,000] Now for my prompt, what I did is I took the error message, but I enriched it with yet
+[00:03:53,000 --> 00:03:54,000] more context.
+[00:03:54,000 --> 00:03:58,199] I said, clicking add expense creates this error.
+[00:03:58,199 --> 00:04:03,759] So now not only am I telling it what the error is and the raw information of the error, I'm
+[00:04:03,759 --> 00:04:07,580] also going and telling it when this error shows up.
+[00:04:07,580 --> 00:04:12,259] So I'm saying when I click add expense, this is what happens.
+[00:04:12,259 --> 00:04:16,899] And so whenever we're working with Cloud Code, there are some things that sometimes we're
+[00:04:16,899 --> 00:04:20,859] just going to have to be Cloud's hands, eyes, and ears.
+[00:04:20,859 --> 00:04:25,059] And if that's the case and something goes wrong, we have to provide the context about
+[00:04:25,059 --> 00:04:26,059] what's going wrong.
+[00:04:26,059 --> 00:04:31,579] Now, if I go in, I just paste this back in after it finishes the feature, it says, okay,
+[00:04:31,579 --> 00:04:32,579] here's what the error is.
+[00:04:32,579 --> 00:04:33,859] It figures it out.
+[00:04:33,859 --> 00:04:39,660] It then goes through, fixes its error, comes back, tells me I can go and try it again.
+[00:04:39,660 --> 00:04:45,220] Now I want to just take a step back and think about the process.
+[00:04:45,220 --> 00:04:52,459] Cloud Code can go and run automated things, like it can run commands to interact with
+[00:04:52,459 --> 00:04:59,899] Git, to compile the code, to run automated tests, and it can directly get back error
+[00:04:59,899 --> 00:05:02,619] messages and other things.
+[00:05:02,619 --> 00:05:08,140] Sometimes we are going to have to step in and be Cloud's hands, eyes, and ears.
+[00:05:08,140 --> 00:05:12,940] And we can go and do something of our own accord, telling us, you know, just going and
+[00:05:12,940 --> 00:05:17,820] exploring the user interface, for example, discovering issues, and then giving it feedback
+[00:05:17,820 --> 00:05:20,179] on what we were doing and what we saw.
+[00:05:20,179 --> 00:05:21,260] We can give it screenshots.
+[00:05:21,260 --> 00:05:22,980] We can copy and paste error messages.
+[00:05:22,980 --> 00:05:28,940] We can give it our own commentary about what we like or dislike, things like that.
+[00:05:28,940 --> 00:05:30,940] So we can give it this feedback.
+[00:05:31,899 --> 00:05:35,380] We want to minimize the amount of this that we do.
+[00:05:35,380 --> 00:05:40,899] The more that we are working as Cloud's hands, eyes, and ears, the more coupled it is to
+[00:05:40,899 --> 00:05:45,100] us, and we become a bottleneck for scaling up that AI labor.
+[00:05:45,100 --> 00:05:49,779] So whenever you see this pattern starting to emerge, I want you to think very carefully
+[00:05:49,779 --> 00:05:55,220] about how do I move from this world, where it's having to come to me for all these different
+[00:05:55,220 --> 00:06:00,220] types of testing things, and move more into this world, where I take something that I'm
+[00:06:00,220 --> 00:06:05,820] currently doing for Cloud Code on its behalf, like, you know, actually going and clicking
+[00:06:05,820 --> 00:06:08,899] around on the user interface, and is there a way that I can make that something that
+[00:06:08,899 --> 00:06:15,299] Cloud Code does programmatically, by scripting some type of interaction with the user interface,
+[00:06:15,299 --> 00:06:20,500] or giving it somehow remote control over the browser, or the mouse, which there's all kinds
+[00:06:20,500 --> 00:06:22,880] of facilities to do things like this.
+[00:06:22,880 --> 00:06:27,779] So we want to try to minimize the amount of this type of thing we do, but sometimes we
+[00:06:27,779 --> 00:06:32,579] just have to do it, or sometimes we'll go into ad hoc testing of the user interface,
+[00:06:32,579 --> 00:06:36,940] or discover something that we don't like, you know, stylistically in the user interface,
+[00:06:36,940 --> 00:06:39,859] the way it looks, or something like that, that there's no way Cloud Code's going to
+[00:06:39,859 --> 00:06:43,700] know this, because, right, it just doesn't know all the things we like and dislike in
+[00:06:43,700 --> 00:06:46,540] terms of the way things visually work or look.
+[00:06:46,540 --> 00:06:47,899] We have to go and kind of discover it.
+[00:06:47,899 --> 00:06:50,019] And so those types of things make sense.
+[00:06:50,019 --> 00:06:55,540] We're going to go and do them, and we provide Cloud Code feedback on what was happening,
+[00:06:55,540 --> 00:06:58,779] what we liked or didn't like, what error messages showed up.
+[00:06:58,779 --> 00:07:04,260] But as much as possible, we want to minimize that and move towards automated testing, where
+[00:07:04,260 --> 00:07:10,220] Cloud Code can complete that loop itself and get feedback on its own changes itself.
+[00:07:10,220 --> 00:07:14,179] Of course, we always have to instruct Cloud Code to remember to do this and get feedback
+[00:07:14,179 --> 00:07:14,899] on what it's done.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/02_ensuring-claude-code-checks-its-own-work.en.srt
+TYPE: SRT
+TITLE: Ensuring Claude Code Checks Its Own Work
+
+[00:00:00,000 --> 00:00:06,820] Now, we can be Claude's hands, eyes and ears, but we probably don't want to be.
+[00:00:06,820 --> 00:00:10,880] And you know, one of the things I always feel bad about is when I just make basic mistakes
+[00:00:10,880 --> 00:00:14,159] where I fail to seek feedback on my own changes.
+[00:00:14,159 --> 00:00:17,840] Like I go and change something and I don't bother running the linter.
+[00:00:17,840 --> 00:00:22,000] I don't bother rerunning all the tests and ended up breaking something and committing
+[00:00:22,000 --> 00:00:23,000] it.
+[00:00:23,000 --> 00:00:24,000] Right.
+[00:00:24,000 --> 00:00:26,079] And then somebody else discovers it, right?
+[00:00:26,079 --> 00:00:30,719] Somebody else has to find and give me feedback on my mistake because I didn't do some basic
+[00:00:30,719 --> 00:00:35,680] checks to see that was, you know, that my code actually didn't work.
+[00:00:35,680 --> 00:00:36,680] Right.
+[00:00:36,680 --> 00:00:37,680] And we don't want to do that.
+[00:00:37,680 --> 00:00:38,680] Right.
+[00:00:38,680 --> 00:00:42,080] I tried it as much as possible not to forget to do these things or not to skip and cut
+[00:00:42,080 --> 00:00:43,080] corners.
+[00:00:43,080 --> 00:00:44,080] And sometimes I do.
+[00:00:44,080 --> 00:00:46,439] Well, we don't want Claude code to get tired.
+[00:00:46,439 --> 00:00:49,959] We don't want our AI labor to get tired and to cut corners.
+[00:00:49,959 --> 00:00:52,080] The real thing is it doesn't get tired.
+[00:00:52,080 --> 00:00:57,080] It just, if it isn't instructed to do these things, to seek feedback and make sure that
+[00:00:57,080 --> 00:01:03,680] its own work actually compiles, passes tests and things, it may not because it is somewhat
+[00:01:03,680 --> 00:01:05,040] random.
+[00:01:05,040 --> 00:01:09,300] So a basic thing we want to do is we want to make sure that we instruct it to always
+[00:01:09,300 --> 00:01:10,300] get feedback.
+[00:01:10,300 --> 00:01:15,879] Now, we can certainly let it just write code and do things, but then we're going to discover
+[00:01:15,879 --> 00:01:19,199] its changes and that break things ourselves.
+[00:01:19,199 --> 00:01:21,959] And we don't really want to do that because that puts the human in the loop.
+[00:01:21,959 --> 00:01:28,760] So we need to do some basic things to make sure that Claude code sends as few errors
+[00:01:28,760 --> 00:01:31,120] as possible over to the human side.
+[00:01:31,120 --> 00:01:36,919] Ideally, we want it writing just perfect, bang on, beautiful, amazing code.
+[00:01:36,919 --> 00:01:40,839] And one of the simplest ways that we can make sure that it produces the highest quality
+[00:01:40,839 --> 00:01:45,959] outputs before those outputs get to the human being is to give it some process of basic
+[00:01:45,959 --> 00:01:49,760] checks and feedback that it needs to seek on its work.
+[00:01:49,760 --> 00:01:54,199] We want to tell it to always compile the code, always execute the tests, always run
+[00:01:54,199 --> 00:01:59,559] the code, and if possible, build systems so it can interact with the user interface or
+[00:01:59,559 --> 00:02:02,680] the system in an integration test itself programmatically.
+[00:02:02,680 --> 00:02:08,919] We want to do as much as possible in an automated fashion, give it as much as possible that
+[00:02:08,919 --> 00:02:13,559] it can do completely independently of the human being and as much process around that.
+[00:02:13,800 --> 00:02:19,600] Now the easiest way to do this is to one, make sure that tests are built, two, make
+[00:02:19,600 --> 00:02:23,839] sure there's all kinds of tools that it can use to check and get feedback on whether or
+[00:02:23,839 --> 00:02:29,039] not its changes work or not, things like the compiler, and then go and document those in
+[00:02:29,039 --> 00:02:30,360] the Claude.md file.
+[00:02:30,360 --> 00:02:35,240] These fundamental checks are super important to get in Claude.md because what you'll see
+[00:02:35,240 --> 00:02:40,559] is if you don't have these sort of basic ground rules in Claude.md, it may not follow these
+[00:02:40,559 --> 00:02:42,559] things like you would expect.
+[00:02:42,559 --> 00:02:49,520] So in addition to creating feature branches, which I think is a ground rule, is telling
+[00:02:49,520 --> 00:02:54,880] Claude code when it builds new stuff to write tests for it.
+[00:02:54,880 --> 00:02:59,720] Now it's even better if you tell it the specific testing libraries and things like that, or
+[00:02:59,720 --> 00:03:03,520] tell it where to look to understand how your testing works, things like that.
+[00:03:03,520 --> 00:03:11,039] But at the basic level, you want to tell it when you build new code, write tests for it.
+[00:03:11,039 --> 00:03:19,520] And then second, before you check in code, go and compile the code and make sure it passes
+[00:03:19,520 --> 00:03:22,039] all the tests.
+[00:03:22,039 --> 00:03:26,059] And what we're doing here is we're setting Claude code up to loop.
+[00:03:26,059 --> 00:03:31,520] If we don't do this, what'll happen sometimes is it'll just go and write code.
+[00:03:31,520 --> 00:03:37,559] Maybe it compiles it, maybe it doesn't, but it goes and writes code, it thinks it works,
+[00:03:37,559 --> 00:03:40,960] and then when we go and try to run the application, the application's broken because it's got
+[00:03:40,960 --> 00:03:45,160] compilation errors or failing tests or other things.
+[00:03:45,160 --> 00:03:49,880] And that's really annoying because that prevents us from scaling our IAI labor up, it wastes
+[00:03:49,880 --> 00:03:54,679] our time as human beings, and our time is precious, and we want to protect that time
+[00:03:54,679 --> 00:03:56,479] as much as possible.
+[00:03:56,479 --> 00:04:00,160] And the worst thing we can do is have it writing a bunch of junky code that if it just bothered
+[00:04:00,160 --> 00:04:01,440] to compile it.
+[00:04:01,440 --> 00:04:06,880] The way that we get around this is we specify very clearly, you're going to write code,
+[00:04:06,880 --> 00:04:10,600] you're going to do it in a branch, you're going to go and you're going to, and I should
+[00:04:10,759 --> 00:04:15,360] probably say compile code, but it's implicit in running tests.
+[00:04:15,360 --> 00:04:19,480] You're going to write tests to go with your code, you're going to run the tests, and you're
+[00:04:19,480 --> 00:04:22,279] going to do all of that before you're committing.
+[00:04:22,279 --> 00:04:26,160] You're going to do all of it and make sure the tests pass before you're committing.
+[00:04:26,160 --> 00:04:30,839] Now I could have gone and said compile, but it's implicit in running the tests and making
+[00:04:30,839 --> 00:04:35,119] them pass that it has to compile the code typically to actually run the tests and get
+[00:04:35,119 --> 00:04:36,119] them to pass.
+[00:04:36,119 --> 00:04:40,279] So implicit in this is you're going to go write code, you're going to automate the
+[00:04:40,279 --> 00:04:44,640] testing of it, and you're going to make everything work before you hand it off to me.
+[00:04:44,640 --> 00:04:50,239] And this simple little bit of context that we provide in cloud.md will save you a vast
+[00:04:50,239 --> 00:04:51,000] amount of time.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/03_software-design-token-limits-and-maintainability.en.srt
+TYPE: SRT
+TITLE: Software Design Token Limits And Maintainability
+
+[00:00:00,000 --> 00:00:03,640] Now, the AI labor we've been using seems sort of magical,
+[00:00:03,640 --> 00:00:05,599] like we can just give it anything we want
+[00:00:05,599 --> 00:00:07,159] and it'll go and work.
+[00:00:07,159 --> 00:00:08,920] And that is true to a degree,
+[00:00:08,920 --> 00:00:11,119] but unfortunately there are fundamental limitations
+[00:00:11,119 --> 00:00:13,060] that we have to account for.
+[00:00:13,060 --> 00:00:14,960] And those impact our design.
+[00:00:14,960 --> 00:00:16,840] Now, interestingly, a lot of the things
+[00:00:16,840 --> 00:00:19,299] that we're gonna see that really matter
+[00:00:19,299 --> 00:00:20,639] are the same things that matter
+[00:00:20,639 --> 00:00:24,159] when we're just doing a good job with our software design,
+[00:00:24,159 --> 00:00:25,940] where we try to make things modular,
+[00:00:25,940 --> 00:00:28,799] we try to isolate, have single responsibility,
+[00:00:28,799 --> 00:00:31,059] these types of things where we try to make it easy
+[00:00:31,059 --> 00:00:33,840] for somebody to go and find where to make the change,
+[00:00:33,840 --> 00:00:35,439] how to make the change,
+[00:00:35,439 --> 00:00:37,000] we try to have a limited amount of stuff
+[00:00:37,000 --> 00:00:38,500] that needs to be changed,
+[00:00:38,500 --> 00:00:40,000] and we don't want ripple effects.
+[00:00:40,000 --> 00:00:43,099] All of these types of things that we really care about,
+[00:00:43,099 --> 00:00:44,959] those things really matter.
+[00:00:44,959 --> 00:00:48,099] Now, I wanna take a moment to understand why they matter.
+[00:00:48,099 --> 00:00:51,959] Why does it matter that we pay attention to design?
+[00:00:51,959 --> 00:00:53,880] Well, let's think about what happens
+[00:00:53,880 --> 00:00:56,599] when you go and give a prompt to Cloud Code.
+[00:00:56,599 --> 00:00:58,159] Let's say you go in and you say,
+[00:00:58,240 --> 00:01:03,240] I need to create a report of expenses related to software.
+[00:01:06,000 --> 00:01:08,919] Now, obviously, my prompt here has got some issues,
+[00:01:08,919 --> 00:01:10,400] but it's gonna take this.
+[00:01:10,400 --> 00:01:11,480] And the first thing it has to do
+[00:01:11,480 --> 00:01:16,440] is it has to figure out what files is it going to change?
+[00:01:16,440 --> 00:01:18,360] Now, depending on your project structure,
+[00:01:18,360 --> 00:01:20,000] depending on the naming of your files,
+[00:01:20,000 --> 00:01:22,839] it might be very easy for it to figure out
+[00:01:22,839 --> 00:01:25,239] what is going to be impacted by the change.
+[00:01:25,239 --> 00:01:26,360] But the very first part
+[00:01:26,360 --> 00:01:28,800] is it's gonna have to go and investigate
+[00:01:28,800 --> 00:01:33,800] and try to figure out what needs to be changed and how.
+[00:01:34,839 --> 00:01:37,779] Now, how does it do this?
+[00:01:37,779 --> 00:01:40,919] Do we just take all of the files for the project
+[00:01:40,919 --> 00:01:42,319] and dump them into the model
+[00:01:42,319 --> 00:01:44,580] and say which ones need to be changed?
+[00:01:44,580 --> 00:01:47,400] Well, if you have a tiny project, maybe,
+[00:01:47,400 --> 00:01:51,000] but most software projects are too big to do this.
+[00:01:51,000 --> 00:01:54,279] We can't actually just dump everything into the model.
+[00:01:54,279 --> 00:01:57,919] One, it's expensive because we're paying per token.
+[00:01:57,919 --> 00:02:00,919] And basically, tokens are words, roughly,
+[00:02:00,919 --> 00:02:02,279] that we can think of that are going in.
+[00:02:02,279 --> 00:02:04,160] So the more software you're dumping in,
+[00:02:04,160 --> 00:02:07,879] the more tokens it's consuming, the more expensive it is,
+[00:02:07,879 --> 00:02:10,360] but it's also inefficient, right?
+[00:02:10,360 --> 00:02:13,279] It's limiting our scalability
+[00:02:13,279 --> 00:02:15,820] because it's requiring processing
+[00:02:15,820 --> 00:02:17,199] a larger amount of information,
+[00:02:17,199 --> 00:02:20,960] which is inherently slower, inherently more expensive.
+[00:02:20,960 --> 00:02:22,860] It's not what we wanna do.
+[00:02:22,860 --> 00:02:27,860] So it begs the question, why do we not wanna do this?
+[00:02:28,100 --> 00:02:29,500] Now, certainly it's less efficient,
+[00:02:29,500 --> 00:02:31,240] but there's another fundamental limit
+[00:02:31,240 --> 00:02:33,080] that we have to deal with always,
+[00:02:33,080 --> 00:02:35,539] and that is the token limits.
+[00:02:35,539 --> 00:02:37,220] We have a limit on the number of tokens
+[00:02:37,220 --> 00:02:38,580] that we can put into the model,
+[00:02:38,580 --> 00:02:40,500] and we also have a limit on the number of tokens
+[00:02:40,500 --> 00:02:43,139] that we can get out of the model at a time.
+[00:02:43,139 --> 00:02:45,779] So one of the problems is big software
+[00:02:45,779 --> 00:02:48,020] is going to exceed the input token limit.
+[00:02:48,020 --> 00:02:50,119] So even if we wanted to dump the contents
+[00:02:50,119 --> 00:02:51,940] of every file in there at once and say
+[00:02:51,940 --> 00:02:54,899] which files need to be changed,
+[00:02:54,899 --> 00:02:56,899] that's not gonna work because it's gonna exceed
+[00:02:56,899 --> 00:02:59,820] the input token limit, and we fundamentally can't do it.
+[00:02:59,820 --> 00:03:02,860] So the AI is always gonna be using a window,
+[00:03:02,860 --> 00:03:05,020] kind of think of it like a window or a lens
+[00:03:05,020 --> 00:03:07,779] that it can go and focus on different parts of the software,
+[00:03:07,779 --> 00:03:10,919] certain files, certain segments, certain folders,
+[00:03:10,919 --> 00:03:13,860] and it has to try to, within that lens that it's got,
+[00:03:13,860 --> 00:03:15,860] it has to try to move it around and explore
+[00:03:15,860 --> 00:03:18,339] and figure out what software
+[00:03:18,339 --> 00:03:20,020] it actually needs to go and change.
+[00:03:20,020 --> 00:03:21,600] Now, this is the same thing humans do, right?
+[00:03:22,259 --> 00:03:23,800] We have to go and figure out which file
+[00:03:23,800 --> 00:03:26,039] we might need to change, and we'll do investigation,
+[00:03:26,039 --> 00:03:27,240] we'll look at different files,
+[00:03:27,240 --> 00:03:29,800] we'll try to understand what it's doing,
+[00:03:29,800 --> 00:03:32,100] we'll try to figure out what things to follow up on,
+[00:03:32,100 --> 00:03:33,880] what dependencies are there,
+[00:03:33,880 --> 00:03:37,080] and it's gonna go through that same discovery process,
+[00:03:37,080 --> 00:03:40,600] and we wanna make that as efficient as possible.
+[00:03:40,600 --> 00:03:44,600] On the flip side, if our change requires
+[00:03:44,600 --> 00:03:47,240] a ton of new code to be produced,
+[00:03:47,240 --> 00:03:49,660] it may not be able to do it all at once.
+[00:03:49,699 --> 00:03:51,419] So if we have a giant file
+[00:03:51,419 --> 00:03:53,820] that needs to be completely rewritten from scratch,
+[00:03:53,820 --> 00:03:55,860] it may not be possible for it to rewrite
+[00:03:55,860 --> 00:03:59,300] that entire file in one go, and that creates a problem
+[00:03:59,300 --> 00:04:01,559] because it's bigger than the token output limit,
+[00:04:01,559 --> 00:04:03,660] meaning it can't just rewrite that file all at once.
+[00:04:03,660 --> 00:04:05,220] So it might have to write half of it
+[00:04:05,220 --> 00:04:07,820] and then try to come back and write the next half of it,
+[00:04:07,820 --> 00:04:09,039] but the moment that we're doing that,
+[00:04:09,039 --> 00:04:11,419] we're looping, we're adding time,
+[00:04:11,419 --> 00:04:14,220] we're making things harder for our AI labor.
+[00:04:14,220 --> 00:04:19,220] So if we can design our code in some way
+[00:04:19,980 --> 00:04:22,619] where we have a small number of files
+[00:04:22,619 --> 00:04:26,100] that need to be changed for a feature, for whatever it is,
+[00:04:26,100 --> 00:04:28,820] it's easy to figure out what files need to change,
+[00:04:28,820 --> 00:04:31,779] where they need to go, all of those types of things,
+[00:04:31,779 --> 00:04:33,540] they fit within token limits,
+[00:04:33,540 --> 00:04:36,959] it's much, much easier to do these changes.
+[00:04:36,959 --> 00:04:39,940] If we have giant files that don't fit in
+[00:04:39,940 --> 00:04:43,140] or a whole lot of files that we need to process,
+[00:04:43,140 --> 00:04:45,619] particularly files where we have lots of dependencies
+[00:04:45,619 --> 00:04:47,940] that are really hard to figure out and untangle,
+[00:04:47,980 --> 00:04:50,260] it's gonna be a whole heck of a lot harder
+[00:04:50,260 --> 00:04:51,339] for the AI labor to do it,
+[00:04:51,339 --> 00:04:53,380] just like it is for human beings.
+[00:04:53,380 --> 00:04:56,100] So even as it seems magical,
+[00:04:56,100 --> 00:04:58,260] it doesn't mean that we don't get to,
+[00:04:58,260 --> 00:04:59,760] we don't still have to pay attention
+[00:04:59,760 --> 00:05:01,179] to how we design the software,
+[00:05:01,179 --> 00:05:04,420] how we break it up into files, how we modularize it,
+[00:05:04,420 --> 00:05:07,420] because those things will impact the efficiency
+[00:05:07,420 --> 00:05:09,519] that the AI labor can work on.
+[00:05:09,519 --> 00:05:13,700] Now, to give you a visual of what's easy and what's hard,
+[00:05:13,700 --> 00:05:17,380] if you have a change that needs to be made
+[00:05:17,380 --> 00:05:19,859] and it's like the AI sees immediately
+[00:05:19,859 --> 00:05:21,720] it's one file that needs to be changed,
+[00:05:21,720 --> 00:05:23,500] it all fits into that token limit,
+[00:05:23,500 --> 00:05:25,660] it can dump the entire file into the token limit,
+[00:05:25,660 --> 00:05:29,000] it's not many tokens worth of work,
+[00:05:29,000 --> 00:05:31,500] that's a really easy thing.
+[00:05:31,500 --> 00:05:33,739] If you've got giant files
+[00:05:33,739 --> 00:05:35,619] where the changes that are needed to be made
+[00:05:35,619 --> 00:05:38,260] are spread out all across the file,
+[00:05:38,260 --> 00:05:39,859] and particularly when the changes
+[00:05:39,859 --> 00:05:43,299] all need to be cohesive with each other,
+[00:05:43,299 --> 00:05:46,339] then it's much harder for it to make the change.
+[00:05:46,339 --> 00:05:50,299] If you've got thousands of files that need to be changed,
+[00:05:50,299 --> 00:05:53,299] and you can't dump all those thousands of files
+[00:05:53,299 --> 00:05:57,019] or those pieces of those files into the model at once
+[00:05:57,019 --> 00:05:59,220] because the token limits, or even worse,
+[00:05:59,220 --> 00:06:01,179] if they had all these complex dependencies
+[00:06:01,179 --> 00:06:04,100] where you have to reason across many of them at once,
+[00:06:04,100 --> 00:06:09,100] this is gonna be really, really hard for the AI to do.
+[00:06:09,179 --> 00:06:13,579] So, all the same things that matter with humans apply here,
+[00:06:13,579 --> 00:06:15,500] but the reason they really apply
+[00:06:15,500 --> 00:06:16,859] is because token limits
+[00:06:16,859 --> 00:06:18,700] and how much we can put into the model at once
+[00:06:18,700 --> 00:06:20,820] and how much we can get out at once
+[00:06:20,820 --> 00:06:25,160] impact how scalable our design is
+[00:06:25,160 --> 00:06:29,140] in terms of how scalable it is for AI labor to work on it.
+[00:06:29,140 --> 00:06:34,140] If the AI labor can quickly identify the files to work on,
+[00:06:35,100 --> 00:06:37,899] if those files are easy to fit into the token limit
+[00:06:37,899 --> 00:06:40,420] or the portions of the files that it needs to work on
+[00:06:40,420 --> 00:06:42,700] are easy to identify and fit into the token limit,
+[00:06:42,739 --> 00:06:47,380] and it's easy to write the updated changes to those files
+[00:06:47,380 --> 00:06:50,660] within the output token limits, much, much easier.
+[00:06:50,660 --> 00:06:52,820] If you've got giant files
+[00:06:52,820 --> 00:06:55,700] with all kinds of complex spaghetti code,
+[00:06:55,700 --> 00:06:58,339] and it can't easily dump it into the token limit
+[00:06:58,339 --> 00:07:02,220] and rewrite the entire file within the output token limit,
+[00:07:02,220 --> 00:07:04,140] you're gonna be in a really, really hard place.
+[00:07:04,140 --> 00:07:06,540] So, it's really tempting to think
+[00:07:06,540 --> 00:07:08,859] that software design no longer matters,
+[00:07:08,859 --> 00:07:10,779] but it really does matter.
+[00:07:10,779 --> 00:07:13,459] And one of the things we have to do
+[00:07:13,459 --> 00:07:16,100] is we have to think about the design of our software
+[00:07:16,100 --> 00:07:21,100] and instruct Claude Code to write software in a way
+[00:07:21,420 --> 00:07:25,779] that will make it maintainable in the long term
+[00:07:25,779 --> 00:07:29,100] and scalable for AI labor to work on in the long term.
+[00:07:29,100 --> 00:07:32,299] And that is something that requires
+[00:07:32,299 --> 00:07:34,700] all of our design skills as software engineers,
+[00:07:34,700 --> 00:07:36,779] and then translating those design skills
+[00:07:36,779 --> 00:07:38,700] into rules and processes and things
+[00:07:38,700 --> 00:07:40,100] for the AI labor to follow.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/04_having-claude-code-think-plan-first_instructions.html
+TYPE: HTML
+TITLE: Having Claude Code Think Plan First Instructions
+
+It's often better to have Claude Code think before acting and making changes.
+
+Unlike traditional development where you might dive straight into coding, Claude Code's unique capabilities allow you to leverage its reasoning power upfront to avoid costly mistakes later. By asking Claude to think through problems before implementation, you get the benefit of its analytical capabilities to identify potential issues, evaluate multiple approaches, and design robust solutions before any code is written. This "think first, code second" approach is particularly valuable for complex features, architectural decisions, and integration challenges where the cost of rework is high and the benefits of proper planning are substantial.
+
+Having Claude Code save the plan to a file is a great way to preserve the design and thought process for future reference.
+
+When Claude creates a comprehensive plan document, you can review it offline, share it with team members, edit it to add additional constraints or requirements, and use it as a reference throughout development. This documented planning phase becomes invaluable for debugging issues later, onboarding new team members, or revisiting architectural decisions months down the line. You can ask Claude to save its analysis as FEATURE_PLAN.md or INTEGRATION_DESIGN.md, then edit these files to refine the approach before giving Claude the go-ahead to implement. This creates a clear paper trail of your design decisions and ensures that the reasoning behind complex implementations doesn't get lost in the code.
+
+Why Think First?
+
+Complex development work requires careful planning to avoid costly mistakes, architectural dead-ends, and integration nightmares. Claude Code's extended thinking modes give Claude additional computation time to thoroughly analyze problems before implementation begins. It is MUCH faster to point out a mistake in Claude Code's plan and have it fix the plan than it is to try and undo poor implementation decisions made on the fly.
+
+Extended Thinking Levels
+
+Claude Code provides progressively deeper thinking modes triggered by specific phrases:
+
+"think"
+
+- Basic extended thinking for straightforward problems
+
+"think hard"
+
+- Deeper analysis for moderate complexity
+
+"think harder"
+
+- Comprehensive evaluation for complex scenarios
+
+"ultrathink"
+
+- Maximum thinking budget for highly complex problems
+
+Each level allocates more computational resources for Claude to evaluate alternatives, consider edge cases, and develop robust solutions.
+
+Example:
+
+Think hard about how to implement a machine learning-powered expense categorization system that learns from user behavior and suggests categories automatically.
+
+1. What are the core technical challenges?
+2. What data do we need to collect and how?
+3. What ML approaches would work best for this problem?
+4. How should we handle privacy and data security?
+5. What's the user experience flow?
+6. How do we handle edge cases and errors?
+7. What's the deployment and maintenance strategy?
+
+Provide a comprehensive technical analysis before we start coding.
+Save the plan to development_plan.txt
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/05_project-structure-and-file-naming-is-critical-context-for-claude-code.en.srt
+TYPE: SRT
+TITLE: Project Structure And File Naming Is Critical Context For Claude Code
+
+[00:00:00,000 --> 00:00:05,099] Now, what we saw was that we can't go and just assume that AI is going to dump all our
+[00:00:05,099 --> 00:00:08,819] files in at once in order to figure out what to do.
+[00:00:08,819 --> 00:00:14,060] It's going to have to go and find and figure out where changes need to be made.
+[00:00:14,060 --> 00:00:19,959] And this is a critical, critical step in making sure that the right changes get made is it
+[00:00:19,959 --> 00:00:23,899] has to go and discover which files have the relevant information.
+[00:00:23,899 --> 00:00:28,379] Now one way we can do this, of course, if we can write a Claw.md file, or we can write
+[00:00:28,379 --> 00:00:34,139] commands that provide important context about where things live and where changes should
+[00:00:34,139 --> 00:00:35,139] be made.
+[00:00:35,139 --> 00:00:40,419] But oftentimes, we're going to go and ask ad hoc for it to do things where we're not
+[00:00:40,419 --> 00:00:43,979] going to be able to just have a command that says this is where things live.
+[00:00:43,979 --> 00:00:45,560] So we have to think about this process.
+[00:00:45,560 --> 00:00:49,159] Every time we give it a prompt, some task to perform, it's going to have to map that
+[00:00:49,159 --> 00:00:55,599] prompt into our code base and our project structure and figure out where the things
+[00:00:55,599 --> 00:00:59,240] are that it needs to go and make changes to.
+[00:00:59,240 --> 00:01:02,759] This could be configuration files, it could be source code.
+[00:01:02,759 --> 00:01:08,040] But there's a really important concept that we have to think about, which is how we structure
+[00:01:08,040 --> 00:01:09,480] our project.
+[00:01:09,480 --> 00:01:17,040] At the top level, the structure of the folders, the naming of files is going to be what Claude
+[00:01:17,040 --> 00:01:18,919] code sees.
+[00:01:18,919 --> 00:01:23,599] So it's going to get a directory listing, for example, what directories are in this
+[00:01:23,599 --> 00:01:24,599] project?
+[00:01:24,599 --> 00:01:26,680] What files are within each directory?
+[00:01:26,680 --> 00:01:31,319] And it's going to be doing this sort of top-down exploration, sort of tree-based exploration.
+[00:01:31,319 --> 00:01:34,360] So it may see the directory names, and it may say, well, that looks like a relevant
+[00:01:34,360 --> 00:01:35,360] directory.
+[00:01:35,360 --> 00:01:38,839] Let me see what's inside of that directory and explore it.
+[00:01:38,839 --> 00:01:41,080] Or maybe it has an index or something else.
+[00:01:41,080 --> 00:01:47,879] But at the top level, we can give Claude code a lot of help by thinking about how we structure
+[00:01:47,879 --> 00:01:50,599] things and how we prompt.
+[00:01:50,599 --> 00:01:56,559] If the things that we say in our prompts correspond very closely to things that are
+[00:01:56,559 --> 00:02:01,800] very obvious and clear from the top level, if we ask it to do things using terminology
+[00:02:01,800 --> 00:02:06,839] and naming that is very apparent at a high level in our project, it's going to make it
+[00:02:06,839 --> 00:02:07,839] much easier.
+[00:02:07,839 --> 00:02:14,119] So, for example, if I need to add some expense report feature and there is a clear folder
+[00:02:14,119 --> 00:02:21,000] structure that exactly matches to this feature that I'm doing and where things should be,
+[00:02:21,000 --> 00:02:22,000] then it's going to be much easier.
+[00:02:22,000 --> 00:02:25,440] This is the same thing if you have a new team member and you ask them to do something and
+[00:02:25,440 --> 00:02:30,160] there's a folder that makes it really clear where they should go and do the work or look
+[00:02:30,160 --> 00:02:32,320] for the relevant stuff.
+[00:02:32,320 --> 00:02:40,759] So the project structure itself, the naming, the directory structure, is itself really
+[00:02:40,759 --> 00:02:46,800] important context for Claude code to just go and discover and know things right off
+[00:02:46,800 --> 00:02:49,360] the bat about your project.
+[00:02:49,360 --> 00:02:54,399] And one of the things that can be helpful is to think about how to structure things
+[00:02:54,399 --> 00:03:01,000] to give Claude code as much context as possible just from looking at the top level.
+[00:03:01,000 --> 00:03:03,279] And so let's take a look at what I mean by this.
+[00:03:03,279 --> 00:03:07,479] Let's assume that this is our project structure.
+[00:03:07,520 --> 00:03:12,839] What would a prompt look like that makes Claude code work harder?
+[00:03:12,839 --> 00:03:17,399] Well, if I go to this and I dump this into Claude, because we can demonstrate this with
+[00:03:17,399 --> 00:03:21,479] Claude, if I give it a screenshot of this directory structure and I say, look at the
+[00:03:21,479 --> 00:03:27,479] project, is it doing client-side state management or server-state caching, right?
+[00:03:27,479 --> 00:03:32,199] Well, what it says is I can't definitively determine whether this is doing client-side
+[00:03:32,199 --> 00:03:36,880] state management or server-state caching just from the folder structure alone.
+[00:03:36,880 --> 00:03:41,559] So this folder structure is insufficient information to tell it about that.
+[00:03:41,559 --> 00:03:44,839] It's going to have to dive deeper and start having to explore through the files and the
+[00:03:44,839 --> 00:03:46,160] way things are written.
+[00:03:46,160 --> 00:03:48,199] It can't instantly tell.
+[00:03:48,199 --> 00:03:49,520] Let's try a different structure.
+[00:03:49,520 --> 00:03:51,639] Let's say we have something like this.
+[00:03:51,639 --> 00:03:55,660] Go and give it the same screenshot, ask the same question, and it says, I need to examine
+[00:03:55,660 --> 00:03:58,199] the actual code files.
+[00:03:58,199 --> 00:04:01,720] Let's say that our project structure looks like this.
+[00:04:01,720 --> 00:04:05,639] Now we answer this, ask the same question, it says, this appears to be doing client-side
+[00:04:05,679 --> 00:04:10,160] state management using Redux and the Redux toolkit.
+[00:04:10,160 --> 00:04:16,880] And what we see is that if we have the right sort of structure to our project, naming conventions,
+[00:04:16,880 --> 00:04:20,799] it can instantly tell important things about our project.
+[00:04:20,799 --> 00:04:27,279] Now the other thing that's really helpful is that when we use common naming conventions,
+[00:04:27,279 --> 00:04:30,519] what is standard practice out there?
+[00:04:30,519 --> 00:04:34,959] When we follow the standard of practice that most people do, that's the thing that it was
+[00:04:34,959 --> 00:04:37,200] most likely trained on.
+[00:04:37,200 --> 00:04:43,559] And when it goes and it sees things like store, slices, reducers, and actions, it knows this
+[00:04:43,559 --> 00:04:50,399] is the library that's probably used, this library has client-side state management,
+[00:04:50,399 --> 00:04:53,160] and it gives it additional context.
+[00:04:53,160 --> 00:04:58,480] So when we go off and we veer off and we have all kinds of like kooky custom naming and
+[00:04:58,480 --> 00:05:03,160] layout things that are weird, we don't do things in standard ways, we're going to have
+[00:05:03,160 --> 00:05:08,399] to do more work to document that stuff in cloud.md or in commands to explain how things
+[00:05:08,399 --> 00:05:10,200] are laid out.
+[00:05:10,200 --> 00:05:16,559] If we have standard, very, very standard naming conventions, standard layouts, standard frameworks
+[00:05:16,559 --> 00:05:21,440] and libraries, it's going to have an easier time figuring out where things are and what
+[00:05:21,440 --> 00:05:23,920] they do from the names alone.
+[00:05:23,920 --> 00:05:30,079] So the fundamental structure of our project, the naming conventions, the folder structures,
+[00:05:30,079 --> 00:05:35,519] the naming of folders, the files that are present and their names, give rich context
+[00:05:35,519 --> 00:05:41,040] to Cloud to help it figure out where to make changes and how to make changes without having
+[00:05:41,040 --> 00:05:43,440] to dive way into the details.
+[00:05:43,440 --> 00:05:50,000] So those high-level names and common structures are very, very token efficient.
+[00:05:50,000 --> 00:05:55,519] What this means is, if you've got something like we saw here, this requires a very small
+[00:05:55,519 --> 00:06:00,839] number of tokens to communicate to Cloud, but gives it rich information about how the
+[00:06:00,839 --> 00:06:02,679] software is structured.
+[00:06:02,679 --> 00:06:08,279] If you have to go and write out all of the information about using Redux or whatever
+[00:06:08,279 --> 00:06:13,440] we're doing in the project and all the libraries, and you write it out in sentences, it's going
+[00:06:13,440 --> 00:06:18,480] to consume way more tokens than this does right here of just showing you the directory
+[00:06:18,480 --> 00:06:24,000] structure with common names because those common names carry a lot of meaning, carry
+[00:06:24,000 --> 00:06:25,640] a lot of context.
+[00:06:25,640 --> 00:06:27,920] They're highly token efficient.
+[00:06:27,920 --> 00:06:34,059] So when you are structuring your project, you want to think about, how do I structure
+[00:06:34,059 --> 00:06:41,000] the project in a way that as I begin going prompting and giving tasks, that Cloud Code
+[00:06:41,000 --> 00:06:47,399] has as much context just from the structure alone as possible to figure out what needs
+[00:06:47,399 --> 00:06:53,079] to be changed, what are the important architectural details, all kinds of things can be seen just
+[00:06:53,160 --> 00:06:54,160] from the project structure.
+[00:06:54,160 --> 00:06:58,320] The project structure is really rich context.
+[00:06:58,320 --> 00:07:03,559] It can tell things like the programming language you're using just by the file extensions.
+[00:07:03,559 --> 00:07:08,320] It can tell if you're using deployments based on the serverless framework because you might
+[00:07:08,320 --> 00:07:13,220] have a serverless.yaml, and that gives it rich information about the project.
+[00:07:13,220 --> 00:07:19,519] So you want to think really, really carefully about, one, avoiding these really sort of
+[00:07:19,519 --> 00:07:24,600] weird, unusual structures, naming conventions, things like that, that aren't standard of
+[00:07:24,600 --> 00:07:27,760] practice because that's going to make your prompting less token efficient.
+[00:07:27,760 --> 00:07:33,079] It's contextual information that it can gather from your project structure, maybe lower.
+[00:07:33,079 --> 00:07:40,040] The closer that the structure is to the prompts that you're asking for and the tasks that
+[00:07:40,040 --> 00:07:43,880] you're providing, the easier it's going to be to find where to make the changes.
+[00:07:43,880 --> 00:07:48,739] So if you say, I need you to change the expense dashboard to do this, and you've got a folder
+[00:07:48,739 --> 00:07:53,339] that says expense dashboard, well, it's going to probably be really easy for it to find
+[00:07:53,339 --> 00:07:54,339] the code.
+[00:07:54,339 --> 00:07:57,859] If on the other hand, you say, I need you to change the expense dashboard, and the expense
+[00:07:57,859 --> 00:08:02,859] dashboard is broken into 10 separate components that are spread across different folders in
+[00:08:02,859 --> 00:08:08,299] different places in the hierarchy, and they don't use standard naming conventions or structure,
+[00:08:08,299 --> 00:08:12,079] it's going to have to do a lot of work to find all of those 10 pieces.
+[00:08:12,119 --> 00:08:19,359] So project structure can be critical in making our AI labor scale, token efficient, and it's
+[00:08:19,359 --> 00:08:24,239] just going to be faster and more likely to do the right thing if you're following sort
+[00:08:24,239 --> 00:08:28,799] of standard, obvious, clear structuring practices and naming conventions.

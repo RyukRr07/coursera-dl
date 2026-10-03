@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import html
 import re
+import shutil
 import sys
 import zipfile
 from html.parser import HTMLParser
@@ -21,6 +22,7 @@ from xml.etree import ElementTree
 BASE_DIR = Path(__file__).resolve().parent
 SOURCE_DIR = BASE_DIR / "descargas"
 OUTPUT_DIR = BASE_DIR / "resumenes_cursos_txt"
+ORGANIZED_OUTPUT_DIR = BASE_DIR / "resumenes_cursos_por_curso"
 SUPPORTED_EXTENSIONS = {".srt", ".txt", ".pdf", ".pptx", ".html", ".htm"}
 
 COURSE_TITLES = {
@@ -242,8 +244,34 @@ def main() -> int:
         index.extend(f"- {item}" for item in warnings)
     (OUTPUT_DIR / "00_INDICE.txt").write_text("\n".join(index) + "\n", encoding="utf-8")
 
+    # Create a second view with one folder per course for easier browsing.
+    ORGANIZED_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    organized_index = ["COURSE MATERIALS — ORGANIZED BY COURSE", "=" * 42, ""]
+    for course_dir in sorted(p for p in SOURCE_DIR.iterdir() if p.is_dir()):
+        course_name = COURSE_TITLES.get(course_dir.name, re.sub(r"[_-]+", " ", course_dir.name).title())
+        course_output = ORGANIZED_OUTPUT_DIR / re.sub(r"[^A-Za-z0-9_-]+", "_", course_name).strip("_")
+        course_output.mkdir(parents=True, exist_ok=True)
+        # Refresh only generated text files in this course's output directory.
+        for old_txt in course_output.glob("*.txt"):
+            old_txt.unlink()
+        copied = sorted(OUTPUT_DIR.glob(f"{course_dir.name}_*.txt"))
+        for source_txt in copied:
+            if source_txt.name == "00_INDICE.txt":
+                continue
+            if "_Modulo_" in source_txt.name:
+                new_name = source_txt.name.split("_Modulo_", 1)[1]
+                new_name = f"Modulo_{new_name}"
+            else:
+                new_name = "Curso_Completo.txt"
+            shutil.copyfile(source_txt, course_output / new_name)
+        organized_index.append(f"{course_name}/")
+        organized_index.extend(f"  {p.name}" for p in sorted(course_output.glob("*.txt")))
+        organized_index.append("")
+    (ORGANIZED_OUTPUT_DIR / "00_INDICE.txt").write_text("\n".join(organized_index) + "\n", encoding="utf-8")
+
     output_non_txt = [p.name for p in OUTPUT_DIR.iterdir() if p.is_file() and p.suffix.lower() != ".txt"]
     print(f"Output folder: {OUTPUT_DIR}")
+    print(f"Organized output folder: {ORGANIZED_OUTPUT_DIR}")
     print(f"Courses: {len([p for p in SOURCE_DIR.iterdir() if p.is_dir()])}")
     print(f"Modules: {total_modules}")
     print(f"Source files included: {total_files}")

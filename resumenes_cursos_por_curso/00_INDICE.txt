@@ -1,0 +1,27 @@
+COURSE MATERIALS — ORGANIZED BY COURSE
+==========================================
+
+Claude Code/
+  Curso_Completo.txt
+  Modulo_01.txt
+  Modulo_02.txt
+  Modulo_03.txt
+  Modulo_04.txt
+  Modulo_05.txt
+  Modulo_06.txt
+
+Introduction to Back-End Development/
+  Curso_Completo.txt
+  Modulo_01.txt
+  Modulo_02.txt
+  Modulo_03.txt
+  Modulo_04.txt
+
+Learning How to Learn/
+  Curso_Completo.txt
+  Modulo_01.txt
+  Modulo_02.txt
+  Modulo_03.txt
+  Modulo_04.txt
+  Modulo_05.txt
+

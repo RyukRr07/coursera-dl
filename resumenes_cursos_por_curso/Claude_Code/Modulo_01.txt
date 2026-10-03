@@ -1,0 +1,1402 @@
+Claude Code
+MODULE 01: Scaling Up Software Engineering With Claude Code Generative Ai
+========================================================================================
+
+This file collects the readable text from this module's subtitles and learning materials. Source paths are kept below each section.
+
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-claude-code/01_introduction-to-claude-code-software-engineering-with-ai-agents.en.srt
+TYPE: SRT
+TITLE: Introduction To Claude Code Software Engineering With Ai Agents
+
+[00:00:00,000 --> 00:00:06,000] This is going to be the year where you go from a software developer that's worried about individual pieces of code
+[00:00:06,000 --> 00:00:10,000] to a CEO of your own software development organization.
+[00:00:10,000 --> 00:00:14,000] And that's what Generative AI can do for you when it comes to software engineering.
+[00:00:14,000 --> 00:00:20,000] Now you may have heard a lot about vibe coding and using Generative AI to write code,
+[00:00:20,000 --> 00:00:25,000] but I want to teach you a way of thinking about it and approaching it that's much bigger in scale.
+[00:00:25,000 --> 00:00:30,000] And the tool we're going to use is I think one of the most important advances in software engineering of my lifetime.
+[00:00:30,000 --> 00:00:32,000] It's Cloud Code by Anthropic.
+[00:00:32,000 --> 00:00:37,000] Now this may sound like a huge statement that this is one of the most important,
+[00:00:37,000 --> 00:00:41,000] if not the most important innovations in software engineering.
+[00:00:41,000 --> 00:00:44,000] We've had all kinds of things happen like cloud computing.
+[00:00:44,000 --> 00:00:49,000] We've had virtual machines. We've had containers. We've had new languages.
+[00:00:49,000 --> 00:00:55,000] Why would Cloud Code in particular be such a big advance in software engineering?
+[00:00:55,000 --> 00:00:58,000] Well, I want to show you what it does that's different.
+[00:00:58,000 --> 00:01:02,000] And I want you to start thinking differently about how you produce software
+[00:01:02,000 --> 00:01:07,000] because you really, really have to take a moment to reset your expectations about how we build things
+[00:01:07,000 --> 00:01:10,000] and what we do with the tools that are at our disposal.
+[00:01:10,000 --> 00:01:15,000] So I want you to think about if you were approaching a software project
+[00:01:15,000 --> 00:01:19,000] and you had a team of 1,000 developers available to you,
+[00:01:19,000 --> 00:01:23,000] how would you go and approach that project differently?
+[00:01:23,000 --> 00:01:26,000] Well, I suspect it'd be very different than what you're doing today.
+[00:01:26,000 --> 00:01:30,000] And that is the mentality you're going to have to take on with Cloud Code.
+[00:01:30,000 --> 00:01:33,000] It's something that allows you to do so much more,
+[00:01:33,000 --> 00:01:38,000] to think and achieve at a completely different level when it comes to the production of software.
+[00:01:38,000 --> 00:01:42,000] So let's take a look at a simple example with Cloud Code.
+[00:01:42,000 --> 00:01:49,000] I opened up Cloud Code and I started building an application that I could use as a demo for this course.
+[00:01:49,000 --> 00:01:55,000] So I said, write a complete Next.js plus Next.UI web application for tracking expenses.
+[00:01:55,000 --> 00:01:58,000] When you're done, start it for me to test.
+[00:01:58,000 --> 00:02:00,000] Now I want you to think about this.
+[00:02:00,000 --> 00:02:03,000] If you had to go and sit down and write this from scratch,
+[00:02:03,000 --> 00:02:09,000] are you going to measure the time that it takes you to write it in hours or days, weeks?
+[00:02:10,000 --> 00:02:13,000] If you had a team of five people just to get everybody coordinated and working,
+[00:02:13,000 --> 00:02:15,000] it's probably going to take some time.
+[00:02:15,000 --> 00:02:17,000] This is not a quick task.
+[00:02:17,000 --> 00:02:20,000] Now, I'm asking Cloud Code to do this.
+[00:02:20,000 --> 00:02:21,000] What does it do?
+[00:02:21,000 --> 00:02:27,000] Well, it goes and says, okay, I'll create a complete Next.js for Next.UI application for you.
+[00:02:27,000 --> 00:02:30,000] And then it goes off and it builds itself a to-do list.
+[00:02:30,000 --> 00:02:32,000] It begins planning out the work.
+[00:02:32,000 --> 00:02:35,000] It plans out the software engineering task ahead of it.
+[00:02:35,000 --> 00:02:38,000] Now, notice I've given it from scratch, no existing code.
+[00:02:38,000 --> 00:02:43,000] Go and build this application with almost no requirements about what should be there.
+[00:02:43,000 --> 00:02:45,000] And if you think about software engineering,
+[00:02:45,000 --> 00:02:48,000] often that's the hardest thing is trying to think about what all should be there,
+[00:02:48,000 --> 00:02:50,000] what's common in these types of applications.
+[00:02:50,000 --> 00:02:54,000] And it's going and it's going to think through all of these things for us.
+[00:02:54,000 --> 00:02:57,000] And it goes and thinks about things like initializing the Next.js project,
+[00:02:57,000 --> 00:02:59,000] creating an expense data model,
+[00:02:59,000 --> 00:03:03,000] creating an expense list with filtering and sorting, expense statistics.
+[00:03:03,000 --> 00:03:07,000] It goes through all this and then it begins asking me,
+[00:03:07,000 --> 00:03:10,000] is it allowed to go and start doing software engineering tasks?
+[00:03:10,000 --> 00:03:12,000] So it starts getting my permission to do some work.
+[00:03:12,000 --> 00:03:14,000] It asks me, do you want to proceed, for example,
+[00:03:14,000 --> 00:03:18,000] with this NPX create Next app at latest expense tracker?
+[00:03:18,000 --> 00:03:20,000] And you know what it's doing?
+[00:03:20,000 --> 00:03:26,000] It knows Next.js and it knows how to initialize an application
+[00:03:26,000 --> 00:03:30,000] and initialize one that's got all these other things like Tailwind for styling and other things.
+[00:03:30,000 --> 00:03:32,000] And it's going ahead and doing it.
+[00:03:32,000 --> 00:03:38,000] And then it goes off and it builds the entire application in like five minutes.
+[00:03:38,000 --> 00:03:39,000] Five minutes.
+[00:03:39,000 --> 00:03:42,000] And then it says, here it is for you to go and test.
+[00:03:42,000 --> 00:03:44,000] Now what did it build?
+[00:03:44,000 --> 00:03:45,000] Well, it built this.
+[00:03:45,000 --> 00:03:50,000] An expense tracker web application that's now running that I can go and try out.
+[00:03:50,000 --> 00:03:53,000] We've got an overview of expenses.
+[00:03:53,000 --> 00:03:56,000] We've got a breakdown of all the individual expenses.
+[00:03:56,000 --> 00:03:59,000] If we go and hit the add expense button,
+[00:03:59,000 --> 00:04:06,000] we've got a form for us where we can go and add expenses with descriptions, amounts, categories, dates, the payment method.
+[00:04:06,000 --> 00:04:09,000] And it's built all of this in two seconds.
+[00:04:09,000 --> 00:04:12,000] If I go in and I add an expense like my Claude subscription,
+[00:04:12,000 --> 00:04:18,000] because you're going to want a Claude subscription when you see what Claude code can do for you.
+[00:04:18,000 --> 00:04:22,000] When it's done with this and I add that expense, it goes and adds it.
+[00:04:22,000 --> 00:04:24,000] It begins updating everything.
+[00:04:24,000 --> 00:04:27,000] It updates the expense tracker with statistics.
+[00:04:27,000 --> 00:04:29,000] What did it take to build this, right?
+[00:04:29,000 --> 00:04:30,000] Was this one file?
+[00:04:30,000 --> 00:04:32,000] You know, we're starting to think about like generative AI.
+[00:04:32,000 --> 00:04:34,000] It helps me write code, right?
+[00:04:34,000 --> 00:04:37,000] It writes functions for me or maybe it writes a file for me.
+[00:04:37,000 --> 00:04:38,000] No, this is much more.
+[00:04:38,000 --> 00:04:42,000] It went and built an entire application from scratch.
+[00:04:42,000 --> 00:04:47,000] That entire web application that we saw that looks beautiful, by the way, right?
+[00:04:47,000 --> 00:04:49,000] It looks great.
+[00:04:49,000 --> 00:04:50,000] And you know what else I didn't have to tell it to do?
+[00:04:50,000 --> 00:04:53,000] I didn't have to start thinking through the requirements yet.
+[00:04:53,000 --> 00:04:57,000] When you really knew what was common and what you needed to do in an expense tracking application,
+[00:04:57,000 --> 00:04:59,000] it built out the entire app.
+[00:04:59,000 --> 00:05:04,000] All of these files we see here and more were produced by it independently,
+[00:05:04,000 --> 00:05:07,000] autonomously in under five minutes.
+[00:05:07,000 --> 00:05:11,000] All of these components for expense forms, all of the core layout stuff,
+[00:05:11,000 --> 00:05:14,000] all of the package stuff, all that boilerplate to get the project running,
+[00:05:14,000 --> 00:05:16,000] all produced by it.
+[00:05:16,000 --> 00:05:19,000] And if you want to go and look at an individual component, it's all there,
+[00:05:19,000 --> 00:05:23,000] nicely laid out, thought through, well designed.
+[00:05:23,000 --> 00:05:28,000] Now I want to go back and just point out the speed that this was accomplished.
+[00:05:28,000 --> 00:05:31,000] I went and I did this in under 10 minutes.
+[00:05:31,000 --> 00:05:33,000] I think it was under five minutes.
+[00:05:33,000 --> 00:05:37,000] I went and I launched this thing and then I went off and I got a cup of coffee.
+[00:05:37,000 --> 00:05:41,000] And while I was making that cup of coffee with my AeroPress and, you know,
+[00:05:41,000 --> 00:05:44,000] pressing down, squeezing all that coffee into the cup,
+[00:05:44,000 --> 00:05:50,000] it was building a complete application that would take me at best hours,
+[00:05:50,000 --> 00:05:55,000] but probably days to build from scratch and to rival what it's done.
+[00:05:55,000 --> 00:05:58,000] And if you go and you begin looking at the subtlety of what it did,
+[00:05:58,000 --> 00:06:04,000] like it automatically knew the requirements of an average expense tracking
+[00:06:04,000 --> 00:06:06,000] web application.
+[00:06:06,000 --> 00:06:09,000] I didn't have to tell it details about like go and add a category,
+[00:06:09,000 --> 00:06:12,000] go and add a description, go and add this.
+[00:06:12,000 --> 00:06:14,000] It went and built it all for me.
+[00:06:14,000 --> 00:06:20,000] It allows us to do things that look like we have extremely large development teams.
+[00:06:20,000 --> 00:06:22,000] But the thing that's different, and I want you to think about,
+[00:06:22,000 --> 00:06:25,000] is let's say you had 100 people.
+[00:06:25,000 --> 00:06:28,000] Maybe 100 people could build this faster than Cloud Code.
+[00:06:28,000 --> 00:06:31,000] But in reality, the answer is no, they couldn't.
+[00:06:31,000 --> 00:06:35,000] Because that 100 people would have to go and figure out what the requirements are.
+[00:06:35,000 --> 00:06:37,000] They'd have to all coordinate.
+[00:06:37,000 --> 00:06:42,000] It would take each individual person longer to get started than it does Cloud Code.
+[00:06:42,000 --> 00:06:47,000] So Cloud Code just did work that's like 500, 1,000 developers,
+[00:06:47,000 --> 00:06:52,000] but with perfect coordination, almost instantaneous results,
+[00:06:52,000 --> 00:06:54,000] in under five minutes.
+[00:06:54,000 --> 00:06:57,000] This is one of the most important revolutions in software engineering
+[00:06:57,000 --> 00:06:59,000] of our lifetimes.
+[00:06:59,000 --> 00:07:02,000] It is going to transform everything we do as software engineers,
+[00:07:02,000 --> 00:07:05,000] and it is critically, critically important.
+[00:07:05,000 --> 00:07:10,000] You understand how these tools work, that you can go and leverage them
+[00:07:10,000 --> 00:07:14,000] to do things that are absolutely unbelievable to other developers.
+[00:07:14,000 --> 00:07:18,000] But also, what we can see is it's going to change our role as developers.
+[00:07:18,000 --> 00:07:21,000] What we do and what we focus on and the skills we need
+[00:07:21,000 --> 00:07:23,000] are about to change dramatically,
+[00:07:23,000 --> 00:07:27,000] and we're going to give an initial look at what are those critical skills
+[00:07:27,000 --> 00:07:29,000] that you have to have in your toolbox,
+[00:07:29,000 --> 00:07:33,000] how do you have to start changing how you go and approach software development,
+[00:07:33,000 --> 00:07:35,000] but what are the things that are still the same?
+[00:07:35,000 --> 00:07:38,000] We're going to cover all these things and more in this course.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-claude-code/02_1000x-improvement-in-software-engineering-productivity-with-big-prompts.en.srt
+TYPE: SRT
+TITLE: 1000X Improvement In Software Engineering Productivity With Big Prompts
+
+[00:00:00,000 --> 00:00:03,180] Most people that are talking about using generative AI
+[00:00:03,180 --> 00:00:05,820] for software development, doing things like Vibe Coding,
+[00:00:05,820 --> 00:00:08,779] they're really, really missing the capabilities
+[00:00:08,779 --> 00:00:11,939] because of one important fundamental difference
+[00:00:11,939 --> 00:00:13,420] in how they're approaching it.
+[00:00:13,420 --> 00:00:15,840] And this is something that I wanna teach right up front
+[00:00:15,840 --> 00:00:17,700] because it may be the most important thing
+[00:00:17,700 --> 00:00:20,020] that you get out of this course is thinking differently.
+[00:00:20,020 --> 00:00:22,219] Particularly when we start building software engineering
+[00:00:22,219 --> 00:00:24,559] with AI agents like Cloud Code,
+[00:00:24,559 --> 00:00:27,680] we have to approach it in a very, very different way.
+[00:00:27,680 --> 00:00:30,920] We are used to micromanaging the code.
+[00:00:30,920 --> 00:00:33,439] We're used to going and looking at individual functions.
+[00:00:33,439 --> 00:00:36,139] Lots of people today have gotten on the bandwagon
+[00:00:36,139 --> 00:00:39,459] of going and using generative AI to generate code.
+[00:00:39,459 --> 00:00:40,900] We hear about Vibe Coding,
+[00:00:40,900 --> 00:00:43,700] it's all focused on generating the code,
+[00:00:43,700 --> 00:00:47,020] but with this idea that humans are tightly in the loop
+[00:00:47,020 --> 00:00:50,099] of each individual function and file.
+[00:00:50,099 --> 00:00:53,380] And I wanna tell you, this is a fundamental mistake
+[00:00:53,380 --> 00:00:56,619] when it comes to software engineering with AI agents.
+[00:00:56,619 --> 00:01:00,400] If we are micromanaging the AI's work,
+[00:01:00,400 --> 00:01:04,519] we are totally losing out on one of the most important parts
+[00:01:04,519 --> 00:01:05,400] of this whole process.
+[00:01:05,400 --> 00:01:10,199] And that is the fact that AI is able to scale up
+[00:01:10,199 --> 00:01:12,300] and do tasks for us.
+[00:01:12,300 --> 00:01:13,480] Now, this is really important
+[00:01:13,480 --> 00:01:15,559] because if we want AI to scale,
+[00:01:15,559 --> 00:01:18,519] we have to think differently about how we prompt it.
+[00:01:18,519 --> 00:01:21,919] Prompts are the instructions that we give to generative AI.
+[00:01:21,919 --> 00:01:24,800] We think about CPUs as we give them instructions.
+[00:01:24,819 --> 00:01:27,379] Well, generative AI works on prompts.
+[00:01:27,379 --> 00:01:30,139] Prompts are our instructions for generative AI.
+[00:01:30,139 --> 00:01:32,419] Now, when we go in and we give it a prompt,
+[00:01:32,419 --> 00:01:34,059] a set of instructions about what to do
+[00:01:34,059 --> 00:01:35,379] and what to build for us,
+[00:01:35,379 --> 00:01:37,660] certainly we can go and tell it to write
+[00:01:37,660 --> 00:01:39,019] an individual function.
+[00:01:39,019 --> 00:01:41,959] We can go and tell it to write an individual file.
+[00:01:41,959 --> 00:01:45,040] We can go and give it some small set of files.
+[00:01:45,040 --> 00:01:50,040] But the scale that we prompt at directly impacts the scale
+[00:01:50,059 --> 00:01:52,980] of the software that we can build.
+[00:01:52,980 --> 00:01:57,080] The more scalable that we use these generative AI tools,
+[00:01:57,080 --> 00:01:59,080] the more scalable of a way that we use them
+[00:01:59,080 --> 00:02:00,040] for software engineering,
+[00:02:00,040 --> 00:02:02,000] the more that we can go and produce.
+[00:02:02,000 --> 00:02:05,160] And what we can do is amazing things with it.
+[00:02:05,160 --> 00:02:08,199] If we're focused on these micromanagement little prompts,
+[00:02:08,199 --> 00:02:10,160] we're focused on individual pieces of code,
+[00:02:10,160 --> 00:02:11,860] we're never gonna see the power.
+[00:02:11,860 --> 00:02:13,160] Now, I wanna show you what I mean by this
+[00:02:13,160 --> 00:02:14,960] with some quick examples.
+[00:02:14,960 --> 00:02:16,360] Let's say you go in and you'd say,
+[00:02:16,360 --> 00:02:17,880] I would like you to create
+[00:02:17,880 --> 00:02:21,080] component slash expense underscore list dot TSX
+[00:02:21,100 --> 00:02:23,660] and create functions to display and store data.
+[00:02:23,660 --> 00:02:26,500] That is micromanaging the AI agent.
+[00:02:26,500 --> 00:02:29,580] Now, you notice this is the opposite of what I did before.
+[00:02:29,580 --> 00:02:31,740] I said, go and build an entire application
+[00:02:31,740 --> 00:02:33,139] to manage expenses.
+[00:02:33,139 --> 00:02:36,259] And it went ran for five minutes and then it was done.
+[00:02:36,259 --> 00:02:38,779] If you go in and you use prompts like this,
+[00:02:38,779 --> 00:02:40,699] you are micromanaging the AI.
+[00:02:40,699 --> 00:02:43,100] You are preventing it from scaling up
+[00:02:43,100 --> 00:02:44,899] and doing the work that it needs to do.
+[00:02:44,899 --> 00:02:45,779] Now think about this.
+[00:02:45,779 --> 00:02:48,860] If your manager sat down with you and said,
+[00:02:48,860 --> 00:02:51,440] now I want you to write a function to do this.
+[00:02:51,440 --> 00:02:54,199] And now I want you to write a function to do that.
+[00:02:54,199 --> 00:02:55,839] It would be total micromanaging.
+[00:02:55,839 --> 00:02:57,000] You would go insane,
+[00:02:57,000 --> 00:03:00,479] but it would also be a vast waste of resources.
+[00:03:00,479 --> 00:03:02,119] It would be highly inefficient.
+[00:03:02,119 --> 00:03:04,880] Your manager doesn't sit down with you, hopefully,
+[00:03:04,880 --> 00:03:07,240] unless you're in some like type of training program
+[00:03:07,240 --> 00:03:09,399] and tell you function by function what to write
+[00:03:09,399 --> 00:03:10,720] or file by file what to write.
+[00:03:10,720 --> 00:03:12,639] No, they give you big tasks.
+[00:03:12,639 --> 00:03:14,759] Let's look at another bad example.
+[00:03:14,759 --> 00:03:17,800] Now, I wanna point out one quick thing here
+[00:03:17,820 --> 00:03:20,740] before I move on and before I forget.
+[00:03:20,740 --> 00:03:22,619] It's not that this is terrible, right?
+[00:03:22,619 --> 00:03:24,580] Generative AI can absolutely do this
+[00:03:24,580 --> 00:03:26,419] and it can be a huge productivity boost.
+[00:03:26,419 --> 00:03:29,100] This is like the basis of vibe coding, right?
+[00:03:29,100 --> 00:03:30,759] Go and get it to generate pieces of code
+[00:03:30,759 --> 00:03:33,619] for you that you are constantly assembling as the human.
+[00:03:33,619 --> 00:03:36,419] And you can easily get a five to 10X improvement
+[00:03:36,419 --> 00:03:39,639] in my experience on your coding productivity.
+[00:03:39,639 --> 00:03:41,179] But we wanna think beyond code.
+[00:03:41,179 --> 00:03:43,179] We wanna think about software engineering
+[00:03:43,179 --> 00:03:45,899] and we wanna think about software engineering at scale.
+[00:03:45,919 --> 00:03:48,199] If we're still doing these micromanaging prompts
+[00:03:48,199 --> 00:03:50,279] like this one, like in expense list,
+[00:03:50,279 --> 00:03:53,000] add a function to sort the list of expenses by time.
+[00:03:53,000 --> 00:03:54,000] At the end of the function,
+[00:03:54,000 --> 00:03:56,119] it should update the state of the expense list.
+[00:03:56,119 --> 00:03:58,440] If you're still thinking at small scale like this,
+[00:03:58,440 --> 00:03:59,440] you're micromanaging.
+[00:03:59,440 --> 00:04:02,000] It's the equivalent of your boss sitting there and said,
+[00:04:02,000 --> 00:04:05,360] now put this function in, now put this function in.
+[00:04:05,360 --> 00:04:07,360] Yeah, you can do that with the AI
+[00:04:07,360 --> 00:04:10,559] and it can still be efficient and fast,
+[00:04:10,559 --> 00:04:12,919] but that's not where the power comes.
+[00:04:12,940 --> 00:04:16,059] The power comes when we start thinking much bigger
+[00:04:16,059 --> 00:04:18,540] about the tasks and the way we prompt.
+[00:04:18,540 --> 00:04:20,420] And instead of going in with these micromanagement,
+[00:04:20,420 --> 00:04:22,279] build this code, build this code, build this code,
+[00:04:22,279 --> 00:04:24,619] we go in and we say something like this.
+[00:04:24,619 --> 00:04:27,720] Act like the typical user of this application,
+[00:04:27,720 --> 00:04:30,619] then create different ways of sorting, filtering,
+[00:04:30,619 --> 00:04:31,980] and displaying the expenses
+[00:04:31,980 --> 00:04:34,679] that are incredibly powerful and useful.
+[00:04:34,679 --> 00:04:36,420] Now that's wild.
+[00:04:36,420 --> 00:04:37,299] That's wild, right?
+[00:04:37,299 --> 00:04:39,760] Can AI actually do this?
+[00:04:39,760 --> 00:04:41,420] Well, we'll find out in a second.
+[00:04:42,320 --> 00:04:45,200] This is 1000X.
+[00:04:45,200 --> 00:04:47,579] The other thing is five to 10X.
+[00:04:47,579 --> 00:04:48,760] If you're going and you're getting it
+[00:04:48,760 --> 00:04:50,399] to generate individual pieces of code,
+[00:04:50,399 --> 00:04:52,799] yeah, that's super, super valuable.
+[00:04:52,799 --> 00:04:54,160] But if it can do this,
+[00:04:54,160 --> 00:04:58,480] this is 1000X productivity improvement, maybe more.
+[00:04:58,480 --> 00:05:00,040] So can it do it?
+[00:05:00,040 --> 00:05:02,179] Let's see what Cloud Code does.
+[00:05:02,179 --> 00:05:04,019] We've got our expense application.
+[00:05:04,019 --> 00:05:05,440] We've just given it,
+[00:05:05,440 --> 00:05:08,320] literally act like the typical user of this application.
+[00:05:08,320 --> 00:05:10,399] It's dreaming up and imagining
+[00:05:10,420 --> 00:05:12,700] how the user of this application would behave,
+[00:05:12,700 --> 00:05:14,739] what they would think, what they would feel,
+[00:05:14,739 --> 00:05:16,220] what they would need.
+[00:05:16,220 --> 00:05:18,739] It's dreaming up and imagining the requirements
+[00:05:18,739 --> 00:05:19,779] from their perspective
+[00:05:19,779 --> 00:05:22,420] and then doing the software engineering.
+[00:05:22,420 --> 00:05:24,220] Goes off and it says, okay, great.
+[00:05:24,220 --> 00:05:27,320] I'm gonna start a new branch of this Git repository
+[00:05:27,320 --> 00:05:29,339] in order to go and do this work.
+[00:05:29,339 --> 00:05:32,019] It says I'm gonna implement advanced date range filtering.
+[00:05:32,019 --> 00:05:33,179] Notice I didn't tell it.
+[00:05:33,179 --> 00:05:35,000] I didn't micromanage it and tell it,
+[00:05:35,000 --> 00:05:37,100] you need date range filtering.
+[00:05:37,100 --> 00:05:38,179] I said, you need filtering.
+[00:05:38,200 --> 00:05:41,119] You would need to think like a user of this application.
+[00:05:41,119 --> 00:05:43,720] It says I'm gonna add multi-select category filtering.
+[00:05:43,720 --> 00:05:45,880] I'm gonna add expense trend visualization.
+[00:05:45,880 --> 00:05:48,920] I'm gonna create monthly budget tracking features.
+[00:05:48,920 --> 00:05:51,519] I'm gonna implement spending insights.
+[00:05:51,519 --> 00:05:52,959] I didn't tell it to do this.
+[00:05:52,959 --> 00:05:54,480] I didn't micromanage it and say,
+[00:05:54,480 --> 00:05:56,000] do this, do this and do this.
+[00:05:56,000 --> 00:05:57,559] I've zoomed up.
+[00:05:57,559 --> 00:05:59,519] I haven't just zoomed way, way out.
+[00:05:59,519 --> 00:06:02,359] I am out in space saying, build me a world.
+[00:06:02,359 --> 00:06:04,559] And imagine what the people of this world
+[00:06:04,559 --> 00:06:06,559] are going to need, what resources
+[00:06:06,559 --> 00:06:08,339] and what technology and build it.
+[00:06:08,339 --> 00:06:09,779] And that's what it's doing.
+[00:06:09,779 --> 00:06:12,619] It's doing that equivalent of zooming out.
+[00:06:12,619 --> 00:06:14,820] And then it goes through and it does a bunch of work.
+[00:06:14,820 --> 00:06:17,100] Five minutes later, 10 minutes later,
+[00:06:17,100 --> 00:06:18,220] I don't know the exact time
+[00:06:18,220 --> 00:06:20,420] because I was off doing other things,
+[00:06:20,420 --> 00:06:21,980] thinking about the application,
+[00:06:21,980 --> 00:06:23,619] thinking about what I wanted to do next,
+[00:06:23,619 --> 00:06:27,220] what big tasks I wanted strategically in the software.
+[00:06:27,220 --> 00:06:29,700] I was doing other things, higher order,
+[00:06:29,700 --> 00:06:31,420] more important critical thinking
+[00:06:31,420 --> 00:06:34,059] while it was going and writing all of these features.
+[00:06:34,059 --> 00:06:34,880] It came back.
+[00:06:34,880 --> 00:06:36,420] What did it build for me?
+[00:06:37,279 --> 00:06:38,119] Advanced date range filtering,
+[00:06:38,119 --> 00:06:39,920] pre-configured date selects,
+[00:06:39,920 --> 00:06:42,079] custom date range picker with calendar inputs,
+[00:06:42,079 --> 00:06:43,679] clear visual indication,
+[00:06:43,679 --> 00:06:45,679] multi-select category filtering.
+[00:06:45,679 --> 00:06:47,700] And I'm not going to go into the details of it.
+[00:06:47,700 --> 00:06:49,519] Amount range filtering.
+[00:06:50,399 --> 00:06:52,359] And notice it did us all in a feature branch,
+[00:06:52,359 --> 00:06:53,200] which is awesome.
+[00:06:53,200 --> 00:06:55,040] I just want to point that out.
+[00:06:55,040 --> 00:06:56,839] So it got all this stuff
+[00:06:56,839 --> 00:07:00,000] and then comprehensive analytics dashboard,
+[00:07:00,000 --> 00:07:02,160] daily spending trends, monthly spending trends,
+[00:07:02,160 --> 00:07:04,920] category breakdown, payment method distribution,
+[00:07:04,940 --> 00:07:08,339] key insight cards, top five category list,
+[00:07:08,339 --> 00:07:11,940] export functionality, all of this stuff,
+[00:07:11,940 --> 00:07:14,500] plus UI and UX enhancements,
+[00:07:14,500 --> 00:07:16,739] new analytics tab, responsive layout,
+[00:07:16,739 --> 00:07:19,320] better organization of filter controls.
+[00:07:19,320 --> 00:07:21,980] How these features help users.
+[00:07:21,980 --> 00:07:24,820] Better financial awareness, flexible analysis,
+[00:07:24,820 --> 00:07:26,839] data portability, time-based insights,
+[00:07:26,839 --> 00:07:28,940] and category management.
+[00:07:28,940 --> 00:07:30,260] That's what it says it did.
+[00:07:30,260 --> 00:07:31,380] Did it do it?
+[00:07:31,380 --> 00:07:34,220] Did it go and modify the expense application to do this?
+[00:07:34,220 --> 00:07:35,600] Well, yes, it did.
+[00:07:35,600 --> 00:07:37,040] Here's the new analytics tab
+[00:07:37,040 --> 00:07:38,839] that it just finished describing to us.
+[00:07:38,839 --> 00:07:41,040] Now again, I've only put in one expense so far,
+[00:07:41,040 --> 00:07:43,359] but already it started populating the analytics tab
+[00:07:43,359 --> 00:07:44,880] with all of the different graphs,
+[00:07:44,880 --> 00:07:48,399] top spending categories, highest days, month over month,
+[00:07:48,399 --> 00:07:51,200] average, highest category, monthly spending trends,
+[00:07:51,200 --> 00:07:52,480] payment method distribution,
+[00:07:52,480 --> 00:07:54,359] all the things it talked about.
+[00:07:54,359 --> 00:07:56,399] We've got the expense tracker we did before,
+[00:07:56,399 --> 00:07:58,700] but now we've got a bunch of stuff added to it.
+[00:07:58,700 --> 00:08:00,359] What's been added to this thing?
+[00:08:00,359 --> 00:08:03,040] Well, we've got things like being able to go and export.
+[00:08:03,059 --> 00:08:06,899] Export now to CSV, to JSON, to a text report.
+[00:08:06,899 --> 00:08:08,339] We've got the ability to go
+[00:08:08,339 --> 00:08:10,679] and do all kinds of filtering by category.
+[00:08:10,679 --> 00:08:12,420] I didn't have this before.
+[00:08:12,420 --> 00:08:14,019] And then we've got this ability to go
+[00:08:14,019 --> 00:08:18,019] and do other quick filters by day and custom time range.
+[00:08:18,019 --> 00:08:21,339] It did an incredible amount of work,
+[00:08:21,339 --> 00:08:24,100] but it didn't have to be micromanaged to get there.
+[00:08:24,100 --> 00:08:25,380] What did it do?
+[00:08:25,380 --> 00:08:29,820] I told it act as a customer or user of this application
+[00:08:29,820 --> 00:08:32,739] and think about what we would need to do this.
+[00:08:33,440 --> 00:08:34,799] It's dreaming up the requirements
+[00:08:34,799 --> 00:08:37,119] by simulating the customer perspective.
+[00:08:37,119 --> 00:08:38,359] It's dreaming up the requirements
+[00:08:38,359 --> 00:08:41,719] and then using them to populate a list of tasks
+[00:08:41,719 --> 00:08:44,679] for its development that are cohesive and fit together.
+[00:08:44,679 --> 00:08:48,640] And then it's going and implementing all of it in minutes.
+[00:08:48,640 --> 00:08:52,400] That is a thousand X in software development.
+[00:08:52,400 --> 00:08:55,299] Thousand X in software engineering.
+[00:08:55,299 --> 00:08:57,919] Now, I want to step back again
+[00:08:57,919 --> 00:09:01,679] and remind you of the important, important point here.
+[00:09:02,500 --> 00:09:03,979] If you get nothing out of this course,
+[00:09:03,979 --> 00:09:06,820] if you stop now, I don't want you to forget this.
+[00:09:06,820 --> 00:09:09,359] Because as a software engineer,
+[00:09:09,359 --> 00:09:11,780] if you were going and you were focused
+[00:09:11,780 --> 00:09:14,299] on the micromanagement of AI,
+[00:09:14,299 --> 00:09:15,400] and what does that mean?
+[00:09:15,400 --> 00:09:17,859] Create this file, create this function.
+[00:09:17,859 --> 00:09:19,419] Now go create this other function,
+[00:09:19,419 --> 00:09:22,679] create this other file, create a couple of files.
+[00:09:22,679 --> 00:09:25,460] If you were doing that, what are you doing?
+[00:09:25,460 --> 00:09:27,820] You are creating a micromanagement loop
+[00:09:27,820 --> 00:09:29,020] where every time it does some work,
+[00:09:29,020 --> 00:09:32,479] it has to come back to you for approval.
+[00:09:32,479 --> 00:09:33,820] And every time you approve it,
+[00:09:33,820 --> 00:09:35,940] you have to give it the next little task.
+[00:09:35,940 --> 00:09:39,599] You are owning the cycle.
+[00:09:39,599 --> 00:09:42,260] You are becoming the controller and the bottleneck
+[00:09:42,260 --> 00:09:45,659] for the software engineering lifecycle here.
+[00:09:45,659 --> 00:09:48,820] Instead of going and say, build features and test them
+[00:09:48,820 --> 00:09:51,179] that will make our customers really, really happy
+[00:09:51,179 --> 00:09:52,539] and solve these problems,
+[00:09:52,539 --> 00:09:54,840] and then going off and focusing on figuring out
+[00:09:54,840 --> 00:09:55,859] what are the customer problems
+[00:09:55,859 --> 00:09:58,179] and things we need to care about.
+[00:09:58,179 --> 00:09:59,780] Instead of thinking about architecture
+[00:09:59,780 --> 00:10:00,960] and all these other things,
+[00:10:00,960 --> 00:10:03,400] you become in this tight little loop of go do this code,
+[00:10:03,400 --> 00:10:05,979] go do this code, go do that file, go do that file.
+[00:10:05,979 --> 00:10:08,539] And if you do that, you slow the whole thing down.
+[00:10:08,539 --> 00:10:11,580] You prevent the AI from scaling up in the way it can.
+[00:10:11,580 --> 00:10:16,419] And the scalability of the AI is the key, key innovation
+[00:10:16,419 --> 00:10:17,619] in this whole process.
+[00:10:19,380 --> 00:10:21,000] Don't be the bottleneck.
+[00:10:21,000 --> 00:10:23,099] You do not want to micromanage.
+[00:10:23,099 --> 00:10:24,340] If you are in this model
+[00:10:24,340 --> 00:10:26,719] where you're giving an individual tiny little task,
+[00:10:26,719 --> 00:10:28,159] you are the bottleneck.
+[00:10:28,159 --> 00:10:29,599] And when you do this,
+[00:10:29,599 --> 00:10:31,099] you're gonna require hundreds
+[00:10:31,099 --> 00:10:33,440] of these micromanagement iterations
+[00:10:33,440 --> 00:10:35,919] where you have to go and insert yourself
+[00:10:35,919 --> 00:10:36,840] and tell it the next thing to do
+[00:10:36,840 --> 00:10:38,280] and tell it the next selling to do.
+[00:10:38,280 --> 00:10:41,280] Imagine if you sat down with a compiler and you said,
+[00:10:41,280 --> 00:10:44,280] okay, now I want you to compile this line of code.
+[00:10:44,280 --> 00:10:47,039] Okay, now I want you to put the stuff
+[00:10:47,039 --> 00:10:48,479] that got generated over here in this file.
+[00:10:48,479 --> 00:10:50,919] Now I want you to take this little bit of code
+[00:10:50,919 --> 00:10:51,880] and I want you to compile it.
+[00:10:51,880 --> 00:10:53,320] Now I want you to move the bits over here.
+[00:10:53,320 --> 00:10:54,239] Now I want you to do this.
+[00:10:54,239 --> 00:10:56,219] And like, you don't micromanage your compiler.
+[00:10:56,739 --> 00:10:57,580] You say, go and compile that.
+[00:10:57,580 --> 00:10:58,619] Tell me when you're done.
+[00:10:58,619 --> 00:11:00,099] Tell me if there's a problem.
+[00:11:00,099 --> 00:11:01,539] That's where you need to start thinking
+[00:11:01,539 --> 00:11:03,820] is throughout the history of software engineering,
+[00:11:03,820 --> 00:11:06,840] we've continuously raised the level of abstraction.
+[00:11:06,840 --> 00:11:09,979] And this has created an unbelievable new level
+[00:11:09,979 --> 00:11:11,940] of abstraction that you as a software engineer
+[00:11:11,940 --> 00:11:13,700] are going to be working at.
+[00:11:13,700 --> 00:11:15,900] You need to take advantage
+[00:11:15,900 --> 00:11:17,460] of this new level of abstraction.
+[00:11:17,460 --> 00:11:19,219] You have to step back
+[00:11:19,219 --> 00:11:21,900] and you have to start thinking about giving it tasks,
+[00:11:21,900 --> 00:11:24,619] problems, challenge, insights,
+[00:11:24,619 --> 00:11:26,780] things to go and innovate around.
+[00:11:26,780 --> 00:11:28,859] You are the driver of the critical thinking
+[00:11:28,859 --> 00:11:29,739] about what to do
+[00:11:29,739 --> 00:11:32,020] and what are the important characteristics of it,
+[00:11:32,020 --> 00:11:35,260] of the architecture, of the process, of these things.
+[00:11:35,260 --> 00:11:36,940] But when it comes to the code,
+[00:11:36,940 --> 00:11:39,500] you want to build a situation and a system
+[00:11:39,500 --> 00:11:41,700] and a process to where you can step back
+[00:11:41,700 --> 00:11:44,700] and you can go and let it do its work.
+[00:11:44,700 --> 00:11:46,580] You don't have your boss sitting over your shoulder
+[00:11:46,580 --> 00:11:47,940] where you write every line of code.
+[00:11:47,940 --> 00:11:49,820] You don't want to be the boss of the AI
+[00:11:49,820 --> 00:11:52,419] sitting over its shoulder for every single line of code.
+[00:11:52,419 --> 00:11:53,979] Now, a lot of people have issue with this.
+[00:11:53,979 --> 00:11:55,460] They're like, hey, I can't write good code.
+[00:11:55,460 --> 00:11:58,900] And we'll talk about that in the future in a minute.
+[00:11:58,900 --> 00:12:01,780] But the key to this,
+[00:12:01,780 --> 00:12:05,979] the key power of generative AI, of cloud code
+[00:12:05,979 --> 00:12:08,780] in using AI agents for software engineering
+[00:12:08,780 --> 00:12:11,059] is when you allow them to scale,
+[00:12:11,059 --> 00:12:12,460] when you use it in a way
+[00:12:12,460 --> 00:12:15,340] that creates nearly unlimited scalability
+[00:12:15,340 --> 00:12:16,460] in your development,
+[00:12:16,460 --> 00:12:19,539] that gives you a thousand X what you could do before,
+[00:12:19,539 --> 00:12:22,460] not just 10 X, not just five X.
+[00:12:22,460 --> 00:12:24,700] We're talking truly, fundamentally,
+[00:12:24,700 --> 00:12:28,260] orders of magnitude advances in the rate
+[00:12:28,260 --> 00:12:31,299] and the quality of what we can produce with software.
+[00:12:31,299 --> 00:12:33,500] But to do that, the very first,
+[00:12:33,500 --> 00:12:35,539] simplest, most important step
+[00:12:35,539 --> 00:12:38,380] is we have to step back from little tiny prompts
+[00:12:38,380 --> 00:12:40,260] that micromanage the AI
+[00:12:40,260 --> 00:12:43,020] and put us tightly in the loop of every single change
+[00:12:43,020 --> 00:12:45,059] and step back and start thinking about
+[00:12:45,059 --> 00:12:46,979] as innovators, entrepreneurs,
+[00:12:46,979 --> 00:12:50,219] that have big ideas that task the AI labor
+[00:12:50,219 --> 00:12:52,739] and scale it up and use it in scalable ways
+[00:12:52,739 --> 00:12:55,059] that go and make thousand X improvements
+[00:12:55,059 --> 00:12:57,099] in software engineering productivity.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-claude-code/03_an-important-note-on-costs_instructions.html
+TYPE: HTML
+TITLE: An Important Note On Costs Instructions
+
+There are two ways to use Claude Code:
+
+1. You can buy a monthly subscription that includes Claude Code. If you take this route, there are limits on how much of Claude Code you can use on a given day / month.
+
+2. You can connect Claude Code to an API Key and pay for actual token usage costs.
+
+Know more about the pricing and plans
+
+here
+
+.
+
+The first exercise in this class can consume $1.50 or more in tokens. I would assume that you can easily consume $50+ dollars in tokens if you complete all of the examples / exercises. You are not required to complete the exercises before the final assignment, but they are valuable learning experiences. I would suggest carefully tracking token costs and determining if a monthly subscription is more cost effective. Also, I would strongly encourage putting limits on your token usage (e.g., don't auto recharge, etc.) if you are not used to Claude Code costs.
+
+For me personally, the costs for Claude Code are far cheaper than doing the comparable work myself.
+
+For my personal use, I pay for a monthly subscription and
+
+regularly
+
+hit the token limits and have to take a break. This is a great time to think through design, process, etc. Hitting the token limit is a reminder for me to pause and do some reflection. For my work at Vanderbilt, we pay token costs.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-claude-code/04_exercise-getting-started-with-claude-code-building-your-first-application_instructions.html
+TYPE: HTML
+TITLE: Exercise Getting Started With Claude Code Building Your First Application Instructions
+
+Prerequisites
+
+Basic familiarity with command line/terminal
+
+If you need help, open
+
+Claude
+
+and prompt it with: "
+
+Teach me how to use the command line on my system. Ask me one question at a time or tell me one step at a time what to do. What is the first question or step?
+
+"
+
+Node.js installed on your system (
+
+https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+
+)
+
+If you need help, open
+
+Claude
+
+and prompt it with: "
+
+Help me install NodeJS and NPM. Ask me one question at a time or tell me one step at a time what to do. What is the first question or step?
+
+"
+
+Git installed and configured
+
+If you need help, open
+
+Claude
+
+and prompt it with: "
+
+Help me install the Git CLI. Ask me one question at a time or tell me one step at a time what to do. What is the first question or step?
+
+"
+
+Part 1: Installing Claude Code
+
+Step 1: Installation
+
+To get access to Claude Code:
+
+Get Access: Visit
+
+claude.ai/code
+
+to sign up for a subscription that includes Claude Code or get an API key to pay for usage
+
+Install via npm (once you have access):
+
+npm install -g @anthropic-ai/claude-code
+
+Verify Installation:
+
+Claude --version
+
+Step 2: First Launch
+
+Create a new project directory:
+
+mkdir expense-tracker-ai
+
+Change to the project directory:
+
+cd expense-tracker-ai
+
+Launch Claude Code:
+
+Claude
+
+First-time setup: Claude will prompt you to authenticate and set up basic permissions.
+
+Part 2: Understanding the Interface
+
+Key Interface Elements
+
+When you launch Claude Code, you'll see:
+
+Prompt input: Where you type your instructions
+
+Tool permission requests: Claude will ask before running commands
+
+File operations: You'll see real-time file creation and editing
+
+Todo updates: Claude explains what it's doing as it works
+
+Essential Commands
+
+/init
+
+: Initialize a CLAUDE.md file for your project (when there is an existing project)
+
+/permissions
+
+: Manage tool permissions
+
+/clear
+
+: Clear conversation history
+
+/help
+
+: Show available commands
+
+Slash commands
+
+: Type / to see all available commands
+
+Part 3: Your First Big Prompt - Building an Expense Tracker
+
+Step 1: Initialize the Project with The Big Prompt Approach
+
+Instead of asking Claude to "create a component" or "add a function," we're going to use a
+
+big prompt
+
+that describes our entire vision. This is the key to leveraging AI as labor rather than just a coding assistant.
+
+I want you to create a modern, professional NextJS expense tracking application. Here's my vision:
+
+APPLICATION OVERVIEW:
+Build a complete expense tracking web app that helps users manage their personal finances. The app should feel modern, intuitive, and professional.
+
+CORE FEATURES:
+- Add expenses with date, amount, category, and description
+- View expenses in a clean, organized list
+- Filter expenses by date range and category
+- Dashboard with spending summaries and basic analytics
+- Categories: Food, Transportation, Entertainment, Shopping, Bills, Other
+- Data persistence using localStorage for this demo
+
+TECHNICAL REQUIREMENTS:
+- NextJS 14 with App Router
+- TypeScript for type safety
+- Tailwind CSS for styling with a modern, clean design
+- Responsive design that works on desktop and mobile
+- Use React hooks for state management
+- Form validation for expense inputs
+- Date picker for expense dates
+- Currency formatting for amounts
+
+DESIGN REQUIREMENTS:
+- Clean, modern interface with a professional color scheme
+- Intuitive navigation and user experience
+- Visual feedback for user actions
+- Loading states and error handling
+- Mobile-responsive design
+
+SPECIFIC FUNCTIONALITY:
+- Expense form with validation
+- Expense list with search and filter capabilities
+- Summary cards showing total spending, monthly spending, top categories
+- Basic charts or visual representations of spending patterns
+- Export functionality (at least CSV)
+- Delete and edit existing expenses
+
+Please create this as a complete, production-ready application. Set up the project structure, implement all features, and make sure everything works together seamlessly. Focus on creating something that looks professional and that I could actually use to track my expenses.
+
+When you're done, provide instructions on how to run the application and test all features.
+
+Step 3: Watch Claude Work
+
+After sending this prompt, Claude will:
+
+Plan the approach: It will outline how it will build the application
+
+Create the project structure: Set up NextJS with TypeScript and Tailwind
+
+Build components: Create all the necessary React components
+
+Implement features: Add all the functionality you requested
+
+Test and verify
+
+: Make sure everything works together (it may forget to do this...if so, remind it with something like "please compile and make sure the application runs...")
+
+Important
+
+: Claude will ask for permissions to:
+
+Run terminal commands (npm create-next-app, npm install, etc.)
+
+Create and edit files
+
+Install dependencies
+
+Always review what it's asking to do and approve safe operations.
+
+Step 4: Understanding the Output
+
+As Claude works, pay attention to:
+
+File structure: How it organizes the project
+
+Component architecture: How it breaks down the application
+
+State management: How it handles data flow
+
+Styling approach: How it implements the design
+
+Step 5: Testing Your Application
+
+Once Claude finishes, it will provide instructions to run the app:
+
+npm run dev
+
+Open your browser to http://localhost:3000 and test.
+
+Stopping the Application: When you're done testing, make sure to stop the development server to free up the port.In your terminal, press Ctrl + C to terminate the process.This ensures port 3000 is not left running in the background.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_getting-started-with-claude-code/05_learning-more-staying-connected_instructions.html
+TYPE: HTML
+TITLE: Learning More Staying Connected Instructions
+
+Stay Up to Date in a Rapidly Changing AI Landscape — Join the Private Community for Professionals in My Coursera Classes
+
+If you’re taking any of my Coursera courses, you’re invited to join our private Circle community! While the courses give you core skills and frameworks, this space is for going beyond the syllabus—with extra resources, office hours, monthly updates on key trends in AI, and more. It also includes exclusive content that enriches and extends topics from all 20+ of my courses — and it’s only available to professionals actively taking my Coursera courses. It’s the best way to stay current, go deeper, and connect with others on the same professional learning journey.
+
+Join the Community
+
+here
+
+Learning More About Prompt Engineering
+
+If you haven't taken my first course,
+
+Prompt Engineering for ChatGPT
+
+, it is a great complement to this course that also teaches concepts that every prompt engineer can benefit from.
+
+Also, check out the following courses on GPTs:
+
+1.
+
+Custom GPTs
+
+2.
+
+ChatGPT Advanced Data Analysis
+
+Connect with Me on LinkedIn
+
+If you would like to stay connected to what we are doing at Vanderbilt as part of the Initiative on the Future of Learning & Generative AI, please don't hesitate to reach out and connect with me on
+
+LinkedIn.
+
+Primer on Generative AI
+
+Learn how specifically Generative AI is going to transform computing and industry in
+
+my Generative AI Primer
+
+course.
+
+All My Generative AI Courses are Here
+
+I teach a number of additional courses on Generative AI, including: GPT-4 Vision, Innovative Teaching with ChatGPT, ChatGPT Advanced Data Analysis, Generative AI Primer, Generative AI for Leaders, Trustworthy Generative AI, and more. You can see all the Generative AI courses that I teach
+
+here
+
+.
+
+Learn More Prompt Patterns in Our Paper:
+
+A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT
+
+by Jules White, Quchen Fu, Sam Hays, Michael Sandborn, Carlos Olea, Henry Gilbert, Ashraf Elnashar, Jesse Spencer-Smith, Douglas C. Schmidt
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_leveraging-the-software-engineering-advantages-of-claude-code/01_one-software-engineer-to-another-lets-talk-about-the-fear.en.srt
+TYPE: SRT
+TITLE: One Software Engineer To Another Lets Talk About The Fear
+
+[00:00:00,000 --> 00:00:04,000] I want to take a minute to talk to you, one developer to another.
+[00:00:04,000 --> 00:00:08,800] I'm somebody who has deeply loved coding throughout my career.
+[00:00:08,800 --> 00:00:11,159] I've explored so many languages.
+[00:00:11,159 --> 00:00:13,279] I had fun doing all kinds of things.
+[00:00:13,279 --> 00:00:22,319] Everything from C++ to Prolog, to Java, to JavaScript, to Clojure, to you name it, TypeScript.
+[00:00:22,319 --> 00:00:27,319] I've gone and I've explored languages, I've seen the beauty of language design, of really
+[00:00:27,319 --> 00:00:32,159] thinking through individual lines of code and structure, patterns, all kinds of things.
+[00:00:32,159 --> 00:00:36,360] It has been a deep passion of mine throughout my life.
+[00:00:36,360 --> 00:00:42,360] And I'll be honest, when these tools came along, at first I was like, this is extraordinarily
+[00:00:42,360 --> 00:00:43,360] frightening to me.
+[00:00:43,360 --> 00:00:44,959] And I feel really sad.
+[00:00:44,959 --> 00:00:47,880] What does this mean for me as a software engineer?
+[00:00:47,880 --> 00:00:55,200] What does it mean that AI can write code faster and probably better with the right prompting
+[00:00:55,200 --> 00:00:57,240] than I ever could on my own?
+[00:00:57,240 --> 00:01:01,959] And there was a moment of profound looking inward and sadness and worry about what does
+[00:01:01,959 --> 00:01:06,839] this mean for something that I have cared about so much throughout my career?
+[00:01:06,839 --> 00:01:09,480] And I want to tell you that there is another side to that.
+[00:01:09,480 --> 00:01:15,800] As you make it through, I am now in the area where I have never felt more joy, more creativity,
+[00:01:15,800 --> 00:01:19,199] more fun in the work I do building software than today.
+[00:01:19,199 --> 00:01:25,120] And it's because of what generative AI can do, and in particular, what Cloud Code can do.
+[00:01:25,120 --> 00:01:29,239] Cloud Code was a moment for me when I started stepping back and doing these bigger prompts,
+[00:01:29,239 --> 00:01:33,839] like build an entire application, build an entire feature.
+[00:01:33,839 --> 00:01:38,879] When I started going and approaching it like that, it transformed everything that I do
+[00:01:38,879 --> 00:01:42,919] in software engineering in a way that made it so creative and so fun.
+[00:01:42,919 --> 00:01:50,239] I stopped getting stuck in debugging and dealing with all the minutia of versions of libraries
+[00:01:50,239 --> 00:01:54,760] and all this other garbage that slows me down, and of all my mistakes, and I started getting
+[00:01:54,760 --> 00:01:58,639] to think about how do I really solve this problem?
+[00:01:58,639 --> 00:02:01,879] How do I build an application that's really exciting and innovative?
+[00:02:01,879 --> 00:02:07,160] And today, I have more fun than I've ever had with software engineering, with building software.
+[00:02:07,160 --> 00:02:10,240] I'm building at a far higher rate of velocity.
+[00:02:10,240 --> 00:02:13,759] I'm building at a far higher level of quality.
+[00:02:13,759 --> 00:02:17,559] And I'm getting to go and do all those things that I'm always like, that would be awesome
+[00:02:17,559 --> 00:02:21,839] to do, but I just don't have the time because I'm still not even going to finish this little feature.
+[00:02:21,839 --> 00:02:22,839] All that goes away.
+[00:02:22,919 --> 00:02:27,880] I can go in as much as I can dream and think of amazing things to do as fast as I can come
+[00:02:27,880 --> 00:02:31,000] up with them, you know, I can go and build them.
+[00:02:31,000 --> 00:02:35,039] Now what's important is my creativity and my critical thinking, my knowledge of design
+[00:02:35,039 --> 00:02:39,199] and architecture and thought about how to put all this together and what would be something
+[00:02:39,199 --> 00:02:41,839] really cool and amazing.
+[00:02:41,839 --> 00:02:43,759] And yeah, it does.
+[00:02:43,759 --> 00:02:47,520] There is a moment that when you start this process where you think, oh my gosh, am I
+[00:02:47,520 --> 00:02:50,960] going to be totally unhappy that I'm not writing individual lines of code?
+[00:02:51,080 --> 00:02:53,199] Well, for me, the answer is absolutely not.
+[00:02:53,199 --> 00:02:57,679] It has been the most inspiring and fun, you know, time of my career.
+[00:02:57,679 --> 00:03:00,559] And I directly thank Claude Code for that.
+[00:03:00,559 --> 00:03:06,199] Because Claude Code took it from that 5 to 10x to when I had that moment where I gave
+[00:03:06,199 --> 00:03:10,100] it that 1000x prompt and it did something that took my breath away.
+[00:03:10,100 --> 00:03:15,639] It was that moment when I realized I was at a point in history where AI agents and Claude
+[00:03:15,639 --> 00:03:21,479] Code had suddenly transformed software engineering in a way that was going to be profoundly impactful
+[00:03:21,479 --> 00:03:23,759] and exciting for the rest of my career.
+[00:03:23,759 --> 00:03:25,039] So I know you're worried.
+[00:03:25,039 --> 00:03:26,039] Hang with me.
+[00:03:26,039 --> 00:03:31,600] I promise by the end of this, I will help you feel like an incredible innovator, a leader,
+[00:03:31,600 --> 00:03:35,679] somebody who is excited about solving problems in the world and doing it through their knowledge
+[00:03:35,679 --> 00:03:36,839] of software and computing.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_leveraging-the-software-engineering-advantages-of-claude-code/02_ai-labor-claude-code-is-an-ai-development-team.en.srt
+TYPE: SRT
+TITLE: Ai Labor Claude Code Is An Ai Development Team
+
+[00:00:00,000 --> 00:00:04,880] Hopefully, by now, you've gone off and tried one of these crazy big prompts, at least build
+[00:00:04,880 --> 00:00:09,760] an entire application for me, and absolutely been stunned by what Cloud Code is capable
+[00:00:09,760 --> 00:00:10,760] of.
+[00:00:10,760 --> 00:00:13,159] Now, I want to take a step back for a moment.
+[00:00:13,159 --> 00:00:17,719] I want to talk about why big prompts are so important, why going and thinking differently
+[00:00:17,719 --> 00:00:20,200] about prompting is so important.
+[00:00:20,200 --> 00:00:24,479] But also to give you a model of how we're going to start thinking about AI throughout
+[00:00:24,479 --> 00:00:25,479] the rest of this course.
+[00:00:25,479 --> 00:00:28,239] And we start thinking about it in this model.
+[00:00:28,239 --> 00:00:32,319] It will help us understand what's really important from a software engineering perspective
+[00:00:32,319 --> 00:00:35,799] to go and use AI and to do work with it.
+[00:00:35,799 --> 00:00:39,639] And that is a simple model, which is AI is labor.
+[00:00:39,639 --> 00:00:42,919] Now, what does that mean that AI is labor?
+[00:00:42,919 --> 00:00:46,720] And more specifically, it's software engineering labor.
+[00:00:46,720 --> 00:00:52,119] When you go and you begin using AI, particularly AI agents like Cloud Code, they are going
+[00:00:52,119 --> 00:00:54,200] to go and do work on your behalf.
+[00:00:54,520 --> 00:00:59,560] Now, we started off the generative AI sort of revolution with AI labor doing little chunks
+[00:00:59,560 --> 00:01:00,560] of work for us.
+[00:01:00,560 --> 00:01:04,199] We'd give it a prompt, and we would get a bunch of text out of it.
+[00:01:04,199 --> 00:01:07,839] And we go copy that text into a file, we might get a function that we're going to go and
+[00:01:07,839 --> 00:01:13,360] put into some JavaScript file, something like that.
+[00:01:13,360 --> 00:01:17,519] But we were stuck in this world where we could only access little bits of AI labor at a time.
+[00:01:17,519 --> 00:01:21,599] We got a little bit out, we go and copy and paste it in somewhere.
+[00:01:21,599 --> 00:01:25,599] And then over time, we got it to where it would directly put its work into something.
+[00:01:25,599 --> 00:01:29,360] And over time, what we've gotten is where we can get more and more labor out of it at
+[00:01:29,360 --> 00:01:30,599] a time.
+[00:01:30,599 --> 00:01:35,559] We give it a prompt, it produces some work for us, it does some labor for us.
+[00:01:35,559 --> 00:01:37,879] And then we go and we do something with that labor.
+[00:01:37,879 --> 00:01:43,800] Now, this is why it's so important when we start thinking about prompting to start thinking
+[00:01:43,800 --> 00:01:50,760] about bigger prompts, is because bigger prompts are allowing us to leverage AI labor.
+[00:01:50,879 --> 00:01:55,879] For AI agents that have the sophistication of Claude, and there's not many of them yet
+[00:01:55,879 --> 00:02:01,000] at the sophistication of Claude, but for the ones that are, the power of that agent comes
+[00:02:01,000 --> 00:02:06,419] from treating it as labor that can go and do things autonomously on your behalf at much
+[00:02:06,419 --> 00:02:07,419] larger scale.
+[00:02:07,419 --> 00:02:09,520] Not little bits of work that you're micromanaging.
+[00:02:09,520 --> 00:02:12,399] I use that boss looking over your shoulder analogy.
+[00:02:12,399 --> 00:02:14,119] We want to move away from that.
+[00:02:14,119 --> 00:02:17,520] We want to move to a world where you are a leader.
+[00:02:17,520 --> 00:02:22,199] You have many teams working for you and you give them tasks.
+[00:02:22,199 --> 00:02:27,279] And you want to prompt in a way that it allows that AI labor, Claude code, to go and scale
+[00:02:27,279 --> 00:02:30,279] up its work for you and work autonomously.
+[00:02:30,279 --> 00:02:34,199] And that's why thinking about it in the AI labor model is so important, is because this
+[00:02:34,199 --> 00:02:37,839] is labor that you can employ to do work for you.
+[00:02:37,839 --> 00:02:39,759] And you want to be able to use this labor.
+[00:02:39,759 --> 00:02:45,440] You want to be able to use as much of it as scalably and as much of it in parallel as
+[00:02:45,440 --> 00:02:46,440] possible.
+[00:02:46,440 --> 00:02:51,199] If you don't think through how you're using it, you can't use it and scale it up.
+[00:02:51,199 --> 00:02:53,080] You can't use it in parallel.
+[00:02:53,080 --> 00:02:54,919] You get to become the bottleneck.
+[00:02:54,919 --> 00:02:58,320] And the simple starting point for this is your prompt.
+[00:02:58,320 --> 00:03:03,600] If you don't prompt correctly, you cannot scale up your use of AI labor.
+[00:03:03,600 --> 00:03:08,960] Now if you prompt and micromanage, you get one coworker that's really smart at writing
+[00:03:08,960 --> 00:03:14,399] a function, but you can only tell that coworker one thing to do at a time.
+[00:03:14,399 --> 00:03:18,559] If you go and you start prompting bigger, it's like having hundreds or thousands of
+[00:03:18,559 --> 00:03:23,320] coworkers that are working on your behalf to carry out your vision.
+[00:03:23,320 --> 00:03:27,360] But in order to get there, you have to give your vision, not the micromanagement of the
+[00:03:27,360 --> 00:03:29,399] implementation of the vision.
+[00:03:29,399 --> 00:03:36,360] So again, this is not how an AI leader, an AI leader of labor does not prompt like this.
+[00:03:36,360 --> 00:03:38,919] They don't micromanage.
+[00:03:38,919 --> 00:03:40,820] They go and they prompt like this.
+[00:03:40,820 --> 00:03:42,419] Look at this list of expenses.
+[00:03:42,419 --> 00:03:45,220] How could we make it incredibly bold, beautiful, and modern?
+[00:03:45,220 --> 00:03:49,380] Blow my mind with the elegance, simplicity, and beauty of your user interface.
+[00:03:49,380 --> 00:03:51,279] You challenge the AI.
+[00:03:51,279 --> 00:03:53,820] You give it big tasks.
+[00:03:53,820 --> 00:03:56,500] You go and you do things that are a thousand X improvement.
+[00:03:56,500 --> 00:03:58,240] The user interface isn't consistent.
+[00:03:58,240 --> 00:04:01,559] Could you make everything match the style of the list of expenses?
+[00:04:01,559 --> 00:04:04,740] You tell it to go and look at something and make it happen everywhere.
+[00:04:04,740 --> 00:04:07,940] You don't tell it, you know, here's an individual thing.
+[00:04:07,940 --> 00:04:09,380] You just say, go look at it, figure it out.
+[00:04:09,380 --> 00:04:11,179] But I want it to be the same across all of them.
+[00:04:11,179 --> 00:04:15,500] You start thinking bigger, you start prompting in a way that allows the AI labor to go and
+[00:04:15,500 --> 00:04:16,500] scale up.
+[00:04:16,500 --> 00:04:18,179] But you also give it bold challenges.
+[00:04:18,179 --> 00:04:22,299] And I know this seems wild, but it wasn't until I started doing things like this that
+[00:04:22,299 --> 00:04:27,859] I really, you know, was blown away by what Cloud Code was capable of.
+[00:04:27,859 --> 00:04:33,420] You know, and then you want to think about having it understand the problems and the
+[00:04:33,420 --> 00:04:34,420] context.
+[00:04:34,420 --> 00:04:37,380] And there's all kinds of ways of expressing the problem in the context of what you're
+[00:04:37,380 --> 00:04:38,380] trying to achieve.
+[00:04:38,579 --> 00:04:42,619] But something like this, when I'm trying to prepare my small businesses' taxes, I find
+[00:04:42,619 --> 00:04:45,660] it really hard to gather all of the relevant expenses.
+[00:04:45,660 --> 00:04:49,459] Create something amazing to solve that problem for me.
+[00:04:49,459 --> 00:04:51,600] We are tasking AI labor.
+[00:04:51,600 --> 00:04:54,000] Go and solve this challenge for me.
+[00:04:54,000 --> 00:04:56,980] We're not telling to write an individual function for you.
+[00:04:56,980 --> 00:05:03,739] Now, the rest of this course, we're going to start thinking about how do we task AI
+[00:05:03,739 --> 00:05:06,859] labor to help us with software engineering?
+[00:05:06,859 --> 00:05:11,140] What are the challenges that we encounter when we use AI labor in our software engineering
+[00:05:11,140 --> 00:05:12,380] processes?
+[00:05:12,380 --> 00:05:15,179] How do we scale up our use of AI labor?
+[00:05:15,179 --> 00:05:19,420] What are the unique concerns that we have to have when we're working with AI labor?
+[00:05:19,420 --> 00:05:21,299] And we're working with Cloud Code.
+[00:05:21,299 --> 00:05:24,480] Cloud Code is our interface to this AI labor.
+[00:05:24,480 --> 00:05:26,260] It is the AI labor that we're working with.
+[00:05:26,260 --> 00:05:30,100] And we're going to have to understand how we communicate with Cloud Code, how we give
+[00:05:30,100 --> 00:05:35,059] it process, all kinds of important things that we need when we're doing software engineering.
+[00:05:35,059 --> 00:05:39,540] But remember, you're not working with just a chat interface anymore.
+[00:05:39,540 --> 00:05:41,540] Cloud Code is an AI agent.
+[00:05:41,540 --> 00:05:43,140] It is your AI labor.
+[00:05:43,140 --> 00:05:49,019] It is a team, if you use it right, of 100 or 1,000 developers that is there to help
+[00:05:49,019 --> 00:05:51,019] carry out and achieve your vision.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_leveraging-the-software-engineering-advantages-of-claude-code/03_the-best-of-n-pattern-leverage-ai-labor-cost-advantages.en.srt
+TYPE: SRT
+TITLE: The Best Of N Pattern Leverage Ai Labor Cost Advantages
+
+[00:00:00,000 --> 00:00:05,320] Now, people have this belief that AI code quality is pretty low, creates all this code
+[00:00:05,320 --> 00:00:07,480] with all these security vulnerabilities.
+[00:00:07,480 --> 00:00:10,600] And I'm here to tell you, first off, I totally disagree with this.
+[00:00:10,600 --> 00:00:12,779] And we'll talk more about that.
+[00:00:12,779 --> 00:00:15,380] But it's really missing the point.
+[00:00:15,380 --> 00:00:21,639] First off, how you prompt is incredibly impactful on the quality of the code you get out.
+[00:00:21,639 --> 00:00:26,479] But there's so many other techniques outside of the prompt and things that we can do that
+[00:00:26,479 --> 00:00:30,719] that can allow us to write higher quality software than we ever could have before.
+[00:00:30,719 --> 00:00:35,720] Now, does it mean that you don't have to be involved and you don't have to pay close attention
+[00:00:35,720 --> 00:00:36,720] to the code quality?
+[00:00:36,720 --> 00:00:37,720] Absolutely not.
+[00:00:37,720 --> 00:00:40,479] You have to be intimately involved in thinking through this.
+[00:00:40,479 --> 00:00:43,279] You're going to have to be an important part of the architecture and the design and all
+[00:00:43,279 --> 00:00:44,560] these things.
+[00:00:44,560 --> 00:00:47,080] But your role is going to be a little bit different.
+[00:00:47,080 --> 00:00:51,159] And now I want to show you some examples of things that we can do.
+[00:00:51,159 --> 00:00:56,159] Part of what we can do is we can do more, but we can use the fact that we can do more
+[00:00:56,159 --> 00:01:00,639] and we can scale up our AI labor to actually get higher quality.
+[00:01:00,639 --> 00:01:01,959] Now what do I mean by this?
+[00:01:01,959 --> 00:01:06,559] Well, one of the most common reasons, honestly, that software fails is because people build
+[00:01:06,559 --> 00:01:10,879] the wrong thing or they don't think of that great feature that some other competitor does
+[00:01:10,879 --> 00:01:11,879] think of.
+[00:01:11,879 --> 00:01:17,000] And in fact, when we go and build software, it is so labor intensive that often we don't
+[00:01:17,000 --> 00:01:18,779] think enough about the design.
+[00:01:18,779 --> 00:01:24,559] We don't explore enough alternatives and different pathways of design and implementation because
+[00:01:24,559 --> 00:01:28,680] it's so extraordinarily expensive to do just a single one.
+[00:01:28,680 --> 00:01:33,199] So let's go and attack that problem with scalable AI labor.
+[00:01:33,199 --> 00:01:34,199] What does that look like?
+[00:01:34,199 --> 00:01:37,440] Well, let's take a look.
+[00:01:37,440 --> 00:01:38,680] Here's what we want to do.
+[00:01:38,680 --> 00:01:43,440] We want to employ the speed, the scalability, and the egoless nature, because we're going
+[00:01:43,440 --> 00:01:50,879] to do something that would be so hard to do with human developers, to do more work, produce
+[00:01:50,879 --> 00:01:53,639] more software at a higher level of quality.
+[00:01:53,720 --> 00:01:55,040] Well, how do we do that?
+[00:01:55,040 --> 00:01:56,040] Let's look at an example.
+[00:01:56,040 --> 00:02:02,480] Now, you remember before, when I had it going, I had Claude Code basically modify that expense
+[00:02:02,480 --> 00:02:06,599] application to add all the filtering and reporting capabilities, but notice I gave it this big
+[00:02:06,599 --> 00:02:08,119] task to do.
+[00:02:08,119 --> 00:02:12,960] And it implemented all this amazing stuff, like all these different dashboards and filtering
+[00:02:12,960 --> 00:02:13,960] techniques.
+[00:02:13,960 --> 00:02:15,800] It did a ton of work, right?
+[00:02:15,800 --> 00:02:18,059] Well, what do I do next?
+[00:02:18,059 --> 00:02:22,720] In the AI labor world, where it spent five minutes doing that, what do I do next?
+[00:02:22,720 --> 00:02:25,279] What do I use with my time that I have?
+[00:02:25,279 --> 00:02:28,199] Where do I really get the big bang for the buck?
+[00:02:28,199 --> 00:02:33,399] Well, what I do is I do something like this, and this is what I did next.
+[00:02:33,399 --> 00:02:37,199] Rather than stopping and saying, yeah, that's great, wow, that looks so good, I'm done,
+[00:02:37,199 --> 00:02:40,639] I went and said, okay, that was awesome.
+[00:02:40,639 --> 00:02:46,479] Can you go back to the prior branch and repeat this process, but solve the underlying problem
+[00:02:46,479 --> 00:02:48,800] in a different and wildly valuable way?
+[00:02:48,800 --> 00:02:51,479] Surprise me with your creativity.
+[00:02:51,479 --> 00:02:54,279] So rather than just stopping and saying, hey, I solved the problem, let's go on to
+[00:02:54,279 --> 00:02:58,320] the next thing, I said, let's go and solve it and implement it in a totally different
+[00:02:58,320 --> 00:03:03,440] way so that I can go and compare and contrast and begin evaluating.
+[00:03:03,440 --> 00:03:08,240] This is something that would be near impossible to do with traditional methods.
+[00:03:08,240 --> 00:03:12,399] If you think about all the work it did, and I had to have a human team go and do all that
+[00:03:12,399 --> 00:03:16,860] work, and then I said, now, by the way, go throw all of that away, team, just so I could
+[00:03:16,860 --> 00:03:20,740] try something else, because I just want to see what you come up with, you know?
+[00:03:20,740 --> 00:03:25,419] And I said, please do it in the next five minutes, good luck, not going to happen.
+[00:03:25,419 --> 00:03:27,940] But it does it just fine.
+[00:03:27,940 --> 00:03:29,020] It's egoless.
+[00:03:29,020 --> 00:03:30,399] It doesn't get burnt out.
+[00:03:30,399 --> 00:03:34,339] It doesn't get, you know, upset that you're asking it and pushing it to do something else.
+[00:03:34,339 --> 00:03:38,899] It says, okay, great, I'll go check out the other branch that we based this one off of,
+[00:03:38,899 --> 00:03:41,339] which was this feature dynamic categories.
+[00:03:41,339 --> 00:03:45,779] Now let me create a completely different and creative approach to solving expense tracking.
+[00:03:45,779 --> 00:03:49,539] I'll focus on AI powered insights, gamification, and social features.
+[00:03:49,539 --> 00:03:53,020] Well, that is pretty creative, not what I was thinking of.
+[00:03:53,020 --> 00:03:54,419] But that's the whole point, right?
+[00:03:54,419 --> 00:03:59,820] I task Claude code with going and showing me something totally wildly different, because
+[00:03:59,820 --> 00:04:03,740] maybe there's something out there that I've missed that I should be thinking of.
+[00:04:03,740 --> 00:04:08,539] And it goes out and says, okay, I'm also going to create an AI powered expense anomaly detection
+[00:04:08,539 --> 00:04:09,539] system.
+[00:04:09,539 --> 00:04:14,100] And it goes and it builds all of this stuff, this AI powered expense anomaly detection
+[00:04:14,100 --> 00:04:17,260] and this gamification, and all these things.
+[00:04:17,260 --> 00:04:19,220] And it was cool.
+[00:04:19,220 --> 00:04:22,700] But at the end of the day, after I looked at it, I was like, it's cool, but it's not
+[00:04:22,700 --> 00:04:23,700] what I want.
+[00:04:23,700 --> 00:04:24,700] And I threw it all away.
+[00:04:24,700 --> 00:04:25,700] And I switched back to the other branch.
+[00:04:25,700 --> 00:04:28,980] And we continued on with those other great features that are implemented.
+[00:04:28,980 --> 00:04:33,140] But I just did something that I've never been able to do before.
+[00:04:33,140 --> 00:04:38,459] As I went, and I was able to build it in a totally different way, and actually go and
+[00:04:38,459 --> 00:04:41,980] work with it and experience it and try it out.
+[00:04:41,980 --> 00:04:44,940] And I could go and maybe there was something in this new version that it built around that
+[00:04:44,940 --> 00:04:49,179] maybe AI powered anomaly detection or social features that I want in the other version.
+[00:04:49,179 --> 00:04:51,140] I don't want all of this, but I want this part.
+[00:04:51,140 --> 00:04:53,380] Well, it's just built two versions and two branches.
+[00:04:53,380 --> 00:04:57,220] I can get to the end of this and I can say, and now cherry pick this part that I thought
+[00:04:57,220 --> 00:05:01,779] was really cool and bring it into that other branch and implement it there.
+[00:05:01,779 --> 00:05:03,359] And that's how we have to start thinking.
+[00:05:03,359 --> 00:05:08,420] We have to start stepping back and saying, I can do bigger and more amazing things than
+[00:05:08,420 --> 00:05:09,420] ever before.
+[00:05:09,420 --> 00:05:11,899] But I have to start thinking at this macro level.
+[00:05:11,899 --> 00:05:16,980] Let's implement 10 versions of this application or 10 versions of that feature.
+[00:05:16,980 --> 00:05:21,679] And let's compare them all and try them all and think about it and talk about it.
+[00:05:21,679 --> 00:05:26,559] And then go and task the AI with taking the best of whatever thing we've got.
+[00:05:26,559 --> 00:05:29,299] And that's when we begin getting the real power.
+[00:05:29,299 --> 00:05:32,940] Because AI labor is fast.
+[00:05:32,940 --> 00:05:36,380] And for what it does, it's extraordinarily cheap.
+[00:05:36,380 --> 00:05:39,820] There's all this discussion of AI is expensive, AI is expensive.
+[00:05:39,820 --> 00:05:43,579] This thing to do is extraordinarily cheap.
+[00:05:43,579 --> 00:05:49,339] I would argue that building that application is thousands of dollars worth of work that
+[00:05:49,339 --> 00:05:51,459] was done in minutes.
+[00:05:51,459 --> 00:05:52,459] Minutes.
+[00:05:52,459 --> 00:05:58,260] Now, if you think about it, even if you pay for the highest tier subscription for these
+[00:05:58,260 --> 00:06:02,820] things, even if you're going and paying for the tokens that were done for this, it's nowhere
+[00:06:02,820 --> 00:06:05,579] near thousands of dollars in cost.
+[00:06:05,579 --> 00:06:08,220] I would bet it's under a buck.
+[00:06:08,220 --> 00:06:09,339] Maybe it's five bucks.
+[00:06:09,339 --> 00:06:10,739] I doubt it.
+[00:06:10,739 --> 00:06:16,619] But there's no planet where you can go and build that entire set of dashboards and filters
+[00:06:16,619 --> 00:06:18,540] and everything's for $5.
+[00:06:18,540 --> 00:06:19,540] No planet.
+[00:06:19,540 --> 00:06:25,019] AI labor is incredibly scalable, but it's also incredibly cheap.
+[00:06:25,019 --> 00:06:29,859] And it's so cheap that I can go and look at its work on some big, massive effort like
+[00:06:29,859 --> 00:06:35,339] that, throw it away if I don't like it and try another one and try another one.
+[00:06:35,339 --> 00:06:41,299] And then the best part about it is it's allowing me, the human being, to explore and learn
+[00:06:41,299 --> 00:06:45,420] about and think critically about what's really good and not.
+[00:06:45,420 --> 00:06:49,519] Its variability in what it does becomes this huge asset that I have.
+[00:06:49,519 --> 00:06:54,100] The fact that I can say, now go throw it away, think it up from scratch and show me something
+[00:06:54,100 --> 00:07:00,299] totally different, and it can do it without being super upset with me or without being
+[00:07:00,299 --> 00:07:02,859] hugely biased by what it did before.
+[00:07:02,859 --> 00:07:07,220] The fact that it can do it from scratch on the fly and show me something totally different
+[00:07:07,220 --> 00:07:13,220] is huge value to me for my critical thinking, my design, my going and evaluating.
+[00:07:13,220 --> 00:07:16,380] And me as a human being, I've become a really important part of this because I'm going to
+[00:07:16,380 --> 00:07:21,380] go and evaluate many different ones, and I'm going to decide which one is best and why
+[00:07:21,380 --> 00:07:22,380] and what I like.
+[00:07:22,380 --> 00:07:23,380] And I may ask it to merge.
+[00:07:23,380 --> 00:07:25,220] I may ask it to do different things.
+[00:07:25,220 --> 00:07:30,140] But now I'm tackling some super hard problems in software engineering, which is how to build
+[00:07:30,140 --> 00:07:33,940] the right thing, the innovative thing, and how to discover it.
+[00:07:33,940 --> 00:07:39,260] It's something that's intimately important that you as a human being be involved with,
+[00:07:39,260 --> 00:07:41,179] and we'll talk about why.
+[00:07:41,179 --> 00:07:46,820] But I want you to start thinking about, when you start deploying AI labor to solve problems,
+[00:07:46,820 --> 00:07:49,619] don't have it solve the problem once.
+[00:07:49,619 --> 00:07:54,980] Build systems where it solves the problem three, five, ten times, and then gives you
+[00:07:54,980 --> 00:08:00,179] all of them back as a human being to go and evaluate and judge and decide what you like
+[00:08:00,179 --> 00:08:03,459] best and why, or how you want to combine things.
+[00:08:03,459 --> 00:08:08,899] Or tell it, here's my rubric that I want you to go ahead and pre-evaluate all of them with,
+[00:08:08,899 --> 00:08:13,100] and then show that to me so that I can then narrow my focus down to the top three or four
+[00:08:13,100 --> 00:08:15,579] that I want to go and spend my time evaluating.
+[00:08:15,579 --> 00:08:20,380] We start thinking about software engineering as search, where we deploy AI labor teams
+[00:08:20,380 --> 00:08:22,880] to go and do search for us.
+[00:08:22,880 --> 00:08:27,200] We deploy little AI labor teams to go and run search parties, to go and find and discover
+[00:08:27,200 --> 00:08:31,760] different solutions, and then we take back all the discoveries, and you as a human being
+[00:08:31,760 --> 00:08:35,880] decide which of those discoveries are the most valuable, how do you want to merge them
+[00:08:35,880 --> 00:08:39,719] together, or do you want to throw them all away and try something totally different?
+[00:08:39,719 --> 00:08:44,239] This is the real value of when we start thinking about cloud code and AI labor, is we step
+[00:08:44,239 --> 00:08:46,559] back and we start doing more valuable things.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 02_leveraging-the-software-engineering-advantages-of-claude-code/04_exercise-build-multiple-versions-of-a-feature-with-best-of-n_instructions.html
+TYPE: HTML
+TITLE: Exercise Build Multiple Versions Of A Feature With Best Of N Instructions
+
+Prerequisites
+
+Completed the first exercise -
+
+NextJS expense tracking app
+
+Basic understanding of Git branches.
+
+If you need help, prompt Claude with "
+
+Teach me about Git branches. Let's do it interactively. Don't create an artifact. Explain things using concrete examples with example repositories with a handful of files.
+
+"
+
+Claude Code installed and working expense tracker project
+
+Part 1: Understanding the Best-of-N Pattern
+
+What is Best-of-N?
+
+The Best-of-N pattern leverages a unique advantage of AI labor:
+
+it's fast, cheap, and egoless
+
+. Unlike human developers, Claude doesn't get frustrated when you ask it to throw away work and try again.
+
+Traditional Development
+
+:
+
+Implement one solution
+
+Stick with it (too expensive to rewrite)
+
+Hope it's the best approach
+
+AI Labor Development
+
+:
+
+Implement 3-5 different solutions
+
+Compare and evaluate all of them
+
+Choose the best or combine elements
+
+Total time: Still faster than one traditional implementation
+
+Why This Works
+
+AI is fast
+
+: What takes days for humans takes minutes for AI
+
+AI is cheap
+
+: Even premium AI usage costs less than developer time
+
+AI is creative
+
+: Each attempt can explore radically different approaches
+
+AI is egoless
+
+: No hurt feelings when you discard its work
+
+Part 2: Setting Up for Multiple Implementations
+
+Step 1: Prepare Your Repository
+
+First, make sure your expense tracker is committed and working:
+
+cd expense-tracker-ai
+
+git add .
+
+git commit -m "Initial expense tracker implementation"
+
+git status
+
+Step 2: Launch Claude Code
+
+claude
+
+Part 3: Implementing Version 1 - Simple CSV Export
+
+The Feature Request
+
+We're going to implement data export functionality three different ways. Let's start with Version 1.
+
+Prompt for Version 1:
+
+I want to add data export functionality to my expense tracker. For this first version, implement a SIMPLE approach.
+
+VERSION CONTROL:
+- Before you start, create a new branch called "feature-data-export-v1"
+- Make all your changes in this branch
+- Commit your changes when complete
+
+VERSION 1 REQUIREMENTS:
+- Add an "Export Data" button to the main dashboard
+- When clicked, export all expenses as a CSV file
+- Include columns: Date, Category, Amount, Description
+- Use a simple, straightforward implementation
+- Keep the UI minimal - just a button that triggers the download
+
+IMPLEMENTATION APPROACH:
+Focus on simplicity and getting it working quickly. Don't overthink the user experience - just make it functional. Use standard browser APIs for file download.
+
+PROCESS:
+1. Create and checkout the new branch "feature-data-export-v1"
+2. Implement the CSV export functionality
+3. Add the export button to the dashboard
+4. Test that it works correctly
+5. Commit your changes with a descriptive message
+
+Remember: This is Version 1 of 3 - keep it simple and functional.
+
+What to Observe
+
+As Claude works on Version 1, notice:
+
+How it creates the branch
+
+The approach it takes (likely using browser APIs)
+
+The simplicity of the implementation
+
+Where it places the export button
+
+How it formats the CSV data
+
+Test Version 1
+
+Once Claude completes the implementation:
+
+Start the development server: npm run dev
+
+Add some test expenses
+
+Click the Export button
+
+Verify the CSV file downloads and opens correctly
+
+Part 4: Implementing Version 2 - Advanced Export with Options
+
+Reset and Create Version 2
+
+Now we'll ask Claude to implement the same feature completely differently.
+
+Prompt for Version 2:
+
+Excellent work on Version 1! Now I want you to implement the SAME data export feature in a completely different way.
+
+VERSION CONTROL:
+- Switch back to the original branch (before any export functionality)
+- Create a new branch called "feature-data-export-v2"
+- This should be a completely fresh implementation
+
+VERSION 2 REQUIREMENTS:
+Implement an ADVANCED export system with these features:
+- Export modal/dialog with multiple options
+- Multiple export formats: CSV, JSON, and PDF
+- Date range filtering for exports (start date, end date)
+- Category filtering for exports (select specific categories)
+- Preview of data before export (show table of what will be exported)
+- Custom filename input field
+- Export summary showing how many records will be exported
+- Loading states during export process
+
+IMPLEMENTATION APPROACH:
+This version should feel like a professional business application export feature. Think about what a power user would want - lots of control and options. Use a modal or drawer interface, not just a simple button.
+
+Make this implementation completely different from Version 1:
+- Different UI components and patterns
+- Different user experience flow
+- More sophisticated code architecture
+- Professional polish and attention to detail
+
+PROCESS:
+1. Switch back to original branch
+2. Create and checkout: git checkout -b feature-data-export-v2
+3. Implement the advanced export system
+4. Test all the functionality thoroughly
+5. Commit your changes
+
+Show me what's possible with a more sophisticated approach. Be creative!
+
+Part 5: Implementing Version 3 - Cloud Integration
+
+Create Version 3
+
+Let's explore a third completely different approach.
+
+Prompt for Version 3:
+
+Great work on Version 2! Now let's try a third completely different approach to the same export feature.
+
+VERSION CONTROL:
+- Switch back to the original branch (clean state, no export features)
+- Create branch "feature-data-export-v3"
+
+VERSION 3 REQUIREMENTS:
+Implement a CLOUD-INTEGRATED export system with these features:
+- Email export functionality (simulated - show UI flow)
+- Google Sheets integration mockup (show what the flow would look like)
+- Automatic backup scheduling options (UI for setting up recurring exports)
+- Export history tracking (show previous exports with timestamps)
+- Sharing capabilities - generate shareable links or QR codes
+- Export templates (different formats for different purposes: "Tax Report", "Monthly Summary", "Category Analysis")
+- Integration mockups with popular tools (Dropbox, OneDrive, etc.)
+- Cloud storage options and sync status indicators
+
+IMPLEMENTATION APPROACH:
+Think like a modern SaaS application - focus on connectivity, sharing, and integration with other services. Even if we're simulating some integrations, make the UI and user flow feel like a real cloud service.
+
+This should feel completely different from both Version 1 (simple) and Version 2 (advanced local):
+- Modern cloud service aesthetic
+- Focus on sharing and collaboration
+- Integration-first mindset
+- Background processing concepts
+- Service connectivity themes
+
+Be creative and surprise me with innovative features around data export, sharing, and cloud integration that I might not have thought of!
+
+PROCESS:
+1. Switch to the original branch
+2. Create and checkout: git checkout -b feature-data-export-v3
+3. Implement the cloud-integrated export system
+4. Make it feel modern, connected, and innovative
+5. Commit your changes
+
+Think big picture - how would a company like Notion or Airtable approach this feature?
+
+Part 6: Comparing Your Three Versions
+
+Switch Between Branches
+
+Now you can easily switch between all three implementations:
+
+# View all branches
+git branch -a
+
+# Switch to Version 1
+git checkout feature-data-export-v1
+npm run dev
+# Test the simple CSV export
+
+# Switch to Version 2
+git checkout feature-data-export-v2
+npm run dev
+# Test the advanced modal with options
+
+# Switch to Version 3
+git checkout feature-data-export-v3
+npm run dev
+# Test the cloud integration features

@@ -1,0 +1,1050 @@
+Claude Code
+MODULE 02: Generative Ai Claude Code Code Quality
+================================================================
+
+This file collects the readable text from this module's subtitles and learning materials. Source paths are kept below each section.
+
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/01_can-ai-judge-code-quality.en.srt
+TYPE: SRT
+TITLE: Can Ai Judge Code Quality
+
+[00:00:00,000 --> 00:00:05,000] If we're going to step back and really let cloud code work and scale up,
+[00:00:05,000 --> 00:00:09,000] we have to trust that it can produce high-quality code.
+[00:00:09,000 --> 00:00:12,000] And one of the important things that I've learned is that
+[00:00:12,000 --> 00:00:18,000] my ability to produce high-quality code is driven by my ability to recognize high-quality code,
+[00:00:18,000 --> 00:00:21,000] to go and evaluate code and to spot issues with it,
+[00:00:21,000 --> 00:00:26,000] to spot places where it can be improved, to spot ways of refactoring it.
+[00:00:26,000 --> 00:00:32,000] So it's actually a key part of producing high-quality stuff is being able to evaluate code
+[00:00:32,000 --> 00:00:38,000] and determine how it can be improved or where it doesn't meet quality standards.
+[00:00:38,000 --> 00:00:40,000] The ability to go and look at evaluate code.
+[00:00:40,000 --> 00:00:44,000] So if we want cloud code to go and really work and to have a lot of trust,
+[00:00:44,000 --> 00:00:48,000] we have to establish that it actually knows how to evaluate code and understand it.
+[00:00:48,000 --> 00:00:52,000] So that's what we're going to do is we're going to take a look at its ability to do this.
+[00:00:52,000 --> 00:00:54,000] Now, we're going to do this kind of an interesting way.
+[00:00:54,000 --> 00:00:58,000] We're going to start off in a conversation with cloud, not cloud code.
+[00:00:58,000 --> 00:01:00,000] And what we're going to do is we're going to say,
+[00:01:00,000 --> 00:01:05,000] we're going to have cloud code different solutions to this prompt.
+[00:01:05,000 --> 00:01:09,000] Write a 20-line Python function that can store data it receives as JSON.
+[00:01:09,000 --> 00:01:14,000] Create a table to score the coding solutions across a number of important dimensions.
+[00:01:14,000 --> 00:01:18,000] So I'm asking it to come up with the evaluation criteria,
+[00:01:18,000 --> 00:01:20,000] and it goes in and generates this.
+[00:01:21,000 --> 00:01:25,000] Functionality, error handling, code quality, flexibility, performance, documentation,
+[00:01:25,000 --> 00:01:29,000] security, maintainability, line efficiency, and best practices.
+[00:01:29,000 --> 00:01:31,000] It also has weights for all of them.
+[00:01:31,000 --> 00:01:36,000] That is pretty cool, and it builds a nice little scoring sheet out of five.
+[00:01:36,000 --> 00:01:38,000] And so, for example, it says functionality,
+[00:01:38,000 --> 00:01:41,000] and it shows its scoring system for functionality.
+[00:01:41,000 --> 00:01:44,000] It's got its error handling scoring system.
+[00:01:44,000 --> 00:01:46,000] That is pretty cool.
+[00:01:46,000 --> 00:01:49,000] Now, here's the question.
+[00:01:49,000 --> 00:01:54,000] Can it actually look at code and evaluate it according to the scoring system it comes up with?
+[00:01:54,000 --> 00:01:58,000] It can obviously understand lots of dimensions of what's important in code
+[00:01:58,000 --> 00:02:02,000] because it just listed it all and built the scoring criteria for us, this rubric.
+[00:02:02,000 --> 00:02:06,000] Can it actually apply the rubric to the code that it generated previously
+[00:02:06,000 --> 00:02:08,000] in these other conversations?
+[00:02:08,000 --> 00:02:10,000] Well, let's go and find out.
+[00:02:10,000 --> 00:02:14,000] So I went and I grabbed some of the samples of code.
+[00:02:14,000 --> 00:02:18,000] In this case, I'm going to grab two of them for those functions that we talked about.
+[00:02:18,000 --> 00:02:21,000] So I grabbed two samples of the code it did, and I said,
+[00:02:21,000 --> 00:02:23,000] score these solutions and output the scoring table.
+[00:02:23,000 --> 00:02:27,000] And I just put like, you know, kind of XML-style syntax of A,
+[00:02:27,000 --> 00:02:31,000] and then I put in the first solution, and then I put in XML-style syntax in B,
+[00:02:31,000 --> 00:02:33,000] and then I put in the second solution.
+[00:02:33,000 --> 00:02:34,000] And then what did it do?
+[00:02:34,000 --> 00:02:38,000] It went off and scored all of them and put it into the table.
+[00:02:38,000 --> 00:02:41,000] Now, it was kind of hard for me to read, so I asked it to reformat it for us.
+[00:02:41,000 --> 00:02:44,000] So I said, add a second version of the evaluation template table.
+[00:02:44,000 --> 00:02:48,000] It swaps rows and columns, and this is what we get.
+[00:02:48,000 --> 00:02:53,000] And what I asked it also to do was to provide the winner which solution was better
+[00:02:53,000 --> 00:02:55,000] along this dimension and why.
+[00:02:55,000 --> 00:03:02,000] Now, what we can see is it went and scored all of the solutions across a number of dimensions,
+[00:03:02,000 --> 00:03:07,000] and it says, okay, solution B is better than A for error handling
+[00:03:07,000 --> 00:03:12,000] because it has comprehensive try-except blocks and meaningful error feedback.
+[00:03:12,000 --> 00:03:14,000] That's pretty cool.
+[00:03:14,000 --> 00:03:18,000] So it has a rationale that probably if I gave it to you as a developer,
+[00:03:18,000 --> 00:03:21,000] you might go and look at it and say, yeah, I agree with that.
+[00:03:21,000 --> 00:03:25,000] That's how I would score its error handling is based on having try-and-catch blocks.
+[00:03:25,000 --> 00:03:29,000] Solution B, code quality, includes type hints and cleaner structure.
+[00:03:29,000 --> 00:03:33,000] Now, I talked about type hints because that was something that made me happy, right?
+[00:03:33,000 --> 00:03:38,000] Solution B had type hints, and it says, well, yeah, that one has a higher code quality
+[00:03:38,000 --> 00:03:40,000] because it has type hints.
+[00:03:40,000 --> 00:03:42,000] It has cleaner structure.
+[00:03:42,000 --> 00:03:43,000] I think I agree with that.
+[00:03:43,000 --> 00:03:45,000] I think it has a cleaner structure.
+[00:03:45,000 --> 00:03:46,000] Flexibility.
+[00:03:46,000 --> 00:03:52,000] Solution A offers optional parameters like the timestamp feature and a default file name.
+[00:03:52,000 --> 00:03:56,000] So you notice that's something that's really interesting, right,
+[00:03:56,000 --> 00:04:00,000] because flexibility is something that we think of humans like evaluating and judging.
+[00:04:00,000 --> 00:04:04,000] We don't think of compilers going and looking and deciding on the flexibility
+[00:04:04,000 --> 00:04:06,000] or formal methods deciding on the flexibility.
+[00:04:06,000 --> 00:04:08,000] No, that's a human-level type judgment.
+[00:04:08,000 --> 00:04:12,000] But it's judging it about this code, and it's got some really good, I think,
+[00:04:12,000 --> 00:04:17,000] sound evidence for that, that this one has an optional timestamp
+[00:04:17,000 --> 00:04:19,000] and has a default file name.
+[00:04:19,000 --> 00:04:21,000] That adds some flexibility.
+[00:04:21,000 --> 00:04:23,000] Line efficiency, the 20-line constraint.
+[00:04:23,000 --> 00:04:24,000] I'm not sure that's true.
+[00:04:24,000 --> 00:04:26,000] I'm not sure either one does.
+[00:04:26,000 --> 00:04:27,000] I didn't count them.
+[00:04:27,000 --> 00:04:30,000] I would not be surprised if neither one is actually in 20 lines.
+[00:04:30,000 --> 00:04:34,000] Overall, it says solution B is better because it has error handling
+[00:04:34,000 --> 00:04:37,000] and constraint adherence that outweigh A's flexibility.
+[00:04:37,000 --> 00:04:39,000] And we see that right down here at the bottom.
+[00:04:39,000 --> 00:04:42,000] So what we see is given a rubric, given context,
+[00:04:42,000 --> 00:04:45,000] it can absolutely go and evaluate code
+[00:04:45,000 --> 00:04:49,000] and determine the quality of that code with respect to that rubric.
+[00:04:49,000 --> 00:04:52,000] Now, I've talked a bit about,
+[00:04:52,000 --> 00:04:56,000] and I think this is a really important thing to call out, context.
+[00:04:56,000 --> 00:04:58,000] Context is everything.
+[00:04:58,000 --> 00:05:01,000] And in fact, in the context of this rubric, it's really important
+[00:05:01,000 --> 00:05:05,000] because a lot of these things like flexibility and error handling
+[00:05:05,000 --> 00:05:08,000] can't be judged just in isolation.
+[00:05:08,000 --> 00:05:10,000] You really have to have a lot of contextual information
+[00:05:10,000 --> 00:05:13,000] to know what does it mean to have good error handling.
+[00:05:13,000 --> 00:05:16,000] Well, it depends on the context and how you're going to use it,
+[00:05:16,000 --> 00:05:18,000] all kinds of other things.
+[00:05:18,000 --> 00:05:21,000] So let's go and give it some additional context in the conversation
+[00:05:21,000 --> 00:05:24,000] and see if, given sufficient context,
+[00:05:24,000 --> 00:05:27,000] if it can score accurately in that context.
+[00:05:27,000 --> 00:05:29,000] So I went back and I said,
+[00:05:29,000 --> 00:05:32,000] by the way, this is for a system that does historical logging
+[00:05:32,000 --> 00:05:34,000] and we need to make sure that we capture everything.
+[00:05:34,000 --> 00:05:36,000] Project best practices.
+[00:05:36,000 --> 00:05:39,000] Always throw exceptions and timing is critical.
+[00:05:39,000 --> 00:05:43,000] Now, does it pick up on the ramifications of that?
+[00:05:43,000 --> 00:05:44,000] Absolutely.
+[00:05:44,000 --> 00:05:45,000] And it says immediately,
+[00:05:45,000 --> 00:05:49,000] this context significantly changes the evaluation.
+[00:05:49,000 --> 00:05:52,000] And then it comes back and it now says solution A is better.
+[00:05:52,000 --> 00:05:55,000] Now, why is solution A better?
+[00:05:55,000 --> 00:05:58,000] Well, for one, because solution A throws exceptions.
+[00:05:58,000 --> 00:06:01,000] Remember, originally it was saying B was better for error handling
+[00:06:01,000 --> 00:06:05,000] because B had try-catch around exceptions.
+[00:06:05,000 --> 00:06:08,000] Now I'm telling it, I don't want you to throw exceptions.
+[00:06:08,000 --> 00:06:10,000] That's my best practice.
+[00:06:10,000 --> 00:06:12,000] Sorry, I do want you to throw exceptions.
+[00:06:12,000 --> 00:06:15,000] That's my best practice because I handle them somewhere else.
+[00:06:15,000 --> 00:06:17,000] Well, that means the evaluation is totally different.
+[00:06:17,000 --> 00:06:20,000] And now A gets a five out of five for error handling
+[00:06:20,000 --> 00:06:23,000] and B gets a one out of five because it's doing the wrong things.
+[00:06:23,000 --> 00:06:27,000] It's putting try-catch around them and swallowing and logging.
+[00:06:27,000 --> 00:06:30,000] That's not the best practice within this other context.
+[00:06:30,000 --> 00:06:35,000] Also, flexibility is better in A now
+[00:06:35,000 --> 00:06:40,000] because A has this timestamp feature that's critical for historical logging.
+[00:06:40,000 --> 00:06:43,000] So what we've done is we've injected context
+[00:06:43,000 --> 00:06:47,000] and it completely changes its ability to go and do the assessment.
+[00:06:47,000 --> 00:06:50,000] Now, that's really, really important.
+[00:06:50,000 --> 00:06:53,000] What this means is if we start giving it sufficient context,
+[00:06:53,000 --> 00:07:00,000] it can start generating code that matches our context.
+[00:07:00,000 --> 00:07:04,000] And if it doesn't, we can ask it to self-evaluate
+[00:07:04,000 --> 00:07:06,000] and figure out how to improve its code
+[00:07:06,000 --> 00:07:09,000] because that's really the benchmark of how things are done.
+[00:07:09,000 --> 00:07:12,000] Like you go and you write code, but then you go and refactor and you improve
+[00:07:12,000 --> 00:07:14,000] and other people come and refactor and improve.
+[00:07:14,000 --> 00:07:17,000] And what we're establishing is that it has the capacity
+[00:07:17,000 --> 00:07:20,000] to go and critique code itself
+[00:07:20,000 --> 00:07:25,000] and then score it across dimensions that are contextually relevant to you.
+[00:07:25,000 --> 00:07:27,000] And what we want to do is build up that context
+[00:07:27,000 --> 00:07:29,000] that it needs to do that scoring
+[00:07:29,000 --> 00:07:32,000] so that it can build code that's at the level of quality that you need
+[00:07:32,000 --> 00:07:35,000] and relevant for the project that you're working on.
+[00:07:35,000 --> 00:07:37,000] That's what's really important about this.
+[00:07:37,000 --> 00:07:41,000] Now, you could actually take this rubric and you could give it to Claude.
+[00:07:41,000 --> 00:07:45,000] And you could say, this is how I want you to evaluate code.
+[00:07:45,000 --> 00:07:49,000] I want you to take all of this into consideration when you produce code.
+[00:07:49,000 --> 00:07:50,000] And you can do that.
+[00:07:50,000 --> 00:07:53,000] And in fact, we're going to do things like that with Claude.
+[00:07:53,000 --> 00:07:56,000] But this is just showing it in Claude.
+[00:07:56,000 --> 00:07:59,000] In Claude code later, we will go and do the same thing.
+[00:07:59,000 --> 00:08:02,000] We will give it the ability to go and judge its own code.
+[00:08:02,000 --> 00:08:04,000] And what this will allow us to do is come over
+[00:08:04,000 --> 00:08:06,000] and help fix that consistency problem
+[00:08:06,000 --> 00:08:09,000] where it doesn't generate things that are what we wanted
+[00:08:09,000 --> 00:08:12,000] or doesn't generate things that have certain strict standards
+[00:08:12,000 --> 00:08:14,000] that we need to meet each time.
+[00:08:14,000 --> 00:08:16,000] And it will help us close that gap.
+[00:08:16,000 --> 00:08:20,000] We'll also give it the ability to go and introspect its own code
+[00:08:20,000 --> 00:08:25,000] and refactor it in ways that will meet our expectations and quality standards.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/02_exercise-ai-evaluation-of-code-feature-implementations_instructions.html
+TYPE: HTML
+TITLE: Exercise Ai Evaluation Of Code Feature Implementations Instructions
+
+Prerequisites
+
+Completed Tutorial 2.2 (Best-of-N Pattern implementation)
+
+Three different implementations of data export feature in separate git branches
+
+Basic understanding of code evaluation principles
+
+Claude Code installed and working
+
+Part 1: Why Code Evaluation Matters for AI Development
+
+The Evaluation Challenge
+
+When working with AI labor, you'll often have multiple working solutions to choose from. Unlike traditional development where you typically only build one version, AI's speed enables exploring multiple approaches. But this creates a new challenge:
+
+How do you systematically evaluate and compare different implementations?
+
+Traditional vs. AI Development Evaluation
+
+Traditional Development:
+
+Evaluate one solution against theoretical alternatives
+
+Make decisions based on experience and intuition
+
+Limited ability to test different approaches
+
+High cost to change direction
+
+AI Development:
+
+Evaluate multiple working implementations
+
+Compare real code, not theoretical approaches
+
+Test actual user experiences side-by-side
+
+Make data-driven decisions about architecture
+
+What We're Evaluating
+
+In this tutorial, we'll evaluate three different implementations of the same feature across multiple dimensions.
+
+Part 2: Setting Up for Systematic Evaluation
+
+Step 1: Verify Your Implementations
+
+First, let's make sure you have all three versions from Tutorial 2.2:
+
+cd expense-tracker-ai
+git branch -a
+
+You should see:
+
+main
+
+feature-data-export-v1 (Simple CSV export)
+
+feature-data-export-v2 (Advanced export with options)
+
+feature-data-export-v3 (Cloud integration features)
+
+Step 2: Launch Claude Code
+
+claude
+
+Step 3: Create & Execute the Evaluation
+
+Now let's have Claude systematically examine each implementation by switching between branches and analyzing the code architecture, user interface design, and technical approaches used in each version. This systematic code review will help us understand not just what each version does, but how it accomplishes its goals and what trade-offs were made in the implementation.
+
+We'll document our findings in a structured format that covers the technical architecture, code organization, libraries used, and implementation patterns for each version. This analysis will form the foundation for making informed decisions about which approach to adopt or how to combine the best elements from multiple versions.
+
+Prompt for Evaluation:
+
+I have three different implementations of data export functionality across three git branches in my expense tracker application. I want to create a systematic evaluation framework to compare them thoroughly.
+
+BACKGROUND:
+- feature-data-export-v1: Simple CSV export (one-button approach)
+- feature-data-export-v2: Advanced export with multiple formats and filtering options
+- feature-data-export-v3: Cloud integration with sharing and collaboration features
+
+Now I want you to systematically analyze each of three features implementations by switching between branches and examining the code, architecture, and implementation details.
+
+ANALYSIS PROCESS:
+For each branch (v1, v2, v3), please:
+
+1. Switch to the branch
+2. Examine all the files that were created or modified
+3. Analyze the code architecture and patterns used
+4. Look at component structure and organization
+5. Review the user interface implementation
+6. Check for error handling and edge cases
+7. Assess the technical approach and libraries used
+
+DOCUMENTATION:
+Create a file called "code-analysis.md" with detailed findings for each version:
+
+**For Each Version, Document:**
+- Files created/modified (list them)
+- Code architecture overview (how is it organized?)
+- Key components and their responsibilities
+- Libraries and dependencies used
+- Implementation patterns and approaches
+- Code complexity assessment
+- Error handling approach
+- Security considerations
+- Performance implications
+- Extensibility and maintainability factors
+
+**Technical Deep Dive:**
+- How does the export functionality work technically?
+- What file generation approach is used?
+- How is user interaction handled?
+- What state management patterns are used?
+- How are edge cases handled?
+
+Be thorough and technical - this analysis will inform our decision about which approach to adopt or how to combine them.
+
+What to Look For After Claude's Initial Analysis
+
+Step 3: Review Claude's Code Analysis
+
+Once Claude completes the systematic code analysis, review the generated
+
+"code-analysis.md"
+
+file to get a high-level view of how dramatically different the three approaches really are. Look for the big picture differences in architecture, complexity, and implementation philosophy - this will help you understand whether you truly explored different solution spaces or just created variations of the same basic approach.
+
+Building Your Personal Evaluation Framework
+
+While Claude's default evaluation approach is comprehensive, you may have specific criteria that matter most to your projects, team, or industry. Creating a custom evaluation template ensures that every Best-of-N comparison focuses on what's actually important to you. Think about what really matters for your projects and create a file called my-evaluation-template.md. Then, tell it to read and apply that evaluation next time you have it implement multiple versions of a feature.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/03_does-ai-labor-understand-design-principles.en.srt
+TYPE: SRT
+TITLE: Does Ai Labor Understand Design Principles
+
+[00:00:00,000 --> 00:00:05,440] Now, before we wrap up our discussion and exploration of code quality, and how do we
+[00:00:05,440 --> 00:00:11,000] produce higher, more consistent quality code with Claude code, I want to do one last thing,
+[00:00:11,000 --> 00:00:16,399] which is I want to start talking about design, and all of these things like extensibility
+[00:00:16,399 --> 00:00:22,639] and modularity and reusability, and you name all these ilities that we care about in software.
+[00:00:22,639 --> 00:00:25,879] And I want to address, can AI understand them?
+[00:00:25,879 --> 00:00:28,040] Can Claude code understand them?
+[00:00:28,040 --> 00:00:29,479] And the answer is absolutely yes.
+[00:00:29,479 --> 00:00:35,200] And this is really important, because often it's much more efficient to express the high
+[00:00:35,200 --> 00:00:40,520] level design principles that we're trying to apply and use than it is to try to generate
+[00:00:40,520 --> 00:00:43,740] a whole bunch of different rules, right?
+[00:00:43,740 --> 00:00:47,639] To go and spell out all the different rules for our code sometimes can be very, very time
+[00:00:47,639 --> 00:00:48,639] consuming.
+[00:00:48,639 --> 00:00:51,799] And really what we want to just say is like, we want you to use this sort of high level
+[00:00:51,799 --> 00:00:54,000] set of principles to judge code.
+[00:00:54,000 --> 00:00:55,599] Now, what do I mean by that?
+[00:00:55,599 --> 00:00:57,040] What is an example of that?
+[00:00:57,439 --> 00:01:01,720] Well, maybe you're familiar with the solid principles, and you've ever heard of the solid
+[00:01:01,720 --> 00:01:05,239] principles for design and coding.
+[00:01:05,239 --> 00:01:07,080] Now, what are the solid principles?
+[00:01:07,080 --> 00:01:09,639] Well, let's go ask Claude and see if it knows what they are.
+[00:01:09,639 --> 00:01:12,199] Do you know the solid design principles?
+[00:01:12,199 --> 00:01:16,160] And it comes back and it's like, yes, I know those, single responsibility principle, open
+[00:01:16,160 --> 00:01:21,779] close principle, Liskov substitution principle, interface segregation principle, and dependency
+[00:01:21,779 --> 00:01:22,779] inversion principle.
+[00:01:23,739 --> 00:01:28,500] Now, if you don't know those, these are some great design principles, typically in an object
+[00:01:28,500 --> 00:01:30,500] oriented context.
+[00:01:30,500 --> 00:01:36,180] But you notice all I had to do was say solid principles, and that expands into a detailed
+[00:01:36,180 --> 00:01:41,019] sort of set of design sensibilities that it knows about all of this stuff here.
+[00:01:41,019 --> 00:01:44,779] I didn't have to go and write all these things down, like follow single responsibility, follow
+[00:01:44,779 --> 00:01:45,779] open and close.
+[00:01:45,779 --> 00:01:46,779] I just had to go do solid.
+[00:01:46,779 --> 00:01:51,059] It's like, I know what solid is, and has a lot of knowledge of what solid is, because
+[00:01:51,059 --> 00:01:53,660] a lot of that was in its training data.
+[00:01:53,660 --> 00:01:58,139] So that one word solid is highly efficient from an instruction perspective.
+[00:01:58,139 --> 00:02:04,620] If we start thinking about instructing our AI labor, every instruction we give it costs
+[00:02:04,620 --> 00:02:05,940] us tokens.
+[00:02:05,940 --> 00:02:10,820] We want really efficient instructions that have real power.
+[00:02:10,820 --> 00:02:17,139] When we go and we say, follow the solid principles, that is a really, really token efficient instruction.
+[00:02:17,139 --> 00:02:19,100] We can give it that, and it knows what to do.
+[00:02:19,100 --> 00:02:20,539] It knows all this stuff to do.
+[00:02:20,539 --> 00:02:25,259] But there's all kinds of design principles where we have short ways of describing them.
+[00:02:25,259 --> 00:02:30,119] We have names that when given that name, it expands into a very robust meaning of what
+[00:02:30,119 --> 00:02:34,279] should be done that it's been trained to understand.
+[00:02:34,279 --> 00:02:38,860] So we want to go and find and use those types of descriptions, those types of design principles,
+[00:02:38,860 --> 00:02:44,080] those ones that zoom out a bit, use a well-known name that has real power to it.
+[00:02:44,080 --> 00:02:48,220] We know a lot of those, and when we begin applying them, Cloud Code can do amazing things
+[00:02:48,220 --> 00:02:49,220] with them.
+[00:02:50,220 --> 00:02:52,539] Let's go and make sure that that's true.
+[00:02:52,539 --> 00:02:54,940] Does it really understand solid?
+[00:02:54,940 --> 00:02:59,500] And so I said refactor solution A to be an exemplar for these principles.
+[00:02:59,500 --> 00:03:01,139] It says, okay, I'll do that.
+[00:03:01,139 --> 00:03:06,779] I'll refactor solution A to demonstrate solid principles, and it did a complete refactor
+[00:03:06,779 --> 00:03:11,179] of solution A that I would say is directly in line with the solid principles.
+[00:03:11,179 --> 00:03:16,380] Now it made it object-oriented because that's sort of implied by solid, typically.
+[00:03:16,380 --> 00:03:18,460] So it made it object-oriented.
+[00:03:18,460 --> 00:03:20,139] It had single responsibility.
+[00:03:20,139 --> 00:03:24,020] We have all these little components that have one single responsibility.
+[00:03:24,020 --> 00:03:27,339] It built it all up, and I don't even believe I've got all the code here because it was
+[00:03:27,339 --> 00:03:31,660] quite a bit because it expanded it at the same time that it modularized it and did all
+[00:03:31,660 --> 00:03:33,179] this stuff for solid.
+[00:03:33,179 --> 00:03:37,660] And then we end up with a data store that you compose a data store by putting together
+[00:03:37,660 --> 00:03:42,740] all of these little components, and so it totally understands solid.
+[00:03:42,740 --> 00:03:49,100] So when you start thinking about how to express to our AI labor, to Claude Code, how to go
+[00:03:49,100 --> 00:03:53,100] and produce code that meets the standards that you're looking for, you also want to
+[00:03:53,100 --> 00:03:58,339] be thinking about what are the fundamental design principles that we live by within our
+[00:03:58,339 --> 00:03:59,339] organization?
+[00:03:59,339 --> 00:04:00,339] How do we express them?
+[00:04:00,339 --> 00:04:05,100] Are there things that are close, that are well-known, that we can give it as a starting
+[00:04:05,100 --> 00:04:08,580] point that are highly token efficient, or do we have to go and list out like a hundred
+[00:04:08,580 --> 00:04:10,500] or a thousand rules?
+[00:04:10,500 --> 00:04:14,860] There's other tricks that we can get out of trying to list all of the individual rules,
+[00:04:14,860 --> 00:04:17,779] but the key is it is extraordinarily robust.
+[00:04:17,779 --> 00:04:22,859] And to answer the overall question, absolutely, we can trust it to produce high quality code
+[00:04:22,859 --> 00:04:24,380] if we give it sufficient context.
+[00:04:24,380 --> 00:04:29,220] If we give it sufficient information about how we judge quality, what we're looking for,
+[00:04:29,220 --> 00:04:32,059] all of these things, we can see that it can score itself.
+[00:04:32,059 --> 00:04:36,220] Now let's go and take a look at Claude Code and how do we apply all these things that
+[00:04:36,220 --> 00:04:41,820] we've identified and discovered and use them with Claude Code to get higher quality code
+[00:04:41,820 --> 00:04:42,940] out more consistently.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/04_chat-craft-scale-spend-more-time-designing-innovating.en.srt
+TYPE: SRT
+TITLE: Chat Craft Scale Spend More Time Designing Innovating
+
+[00:00:00,000 --> 00:00:02,599] So we've seen how to write these big prompts.
+[00:00:02,599 --> 00:00:03,720] So that's it, right?
+[00:00:03,720 --> 00:00:06,679] We just go give Claude code big prompts and we're done.
+[00:00:06,679 --> 00:00:07,880] We don't even have to think about it.
+[00:00:07,880 --> 00:00:10,520] We just say like, deliver this awesome thing.
+[00:00:10,520 --> 00:00:12,840] And thank goodness, it's not that easy.
+[00:00:12,840 --> 00:00:14,880] And the fact that it's not that easy
+[00:00:14,880 --> 00:00:17,079] is where the software engineer comes in.
+[00:00:17,079 --> 00:00:19,739] So, you know, this is where I started with this loss
+[00:00:19,739 --> 00:00:21,040] of like, I'm not gonna be, you know,
+[00:00:21,040 --> 00:00:22,959] tinkering with individual lines of code.
+[00:00:22,959 --> 00:00:24,399] And then I started realizing,
+[00:00:24,399 --> 00:00:27,579] but I am gonna really have to pay attention to architecture.
+[00:00:27,579 --> 00:00:28,760] Because what we've seen is,
+[00:00:28,760 --> 00:00:30,659] is there's a huge amount of variability
+[00:00:30,659 --> 00:00:32,939] in the way that generative AI can write code.
+[00:00:32,939 --> 00:00:34,860] And we have to be the guide.
+[00:00:34,860 --> 00:00:36,119] We have to be the one that says,
+[00:00:36,119 --> 00:00:39,740] this is the right direction to go, the right architecture.
+[00:00:39,740 --> 00:00:41,979] And so what I really started doing was realizing
+[00:00:41,979 --> 00:00:45,860] that I spent a lot more time on the design aspects,
+[00:00:45,860 --> 00:00:48,700] a lot more time on thinking through what I was doing,
+[00:00:48,700 --> 00:00:52,139] and then having no fear to refactor and improve
+[00:00:52,139 --> 00:00:54,259] and to try out many different things.
+[00:00:54,259 --> 00:00:56,500] Now, you can absolutely go in
+[00:00:56,500 --> 00:00:58,380] and just dive into this with Claude code.
+[00:00:58,959 --> 00:01:00,080] And sometimes that's what I do.
+[00:01:00,080 --> 00:01:01,439] In fact, it's all about figuring out
+[00:01:01,439 --> 00:01:03,380] your approach to doing this.
+[00:01:03,380 --> 00:01:04,639] But at the end of the day,
+[00:01:04,639 --> 00:01:06,660] the core thing that you need to end up with
+[00:01:06,660 --> 00:01:08,819] is higher quality code,
+[00:01:08,819 --> 00:01:11,199] higher quality applications
+[00:01:11,199 --> 00:01:12,860] and things that you're producing.
+[00:01:12,860 --> 00:01:13,699] That should be the goal.
+[00:01:13,699 --> 00:01:15,239] It shouldn't just be faster.
+[00:01:15,239 --> 00:01:17,139] Yeah, you can do things faster,
+[00:01:17,139 --> 00:01:18,620] but you want higher quality.
+[00:01:18,620 --> 00:01:20,300] And there's no question it's possible
+[00:01:20,300 --> 00:01:22,620] to achieve higher quality.
+[00:01:22,620 --> 00:01:24,819] Now, what I've kind of developed
+[00:01:24,819 --> 00:01:27,220] is my own little system and approach for this.
+[00:01:27,220 --> 00:01:29,480] But I think it's something that's very, very helpful
+[00:01:29,480 --> 00:01:33,339] to understand how it works and to go and approach it.
+[00:01:33,339 --> 00:01:38,339] So this system that I use is called chat, craft and scale.
+[00:01:38,500 --> 00:01:42,220] And we're gonna focus on the chat and the craft part first.
+[00:01:42,220 --> 00:01:43,940] And then later we're gonna learn all the different ways
+[00:01:43,940 --> 00:01:46,699] that you scale up AI labor
+[00:01:46,699 --> 00:01:48,959] and use it to help develop software.
+[00:01:48,959 --> 00:01:53,339] But the chat and the craft is where I get really excited,
+[00:01:53,339 --> 00:01:54,379] where I get really passionate.
+[00:01:54,379 --> 00:01:56,379] I have so much fun about the intellectual,
+[00:01:56,379 --> 00:01:58,379] the design, the creativity aspects.
+[00:01:58,379 --> 00:02:00,379] And so we're gonna now talk about
+[00:02:00,379 --> 00:02:02,980] the chat, craft, scale approach.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/05_chat-craft-and-explore-requirements-options.en.srt
+TYPE: SRT
+TITLE: Chat Craft And Explore Requirements Options
+
+[00:00:00,000 --> 00:00:02,720] All right, so what does chat mean?
+[00:00:02,720 --> 00:00:05,480] Well, chat is all about thinking through the design,
+[00:00:05,480 --> 00:00:07,000] through a conversation.
+[00:00:07,000 --> 00:00:08,880] Now let's think about what you might do
+[00:00:08,880 --> 00:00:11,479] if you were working with some colleagues.
+[00:00:11,479 --> 00:00:13,319] You might go and have a conversation.
+[00:00:13,319 --> 00:00:14,520] You know, you might go for a coffee
+[00:00:14,520 --> 00:00:16,399] and you might talk about the design of something
+[00:00:16,399 --> 00:00:19,000] and all the different ways that you could design it.
+[00:00:19,000 --> 00:00:20,719] And you still can go and do that,
+[00:00:20,719 --> 00:00:22,440] and I'd still do those things.
+[00:00:22,440 --> 00:00:24,200] But what we wanna do is we wanna have a way
+[00:00:24,200 --> 00:00:27,540] to help us think through all of the design dimensions.
+[00:00:27,540 --> 00:00:30,819] And in fact, this is maybe the most important change
+[00:00:30,819 --> 00:00:33,259] that you need to make in your development process
+[00:00:33,259 --> 00:00:34,900] is when you're getting this time back
+[00:00:34,900 --> 00:00:36,259] from these big prompts that are going
+[00:00:36,259 --> 00:00:37,659] and doing a lot of stuff,
+[00:00:37,659 --> 00:00:41,220] it becomes really important before you send Claude off,
+[00:00:41,220 --> 00:00:43,220] before he goes and starts writing all this code,
+[00:00:43,220 --> 00:00:45,060] that you send it in the right direction,
+[00:00:45,060 --> 00:00:47,619] that you have the right design in mind.
+[00:00:47,619 --> 00:00:50,340] Because once you turn it loose,
+[00:00:50,340 --> 00:00:52,900] particularly if you're turning it loose in this way
+[00:00:52,900 --> 00:00:54,060] where you wanna step back
+[00:00:54,060 --> 00:00:55,720] and you don't wanna micromanage it,
+[00:00:55,720 --> 00:00:56,779] now you've got this problem.
+[00:00:56,819 --> 00:00:58,540] How do you make sure it goes in the right direction
+[00:00:58,540 --> 00:00:59,380] and does the right thing?
+[00:00:59,380 --> 00:01:01,900] And the way you do that is through design,
+[00:01:01,900 --> 00:01:03,099] thinking through requirements,
+[00:01:03,099 --> 00:01:05,139] thinking about how you specify all this,
+[00:01:05,139 --> 00:01:07,940] making sure that you've really thought through the problem.
+[00:01:07,940 --> 00:01:09,580] And I find chat,
+[00:01:09,580 --> 00:01:12,059] chatting with Claude is one of the most effective ways
+[00:01:12,059 --> 00:01:14,940] that I can go and really explore lots of design dimensions
+[00:01:14,940 --> 00:01:16,900] and push myself to think about
+[00:01:16,900 --> 00:01:18,739] all the different ways I could do it.
+[00:01:18,739 --> 00:01:21,419] So we're stepping back from Claude Code for a minute,
+[00:01:21,419 --> 00:01:23,019] we're stepping into Claude,
+[00:01:23,019 --> 00:01:24,620] and we're just gonna go through an example
+[00:01:24,620 --> 00:01:26,059] of a design conversation
+[00:01:26,139 --> 00:01:27,620] and how I want you to think about it.
+[00:01:27,620 --> 00:01:30,260] We go and chat to help us understand
+[00:01:30,260 --> 00:01:31,660] the dimensions of the design,
+[00:01:31,660 --> 00:01:33,300] different directions that we could go,
+[00:01:33,300 --> 00:01:36,639] and this is all about spurring our own critical thinking,
+[00:01:36,639 --> 00:01:38,419] seeing different paths,
+[00:01:38,419 --> 00:01:40,940] and making sure that we've really thought through things.
+[00:01:40,940 --> 00:01:43,220] So let's start off with a simple prompt.
+[00:01:43,220 --> 00:01:45,739] Let's design the requirements for a wrapper
+[00:01:45,739 --> 00:01:46,660] around Claude Code.
+[00:01:46,660 --> 00:01:47,860] So we're gonna write some software
+[00:01:47,860 --> 00:01:49,839] that's gonna go around Claude Code.
+[00:01:49,839 --> 00:01:53,500] This would expose Claude Code as an API via HTTP
+[00:01:53,500 --> 00:01:54,980] that would be called on a server,
+[00:01:54,980 --> 00:01:56,739] come up with an initial set of requirements,
+[00:01:56,739 --> 00:01:58,699] because one of the hardest things is just thinking of
+[00:01:58,699 --> 00:02:00,699] what else should it be able to do?
+[00:02:00,699 --> 00:02:03,059] What are the traditional software engineering requirements?
+[00:02:03,059 --> 00:02:04,419] And these things take a lot of time
+[00:02:04,419 --> 00:02:06,220] to collect and write down.
+[00:02:06,220 --> 00:02:08,419] Well, one of the things it's awesome at
+[00:02:08,419 --> 00:02:10,539] is thinking through what would the requirements look like?
+[00:02:10,539 --> 00:02:11,380] And it comes back,
+[00:02:11,380 --> 00:02:13,860] and so we've got core functionality requirements.
+[00:02:13,860 --> 00:02:16,899] RESTful API with clear resource-based endpoints,
+[00:02:16,899 --> 00:02:19,460] support for synchronous and asynchronous execution modes,
+[00:02:19,460 --> 00:02:21,160] execution capabilities,
+[00:02:21,160 --> 00:02:24,419] execute arbitrary code tasks via HTTP requests,
+[00:02:25,419 --> 00:02:28,539] or stream real-time execution logs and progress updates,
+[00:02:28,539 --> 00:02:30,500] authentication and security.
+[00:02:30,500 --> 00:02:32,240] We've got task management.
+[00:02:32,240 --> 00:02:34,399] We've got infrastructure requirements.
+[00:02:34,399 --> 00:02:36,119] We've got developer experience.
+[00:02:36,119 --> 00:02:37,919] I mean, and then it goes on and on and on,
+[00:02:37,919 --> 00:02:40,660] but this is something that's really awesome, right?
+[00:02:40,660 --> 00:02:42,779] Because it just went and exposed
+[00:02:42,779 --> 00:02:45,220] so many different dimensions.
+[00:02:45,220 --> 00:02:47,500] Now, we're probably not gonna be able to support
+[00:02:47,500 --> 00:02:48,339] all these requirements.
+[00:02:48,339 --> 00:02:50,539] Maybe we can with Claude Code,
+[00:02:50,539 --> 00:02:52,419] because we can develop so much.
+[00:02:52,419 --> 00:02:55,539] But already, I've gone and seen lots of dimensions
+[00:02:55,539 --> 00:02:57,660] to the problem that I might have thought,
+[00:02:57,660 --> 00:03:00,300] you know, initially thought about immediately.
+[00:03:00,300 --> 00:03:01,899] Like, maybe I would have jumped into it
+[00:03:01,899 --> 00:03:04,440] and didn't say, yo, I need metrics for API usage.
+[00:03:04,440 --> 00:03:06,339] Maybe I do, maybe I don't.
+[00:03:06,339 --> 00:03:08,419] You know, but this makes me think through it
+[00:03:08,419 --> 00:03:10,979] and start thinking about designing these things.
+[00:03:10,979 --> 00:03:12,300] One of the other things that's awesome
+[00:03:12,300 --> 00:03:14,419] is it gives me this big list
+[00:03:14,419 --> 00:03:15,820] of things that it could potentially do,
+[00:03:15,820 --> 00:03:17,199] and then I can think of,
+[00:03:17,199 --> 00:03:19,860] which of these do I not care about and why?
+[00:03:19,860 --> 00:03:21,619] And so it allows me to begin thinking
+[00:03:21,619 --> 00:03:22,460] about the requirements,
+[00:03:22,460 --> 00:03:24,339] which often is really tough.
+[00:03:24,339 --> 00:03:26,539] You can also go and get traditional requirements
+[00:03:26,539 --> 00:03:28,100] and say, what are we missing?
+[00:03:28,100 --> 00:03:29,399] How do we enhance these?
+[00:03:29,399 --> 00:03:32,059] Here's sort of the core requirements that we know we want.
+[00:03:32,059 --> 00:03:34,320] What would go with that and be complimentary,
+[00:03:34,320 --> 00:03:36,460] that would fit in that we haven't put down,
+[00:03:36,460 --> 00:03:38,460] to make sure that we have thought through things?
+[00:03:38,460 --> 00:03:40,139] Because often, this is a problem, right,
+[00:03:40,139 --> 00:03:42,380] is we go off and we start development,
+[00:03:42,380 --> 00:03:44,820] but we haven't thought through the requirements.
+[00:03:44,820 --> 00:03:46,699] They're not complete enough.
+[00:03:46,699 --> 00:03:48,580] And because we haven't seen the big picture
+[00:03:48,580 --> 00:03:49,660] of what it needs to be able to do,
+[00:03:49,660 --> 00:03:51,580] we don't get the design right.
+[00:03:52,539 --> 00:03:57,539] Let's say that we go and we want to begin implementing this.
+[00:03:57,779 --> 00:03:59,779] Well, what do we need to do?
+[00:03:59,779 --> 00:04:01,539] Well, the next thing we need to do
+[00:04:01,539 --> 00:04:04,419] is we need to go and start thinking about the design
+[00:04:04,419 --> 00:04:05,339] at a deeper level,
+[00:04:05,339 --> 00:04:07,940] the design of the system and its interfaces.
+[00:04:07,940 --> 00:04:10,580] Now, we've got an HTTP application,
+[00:04:10,580 --> 00:04:12,339] so what does that mean?
+[00:04:12,339 --> 00:04:14,259] Well, we need to go and design
+[00:04:14,259 --> 00:04:15,699] what those interfaces look like,
+[00:04:15,699 --> 00:04:17,299] what all those routes look like,
+[00:04:17,299 --> 00:04:19,700] and we need to go and try to figure out,
+[00:04:19,700 --> 00:04:22,100] have we got everything thought through?
+[00:04:22,100 --> 00:04:23,339] Do our requirements match up?
+[00:04:23,339 --> 00:04:24,820] And can we come up with a good design
+[00:04:24,820 --> 00:04:26,220] for that next level down?
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/06_chat-rapid-prototyping-personas.en.srt
+TYPE: SRT
+TITLE: Chat Rapid Prototyping Personas
+
+[00:00:00,000 --> 00:00:05,000] All right, now let's dive into the next level of design.
+[00:00:05,000 --> 00:00:07,760] We need to think through the interface to this system,
+[00:00:07,760 --> 00:00:09,979] which is going to be this API.
+[00:00:09,979 --> 00:00:12,420] So we continue our conversation and we say,
+[00:00:12,420 --> 00:00:15,479] let's design the course, the course,
+[00:00:15,479 --> 00:00:18,600] I think that meant to be core, it was a typo.
+[00:00:18,600 --> 00:00:19,799] I'll blame it on autocorrect.
+[00:00:19,799 --> 00:00:22,100] Let's design the core API routes.
+[00:00:22,100 --> 00:00:24,399] Propose three different or three designs
+[00:00:24,399 --> 00:00:26,100] based on different rest structures.
+[00:00:26,100 --> 00:00:28,020] I want 10 routes or less,
+[00:00:28,020 --> 00:00:29,899] because I want something I can wrap my head around.
+[00:00:29,899 --> 00:00:33,220] I really want to think about sort of stylistically,
+[00:00:33,220 --> 00:00:35,299] you know, and if I probably can see this in 10 routes,
+[00:00:35,299 --> 00:00:36,720] I can probably get it.
+[00:00:36,720 --> 00:00:38,139] Okay, what does it give us?
+[00:00:38,139 --> 00:00:40,720] Okay, one option is a resource oriented
+[00:00:40,720 --> 00:00:42,900] sort of classic rest it calls it,
+[00:00:42,900 --> 00:00:45,659] where we have API V1 jobs,
+[00:00:45,659 --> 00:00:48,500] and then all these different things underneath jobs.
+[00:00:48,500 --> 00:00:49,840] That looks pretty good.
+[00:00:49,840 --> 00:00:52,419] Now we've got a different one, an action oriented.
+[00:00:52,419 --> 00:00:55,580] And we have execute, status, cancel, results, logs.
+[00:00:55,580 --> 00:00:58,099] That's another one, maybe that's what we want to do.
+[00:00:58,099 --> 00:01:01,340] We've got another one, a hybrid, task focused,
+[00:01:01,340 --> 00:01:03,659] and yet another thing that we could do.
+[00:01:03,659 --> 00:01:06,739] And then it goes, and it gives us differences.
+[00:01:06,739 --> 00:01:08,220] Now we can keep drilling into this.
+[00:01:08,220 --> 00:01:10,099] We could ask to help us think about
+[00:01:10,099 --> 00:01:12,720] comparing and contrasting them, thinking through them,
+[00:01:12,720 --> 00:01:15,099] which is more sort of standard.
+[00:01:15,099 --> 00:01:16,300] What is more average?
+[00:01:16,300 --> 00:01:17,940] In fact, that's something that's really good at
+[00:01:17,940 --> 00:01:20,099] is thinking like, what is the most average?
+[00:01:20,099 --> 00:01:22,419] And sometimes you want average, right?
+[00:01:22,419 --> 00:01:24,900] Because you want other developers to be able to come in
+[00:01:24,900 --> 00:01:26,300] and figure it out really quickly.
+[00:01:26,339 --> 00:01:29,099] And if it's more average in terms of how it looks,
+[00:01:29,099 --> 00:01:30,040] sometimes that's a good thing.
+[00:01:30,040 --> 00:01:31,779] Now, sometimes you want innovative,
+[00:01:31,779 --> 00:01:33,580] but you want it to be understandable.
+[00:01:33,580 --> 00:01:35,339] And so you can go and start thinking about
+[00:01:35,339 --> 00:01:37,720] which of these makes more sense and why.
+[00:01:37,720 --> 00:01:39,739] Now, what else can we do with it?
+[00:01:39,739 --> 00:01:42,220] Well, we can start going and poking holes in our design.
+[00:01:42,220 --> 00:01:44,620] If this is our interface to our system,
+[00:01:44,620 --> 00:01:46,760] what is it going to be able to do or not do?
+[00:01:46,760 --> 00:01:48,900] Where is there going to be friction?
+[00:01:48,900 --> 00:01:52,300] So what I've done is I've followed up in the conversation,
+[00:01:52,300 --> 00:01:54,660] and I said, with this API design,
+[00:01:54,660 --> 00:01:56,699] what use cases would be hard to support?
+[00:01:56,699 --> 00:01:58,940] What friction might it cause?
+[00:01:58,940 --> 00:02:00,459] Poke some holes in it.
+[00:02:00,459 --> 00:02:01,419] Because I want to make sure
+[00:02:01,419 --> 00:02:02,860] that I'm not missing something, right?
+[00:02:02,860 --> 00:02:05,160] It's like a gap analysis for myself.
+[00:02:05,160 --> 00:02:06,940] Like, if I decided to go with this,
+[00:02:06,940 --> 00:02:08,660] what might be the problems?
+[00:02:08,660 --> 00:02:09,619] And it comes back and it says,
+[00:02:09,619 --> 00:02:11,699] well, we are going to have file upload timing issues.
+[00:02:11,699 --> 00:02:15,100] Now, it wasn't what came to mind when I saw this initially.
+[00:02:15,100 --> 00:02:17,899] You have to create an execution first to get an ID,
+[00:02:17,899 --> 00:02:20,039] then upload files, and it's friction.
+[00:02:20,039 --> 00:02:23,259] Maybe there's race conditions, complex client logic,
+[00:02:23,259 --> 00:02:24,720] and wasted executions.
+[00:02:24,720 --> 00:02:27,880] Better approach, allow file uploads during creation
+[00:02:27,880 --> 00:02:29,740] or have a separate workspace concept.
+[00:02:29,740 --> 00:02:31,100] That's interesting.
+[00:02:31,100 --> 00:02:33,419] Maybe I should go and explore that workspace concept
+[00:02:33,419 --> 00:02:34,979] and think about it.
+[00:02:34,979 --> 00:02:35,820] What else?
+[00:02:35,820 --> 00:02:36,979] No batch operation support.
+[00:02:36,979 --> 00:02:39,479] Okay, that might not be very efficient.
+[00:02:39,479 --> 00:02:42,199] Maybe, you know, and it gives me an example.
+[00:02:42,199 --> 00:02:45,380] Process these five CSV files with the same script.
+[00:02:45,380 --> 00:02:46,860] Oh, okay, well, maybe that's a use case
+[00:02:46,860 --> 00:02:47,839] I want to be able to support.
+[00:02:47,839 --> 00:02:48,699] Now I can think about it.
+[00:02:48,699 --> 00:02:52,339] Does, you know, this API design make sense for me?
+[00:02:52,339 --> 00:02:56,360] Limited file management, can't list uploaded files,
+[00:02:56,360 --> 00:02:59,380] can't delete files, can't organize files.
+[00:02:59,380 --> 00:03:00,820] Okay, all those things could be problems.
+[00:03:00,820 --> 00:03:03,160] And now I can start thinking about,
+[00:03:03,160 --> 00:03:04,460] what do I need to do about this?
+[00:03:04,460 --> 00:03:07,139] Or maybe I need to go with a different direction.
+[00:03:07,139 --> 00:03:10,660] Now, sometimes I find that it's unfortunately
+[00:03:10,660 --> 00:03:12,500] not until I actually build the API
+[00:03:12,500 --> 00:03:14,419] and start trying to interact with it
+[00:03:14,419 --> 00:03:16,339] that I discover the real holes, right?
+[00:03:16,339 --> 00:03:18,080] Because I start trying to use it and I'm like,
+[00:03:18,080 --> 00:03:19,759] oh, wait, that doesn't work.
+[00:03:19,759 --> 00:03:22,679] Can we do that faster in chat?
+[00:03:22,679 --> 00:03:24,720] Well, yeah, actually we can.
+[00:03:24,720 --> 00:03:27,539] We can use something called the persona pattern,
+[00:03:27,539 --> 00:03:30,440] where we tell the large language model,
+[00:03:30,440 --> 00:03:33,759] in this case, Claude, to go on and take on a persona.
+[00:03:33,759 --> 00:03:35,639] Now, what is the persona that we want it to take on?
+[00:03:35,639 --> 00:03:39,160] We want it to take on the persona of the API.
+[00:03:39,160 --> 00:03:42,679] And I've given it that first API that we looked at before.
+[00:03:42,679 --> 00:03:46,759] And I've said, act as this API and pretend to be this API.
+[00:03:46,759 --> 00:03:49,039] Like basically act as the implementation of the server.
+[00:03:49,119 --> 00:03:51,320] And this is like rapid prototyping.
+[00:03:51,320 --> 00:03:53,600] I will type in pseudo HTTP requests
+[00:03:53,600 --> 00:03:55,679] and you will respond with an HTTP response
+[00:03:55,679 --> 00:03:56,960] like the server would.
+[00:03:56,960 --> 00:04:00,240] Show me some sample HTTP requests I can send you.
+[00:04:00,240 --> 00:04:02,199] And it comes back with samples of what I could send.
+[00:04:02,199 --> 00:04:05,399] And remember, this was the jobs-oriented API.
+[00:04:05,399 --> 00:04:08,440] So it gives me some sample HTTP requests
+[00:04:08,440 --> 00:04:09,639] that I could send to it.
+[00:04:09,639 --> 00:04:10,679] So now in the conversation,
+[00:04:10,679 --> 00:04:13,279] I'm gonna go and try out those HTTP requests.
+[00:04:13,279 --> 00:04:16,260] I'm gonna have it simulate that implementation
+[00:04:16,260 --> 00:04:17,760] that doesn't exist yet.
+[00:04:17,760 --> 00:04:20,359] I'm just going in as fluidly as I can think of it
+[00:04:20,359 --> 00:04:21,320] and go through the design.
+[00:04:21,320 --> 00:04:22,440] I'm trying it out.
+[00:04:22,440 --> 00:04:25,839] So I tell Claude, post API V1 jobs,
+[00:04:25,839 --> 00:04:27,420] and then I give it the content type,
+[00:04:27,420 --> 00:04:29,640] which is the header, is application JSON,
+[00:04:29,640 --> 00:04:31,119] along with this JSON.
+[00:04:31,119 --> 00:04:33,640] And it's create a simple Python web server.
+[00:04:33,640 --> 00:04:38,640] Comes back and it shows me the simulated HTTP response.
+[00:04:38,880 --> 00:04:41,660] Notice I have not built any code.
+[00:04:41,660 --> 00:04:42,500] I've done nothing.
+[00:04:42,500 --> 00:04:43,359] I've done no mocking.
+[00:04:43,359 --> 00:04:46,239] My mocking is telling the LLM,
+[00:04:46,279 --> 00:04:49,160] I'm telling Claude, take on the persona of this API,
+[00:04:49,160 --> 00:04:51,720] and it's able to simulate the API.
+[00:04:51,720 --> 00:04:53,720] But it's also showing me something, right?
+[00:04:53,720 --> 00:04:54,760] I also have to think through
+[00:04:54,760 --> 00:04:57,920] what do the responses look like, you know, and the requests.
+[00:04:57,920 --> 00:05:01,600] And I can look at this and see, okay, does this look right?
+[00:05:01,600 --> 00:05:03,760] Let's go in and try some more examples.
+[00:05:03,760 --> 00:05:05,239] Is that job there?
+[00:05:05,239 --> 00:05:06,720] Remember, because I went here
+[00:05:06,720 --> 00:05:09,239] and we see it comes back with an ID of the job.
+[00:05:09,239 --> 00:05:14,239] The job is a job underscore A7B3C9D1.
+[00:05:14,559 --> 00:05:18,880] If I go and I post or I get on that API to jobs,
+[00:05:18,880 --> 00:05:23,440] and then I have job A7B3, whatever, yeah, it exists.
+[00:05:23,440 --> 00:05:24,279] And you notice it says,
+[00:05:24,279 --> 00:05:26,320] successfully created a Python web server.
+[00:05:26,320 --> 00:05:28,260] It's actually simulating the execution
+[00:05:28,260 --> 00:05:32,140] of that Claude code agent and what it's writing back.
+[00:05:32,140 --> 00:05:34,500] And then if I go and I ask for the logs of it,
+[00:05:34,500 --> 00:05:36,500] it shows me starting job execution,
+[00:05:36,500 --> 00:05:38,079] create a simple Python web server,
+[00:05:38,079 --> 00:05:41,279] analyzing task requirements, planning implementation.
+[00:05:41,359 --> 00:05:46,359] And it's actually simulating the operation of that system.
+[00:05:46,359 --> 00:05:47,880] That's wild, right?
+[00:05:47,880 --> 00:05:50,040] This is the persona pattern allowing us
+[00:05:50,040 --> 00:05:53,600] to go and like rapid proof of concept mock.
+[00:05:53,600 --> 00:05:55,600] It's like super mocking, right?
+[00:05:55,600 --> 00:05:57,859] Because it's contextually correct.
+[00:05:57,859 --> 00:06:01,160] Because I said, go and do this, create this Python server.
+[00:06:01,160 --> 00:06:03,679] And then it keeps that context throughout it.
+[00:06:03,679 --> 00:06:06,119] And then it also enriches all the fake messages
+[00:06:06,119 --> 00:06:08,320] it creates to have that.
+[00:06:08,320 --> 00:06:10,500] And so this is like super mock.
+[00:06:10,540 --> 00:06:12,660] The persona pattern is the super mock
+[00:06:12,660 --> 00:06:15,700] for all kinds of aspects of system design,
+[00:06:15,700 --> 00:06:17,579] where we can go and say, no, just simulate it.
+[00:06:17,579 --> 00:06:20,980] And as long as we can go and simulate and discuss
+[00:06:20,980 --> 00:06:22,839] and interact through text,
+[00:06:22,839 --> 00:06:24,820] we can have some amazing things happen.
+[00:06:24,820 --> 00:06:26,140] So you can also play games.
+[00:06:26,140 --> 00:06:28,899] You can turn it into like a role-playing game
+[00:06:28,899 --> 00:06:30,140] where you say at each stage,
+[00:06:30,140 --> 00:06:32,579] you'll describe to me what would be on the screen.
+[00:06:32,579 --> 00:06:37,420] And then maybe you can even with Claude artifacts
+[00:06:37,420 --> 00:06:38,540] come up with some awesome way
+[00:06:38,540 --> 00:06:40,220] where it actually shows you each screen
+[00:06:41,059 --> 00:06:44,059] and designs it on the fly and you think about it.
+[00:06:44,059 --> 00:06:45,700] But there's such a rich space here
+[00:06:45,700 --> 00:06:47,619] to begin rapid prototyping,
+[00:06:47,619 --> 00:06:50,380] really battle testing and thinking through designs
+[00:06:50,380 --> 00:06:52,660] and then throwing them away and trying the next one
+[00:06:52,660 --> 00:06:54,459] through a rapid proof of concept.
+[00:06:54,459 --> 00:06:56,619] This is something that you absolutely need
+[00:06:56,619 --> 00:06:57,700] to be spending your time on
+[00:06:57,700 --> 00:07:00,059] because you know what the worst thing in the world is?
+[00:07:00,059 --> 00:07:03,260] The worst thing is deploying Claude code at scale
+[00:07:03,260 --> 00:07:04,980] and having it build a bunch of stuff
+[00:07:04,980 --> 00:07:07,299] that you didn't think through very carefully.
+[00:07:07,299 --> 00:07:08,820] And then by the time you get done
+[00:07:08,820 --> 00:07:11,380] and it's like just like gone
+[00:07:11,380 --> 00:07:13,399] and written all this huge amount of code,
+[00:07:13,399 --> 00:07:14,980] you had it running for like 20 minutes
+[00:07:14,980 --> 00:07:16,579] and then you realize, oh wait,
+[00:07:16,579 --> 00:07:18,899] that wasn't a very good design
+[00:07:18,899 --> 00:07:21,100] that had some major flaws in it, right?
+[00:07:21,100 --> 00:07:23,459] And you just spit out massed amount of code.
+[00:07:23,459 --> 00:07:25,299] You wasted all of these tokens
+[00:07:25,299 --> 00:07:27,260] going and creating all this software
+[00:07:27,260 --> 00:07:29,660] that has fundamental problems with its interface
+[00:07:29,660 --> 00:07:31,779] or fundamental missing requirements
+[00:07:31,779 --> 00:07:34,000] that are now gonna be hard to incorporate.
+[00:07:34,000 --> 00:07:37,859] No, take the time and really explore the design
+[00:07:37,859 --> 00:07:40,899] before you send Claude on an expedition
+[00:07:40,899 --> 00:07:41,820] to create all this code
+[00:07:41,820 --> 00:07:43,859] that's not gonna work from the beginning.
+
+
+------------------------------------------------------------------------------
+
+SOURCE: 01_untitled-lesson/07_craft-constraints-prompts-for-claude-code.en.srt
+TYPE: SRT
+TITLE: Craft Constraints Prompts For Claude Code
+
+[00:00:00,879 --> 00:00:03,599] Let's go to the next step in this process.
+[00:00:03,599 --> 00:00:06,000] We spend a lot of time thinking through the requirements,
+[00:00:06,000 --> 00:00:08,319] thinking through the design, the interfaces.
+[00:00:08,319 --> 00:00:10,239] Now we actually have to go and start implementing.
+[00:00:10,239 --> 00:00:12,560] And this is where I start thinking of the craft.
+[00:00:12,560 --> 00:00:14,680] You know, the craft as a software developer
+[00:00:14,680 --> 00:00:16,600] of knowing what libraries to use
+[00:00:16,600 --> 00:00:18,899] and all of sort of these implementation details
+[00:00:18,899 --> 00:00:20,479] that are going to matter.
+[00:00:20,479 --> 00:00:23,760] You know, how are we gonna structure our folders?
+[00:00:23,760 --> 00:00:27,399] How are we going to, you know, configure it?
+[00:00:27,399 --> 00:00:28,440] How are we gonna deploy it?
+[00:00:28,440 --> 00:00:30,319] All kinds of things like that.
+[00:00:30,319 --> 00:00:32,479] And starting to think of those implementation details,
+[00:00:32,479 --> 00:00:34,319] I think of this as a craft.
+[00:00:34,319 --> 00:00:38,159] Now, this is yet another place that we can find huge value
+[00:00:38,159 --> 00:00:41,259] in going and having a conversation with Claude.
+[00:00:41,259 --> 00:00:43,880] So let's start off by thinking about something
+[00:00:43,880 --> 00:00:45,159] that I think is really valuable,
+[00:00:45,159 --> 00:00:47,200] which is thinking through what the code would look like
+[00:00:47,200 --> 00:00:50,740] and what the developer ergonomics or experience
+[00:00:50,740 --> 00:00:52,040] of the interfaces would look like.
+[00:00:52,040 --> 00:00:55,080] Now, believe it or not, I still think this is important.
+[00:00:55,080 --> 00:00:57,340] And what I've actually found is if I can get it
+[00:00:57,340 --> 00:01:00,259] to write code that looks like it has the ergonomics
+[00:01:00,259 --> 00:01:01,939] of what I would like to use,
+[00:01:01,939 --> 00:01:04,699] that typically Claude Code can write
+[00:01:04,699 --> 00:01:07,239] and use that interface better
+[00:01:07,239 --> 00:01:08,699] than a one that I wouldn't want to use.
+[00:01:08,699 --> 00:01:11,819] It's this weird thing, but like, I think Claude Code,
+[00:01:11,819 --> 00:01:13,660] like that instinctual thing that we have
+[00:01:13,660 --> 00:01:16,139] where like that interface would be a pain to use
+[00:01:16,139 --> 00:01:18,260] turns into truth when we give it to Claude Code
+[00:01:18,260 --> 00:01:20,199] and it can't write code against it as well,
+[00:01:20,199 --> 00:01:21,580] or it makes more mistakes.
+[00:01:21,580 --> 00:01:23,900] And so I think those ergonomics still matter.
+[00:01:23,900 --> 00:01:25,739] So I like to still think through them.
+[00:01:25,739 --> 00:01:28,260] Design three different fluent clients in JavaScript
+[00:01:28,260 --> 00:01:29,620] for interacting with the API.
+[00:01:29,620 --> 00:01:33,059] Only show me the interface usage through examples.
+[00:01:33,059 --> 00:01:35,419] It goes through and shows me one potential design
+[00:01:35,419 --> 00:01:36,839] for the client.
+[00:01:36,839 --> 00:01:38,300] And we could have create job.
+[00:01:38,300 --> 00:01:40,459] And again, I'm all going against that first version
+[00:01:40,459 --> 00:01:42,699] of the API with jobs.
+[00:01:42,699 --> 00:01:44,779] Now we've also got another version of the client
+[00:01:44,779 --> 00:01:46,699] and it shows me another way that we could write it
+[00:01:46,699 --> 00:01:49,580] and structure the interface and the interaction of it.
+[00:01:49,580 --> 00:01:50,540] Here's another one.
+[00:01:51,779 --> 00:01:53,980] Okay, this is yet another way to do it.
+[00:01:53,980 --> 00:01:55,300] And then I can go and start thinking about
+[00:01:55,819 --> 00:01:56,940] which one is gonna be more error prone,
+[00:01:56,940 --> 00:01:59,019] which is gonna require more code.
+[00:01:59,019 --> 00:02:00,459] And if you think about it,
+[00:02:01,339 --> 00:02:03,360] the same things that kind of trip us up,
+[00:02:03,360 --> 00:02:05,900] like is this an error prone API
+[00:02:05,900 --> 00:02:07,739] where you can make a lot of mistakes with it?
+[00:02:07,739 --> 00:02:09,940] There's lots of things that you can forget.
+[00:02:09,940 --> 00:02:13,020] You have to do lots and lots of lines of code
+[00:02:13,020 --> 00:02:14,520] to achieve something.
+[00:02:14,520 --> 00:02:16,139] Well, that's gonna translate into
+[00:02:16,139 --> 00:02:17,539] if it's a lot of codes to achieve,
+[00:02:17,539 --> 00:02:19,779] something that's probably a lot more time
+[00:02:19,779 --> 00:02:20,899] spent by Claude Code,
+[00:02:20,899 --> 00:02:22,699] it's gonna be slower for it to develop.
+[00:02:22,699 --> 00:02:23,779] If it's more error prone,
+[00:02:23,779 --> 00:02:26,860] it's gonna lead to more errors with the AI writing code.
+[00:02:26,860 --> 00:02:27,940] Even though it's really good,
+[00:02:27,940 --> 00:02:29,100] it's still gonna make mistakes.
+[00:02:29,100 --> 00:02:31,220] And the more error prone the interface is,
+[00:02:31,220 --> 00:02:32,660] so we have to think about those things.
+[00:02:32,660 --> 00:02:34,139] And often I find this is a simple way
+[00:02:34,139 --> 00:02:37,139] to start thinking through these implementation details,
+[00:02:37,139 --> 00:02:39,940] the interfaces at the sort of code level.
+[00:02:40,940 --> 00:02:44,300] Okay, now one of the things we have to think about
+[00:02:44,300 --> 00:02:45,820] is now we've come up with our design,
+[00:02:45,820 --> 00:02:48,699] how do we translate that into a task
+[00:02:48,699 --> 00:02:51,020] for Claude Code or a prompt?
+[00:02:51,020 --> 00:02:52,679] And I think this is another great place
+[00:02:52,679 --> 00:02:56,800] for crafting a prompt through Claude itself
+[00:02:56,800 --> 00:02:58,479] is a fantastic thing.
+[00:02:58,479 --> 00:03:00,399] So I've gone through and I've described
+[00:03:00,399 --> 00:03:01,820] all of this design stuff.
+[00:03:01,820 --> 00:03:03,199] I've given it lots of feedback.
+[00:03:03,199 --> 00:03:05,000] I've edited it as I've gone.
+[00:03:05,000 --> 00:03:07,419] I've told it what I like, what I don't like.
+[00:03:07,419 --> 00:03:09,119] We've crafted a design together.
+[00:03:09,119 --> 00:03:11,639] We've probably put it into a Claude artifact.
+[00:03:11,639 --> 00:03:13,039] Now we gotta get into a prompt
+[00:03:13,039 --> 00:03:14,919] that we can go and put into Claude Code.
+[00:03:14,919 --> 00:03:18,039] Yeah, I could go and type stuff into Claude Code,
+[00:03:18,039 --> 00:03:20,919] but I find when I start typing into Claude Code
+[00:03:20,919 --> 00:03:22,479] that I get short things
+[00:03:23,279 --> 00:03:25,199] that sort of lack the richness of like requirements,
+[00:03:25,199 --> 00:03:28,339] documents, specifications that really, really matter.
+[00:03:28,339 --> 00:03:30,479] So I like to actually go into Claude Code first
+[00:03:30,479 --> 00:03:35,479] and really craft a robust sort of meaning and design
+[00:03:35,479 --> 00:03:37,080] and then turn that into a prompt.
+[00:03:37,080 --> 00:03:38,240] Now there's lots of ways to do this.
+[00:03:38,240 --> 00:03:39,880] I could take it into a document
+[00:03:39,880 --> 00:03:41,779] and say read this document, Claude Code,
+[00:03:41,779 --> 00:03:44,000] and implement it or set of documents.
+[00:03:44,000 --> 00:03:45,360] But what I'm gonna do is I'm gonna actually
+[00:03:45,360 --> 00:03:47,240] in this conversation just say,
+[00:03:47,240 --> 00:03:50,500] I like version one of all the design aspects.
+[00:03:50,539 --> 00:03:52,979] Now write a complete prompt that I can cut,
+[00:03:52,979 --> 00:03:56,460] paste into Claude to get it to implement this.
+[00:03:56,460 --> 00:03:59,820] And it comes back with a very extensive prompt
+[00:03:59,820 --> 00:04:01,699] that has all of the specification stuff
+[00:04:01,699 --> 00:04:04,199] that we've talked about, core requirements,
+[00:04:04,199 --> 00:04:06,899] data models, technical implementation,
+[00:04:06,899 --> 00:04:10,580] directory structure, JavaScript fluent client interface,
+[00:04:10,580 --> 00:04:12,300] you know, implementation notes,
+[00:04:12,300 --> 00:04:13,240] and it went on and on.
+[00:04:13,240 --> 00:04:14,300] This isn't all of it.
+[00:04:14,300 --> 00:04:17,119] But what was amazing, right, is I could copy this now
+[00:04:17,119 --> 00:04:19,859] and I could dump it into Claude Code and it would go.
+[00:04:19,859 --> 00:04:24,859] This is big prompt, huge prompt, huge, huge, huge prompt.
+[00:04:25,059 --> 00:04:27,619] And it can do a lot of it,
+[00:04:27,619 --> 00:04:32,260] but it's probably a little too much.
+[00:04:32,260 --> 00:04:35,540] And I like to do big prompts,
+[00:04:35,540 --> 00:04:37,660] but I often find that I get better results
+[00:04:37,660 --> 00:04:40,119] with Claude Code when I take the big prompt
+[00:04:40,119 --> 00:04:43,420] and I segment it into a series of iterative prompts
+[00:04:43,420 --> 00:04:45,959] that build towards the end goal or specification.
+[00:04:45,959 --> 00:04:48,220] Sometimes you need to give it to it all at once.
+[00:04:48,220 --> 00:04:50,500] Sometimes when you go gigantic,
+[00:04:50,500 --> 00:04:53,220] it can kind of get mired down in sort of the details
+[00:04:53,220 --> 00:04:54,859] in some of these things.
+[00:04:54,859 --> 00:04:57,660] And so what I'll often do is go into the conversation
+[00:04:57,660 --> 00:05:00,140] and just say, this is a lot to do at once.
+[00:05:00,140 --> 00:05:01,700] Let's break this plan up
+[00:05:01,700 --> 00:05:03,899] into a series of incremental steps.
+[00:05:03,899 --> 00:05:06,920] We want each step to end in a testable state and a commit.
+[00:05:06,920 --> 00:05:08,899] You choose how many increments.
+[00:05:08,899 --> 00:05:12,059] And it comes back, step one, project set up in basic server,
+[00:05:12,059 --> 00:05:14,220] create a basic Express server with a health checkpoint,
+[00:05:14,220 --> 00:05:16,899] initialize Node.js, install Express,
+[00:05:16,899 --> 00:05:20,700] server starts on port 3000, health check returns.
+[00:05:20,700 --> 00:05:23,820] Step two, in-memory job storage and job creation.
+[00:05:23,820 --> 00:05:27,359] Step three, basic Claude code execution.
+[00:05:27,359 --> 00:05:28,899] Step four, logging system.
+[00:05:28,899 --> 00:05:30,739] And it goes on and on and on through steps.
+[00:05:30,739 --> 00:05:34,380] And now what I have is sort of like a separate prompt
+[00:05:34,380 --> 00:05:37,040] that I can use for each step
+[00:05:37,040 --> 00:05:40,260] that's been thoughtfully done to build for it.
+[00:05:40,260 --> 00:05:42,459] And sometimes what I'll do is I'll combine these two
+[00:05:42,459 --> 00:05:44,760] because I'll say, go and produce
+[00:05:44,760 --> 00:05:46,540] the overall requirements and design.
+[00:05:47,179 --> 00:05:48,019] And I'll go through all this work
+[00:05:48,019 --> 00:05:48,839] and I'll turn it into a document
+[00:05:48,839 --> 00:05:49,899] and I'll put it in the repo.
+[00:05:49,899 --> 00:05:52,019] And I'll say, now here's step one.
+[00:05:52,019 --> 00:05:53,859] And if you have any questions
+[00:05:53,859 --> 00:05:55,380] about the right way to do things
+[00:05:55,380 --> 00:05:58,500] or there's multiple different ways you could do it,
+[00:05:58,500 --> 00:06:00,519] read the design document to figure out the way
+[00:06:00,519 --> 00:06:03,299] that's most appropriate given the design
+[00:06:03,299 --> 00:06:04,380] and where we're going.
+[00:06:04,380 --> 00:06:06,500] And so you can get kind of a hybrid.
+[00:06:06,500 --> 00:06:10,339] So the key though is we wanna think about
+[00:06:10,339 --> 00:06:12,820] how do we present this information to Claude?
+[00:06:12,820 --> 00:06:14,459] Now, as I go through steps,
+[00:06:14,459 --> 00:06:17,380] I still need to probably at each step,
+[00:06:17,380 --> 00:06:20,299] probably do additional levels of thought and design.
+[00:06:20,299 --> 00:06:22,540] So I'm not giving up at all in the code
+[00:06:22,540 --> 00:06:23,820] or the design or anything.
+[00:06:23,820 --> 00:06:26,299] It's just that I'm focusing a lot more
+[00:06:26,299 --> 00:06:29,339] on critical thinking, design aspects,
+[00:06:29,339 --> 00:06:31,619] algorithms, libraries, big picture.
+[00:06:31,619 --> 00:06:32,940] How is this all gonna get put together?
+[00:06:32,940 --> 00:06:35,239] What are the problems we're solving?
+[00:06:35,239 --> 00:06:37,779] So let's say I'm jumping off into step one.
+[00:06:37,779 --> 00:06:41,480] Well, one of the things that I like to do
+[00:06:41,480 --> 00:06:44,059] is really sort of flesh out what are the libraries
+[00:06:44,660 --> 00:06:45,500] and things I'm gonna use
+[00:06:45,500 --> 00:06:47,100] because often there's lots of dimensions to that.
+[00:06:47,100 --> 00:06:50,940] Even if I've kind of decided on this basic idea,
+[00:06:50,940 --> 00:06:52,660] I'd kind of like to explore and know,
+[00:06:52,660 --> 00:06:54,500] are there things out there that I don't know about
+[00:06:54,500 --> 00:06:55,859] that could be really useful?
+[00:06:55,859 --> 00:06:59,640] So I take step one and I say,
+[00:06:59,640 --> 00:07:02,420] let's think of library options for this step.
+[00:07:02,420 --> 00:07:05,559] Let's also think of detailed implementation details,
+[00:07:05,559 --> 00:07:07,679] coding conventions, package structure,
+[00:07:07,679 --> 00:07:10,899] other that we need to decide now.
+[00:07:10,899 --> 00:07:12,820] Comes back, web frameworks choice,
+[00:07:12,820 --> 00:07:15,940] language and type safety, JavaScript versus TypeScript,
+[00:07:15,940 --> 00:07:17,779] package structure and organization.
+[00:07:17,779 --> 00:07:19,660] It goes on and on with all kinds of things.
+[00:07:19,660 --> 00:07:22,339] It has a recommended architecture,
+[00:07:22,339 --> 00:07:23,579] kept going, going, going, going.
+[00:07:23,579 --> 00:07:25,260] And then I can start thinking about which of these
+[00:07:25,260 --> 00:07:26,779] do I really care about now?
+[00:07:26,779 --> 00:07:30,220] Do I want to dictate and say, yeah, that's the way to do it.
+[00:07:30,220 --> 00:07:32,459] Are there specific libraries that I wanna use
+[00:07:32,459 --> 00:07:35,179] or avoid particular structures to the package?
+[00:07:35,179 --> 00:07:38,420] But again, it's getting me thinking and exploring.
+[00:07:38,420 --> 00:07:42,600] And then when I come up with what I think I might want,
+[00:07:43,380 --> 00:07:44,220] I'll also go and just say,
+[00:07:44,220 --> 00:07:47,079] now what are cohesive configurations?
+[00:07:47,079 --> 00:07:49,660] Because sometimes we pick and choose a bunch of things,
+[00:07:49,660 --> 00:07:51,260] but then we want something that's cohesive
+[00:07:51,260 --> 00:07:52,140] that goes with all that.
+[00:07:52,140 --> 00:07:54,079] Like we put everything together.
+[00:07:54,079 --> 00:07:55,200] So I'll say, please,
+[00:07:55,200 --> 00:07:57,079] I propose three different configurations
+[00:07:57,079 --> 00:07:59,000] and discuss the pros, cons.
+[00:07:59,000 --> 00:08:00,420] Would any of these details influence
+[00:08:00,420 --> 00:08:01,480] our architectural choices?
+[00:08:01,480 --> 00:08:03,480] And it comes back minimalist and fast,
+[00:08:03,480 --> 00:08:07,200] express JavaScript, basic manual validation,
+[00:08:07,200 --> 00:08:10,440] console.log, Morgan, Jest,
+[00:08:10,440 --> 00:08:13,559] goes pros, fastest to implement, cons,
+[00:08:13,559 --> 00:08:16,480] configuration two, production ready and verbose,
+[00:08:16,480 --> 00:08:20,559] express, TypeScript, Joy, Winston, Morgan, Jest,
+[00:08:20,559 --> 00:08:23,739] got a bunch of other stuff, pros, cons,
+[00:08:23,739 --> 00:08:26,720] configuration three, Fastify, JavaScript,
+[00:08:26,720 --> 00:08:31,720] Pino, Vitest, bunch of other pros, cons.
+[00:08:31,760 --> 00:08:34,239] But now what I've done is I've taken that design
+[00:08:34,239 --> 00:08:37,320] and I've crafted a lot of the implementation details
+[00:08:37,320 --> 00:08:40,299] and I've crafted the prompts and the sequence of prompts
+[00:08:41,159 --> 00:08:42,000] that I'm going to give to Cloud Code
+[00:08:42,000 --> 00:08:43,859] to actually go and implement it.
+[00:08:43,859 --> 00:08:47,859] And so I'm spending a lot more time on this thought,
+[00:08:47,859 --> 00:08:51,140] thinking about how do we craft the prompts,
+[00:08:51,140 --> 00:08:52,960] the details that are gonna matter.
+[00:08:52,960 --> 00:08:55,960] Now it's not designing all the individual lines of code,
+[00:08:55,960 --> 00:08:58,580] individual files, I'm still doing big prompts,
+[00:08:58,580 --> 00:09:00,900] but I'm crafting the constraints.
+[00:09:00,900 --> 00:09:03,659] I'm crafting the style that we're gonna use.
+[00:09:03,659 --> 00:09:06,539] I'm crafting all of these other things
+[00:09:06,539 --> 00:09:11,539] that become guidelines to give it direction
+[00:09:11,780 --> 00:09:13,140] that's gonna make sure at the end
+[00:09:13,140 --> 00:09:14,940] I end up with something that I want.
